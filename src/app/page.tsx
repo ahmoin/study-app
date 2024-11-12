@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SpanishPractice } from "@/components/spanish-practice.tsx";
+import { SpanishPractice } from "@/components/spanish-practice";
 
 export default function Home() {
   return (
