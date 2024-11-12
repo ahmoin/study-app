@@ -1,13 +1,13 @@
 "use client"
 
-import { useState, useEffect } from 'react'
-import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { CardContent } from "@/components/ui/card"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Label } from "@/components/ui/label"
-import { Checkbox } from "@/components/ui/checkbox"
+import { useEffect, useState } from 'react'
 
 const verbs = {
   poder: {
@@ -122,12 +122,25 @@ const verbs = {
   }
 }
 
+const words = [
+  { word: 'alguien', translation: 'someone, anyone' },
+  { word: 'algo', translation: 'something, anything' },
+  { word: 'algún/alguno/alguna', translation: 'some, any' },
+  { word: 'siempre', translation: 'always' },
+  { word: 'también', translation: 'also, too' },
+  { word: 'nadie', translation: 'no one, nobody' },
+  { word: 'nada', translation: 'nothing' },
+  { word: 'ningún/ninguno/ninguna', translation: 'none, no one, nothing' },
+  { word: 'nunca', translation: 'never' },
+  { word: 'tampoco', translation: 'neither' }
+]
+
 const statementTypes = ['hay que', 'se prohibe', 'tengo que']
 
 type VerbKey = keyof typeof verbs
 type SubjectKey = keyof (typeof verbs)[VerbKey]['conjugations']
 
-type Mode = 'verbConjugation' | 'classroomStatements'
+type Mode = 'verbConjugation' | 'classroomStatements' | 'affirmativeNegative'
 
 export function SpanishPractice() {
   const [mode, setMode] = useState<Mode>('verbConjugation')
@@ -143,6 +156,8 @@ export function SpanishPractice() {
   const [answerSubmitted, setAnswerSubmitted] = useState(false)
   const [quizCompleted, setQuizCompleted] = useState(false)
   const [statements, setStatements] = useState<{ statement: string; type: string; isCorrect: boolean }[]>([])
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const [wordsOrder, setWordsOrder] = useState<number[]>([])  
 
   useEffect(() => {
     const shuffledVerbs = Object.keys(verbs) as VerbKey[]
@@ -151,6 +166,15 @@ export function SpanishPractice() {
       [shuffledVerbs[i], shuffledVerbs[j]] = [shuffledVerbs[j], shuffledVerbs[i]]
     }
     setVerbOrder(shuffledVerbs)
+  }, [])
+
+  useEffect(() => {
+    const shuffledIndices = Array.from({ length: words.length }, (_, i) => i)
+    for (let i = shuffledIndices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledIndices[i], shuffledIndices[j]] = [shuffledIndices[j], shuffledIndices[i]]
+    }
+    setWordsOrder(shuffledIndices)
   }, [])
 
   const currentVerb = verbOrder[currentVerbIndex]
@@ -173,9 +197,24 @@ export function SpanishPractice() {
         setIsCorrect(false);
       }
       setProgress((currentSubjectIndex + 1) / subjects.length * 100);
-    } else {
+    } else if (mode === 'classroomStatements') {
       setStatements(prev => [...prev, { statement: userAnswer, type: statementTypes[currentStatementIndex], isCorrect: false }]);
       setProgress((currentStatementIndex + 1) / statementTypes.length * 100);
+    } else if (mode === 'affirmativeNegative') {
+      const currentWord = words[wordsOrder[currentWordIndex]]
+      const correctAnswer = currentWord.word
+      const normalizedUserAnswer = userAnswer.toLowerCase().trim()
+      const normalizedCorrectAnswer = correctAnswer.toLowerCase()
+      
+      if (normalizedUserAnswer === normalizedCorrectAnswer) {
+        setFeedback(`¡Correcto! La respuesta es: ${correctAnswer}`);
+        setIsCorrect(true);
+        setCorrectAnswers(prev => prev + 1);
+      } else {
+        setFeedback(`Incorrecto. La respuesta correcta es: ${correctAnswer}`);
+        setIsCorrect(false);
+      }
+      setProgress((currentWordIndex + 1) / words.length * 100);
     }
     setAnswerSubmitted(true);
   }
@@ -195,13 +234,20 @@ export function SpanishPractice() {
       } else {
         setCurrentSubjectIndex(prev => prev + 1)
       }
-    } else {
+    } else if (mode === 'classroomStatements') {
       if (currentStatementIndex === statementTypes.length - 1) {
         setQuizCompleted(true)
         setFeedback('¡Has completado la práctica!')
         return
       }
       setCurrentStatementIndex(prev => prev + 1)
+    } else if (mode === 'affirmativeNegative') {
+      if (currentWordIndex === wordsOrder.length - 1) {
+        setQuizCompleted(true)
+        setFeedback('¡Has completado la práctica!')
+        return
+      }
+      setCurrentWordIndex(prev => prev + 1)
     }
     setUserAnswer('')
     setFeedback('')
@@ -249,11 +295,9 @@ export function SpanishPractice() {
   if (!currentVerb && mode === 'verbConjugation') return null
 
   return (
-    <Card className="w-full max-w-md mx-auto">
-      <CardHeader>
-        <CardTitle>Práctica de Español</CardTitle>
-        <CardDescription>Elige un modo de práctica</CardDescription>
-      </CardHeader>
+    <main className="w-full max-w-md mx-auto">
+      <h1 className="text-2xl font-bold">Práctica de Español</h1>
+      <p className="text-sm text-gray-500 pb-4">Elige un modo de práctica</p>
       <CardContent className="space-y-4">
         {!quizCompleted ? (
           <>
@@ -266,6 +310,10 @@ export function SpanishPractice() {
                 <RadioGroupItem value="classroomStatements" id="classroomStatements" />
                 <Label htmlFor="classroomStatements">Frases de Clase</Label>
               </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="affirmativeNegative" id="affirmativeNegative" />
+                <Label htmlFor="affirmativeNegative">Palabras Afirmativas y Negativas</Label>
+              </div>
             </RadioGroup>
             <Progress value={progress} className="w-full" />
             {mode === 'verbConjugation' ? (
@@ -275,14 +323,20 @@ export function SpanishPractice() {
                   <p className="text-sm font-medium">Sujeto: <span className="font-bold">{currentSubject}</span></p>
                 </div>
               </>
-            ) : (
+            ) : mode === 'classroomStatements' ? (
               <div className="space-y-2">
                 <p className="text-sm font-medium">Tipo: <span className="font-bold">{statementTypes[currentStatementIndex]}</span></p>
               </div>
-            )}
+            ) : mode === 'affirmativeNegative' ? (
+              <div className="space-y-2">
+                <p className="text-sm font-medium">
+                  Traducción: <span className="font-bold">{words[wordsOrder[currentWordIndex]]?.translation}</span>
+                </p>
+              </div>
+            ) : null}
             <Input
               type="text"
-              placeholder={mode === 'verbConjugation' ? "Escribe la conjugación" : "Escribe una frase usando el tipo dado"}
+              placeholder={mode === 'verbConjugation' ? "Escribe la conjugación" : mode === 'classroomStatements' ? "Escribe una frase usando el tipo dado" : "Escribe la palabra afirmativa o negativa"}
               value={userAnswer}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
@@ -293,7 +347,7 @@ export function SpanishPractice() {
             >
               {answerSubmitted ? 'Siguiente' : 'Comprobar'}
             </Button>
-            {feedback && mode === 'verbConjugation' && (
+            {feedback && (mode === 'verbConjugation' || mode === 'affirmativeNegative') && (
               <p className={`text-center font-medium ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
                 {feedback}
               </p>
@@ -301,7 +355,7 @@ export function SpanishPractice() {
           </>
         ) : mode === 'verbConjugation' ? (
           <p className="text-center font-medium text-green-600">¡Felicidades! Has completado la práctica de todos los verbos.</p>
-        ) : (
+        ) : mode === 'classroomStatements' ? (
           <div className="space-y-4">
             <p className="text-center font-medium text-green-600">¡Has completado todas las frases! Revisa tus respuestas:</p>
             {statements.map((statement, index) => (
@@ -318,8 +372,10 @@ export function SpanishPractice() {
               </div>
             ))}
           </div>
-        )}
+        ) : mode === 'affirmativeNegative' ? (
+          <p className="text-center font-medium text-green-600">¡Felicidades! Has completado la práctica de todas las palabras afirmativas y negativas.</p>
+        ) : null}
       </CardContent>
-    </Card>
+    </main>
   )
 }
