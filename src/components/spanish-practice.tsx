@@ -119,6 +119,17 @@ const verbs = {
       vosotros: 'conocéis',
       'ellos/ellas/ustedes': 'conocen'
     }
+  },
+  pensar: {
+    translation: 'to think',
+    conjugations: {
+      yo: 'pienso',
+      tú: 'piensas',
+      'él/ella/usted': 'piensa',
+      nosotros: 'pensamos',
+      vosotros: 'pensáis',
+      'ellos/ellas/ustedes': 'piensan'
+    }
   }
 }
 
