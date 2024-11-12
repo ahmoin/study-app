@@ -8,7 +8,6 @@ import { Progress } from "@/components/ui/progress"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
-import confetti from 'canvas-confetti'
 
 const verbs = {
   poder: {
@@ -184,13 +183,6 @@ export function SpanishPractice() {
   const moveToNext = () => {
     if (mode === 'verbConjugation') {
       if (currentSubjectIndex === subjects.length - 1) {
-        if (correctAnswers === subjects.length) {
-          confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-          })
-        }
         if (currentVerbIndex === verbOrder.length - 1) {
           setQuizCompleted(true)
           setFeedback('¡Has completado la práctica!')
