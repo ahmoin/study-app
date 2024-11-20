@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Spanish Practice",
-  description: "Practice hay que, tener que, se prohibe, etc.",
+  title: "Study App",
+  description: "Practice any topic.",
 };
 
 export default function RootLayout({
