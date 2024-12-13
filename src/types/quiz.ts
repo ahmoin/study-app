@@ -19,4 +19,28 @@ export interface SavedQuiz {
   name: string;
   createdAt: number;
   questions: Question[];
+}
+
+export type ActivityVariant = 'four-choice' | 'matching-pairs' | 'typing-practice';
+
+export interface ActivityWord {
+  word: string;
+  translation: string;
+}
+
+export interface Activity {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  variant: ActivityVariant;
+  wordPairs: ActivityWord[];
+}
+
+export interface SavedActivity {
+  id: string;
+  name: string;
+  createdAt: number;
+  variant: ActivityVariant;
+  wordPairs: ActivityWord[];
 } 
