@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
@@ -19,6 +19,17 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   const [options, setOptions] = useState<string[]>([]);
   const [score, setScore] = useState(0);
   const [shuffledPairs, setShuffledPairs] = useState<ActivityWord[]>([]);
+  const nextButtonRef = useRef<HTMLButtonElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const normalizeAnswer = (text: string) => {
+    const normalized = text.toLowerCase()
+      .trim()
+      .replace(/-/g, '') // Remove all dashes
+      .replace(/\s+/g, ' '); // Normalize spaces
+    
+    return normalized;
+  };
 
   // Initialize shuffled pairs when component mounts
   useEffect(() => {
@@ -54,13 +65,18 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   };
 
   const checkAnswer = () => {
-    const isCorrect = userAnswer.toLowerCase().trim() === 
-      shuffledPairs[currentIndex].translation.toLowerCase().trim();
+    const userNormalized = normalizeAnswer(userAnswer);
+    const correctNormalized = normalizeAnswer(shuffledPairs[currentIndex].translation);
+    
+    const isCorrect = userNormalized === correctNormalized;
     
     if (isCorrect) {
       setScore(score + 1);
+    } else {
+      responsiveVoice.speak(shuffledPairs[currentIndex].translation, "US English Female");
     }
     setShowResult(true);
+    setTimeout(() => nextButtonRef.current?.focus(), 0);
   };
 
   const nextQuestion = () => {
@@ -68,6 +84,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
       setCurrentIndex(currentIndex + 1);
       setUserAnswer('');
       setShowResult(false);
+      setTimeout(() => inputRef.current?.focus(), 0);
     } else {
       // Activity completed
       alert(`Activity completed! Score: ${score}/${shuffledPairs.length}`);
@@ -75,7 +92,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
     }
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === 'Enter') {
       if (showResult) {
         nextQuestion();
@@ -88,7 +105,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   return (
     <div 
       className="max-w-2xl mx-auto bg-card border rounded-lg p-6 space-y-6"
-      onKeyPress={handleKeyPress}
+      onKeyDown={handleKeyPress}
       tabIndex={0}
     >
       <div className="flex justify-between items-center">
@@ -129,10 +146,10 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
             </RadioGroup>
           ) : activity.variant === 'typing-practice' ? (
             <Input
+              ref={inputRef}
               value={userAnswer}
               onChange={(e) => setUserAnswer(e.target.value)}
               placeholder="Type your answer"
-              autoFocus
               disabled={showResult}
             />
           ) : null}
@@ -141,11 +158,11 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
 
       {showResult && (
         <div className={`p-4 rounded-lg ${
-          userAnswer.toLowerCase().trim() === shuffledPairs[currentIndex].translation.toLowerCase().trim()
+          normalizeAnswer(userAnswer) === normalizeAnswer(shuffledPairs[currentIndex].translation)
             ? 'bg-green-100 text-green-800' 
             : 'bg-red-100 text-red-800'
         }`}>
-          {userAnswer.toLowerCase().trim() === shuffledPairs[currentIndex].translation.toLowerCase().trim()
+          {normalizeAnswer(userAnswer) === normalizeAnswer(shuffledPairs[currentIndex].translation)
             ? 'Correct!' 
             : `Incorrect. The correct answer is: ${shuffledPairs[currentIndex].translation}`
           }
@@ -154,16 +171,14 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
 
       <div className="flex justify-between">
         <Button 
-          onClick={checkAnswer} 
-          disabled={!userAnswer || showResult}
+          ref={nextButtonRef}
+          onClick={showResult ? nextQuestion : checkAnswer} 
+          disabled={!userAnswer && !showResult}
         >
-          Check Answer
-        </Button>
-        <Button 
-          onClick={nextQuestion} 
-          disabled={!showResult}
-        >
-          {currentIndex < shuffledPairs.length - 1 ? 'Next' : 'Finish'}
+          {showResult 
+            ? (currentIndex < shuffledPairs.length - 1 ? 'Next' : 'Finish')
+            : 'Check Answer'
+          }
         </Button>
       </div>
     </div>
