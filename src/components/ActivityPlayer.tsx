@@ -4,7 +4,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import type { SavedActivity, ActivityWord } from '@/types/quiz';
-import { SpeakButton } from "./SpeakButton";
+import { SpeakButton } from './SpeakButton';
+declare const responsiveVoice: any;
 
 interface ActivityPlayerProps {
   activity: SavedActivity;
@@ -22,7 +23,9 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
     if (activity.variant === 'four-choice') {
       generateOptions();
     }
-  }, [currentIndex]);
+    // Auto-play the word when question loads
+    responsiveVoice.speak(activity.wordPairs[currentIndex].word, "Spanish Female");
+  }, [currentIndex, activity.wordPairs]);
 
   const generateOptions = () => {
     const correctAnswer = activity.wordPairs[currentIndex].translation;
