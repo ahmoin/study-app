@@ -21,6 +21,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   const [shuffledPairs, setShuffledPairs] = useState<ActivityWord[]>([]);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [showOptions, setShowOptions] = useState(!activity.blurOptions);
 
   const normalizeAnswer = (text: string) => {
     const normalized = text.toLowerCase()
@@ -84,6 +85,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
       setCurrentIndex(currentIndex + 1);
       setUserAnswer('');
       setShowResult(false);
+      setShowOptions(!activity.blurOptions);
       setTimeout(() => inputRef.current?.focus(), 0);
     } else {
       // Activity completed
@@ -128,22 +130,35 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
           </div>
 
           {activity.variant === 'four-choice' ? (
-            <RadioGroup 
-              value={userAnswer} 
-              onValueChange={setUserAnswer}
-              disabled={showResult}
-            >
-              {options.map((option, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <RadioGroupItem 
-                    value={option} 
-                    id={`option-${index}`}
-                    disabled={showResult}
-                  />
-                  <Label htmlFor={`option-${index}`}>{option}</Label>
-                </div>
-              ))}
-            </RadioGroup>
+            <div className="space-y-4">
+              <RadioGroup 
+                value={userAnswer} 
+                onValueChange={setUserAnswer}
+                disabled={showResult}
+                className={activity.blurOptions && !showOptions ? 'blur-sm' : ''}
+              >
+                {options.map((option, index) => (
+                  <div key={index} className="flex items-center space-x-2">
+                    <RadioGroupItem 
+                      value={option} 
+                      id={`option-${index}`}
+                      disabled={showResult}
+                    />
+                    <Label htmlFor={`option-${index}`}>{option}</Label>
+                  </div>
+                ))}
+              </RadioGroup>
+              
+              {activity.blurOptions && !showOptions && (
+                <Button
+                  variant="outline"
+                  onClick={() => setShowOptions(true)}
+                  className="w-full"
+                >
+                  Show Answer Choices
+                </Button>
+              )}
+            </div>
           ) : activity.variant === 'typing-practice' ? (
             <Input
               ref={inputRef}

@@ -43,4 +43,5 @@ export interface SavedActivity {
   createdAt: number;
   variant: ActivityVariant;
   wordPairs: ActivityWord[];
+  blurOptions?: boolean;
 } 

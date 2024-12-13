@@ -4,12 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import type { ActivityVariant, ActivityWord, SavedActivity } from '@/types/quiz';
+import { Checkbox } from "@/components/ui/checkbox";
 
 interface ActivityCreationFormProps {
   onSave: (activity: {
     name: string;
     variant: ActivityVariant;
     wordPairs: ActivityWord[];
+    blurOptions?: boolean;
   }) => void;
   initialActivity?: SavedActivity;
   onCancel?: () => void;
@@ -18,6 +20,7 @@ interface ActivityCreationFormProps {
 export function ActivityCreationForm({ onSave, initialActivity, onCancel }: ActivityCreationFormProps) {
   const [activityName, setActivityName] = useState(initialActivity?.name || '');
   const [variant, setVariant] = useState<ActivityVariant>(initialActivity?.variant || 'four-choice');
+  const [blurOptions, setBlurOptions] = useState(initialActivity?.blurOptions || false);
   const [leftWords, setLeftWords] = useState<string>(
     initialActivity?.wordPairs.map(pair => pair.word).join('\n') || ''
   );
@@ -42,13 +45,15 @@ export function ActivityCreationForm({ onSave, initialActivity, onCancel }: Acti
     onSave({
       name: activityName,
       variant,
-      wordPairs
+      wordPairs,
+      blurOptions: variant === 'four-choice' ? blurOptions : undefined
     });
 
     // Reset form
     setActivityName('');
     setLeftWords('');
     setRightWords('');
+    setBlurOptions(false);
   };
 
   return (
@@ -85,6 +90,21 @@ export function ActivityCreationForm({ onSave, initialActivity, onCancel }: Acti
             </SelectContent>
           </Select>
         </div>
+
+        {variant === 'four-choice' && (
+          <div className="col-span-2">
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id="blur-options"
+                checked={blurOptions}
+                onCheckedChange={(checked) => setBlurOptions(checked as boolean)}
+              />
+              <Label htmlFor="blur-options">
+                Blur answer choices until revealed
+              </Label>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="grid grid-cols-2 gap-4 relative">

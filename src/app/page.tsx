@@ -148,13 +148,15 @@ export default function StudyApp() {
     name: string;
     variant: ActivityVariant;
     wordPairs: ActivityWord[];
+    blurOptions?: boolean;
   }) => {
     const activityData: SavedActivity = {
       id: editingActivity?.id || Date.now().toString(),
       name: activity.name,
       createdAt: editingActivity?.createdAt || Date.now(),
       variant: activity.variant,
-      wordPairs: activity.wordPairs
+      wordPairs: activity.wordPairs,
+      blurOptions: activity.blurOptions
     };
 
     const updatedActivities = editingActivity
