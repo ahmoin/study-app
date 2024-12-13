@@ -18,18 +18,30 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   const [showResult, setShowResult] = useState(false);
   const [options, setOptions] = useState<string[]>([]);
   const [score, setScore] = useState(0);
+  const [shuffledPairs, setShuffledPairs] = useState<ActivityWord[]>([]);
+
+  // Initialize shuffled pairs when component mounts
+  useEffect(() => {
+    const shuffled = [...activity.wordPairs]
+      .sort(() => Math.random() - 0.5);
+    setShuffledPairs(shuffled);
+  }, [activity.wordPairs]);
 
   useEffect(() => {
     if (activity.variant === 'four-choice') {
       generateOptions();
     }
     // Auto-play the word when question loads
-    responsiveVoice.speak(activity.wordPairs[currentIndex].word, "Spanish Female");
-  }, [currentIndex, activity.wordPairs]);
+    if (shuffledPairs.length > 0) {
+      responsiveVoice.speak(shuffledPairs[currentIndex].word, "Spanish Female");
+    }
+  }, [currentIndex, shuffledPairs]);
 
   const generateOptions = () => {
-    const correctAnswer = activity.wordPairs[currentIndex].translation;
-    const otherAnswers = activity.wordPairs
+    if (shuffledPairs.length === 0) return;
+    
+    const correctAnswer = shuffledPairs[currentIndex].translation;
+    const otherAnswers = shuffledPairs
       .filter((_, index) => index !== currentIndex)
       .map(pair => pair.translation)
       .sort(() => Math.random() - 0.5)
@@ -43,7 +55,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
 
   const checkAnswer = () => {
     const isCorrect = userAnswer.toLowerCase().trim() === 
-      activity.wordPairs[currentIndex].translation.toLowerCase().trim();
+      shuffledPairs[currentIndex].translation.toLowerCase().trim();
     
     if (isCorrect) {
       setScore(score + 1);
@@ -52,13 +64,13 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
   };
 
   const nextQuestion = () => {
-    if (currentIndex < activity.wordPairs.length - 1) {
+    if (currentIndex < shuffledPairs.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setUserAnswer('');
       setShowResult(false);
     } else {
       // Activity completed
-      alert(`Activity completed! Score: ${score}/${activity.wordPairs.length}`);
+      alert(`Activity completed! Score: ${score}/${shuffledPairs.length}`);
       onClose();
     }
   };
@@ -83,48 +95,50 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
         <div>
           <h2 className="text-2xl font-semibold">{activity.name}</h2>
           <p className="text-muted-foreground">
-            Question {currentIndex + 1} of {activity.wordPairs.length}
+            Question {currentIndex + 1} of {shuffledPairs.length}
           </p>
         </div>
         <Button variant="ghost" onClick={onClose}>Exit</Button>
       </div>
 
-      <div className="space-y-4">
-        <div className="font-medium flex items-center gap-2">
-          Translate: {activity.wordPairs[currentIndex].word}
-          <SpeakButton 
-            text={activity.wordPairs[currentIndex].word}
-          />
-        </div>
+      {shuffledPairs.length > 0 && (
+        <div className="space-y-4">
+          <div className="font-medium flex items-center gap-2">
+            Translate: {shuffledPairs[currentIndex].word}
+            <SpeakButton 
+              text={shuffledPairs[currentIndex].word}
+            />
+          </div>
 
-        {activity.variant === 'four-choice' ? (
-          <RadioGroup value={userAnswer} onValueChange={setUserAnswer}>
-            {options.map((option, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <RadioGroupItem value={option} id={`option-${index}`} />
-                <Label htmlFor={`option-${index}`}>{option}</Label>
-              </div>
-            ))}
-          </RadioGroup>
-        ) : activity.variant === 'typing-practice' ? (
-          <Input
-            value={userAnswer}
-            onChange={(e) => setUserAnswer(e.target.value)}
-            placeholder="Type your answer"
-            autoFocus
-          />
-        ) : null}
-      </div>
+          {activity.variant === 'four-choice' ? (
+            <RadioGroup value={userAnswer} onValueChange={setUserAnswer}>
+              {options.map((option, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <RadioGroupItem value={option} id={`option-${index}`} />
+                  <Label htmlFor={`option-${index}`}>{option}</Label>
+                </div>
+              ))}
+            </RadioGroup>
+          ) : activity.variant === 'typing-practice' ? (
+            <Input
+              value={userAnswer}
+              onChange={(e) => setUserAnswer(e.target.value)}
+              placeholder="Type your answer"
+              autoFocus
+            />
+          ) : null}
+        </div>
+      )}
 
       {showResult && (
         <div className={`p-4 rounded-lg ${
-          userAnswer.toLowerCase().trim() === activity.wordPairs[currentIndex].translation.toLowerCase().trim()
+          userAnswer.toLowerCase().trim() === shuffledPairs[currentIndex].translation.toLowerCase().trim()
             ? 'bg-green-100 text-green-800' 
             : 'bg-red-100 text-red-800'
         }`}>
-          {userAnswer.toLowerCase().trim() === activity.wordPairs[currentIndex].translation.toLowerCase().trim()
+          {userAnswer.toLowerCase().trim() === shuffledPairs[currentIndex].translation.toLowerCase().trim()
             ? 'Correct!' 
-            : `Incorrect. The correct answer is: ${activity.wordPairs[currentIndex].translation}`
+            : `Incorrect. The correct answer is: ${shuffledPairs[currentIndex].translation}`
           }
         </div>
       )}
@@ -140,7 +154,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
           onClick={nextQuestion} 
           disabled={!showResult}
         >
-          {currentIndex < activity.wordPairs.length - 1 ? 'Next' : 'Finish'}
+          {currentIndex < shuffledPairs.length - 1 ? 'Next' : 'Finish'}
         </Button>
       </div>
     </div>
