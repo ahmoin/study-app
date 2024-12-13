@@ -111,10 +111,18 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
           </div>
 
           {activity.variant === 'four-choice' ? (
-            <RadioGroup value={userAnswer} onValueChange={setUserAnswer}>
+            <RadioGroup 
+              value={userAnswer} 
+              onValueChange={setUserAnswer}
+              disabled={showResult}
+            >
               {options.map((option, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <RadioGroupItem value={option} id={`option-${index}`} />
+                  <RadioGroupItem 
+                    value={option} 
+                    id={`option-${index}`}
+                    disabled={showResult}
+                  />
                   <Label htmlFor={`option-${index}`}>{option}</Label>
                 </div>
               ))}
@@ -125,6 +133,7 @@ export function ActivityPlayer({ activity, onClose }: ActivityPlayerProps) {
               onChange={(e) => setUserAnswer(e.target.value)}
               placeholder="Type your answer"
               autoFocus
+              disabled={showResult}
             />
           ) : null}
         </div>
