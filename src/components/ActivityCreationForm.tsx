@@ -1,9 +1,19 @@
-import { useState } from 'react';
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import type { ActivityVariant, ActivityWord, SavedActivity } from '@/types/quiz';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import type {
+  ActivityVariant,
+  ActivityWord,
+  SavedActivity,
+} from "@/types/quiz";
 import { Checkbox } from "@/components/ui/checkbox";
 
 interface ActivityCreationFormProps {
@@ -17,42 +27,50 @@ interface ActivityCreationFormProps {
   onCancel?: () => void;
 }
 
-export function ActivityCreationForm({ onSave, initialActivity, onCancel }: ActivityCreationFormProps) {
-  const [activityName, setActivityName] = useState(initialActivity?.name || '');
-  const [variant, setVariant] = useState<ActivityVariant>(initialActivity?.variant || 'four-choice');
-  const [blurOptions, setBlurOptions] = useState(initialActivity?.blurOptions || false);
+export function ActivityCreationForm({
+  onSave,
+  initialActivity,
+  onCancel,
+}: ActivityCreationFormProps) {
+  const [activityName, setActivityName] = useState(initialActivity?.name || "");
+  const [variant, setVariant] = useState<ActivityVariant>(
+    initialActivity?.variant || "four-choice",
+  );
+  const [blurOptions, setBlurOptions] = useState(
+    initialActivity?.blurOptions || false,
+  );
   const [leftWords, setLeftWords] = useState<string>(
-    initialActivity?.wordPairs.map(pair => pair.word).join('\n') || ''
+    initialActivity?.wordPairs.map((pair) => pair.word).join("\n") || "",
   );
   const [rightWords, setRightWords] = useState<string>(
-    initialActivity?.wordPairs.map(pair => pair.translation).join('\n') || ''
+    initialActivity?.wordPairs.map((pair) => pair.translation).join("\n") || "",
   );
 
   const handleSave = () => {
-    const leftWordsList = leftWords.split('\n').filter(w => w.trim());
-    const rightWordsList = rightWords.split('\n').filter(w => w.trim());
-    
+    const leftWordsList = leftWords.split("\n").filter((w) => w.trim());
+    const rightWordsList = rightWords.split("\n").filter((w) => w.trim());
+
     if (leftWordsList.length !== rightWordsList.length) {
-      alert('Both columns must have the same number of words');
+      alert("Both columns must have the same number of words");
       return;
     }
 
     const wordPairs: ActivityWord[] = leftWordsList.map((word, index) => ({
       word: word.trim(),
-      translation: rightWordsList[index].trim()
+      translation: rightWordsList[index].trim(),
     }));
 
     onSave({
       name: activityName,
       variant,
       wordPairs,
-      blurOptions: variant === 'four-choice' ? blurOptions : undefined
+      blurOptions: variant === "four-choice" ? blurOptions : undefined,
     });
 
     // Reset form
-    setActivityName('');
-    setLeftWords('');
-    setRightWords('');
+    setActivityName("");
+    setLeftWords("");
+    setRightWords("");
     setBlurOptions(false);
   };
 
@@ -60,10 +78,12 @@ export function ActivityCreationForm({ onSave, initialActivity, onCancel }: Acti
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-semibold">
-          {initialActivity ? `Edit Activity: ${initialActivity.name}` : 'Create New Activity'}
+          {initialActivity
+            ? `Edit Activity: ${initialActivity.name}`
+            : "Create New Activity"}
         </h2>
       </div>
-      
+
       <div className="grid grid-cols-2 gap-4">
         <div>
           <Label htmlFor="activity-name">Activity Name</Label>
@@ -91,13 +111,15 @@ export function ActivityCreationForm({ onSave, initialActivity, onCancel }: Acti
           </Select>
         </div>
 
-        {variant === 'four-choice' && (
+        {variant === "four-choice" && (
           <div className="col-span-2">
             <div className="flex items-center space-x-2">
               <Checkbox
                 id="blur-options"
                 checked={blurOptions}
-                onCheckedChange={(checked) => setBlurOptions(checked as boolean)}
+                onCheckedChange={(checked) =>
+                  setBlurOptions(checked as boolean)
+                }
               />
               <Label htmlFor="blur-options">
                 Blur answer choices until revealed
@@ -149,13 +171,13 @@ export function ActivityCreationForm({ onSave, initialActivity, onCancel }: Acti
             Cancel
           </Button>
         )}
-        <Button 
+        <Button
           onClick={handleSave}
           disabled={!activityName || !leftWords || !rightWords}
         >
-          {initialActivity ? 'Save Changes' : 'Create Activity'}
+          {initialActivity ? "Save Changes" : "Create Activity"}
         </Button>
       </div>
     </div>
   );
-} 
+}
