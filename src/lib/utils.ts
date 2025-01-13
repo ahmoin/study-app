@@ -12,7 +12,7 @@ export function removeAccents(str: string): string {
 
 export function checkAnswer(userAnswer: string, question: Question): boolean {
   if (question.type === "multiple-choice") {
-    return userAnswer === question.answer;
+    return question.acceptableAnswers.includes(userAnswer);
   }
 
   if (!question.constructedResponseConfig) {
