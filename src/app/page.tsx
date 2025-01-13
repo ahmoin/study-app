@@ -68,22 +68,26 @@ export default function StudyApp() {
   }, []);
 
   const addQuestion = () => {
-    if (newQuestion.question && newQuestion.acceptableAnswers && newQuestion.acceptableAnswers.length > 0) {
+    if (
+      newQuestion.question &&
+      newQuestion.acceptableAnswers &&
+      newQuestion.acceptableAnswers.length > 0
+    ) {
       setQuestions([
         ...questions,
-        { 
-          ...newQuestion, 
+        {
+          ...newQuestion,
           id: Date.now(),
-          answer: newQuestion.acceptableAnswers[0]
+          answer: newQuestion.acceptableAnswers[0],
         } as Question,
       ]);
-      setNewQuestion({ 
-        type: "multiple-choice", 
+      setNewQuestion({
+        type: "multiple-choice",
         options: ["", "", "", ""],
         constructedResponseConfig: {
           acceptableAnswers: [""],
           ignoreAccents: false,
-        }
+        },
       });
     }
   };
@@ -633,14 +637,22 @@ export default function StudyApp() {
                         <Label>Acceptable Answers (one per line)</Label>
                         <textarea
                           className="w-full min-h-[100px] p-2 border rounded-md"
-                          value={newQuestion.constructedResponseConfig?.acceptableAnswers.join("\n") || ""}
+                          value={
+                            newQuestion.constructedResponseConfig?.acceptableAnswers.join(
+                              "\n",
+                            ) || ""
+                          }
                           onChange={(e) =>
                             setNewQuestion({
                               ...newQuestion,
                               constructedResponseConfig: {
                                 ...newQuestion.constructedResponseConfig,
-                                acceptableAnswers: e.target.value.split("\n").filter((a) => a.trim()),
-                                ignoreAccents: newQuestion.constructedResponseConfig?.ignoreAccents || false,
+                                acceptableAnswers: e.target.value
+                                  .split("\n")
+                                  .filter((a) => a.trim()),
+                                ignoreAccents:
+                                  newQuestion.constructedResponseConfig
+                                    ?.ignoreAccents || false,
                               },
                             })
                           }
@@ -650,13 +662,18 @@ export default function StudyApp() {
                           <Label className="flex items-center space-x-2">
                             <input
                               type="checkbox"
-                              checked={newQuestion.constructedResponseConfig?.ignoreAccents || false}
+                              checked={
+                                newQuestion.constructedResponseConfig
+                                  ?.ignoreAccents || false
+                              }
                               onChange={(e) =>
                                 setNewQuestion({
                                   ...newQuestion,
                                   constructedResponseConfig: {
                                     ...newQuestion.constructedResponseConfig,
-                                    acceptableAnswers: newQuestion.constructedResponseConfig?.acceptableAnswers || [""],
+                                    acceptableAnswers: newQuestion
+                                      .constructedResponseConfig
+                                      ?.acceptableAnswers || [""],
                                     ignoreAccents: e.target.checked,
                                   },
                                 })
@@ -798,8 +815,12 @@ export default function StudyApp() {
                                                   editingQuestion
                                                     .constructedResponseConfig
                                                     ?.acceptableAnswers ||
-                                                  (editingQuestion.acceptableAnswers?.[0]
-                                                    ? [editingQuestion.acceptableAnswers[0]]
+                                                  (editingQuestion
+                                                    .acceptableAnswers?.[0]
+                                                    ? [
+                                                        editingQuestion
+                                                          .acceptableAnswers[0],
+                                                      ]
                                                     : []),
                                                 ignoreAccents: e.target.checked,
                                               },
@@ -969,7 +990,8 @@ export default function StudyApp() {
                       {checkAnswer(userAnswer, questions[currentQuestionIndex])
                         ? "Correct!"
                         : `Incorrect. ${
-                            questions[currentQuestionIndex].acceptableAnswers?.length === 1
+                            questions[currentQuestionIndex].acceptableAnswers
+                              ?.length === 1
                               ? "Correct answer: "
                               : "Acceptable answers: "
                           }${questions[currentQuestionIndex].acceptableAnswers?.join(" or ")}`}
