@@ -95,4 +95,27 @@ export const activityTemplates: Activity[] = [
       { word: "arreglarse", translation: "to fix hair" },
     ],
   },
+  {
+    "id": "spanish-shopping-terms",
+    "name": "Spanish Shopping Terms",
+    "category": "Languages",
+    "description": "Practice Spanish vocabulary related to shopping",
+    "variant": "four-choice",
+    "wordPairs": [
+      { "word": "la entrada", "translation": "entrance" },
+      { "word": "la ganga", "translation": "bargain" },
+      { "word": "el letrero", "translation": "sign" },
+      { "word": "la liquidación", "translation": "sale" },
+      { "word": "el mercado", "translation": "market" },
+      { "word": "la salida", "translation": "exit" },
+      { "word": "el cajero", "translation": "cashier" },
+      { "word": "el cheque (personal)", "translation": "personal check" },
+      { "word": "el cheque de viajero", "translation": "traveler's check" },
+      { "word": "el cupón de regalo", "translation": "gift certificate" },
+      { "word": "en efectivo", "translation": "in cash" },
+      { "word": "el precio", "translation": "price" },
+      { "word": "la marca", "translation": "brand" },
+      { "word": "la talla", "translation": "size" }
+    ]
+  }
 ];
