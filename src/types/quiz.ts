@@ -11,6 +11,7 @@ export interface Question {
   question: string;
   options?: string[];
   acceptableAnswers: string[];
+  explanation?: string;
   constructedResponseConfig?: ConstructedResponseConfig;
 }
 

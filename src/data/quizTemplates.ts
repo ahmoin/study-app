@@ -8,6 +8,7 @@ export interface QuizTemplate {
     question: string;
     options?: string[];
     acceptableAnswers: string[];
+    explanation?: string;
   }[];
 }
 
@@ -996,246 +997,674 @@ export const quizTemplates: QuizTemplate[] = [
     ],
   },
   {
-    "id": "spanish-driving-terms-quiz",
-    "name": "Spanish Driving Terms Quiz",
-    "category": "languages",
-    "description": "constructed-response quiz to practice using spanish driving vocabulary in context",
-    "questions": [
+    id: "spanish-driving-terms-quiz",
+    name: "Spanish Driving Terms Quiz",
+    category: "languages",
+    description:
+      "constructed-response quiz to practice using spanish driving vocabulary in context",
+    questions: [
       {
-        "type": "constructed-response",
-        "question": "usa la palabra 'la avenida' en una oración.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa la palabra 'la avenida' en una oración.",
+        acceptableAnswers: [
           "mi casa está en la avenida principal.",
-          "caminamos por la avenida hasta llegar al parque."
-        ]
+          "caminamos por la avenida hasta llegar al parque.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "describe lo que hace un 'conductor'.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "describe lo que hace un 'conductor'.",
+        acceptableAnswers: [
           "un conductor maneja un vehículo.",
-          "el conductor lleva a los pasajeros a su destino."
-        ]
+          "el conductor lleva a los pasajeros a su destino.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué haces cuando ves un 'semáforo' en rojo?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué haces cuando ves un 'semáforo' en rojo?",
+        acceptableAnswers: [
           "me detengo.",
           "paro el carro.",
-          "no cruzo la calle."
-        ]
+          "no cruzo la calle.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'cruzar' en una oración.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'cruzar' en una oración.",
+        acceptableAnswers: [
           "voy a cruzar la calle cuando no haya tráfico.",
-          "mi abuela necesita ayuda para cruzar la avenida."
-        ]
+          "mi abuela necesita ayuda para cruzar la avenida.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué te puede dar un policía si estacionas mal?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué te puede dar un policía si estacionas mal?",
+        acceptableAnswers: [
           "me puede poner una multa.",
-          "me da una multa por estacionar mal."
-        ]
+          "me da una multa por estacionar mal.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa la palabra 'izquierdo' en una oración.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa la palabra 'izquierdo' en una oración.",
+        acceptableAnswers: [
           "dobla a la izquierda en la esquina.",
-          "el semáforo está en el lado izquierdo."
-        ]
+          "el semáforo está en el lado izquierdo.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué significa '¡basta!' y cuándo lo usarías?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué significa '¡basta!' y cuándo lo usarías?",
+        acceptableAnswers: [
           "significa '¡suficiente!' y lo uso cuando quiero que alguien pare de hacer algo.",
-          "lo digo cuando estoy molesto y quiero que alguien se detenga."
-        ]
+          "lo digo cuando estoy molesto y quiero que alguien se detenga.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué significa 'estar seguro' y por qué es importante al manejar?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question:
+          "¿qué significa 'estar seguro' y por qué es importante al manejar?",
+        acceptableAnswers: [
           "significa estar convencido de algo. es importante estar seguro antes de cruzar una calle.",
-          "necesito estar seguro de que no viene un carro antes de cruzar."
-        ]
+          "necesito estar seguro de que no viene un carro antes de cruzar.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'peligroso' en una oración relacionada con manejar.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'peligroso' en una oración relacionada con manejar.",
+        acceptableAnswers: [
           "es peligroso manejar rápido en la lluvia.",
-          "cruzar sin mirar es muy peligroso."
-        ]
+          "cruzar sin mirar es muy peligroso.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué harías si el puente está cerrado?",
-        "acceptableAnswers": [
-          "buscaría otra ruta.",
-          "no cruzaría el puente."
-        ]
+        type: "constructed-response",
+        question: "¿qué harías si el puente está cerrado?",
+        acceptableAnswers: ["buscaría otra ruta.", "no cruzaría el puente."],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'el camión' en una oración.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'el camión' en una oración.",
+        acceptableAnswers: [
           "el camión transporta mercancía pesada.",
-          "vi un camión rojo en la carretera."
-        ]
+          "vi un camión rojo en la carretera.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿cómo llegas a la escuela desde tu casa? menciona 'la carretera'.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question:
+          "¿cómo llegas a la escuela desde tu casa? menciona 'la carretera'.",
+        acceptableAnswers: [
           "tomo la carretera principal para llegar a la escuela.",
-          "manejo por la carretera hasta la siguiente salida."
-        ]
+          "manejo por la carretera hasta la siguiente salida.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "describe qué hay en una 'cuadra'.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "describe qué hay en una 'cuadra'.",
+        acceptableAnswers: [
           "en la cuadra hay casas y una tienda.",
-          "la escuela está a una cuadra de mi casa."
-        ]
+          "la escuela está a una cuadra de mi casa.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'la esquina' en una indicación.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'la esquina' en una indicación.",
+        acceptableAnswers: [
           "gira a la derecha en la esquina.",
-          "la tienda está en la esquina."
-        ]
+          "la tienda está en la esquina.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué puedes ver en una 'plaza'?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué puedes ver en una 'plaza'?",
+        acceptableAnswers: [
           "en la plaza hay una fuente y muchas personas.",
-          "me gusta caminar por la plaza los domingos."
-        ]
+          "me gusta caminar por la plaza los domingos.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'la fuente' en una oración.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'la fuente' en una oración.",
+        acceptableAnswers: [
           "los niños juegan cerca de la fuente.",
-          "la fuente está en el centro de la plaza."
-        ]
+          "la fuente está en el centro de la plaza.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'el peatón' en una oración sobre seguridad.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'el peatón' en una oración sobre seguridad.",
+        acceptableAnswers: [
           "el peatón debe cruzar en el cruce de calles.",
-          "los conductores deben respetar al peatón."
-        ]
+          "los conductores deben respetar al peatón.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué necesitas para manejar legalmente?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué necesitas para manejar legalmente?",
+        acceptableAnswers: [
           "necesito un permiso de manejar.",
-          "debo tener el permiso de manejar para conducir."
-        ]
+          "debo tener el permiso de manejar para conducir.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'el policía' en una situación de tráfico.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'el policía' en una situación de tráfico.",
+        acceptableAnswers: [
           "el policía dirige el tráfico en la mañana.",
-          "un policía me ayudó cuando me perdí."
-        ]
+          "un policía me ayudó cuando me perdí.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué haces cuando ves una 'señal de parada'?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué haces cuando ves una 'señal de parada'?",
+        acceptableAnswers: [
           "me detengo completamente.",
-          "paro el coche en la señal de parada."
-        ]
+          "paro el coche en la señal de parada.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'ancho' en una descripción de la calle.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'ancho' en una descripción de la calle.",
+        acceptableAnswers: [
           "esta calle es muy ancha.",
-          "necesitamos una avenida más ancha para el tráfico."
-        ]
+          "necesitamos una avenida más ancha para el tráfico.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'de acuerdo' en una conversación.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'de acuerdo' en una conversación.",
+        acceptableAnswers: [
           "sí, estoy de acuerdo contigo.",
-          "de acuerdo, vamos por esa ruta."
-        ]
+          "de acuerdo, vamos por esa ruta.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué haces cuando tienes que esperar mucho tráfico?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué haces cuando tienes que esperar mucho tráfico?",
+        acceptableAnswers: [
           "tengo paciencia y espero.",
-          "me relajo mientras espero que avance el tráfico."
-        ]
+          "me relajo mientras espero que avance el tráfico.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'complicado' en una situación de manejo.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'complicado' en una situación de manejo.",
+        acceptableAnswers: [
           "manejar en esta ciudad es complicado.",
-          "el tráfico en hora pico es muy complicado."
-        ]
+          "el tráfico en hora pico es muy complicado.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'derecho' para dar direcciones.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'derecho' para dar direcciones.",
+        acceptableAnswers: [
           "sigue derecho hasta el semáforo.",
-          "camina derecho por tres cuadras."
-        ]
+          "camina derecho por tres cuadras.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'despacio' como una advertencia.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'despacio' como una advertencia.",
+        acceptableAnswers: [
           "maneja despacio en la zona escolar.",
-          "camina despacio, está resbaloso."
-        ]
+          "camina despacio, está resbaloso.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'la estatua' en una descripción.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'la estatua' en una descripción.",
+        acceptableAnswers: [
           "hay una estatua en medio de la plaza.",
-          "la estatua representa a un héroe nacional."
-        ]
+          "la estatua representa a un héroe nacional.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "¿qué significa 'quitar' en el contexto del tráfico?",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "¿qué significa 'quitar' en el contexto del tráfico?",
+        acceptableAnswers: [
           "quitar un coche mal estacionado.",
-          "el policía va a quitar el obstáculo del camino."
-        ]
+          "el policía va a quitar el obstáculo del camino.",
+        ],
       },
       {
-        "type": "constructed-response",
-        "question": "usa 'estrecho' para describir una calle.",
-        "acceptableAnswers": [
+        type: "constructed-response",
+        question: "usa 'estrecho' para describir una calle.",
+        acceptableAnswers: [
           "la calle es muy estrecha para dos carros.",
-          "el camino estrecho es difícil de manejar."
-        ]
+          "el camino estrecho es difícil de manejar.",
+        ],
+      },
+    ],
+  },
+  {
+    id: "othello-act-v-quiz-explained-1",
+    name: "Othello Act V Quiz (with Explanations)",
+    category: "Literature",
+    description: "A multiple-choice quiz covering Act V of Shakespeare's Othello, with explanations and textual evidence.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "In Act 5, Scene 1, where does Iago instruct Roderigo to hide while waiting for Cassio?",
+        options: [
+          "Behind a curtain",
+          "In an alleyway",
+          "Behind this bulk",
+          "Up in a window"
+        ],
+        acceptableAnswers: [
+          "Behind this bulk"
+        ],
+        explanation: "Iago gives Roderigo clear instructions on where to conceal himself to ambush Cassio, telling him, 'Here, stand behind this bulk. Straight will he / come' (Shakespeare 5.1.1-2)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is Roderigo's stated feeling about the deed Iago asks him to perform (killing Cassio)?",
+        options: [
+          "He is eager and devoted to it.",
+          "He has no great devotion to the deed.",
+          "He feels it is dishonorable but necessary.",
+          "He is terrified but resolved."
+        ],
+        acceptableAnswers: [
+          "He has no great devotion to the deed."
+        ],
+        explanation: "Roderigo expresses his reluctance directly to Iago before taking his position, stating, 'I have no great devotion to the deed, / And yet he hath given me satisfying reasons' (Shakespeare 5.1.8-9)."
+      },
+      {
+        type: "multiple-choice",
+        question: "According to Iago's aside, why does he want Roderigo dead?",
+        options: [
+          "Roderigo knows too much about Desdemona.",
+          "Roderigo might reveal Iago's slander.",
+          "Roderigo might demand back the jewels and gold Iago swindled.",
+          "Roderigo failed to kill Cassio properly."
+        ],
+        acceptableAnswers: [
+          "Roderigo might demand back the jewels and gold Iago swindled."
+        ],
+        explanation: "Iago reveals in an aside that Roderigo's survival is a financial liability: 'Live Roderigo, / He calls me to a restitution large / Of gold and jewels that I bobbed from him / As gifts to Desdemona. / It must not be' (Shakespeare 5.1.14-18)."
+      },
+      {
+        type: "multiple-choice",
+        question: "According to Iago's aside, why does he want Cassio dead?",
+        options: [
+          "Cassio insulted him publicly.",
+          "Cassio's 'daily beauty' makes Iago 'ugly' and Othello might expose Iago to him.",
+          "Cassio stole money from him.",
+          "Cassio refused to help him get promoted."
+        ],
+        acceptableAnswers: [
+          "Cassio's 'daily beauty' makes Iago 'ugly' and Othello might expose Iago to him."
+        ],
+        explanation: "Iago fears Cassio's inherent goodness and the potential for Othello to reveal Iago's manipulations: 'If Cassio do remain, / He hath a daily beauty in his life / That makes me ugly. And besides, the Moor / May unfold me to him. There stand I in much peril. / No, he must die' (Shakespeare 5.1.18-22)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What saves Cassio from Roderigo's initial thrust?",
+        options: [
+          "His quick reflexes",
+          "His coat is better than Roderigo knows",
+          "Iago intervenes",
+          "He trips Roderigo first"
+        ],
+        acceptableAnswers: [
+          "His coat is better than Roderigo knows"
+        ],
+        explanation: "Cassio himself identifies the reason Roderigo's attack failed, likely referring to some form of armor or protective garment: 'That thrust had been mine enemy indeed / But that my coat is better than thou know’st' (Shakespeare 5.1.24-25)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who stabs Cassio in the leg?",
+        options: [
+          "Roderigo",
+          "Bianca",
+          "Othello",
+          "Iago"
+        ],
+        acceptableAnswers: [
+          "Iago"
+        ],
+        explanation: "After Roderigo falls, the stage direction clearly indicates Iago's action: 'Iago stabs Cassio in the leg, and exits' (Shakespeare 5.1.27 SD)."
+      },
+      {
+        type: "multiple-choice",
+        question: "When Othello hears Cassio cry out, what does he believe has happened?",
+        options: [
+          "Roderigo has killed Cassio.",
+          "Iago has killed Cassio.",
+          "Cassio has killed Roderigo.",
+          "Iago has been wounded."
+        ],
+        acceptableAnswers: [
+          "Iago has killed Cassio."
+        ],
+        explanation: "Othello hears Cassio's cries and immediately assumes Iago has fulfilled his promise to kill him, saying, 'The voice of Cassio! Iago keeps his word' (Shakespeare 5.1.29)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What are Roderigo's last words?",
+        options: [
+          "O, I am slain!",
+          "O wretched villain!",
+          "O damned Iago! O inhuman dog!",
+          "Help, ho! Murder, murder!"
+        ],
+        acceptableAnswers: [
+          "O damned Iago! O inhuman dog!"
+        ],
+        explanation: "As Iago stabs the already wounded Roderigo to silence him permanently, Roderigo cries out, identifying his killer: 'O damned Iago! O inhuman dog!' (Shakespeare 5.1.64)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who does Iago immediately try to blame for Cassio's injury upon Bianca's arrival?",
+        options: [
+          "Roderigo",
+          "Lodovico",
+          "Bianca",
+          "Gratiano"
+        ],
+        acceptableAnswers: [
+          "Bianca"
+        ],
+        explanation: "Iago quickly deflects suspicion onto Bianca, referring to her contemptuously: 'Gentlemen all, I do suspect this trash / To be a party in this injury.—' (Shakespeare 5.1.87-88)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Iago ask Emilia to do at the end of Scene 1?",
+        options: [
+          "Tend to Cassio's wounds.",
+          "Go find Othello immediately.",
+          "Run to the citadel and tell Othello and Desdemona what happened.",
+          "Help him interrogate Bianca."
+        ],
+        acceptableAnswers: [
+          "Run to the citadel and tell Othello and Desdemona what happened."
+        ],
+        explanation: "As part of managing the chaotic scene, Iago dispatches Emilia with a specific task: 'Emilia, run you to the citadel / And tell my lord and lady what hath happed.—' (Shakespeare 5.1.129-130)."
+      },
+      {
+        type: "multiple-choice",
+        question: "In his opening lines of Scene 2, Othello repeats 'It is the cause'. What is the 'cause' referring to?",
+        options: [
+          "His jealousy",
+          "Iago's lies",
+          "Desdemona's supposed infidelity",
+          "The loss of the handkerchief"
+        ],
+        acceptableAnswers: [
+          "Desdemona's supposed infidelity"
+        ],
+        explanation: "Othello refers to Desdemona's alleged unfaithfulness as the justification for killing her, believing it a necessary act to prevent her from corrupting others: 'It is the cause... Yet she must die, else she’ll betray more men' (Shakespeare 5.2.1-6)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why does Othello ask Desdemona if she has prayed?",
+        options: [
+          "He wants to join her in prayer.",
+          "He hopes she is innocent.",
+          "He doesn't want to kill her soul.",
+          "He is stalling for time."
+        ],
+        acceptableAnswers: [
+          "He doesn't want to kill her soul."
+        ],
+        explanation: "Othello, despite his murderous intent, expresses a desire for Desdemona to make peace with God before dying: 'I would not kill thy unpreparèd spirit. / No, heaven forfend! I would not kill thy soul' (Shakespeare 5.2.32-33)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What item does Othello mention as the primary proof of Desdemona's guilt?",
+        options: [
+          "A love letter from Cassio",
+          "The handkerchief",
+          "A sworn statement from Iago",
+          "A ring she gave Cassio"
+        ],
+        acceptableAnswers: [
+          "The handkerchief"
+        ],
+        explanation: "Othello repeatedly focuses on the handkerchief as the concrete evidence of her betrayal, stating, 'That handkerchief / Which I so loved, and gave thee, thou gav’st to / Cassio' (Shakespeare 5.2.49-51)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Othello claim Cassio has done regarding Desdemona?",
+        options: [
+          "Stolen the handkerchief",
+          "Confessed to the affair",
+          "Written love poems to her",
+          "Tried to poison Othello"
+        ],
+        acceptableAnswers: [
+          "Confessed to the affair"
+        ],
+        explanation: "When Desdemona pleads for Cassio to be summoned to attest to her innocence, Othello falsely claims Cassio has already admitted guilt: 'OTHELLO / He hath confessed. / DESDEMONA / What, my lord? / OTHELLO / That he hath used thee' (Shakespeare 5.2.74-76)."
+      },
+      {
+        type: "multiple-choice",
+        question: "How does Othello ultimately kill Desdemona?",
+        options: [
+          "He stabs her.",
+          "He poisons her.",
+          "He smothers her.",
+          "He strangles her."
+        ],
+        acceptableAnswers: [
+          "He smothers her."
+        ],
+        explanation: "After Desdemona's pleas for mercy fail, Othello cuts her off, and the stage direction confirms the method: 'OTHELLO / It is too late. / He smothers her' (Shakespeare 5.2.92 SD)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who is the first person to enter Desdemona's bedroom after Othello kills her?",
+        options: [
+          "Iago",
+          "Cassio",
+          "Lodovico",
+          "Emilia"
+        ],
+        acceptableAnswers: [
+          "Emilia"
+        ],
+        explanation: "Emilia calls from outside the door immediately after Desdemona is smothered ('EMILIA, within / My lord, my lord? What ho! My lord, my lord!' - Shakespeare 5.2.93) and then enters shortly after ('Enter Emilia' - Shakespeare 5.2.109 SD)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What initial news does Emilia bring Othello from the street?",
+        options: [
+          "Cassio has killed Roderigo.",
+          "Iago has been wounded.",
+          "Roderigo has killed Cassio.",
+          "Bianca has been arrested."
+        ],
+        acceptableAnswers: [
+          "Cassio has killed Roderigo."
+        ],
+        explanation: "Emilia enters to report the violence outside, telling Othello, 'EMILIA / Cassio, my lord, hath killed / A young Venetian called Roderigo' (Shakespeare 5.2.117-118)."
+      },
+      {
+        type: "multiple-choice",
+        question: "With her dying breaths, who does Desdemona say killed her?",
+        options: [
+          "Othello",
+          "Iago",
+          "Nobody. I myself.",
+          "Cassio"
+        ],
+        acceptableAnswers: [
+          "Nobody. I myself."
+        ],
+        explanation: "When Emilia asks who committed the deed, Desdemona protects Othello to the very end: 'DESDEMONA / Nobody. I myself. Farewell. / Commend me to my kind lord. O, farewell' (Shakespeare 5.2.137-138)."
+      },
+      {
+        type: "multiple-choice",
+        question: "When Othello admits to Emilia that he killed Desdemona, what reason does he give?",
+        options: [
+          "She begged him to do it.",
+          "She was plotting against him.",
+          "She was a whore and false.",
+          "It was an accident."
+        ],
+        acceptableAnswers: [
+          "She was a whore and false."
+        ],
+        explanation: "After Desdemona dies, Othello drops the pretense and tells Emilia his justification: ''Twas I that killed her... She turned to folly, and she was a whore' (Shakespeare 5.2.144-145)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is Emilia's immediate reaction when Othello says Iago told him Desdemona was false?",
+        options: [
+          "Agreement and sorrow",
+          "Disbelief and asking 'My husband?' repeatedly",
+          "Accusing Othello of lying",
+          "Fainting from shock"
+        ],
+        acceptableAnswers: [
+          "Disbelief and asking 'My husband?' repeatedly"
+        ],
+        explanation: "Emilia is utterly stunned that her husband is the source of the slander, repeating in disbelief, 'My husband?' (Shakespeare 5.2.154, 159, 163) before erupting in anger."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who confirms to Emilia that Iago did indeed tell Othello that Desdemona was false with Cassio?",
+        options: [
+          "Othello",
+          "Montano",
+          "Iago himself",
+          "Gratiano"
+        ],
+        acceptableAnswers: [
+          "Iago himself"
+        ],
+        explanation: "When confronted directly by Emilia ('But did you ever tell him she was false?'), Iago admits his role: 'IAGO / I did' (Shakespeare 5.2.192-193)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What crucial information does Emilia reveal about the handkerchief?",
+        options: [
+          "She saw Cassio steal it.",
+          "Desdemona lost it accidentally.",
+          "She found it and gave it to Iago.",
+          "Bianca planted it in Cassio's room."
+        ],
+        acceptableAnswers: [
+          "She found it and gave it to Iago."
+        ],
+        explanation: "Emilia finally reveals the truth about the handkerchief's journey: 'EMILIA / ...that handkerchief thou speak’st / of / I found by fortune, and did give my husband... He begged of me to steal ’t' (Shakespeare 5.2.244-249)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What happens to Emilia after she reveals the truth about Iago and the handkerchief?",
+        options: [
+          "She runs away.",
+          "Othello kills her.",
+          "Iago kills her.",
+          "She is arrested."
+        ],
+        acceptableAnswers: [
+          "Iago kills her."
+        ],
+        explanation: "To silence her permanently after her devastating revelation, Iago attacks his wife. The stage direction notes: 'Iago kills his wife' (Shakespeare 5.2.254 SD)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What news does Gratiano share about Desdemona's father, Brabantio?",
+        options: [
+          "He is coming to Cyprus.",
+          "He has forgiven Desdemona.",
+          "He died of grief over the marriage.",
+          "He has disowned Desdemona."
+        ],
+        acceptableAnswers: [
+          "He died of grief over the marriage."
+        ],
+        explanation: "Upon seeing the tragedy, Gratiano reveals offstage news: 'Poor Desdemon, I am glad thy father’s dead. / Thy match was mortal to him, and pure grief / Shore his old thread in twain' (Shakespeare 5.2.223-225)."
+      },
+      {
+        type: "multiple-choice",
+        question: "After being disarmed, how does Othello get another weapon?",
+        options: [
+          "He takes it from Gratiano.",
+          "He had another hidden in the chamber.",
+          "Emilia gives him one.",
+          "Cassio lends him his sword."
+        ],
+        acceptableAnswers: [
+          "He had another hidden in the chamber."
+        ],
+        explanation: "Othello reveals he was not entirely defenseless, stating, 'I have another weapon in this chamber. / It is a sword of Spain... O, here it is' (Shakespeare 5.2.273-275)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Iago say after Othello stabs him?",
+        options: [
+          "O, I am slain!",
+          "I bleed, sir, but not killed.",
+          "Villainy, villainy!",
+          "Demand me nothing."
+        ],
+        acceptableAnswers: [
+          "I bleed, sir, but not killed."
+        ],
+        explanation: "Even after being stabbed by Othello, Iago remains defiant and points out Othello's failure to kill him: 'IAGO / I bleed, sir, but not killed' (Shakespeare 5.2.299)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What evidence found on Roderigo's body helps confirm Iago's guilt?",
+        options: [
+          "Desdemona's handkerchief",
+          "A map of the citadel",
+          "Letters detailing Iago's plots",
+          "A large sum of money"
+        ],
+        acceptableAnswers: [
+          "Letters detailing Iago's plots"
+        ],
+        explanation: "Lodovico presents incriminating documents found on Roderigo: 'Here is a letter / Found in the pocket of the slain Roderigo, / And here another... The one of / them imports / The death of Cassio, to be undertook / By Roderigo' (Shakespeare 5.2.307-311)."
+      },
+      {
+        type: "multiple-choice",
+        question: "In his final speech, how does Othello ask Lodovico to describe him?",
+        options: [
+          "As a valiant soldier betrayed.",
+          "As one that loved not wisely, but too well.",
+          "As a victim of circumstance.",
+          "As an honorable murderer seeking justice."
+        ],
+        acceptableAnswers: [
+          "As one that loved not wisely, but too well."
+        ],
+        explanation: "Othello attempts to shape his legacy, requesting they report him as 'one that loved not wisely, but too well; / Of one not easily jealous, but being wrought, / Perplexed in the extreme' (Shakespeare 5.2.344-347)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is Othello's final action before he dies?",
+        options: [
+          "He curses Iago.",
+          "He asks Cassio for forgiveness.",
+          "He kisses Desdemona.",
+          "He prays for his soul."
+        ],
+        acceptableAnswers: [
+          "He kisses Desdemona."
+        ],
+        explanation: "Othello turns to Desdemona one last time, stating, 'I kissed thee ere I killed thee. No way but this, / Killing myself, to die upon a kiss' (Shakespeare 5.2.358-359), and then dies."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who is appointed to rule in Cyprus and decide Iago's punishment at the very end of the play?",
+        options: [
+          "Lodovico",
+          "Gratiano",
+          "Montano",
+          "Cassio"
+        ],
+        acceptableAnswers: [
+          "Cassio"
+        ],
+        explanation: "Lodovico strips Othello of his position and designates Cassio as the new authority: 'Your power and your command is taken off, / And Cassio rules in Cyprus... To you, lord / governor, / Remains the censure of this hellish villain' (Shakespeare 5.2.330-336)."
       }
     ]
-  }  
+  }
 ];
 
 export const categories = Array.from(

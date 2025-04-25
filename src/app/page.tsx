@@ -988,13 +988,21 @@ export default function StudyApp() {
                       }`}
                     >
                       {checkAnswer(userAnswer, questions[currentQuestionIndex])
-                        ? "Correct!"
+                        ? `Correct!${
+                            questions[currentQuestionIndex].explanation
+                              ? ` Explanation: ${questions[currentQuestionIndex].explanation}`
+                              : ""
+                          }`
                         : `Incorrect. ${
                             questions[currentQuestionIndex].acceptableAnswers
                               ?.length === 1
                               ? "Correct answer: "
                               : "Acceptable answers: "
-                          }${questions[currentQuestionIndex].acceptableAnswers?.join(" or ")}`}
+                          }${questions[currentQuestionIndex].acceptableAnswers?.join(" or ")}${
+                            questions[currentQuestionIndex].explanation
+                              ? ` Explanation: ${questions[currentQuestionIndex].explanation}`
+                              : ""
+                          }`}
                     </div>
                   )}
 
