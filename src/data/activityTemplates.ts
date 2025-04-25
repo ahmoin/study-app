@@ -117,5 +117,44 @@ export const activityTemplates: Activity[] = [
       { "word": "la marca", "translation": "brand" },
       { "word": "la talla", "translation": "size" }
     ]
-  }
+  },
+  {
+    "id": "spanish-driving-terms",
+    "name": "Spanish Driving Terms",
+    "category": "languages",
+    "description": "practice spanish vocabulary related to driving and directions",
+    "variant": "four-choice",
+    "wordPairs": [
+      { "word": "la avenida", "translation": "avenue" },
+      { "word": "el camión", "translation": "truck" },
+      { "word": "la carretera", "translation": "highway" },
+      { "word": "el conductor", "translation": "driver" },
+      { "word": "el cruce de calles", "translation": "intersection" },
+      { "word": "la cuadra", "translation": "block" },
+      { "word": "la esquina", "translation": "corner" },
+      { "word": "la estatua", "translation": "statue" },
+      { "word": "la fuente", "translation": "fountain" },
+      { "word": "el peatón", "translation": "pedestrian" },
+      { "word": "el permiso de manejar", "translation": "driver’s license" },
+      { "word": "la plaza", "translation": "plaza" },
+      { "word": "el policía", "translation": "police officer" },
+      { "word": "el puente", "translation": "bridge" },
+      { "word": "poner una multa", "translation": "to give a ticket" },
+      { "word": "el semáforo", "translation": "stoplight" },
+      { "word": "la señal de parada", "translation": "stop sign" },
+      { "word": "ancho, -a", "translation": "wide" },
+      { "word": "¡basta!", "translation": "enough!" },
+      { "word": "de acuerdo.", "translation": "ok. agreed." },
+      { "word": "esperar", "translation": "to wait" },
+      { "word": "estar seguro, -a", "translation": "to be sure" },
+      { "word": "peligroso, -a", "translation": "dangerous" },
+      { "word": "complicado, -a", "translation": "complicated" },
+      { "word": "cruzar", "translation": "to cross" },
+      { "word": "derecho", "translation": "straight" },
+      { "word": "izquierdo", "translation": "left" },
+      { "word": "despacio", "translation": "slowly" },
+      { "word": "estrecho, -a", "translation": "narrow" },
+      { "word": "quitar", "translation": "to take away" }
+    ]
+  }  
 ];

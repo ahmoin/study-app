@@ -995,6 +995,247 @@ export const quizTemplates: QuizTemplate[] = [
       },
     ],
   },
+  {
+    "id": "spanish-driving-terms-quiz",
+    "name": "Spanish Driving Terms Quiz",
+    "category": "languages",
+    "description": "constructed-response quiz to practice using spanish driving vocabulary in context",
+    "questions": [
+      {
+        "type": "constructed-response",
+        "question": "usa la palabra 'la avenida' en una oración.",
+        "acceptableAnswers": [
+          "mi casa está en la avenida principal.",
+          "caminamos por la avenida hasta llegar al parque."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "describe lo que hace un 'conductor'.",
+        "acceptableAnswers": [
+          "un conductor maneja un vehículo.",
+          "el conductor lleva a los pasajeros a su destino."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué haces cuando ves un 'semáforo' en rojo?",
+        "acceptableAnswers": [
+          "me detengo.",
+          "paro el carro.",
+          "no cruzo la calle."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'cruzar' en una oración.",
+        "acceptableAnswers": [
+          "voy a cruzar la calle cuando no haya tráfico.",
+          "mi abuela necesita ayuda para cruzar la avenida."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué te puede dar un policía si estacionas mal?",
+        "acceptableAnswers": [
+          "me puede poner una multa.",
+          "me da una multa por estacionar mal."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa la palabra 'izquierdo' en una oración.",
+        "acceptableAnswers": [
+          "dobla a la izquierda en la esquina.",
+          "el semáforo está en el lado izquierdo."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué significa '¡basta!' y cuándo lo usarías?",
+        "acceptableAnswers": [
+          "significa '¡suficiente!' y lo uso cuando quiero que alguien pare de hacer algo.",
+          "lo digo cuando estoy molesto y quiero que alguien se detenga."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué significa 'estar seguro' y por qué es importante al manejar?",
+        "acceptableAnswers": [
+          "significa estar convencido de algo. es importante estar seguro antes de cruzar una calle.",
+          "necesito estar seguro de que no viene un carro antes de cruzar."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'peligroso' en una oración relacionada con manejar.",
+        "acceptableAnswers": [
+          "es peligroso manejar rápido en la lluvia.",
+          "cruzar sin mirar es muy peligroso."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué harías si el puente está cerrado?",
+        "acceptableAnswers": [
+          "buscaría otra ruta.",
+          "no cruzaría el puente."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'el camión' en una oración.",
+        "acceptableAnswers": [
+          "el camión transporta mercancía pesada.",
+          "vi un camión rojo en la carretera."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿cómo llegas a la escuela desde tu casa? menciona 'la carretera'.",
+        "acceptableAnswers": [
+          "tomo la carretera principal para llegar a la escuela.",
+          "manejo por la carretera hasta la siguiente salida."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "describe qué hay en una 'cuadra'.",
+        "acceptableAnswers": [
+          "en la cuadra hay casas y una tienda.",
+          "la escuela está a una cuadra de mi casa."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'la esquina' en una indicación.",
+        "acceptableAnswers": [
+          "gira a la derecha en la esquina.",
+          "la tienda está en la esquina."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué puedes ver en una 'plaza'?",
+        "acceptableAnswers": [
+          "en la plaza hay una fuente y muchas personas.",
+          "me gusta caminar por la plaza los domingos."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'la fuente' en una oración.",
+        "acceptableAnswers": [
+          "los niños juegan cerca de la fuente.",
+          "la fuente está en el centro de la plaza."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'el peatón' en una oración sobre seguridad.",
+        "acceptableAnswers": [
+          "el peatón debe cruzar en el cruce de calles.",
+          "los conductores deben respetar al peatón."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué necesitas para manejar legalmente?",
+        "acceptableAnswers": [
+          "necesito un permiso de manejar.",
+          "debo tener el permiso de manejar para conducir."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'el policía' en una situación de tráfico.",
+        "acceptableAnswers": [
+          "el policía dirige el tráfico en la mañana.",
+          "un policía me ayudó cuando me perdí."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué haces cuando ves una 'señal de parada'?",
+        "acceptableAnswers": [
+          "me detengo completamente.",
+          "paro el coche en la señal de parada."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'ancho' en una descripción de la calle.",
+        "acceptableAnswers": [
+          "esta calle es muy ancha.",
+          "necesitamos una avenida más ancha para el tráfico."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'de acuerdo' en una conversación.",
+        "acceptableAnswers": [
+          "sí, estoy de acuerdo contigo.",
+          "de acuerdo, vamos por esa ruta."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué haces cuando tienes que esperar mucho tráfico?",
+        "acceptableAnswers": [
+          "tengo paciencia y espero.",
+          "me relajo mientras espero que avance el tráfico."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'complicado' en una situación de manejo.",
+        "acceptableAnswers": [
+          "manejar en esta ciudad es complicado.",
+          "el tráfico en hora pico es muy complicado."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'derecho' para dar direcciones.",
+        "acceptableAnswers": [
+          "sigue derecho hasta el semáforo.",
+          "camina derecho por tres cuadras."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'despacio' como una advertencia.",
+        "acceptableAnswers": [
+          "maneja despacio en la zona escolar.",
+          "camina despacio, está resbaloso."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'la estatua' en una descripción.",
+        "acceptableAnswers": [
+          "hay una estatua en medio de la plaza.",
+          "la estatua representa a un héroe nacional."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "¿qué significa 'quitar' en el contexto del tráfico?",
+        "acceptableAnswers": [
+          "quitar un coche mal estacionado.",
+          "el policía va a quitar el obstáculo del camino."
+        ]
+      },
+      {
+        "type": "constructed-response",
+        "question": "usa 'estrecho' para describir una calle.",
+        "acceptableAnswers": [
+          "la calle es muy estrecha para dos carros.",
+          "el camino estrecho es difícil de manejar."
+        ]
+      }
+    ]
+  }  
 ];
 
 export const categories = Array.from(
