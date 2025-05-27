@@ -1241,35 +1241,36 @@ export const quizTemplates: QuizTemplate[] = [
     id: "othello-act-v-quiz-explained-1",
     name: "Othello Act V Quiz (with Explanations)",
     category: "Literature",
-    description: "A multiple-choice quiz covering Act V of Shakespeare's Othello, with explanations and textual evidence.",
+    description:
+      "A multiple-choice quiz covering Act V of Shakespeare's Othello, with explanations and textual evidence.",
     questions: [
       {
         type: "multiple-choice",
-        question: "In Act 5, Scene 1, where does Iago instruct Roderigo to hide while waiting for Cassio?",
+        question:
+          "In Act 5, Scene 1, where does Iago instruct Roderigo to hide while waiting for Cassio?",
         options: [
           "Behind a curtain",
           "In an alleyway",
           "Behind this bulk",
-          "Up in a window"
+          "Up in a window",
         ],
-        acceptableAnswers: [
-          "Behind this bulk"
-        ],
-        explanation: "Iago gives Roderigo clear instructions on where to conceal himself to ambush Cassio, telling him, 'Here, stand behind this bulk. Straight will he / come' (Shakespeare 5.1.1-2)."
+        acceptableAnswers: ["Behind this bulk"],
+        explanation:
+          "Iago gives Roderigo clear instructions on where to conceal himself to ambush Cassio, telling him, 'Here, stand behind this bulk. Straight will he / come' (Shakespeare 5.1.1-2).",
       },
       {
         type: "multiple-choice",
-        question: "What is Roderigo's stated feeling about the deed Iago asks him to perform (killing Cassio)?",
+        question:
+          "What is Roderigo's stated feeling about the deed Iago asks him to perform (killing Cassio)?",
         options: [
           "He is eager and devoted to it.",
           "He has no great devotion to the deed.",
           "He feels it is dishonorable but necessary.",
-          "He is terrified but resolved."
+          "He is terrified but resolved.",
         ],
-        acceptableAnswers: [
-          "He has no great devotion to the deed."
-        ],
-        explanation: "Roderigo expresses his reluctance directly to Iago before taking his position, stating, 'I have no great devotion to the deed, / And yet he hath given me satisfying reasons' (Shakespeare 5.1.8-9)."
+        acceptableAnswers: ["He has no great devotion to the deed."],
+        explanation:
+          "Roderigo expresses his reluctance directly to Iago before taking his position, stating, 'I have no great devotion to the deed, / And yet he hath given me satisfying reasons' (Shakespeare 5.1.8-9).",
       },
       {
         type: "multiple-choice",
@@ -1278,12 +1279,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Roderigo knows too much about Desdemona.",
           "Roderigo might reveal Iago's slander.",
           "Roderigo might demand back the jewels and gold Iago swindled.",
-          "Roderigo failed to kill Cassio properly."
+          "Roderigo failed to kill Cassio properly.",
         ],
         acceptableAnswers: [
-          "Roderigo might demand back the jewels and gold Iago swindled."
+          "Roderigo might demand back the jewels and gold Iago swindled.",
         ],
-        explanation: "Iago reveals in an aside that Roderigo's survival is a financial liability: 'Live Roderigo, / He calls me to a restitution large / Of gold and jewels that I bobbed from him / As gifts to Desdemona. / It must not be' (Shakespeare 5.1.14-18)."
+        explanation:
+          "Iago reveals in an aside that Roderigo's survival is a financial liability: 'Live Roderigo, / He calls me to a restitution large / Of gold and jewels that I bobbed from him / As gifts to Desdemona. / It must not be' (Shakespeare 5.1.14-18).",
       },
       {
         type: "multiple-choice",
@@ -1292,12 +1294,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Cassio insulted him publicly.",
           "Cassio's 'daily beauty' makes Iago 'ugly' and Othello might expose Iago to him.",
           "Cassio stole money from him.",
-          "Cassio refused to help him get promoted."
+          "Cassio refused to help him get promoted.",
         ],
         acceptableAnswers: [
-          "Cassio's 'daily beauty' makes Iago 'ugly' and Othello might expose Iago to him."
+          "Cassio's 'daily beauty' makes Iago 'ugly' and Othello might expose Iago to him.",
         ],
-        explanation: "Iago fears Cassio's inherent goodness and the potential for Othello to reveal Iago's manipulations: 'If Cassio do remain, / He hath a daily beauty in his life / That makes me ugly. And besides, the Moor / May unfold me to him. There stand I in much peril. / No, he must die' (Shakespeare 5.1.18-22)."
+        explanation:
+          "Iago fears Cassio's inherent goodness and the potential for Othello to reveal Iago's manipulations: 'If Cassio do remain, / He hath a daily beauty in his life / That makes me ugly. And besides, the Moor / May unfold me to him. There stand I in much peril. / No, he must die' (Shakespeare 5.1.18-22).",
       },
       {
         type: "multiple-choice",
@@ -1306,40 +1309,33 @@ export const quizTemplates: QuizTemplate[] = [
           "His quick reflexes",
           "His coat is better than Roderigo knows",
           "Iago intervenes",
-          "He trips Roderigo first"
+          "He trips Roderigo first",
         ],
-        acceptableAnswers: [
-          "His coat is better than Roderigo knows"
-        ],
-        explanation: "Cassio himself identifies the reason Roderigo's attack failed, likely referring to some form of armor or protective garment: 'That thrust had been mine enemy indeed / But that my coat is better than thou know’st' (Shakespeare 5.1.24-25)."
+        acceptableAnswers: ["His coat is better than Roderigo knows"],
+        explanation:
+          "Cassio himself identifies the reason Roderigo's attack failed, likely referring to some form of armor or protective garment: 'That thrust had been mine enemy indeed / But that my coat is better than thou know’st' (Shakespeare 5.1.24-25).",
       },
       {
         type: "multiple-choice",
         question: "Who stabs Cassio in the leg?",
-        options: [
-          "Roderigo",
-          "Bianca",
-          "Othello",
-          "Iago"
-        ],
-        acceptableAnswers: [
-          "Iago"
-        ],
-        explanation: "After Roderigo falls, the stage direction clearly indicates Iago's action: 'Iago stabs Cassio in the leg, and exits' (Shakespeare 5.1.27 SD)."
+        options: ["Roderigo", "Bianca", "Othello", "Iago"],
+        acceptableAnswers: ["Iago"],
+        explanation:
+          "After Roderigo falls, the stage direction clearly indicates Iago's action: 'Iago stabs Cassio in the leg, and exits' (Shakespeare 5.1.27 SD).",
       },
       {
         type: "multiple-choice",
-        question: "When Othello hears Cassio cry out, what does he believe has happened?",
+        question:
+          "When Othello hears Cassio cry out, what does he believe has happened?",
         options: [
           "Roderigo has killed Cassio.",
           "Iago has killed Cassio.",
           "Cassio has killed Roderigo.",
-          "Iago has been wounded."
+          "Iago has been wounded.",
         ],
-        acceptableAnswers: [
-          "Iago has killed Cassio."
-        ],
-        explanation: "Othello hears Cassio's cries and immediately assumes Iago has fulfilled his promise to kill him, saying, 'The voice of Cassio! Iago keeps his word' (Shakespeare 5.1.29)."
+        acceptableAnswers: ["Iago has killed Cassio."],
+        explanation:
+          "Othello hears Cassio's cries and immediately assumes Iago has fulfilled his promise to kill him, saying, 'The voice of Cassio! Iago keeps his word' (Shakespeare 5.1.29).",
       },
       {
         type: "multiple-choice",
@@ -1348,26 +1344,20 @@ export const quizTemplates: QuizTemplate[] = [
           "O, I am slain!",
           "O wretched villain!",
           "O damned Iago! O inhuman dog!",
-          "Help, ho! Murder, murder!"
+          "Help, ho! Murder, murder!",
         ],
-        acceptableAnswers: [
-          "O damned Iago! O inhuman dog!"
-        ],
-        explanation: "As Iago stabs the already wounded Roderigo to silence him permanently, Roderigo cries out, identifying his killer: 'O damned Iago! O inhuman dog!' (Shakespeare 5.1.64)."
+        acceptableAnswers: ["O damned Iago! O inhuman dog!"],
+        explanation:
+          "As Iago stabs the already wounded Roderigo to silence him permanently, Roderigo cries out, identifying his killer: 'O damned Iago! O inhuman dog!' (Shakespeare 5.1.64).",
       },
       {
         type: "multiple-choice",
-        question: "Who does Iago immediately try to blame for Cassio's injury upon Bianca's arrival?",
-        options: [
-          "Roderigo",
-          "Lodovico",
-          "Bianca",
-          "Gratiano"
-        ],
-        acceptableAnswers: [
-          "Bianca"
-        ],
-        explanation: "Iago quickly deflects suspicion onto Bianca, referring to her contemptuously: 'Gentlemen all, I do suspect this trash / To be a party in this injury.—' (Shakespeare 5.1.87-88)."
+        question:
+          "Who does Iago immediately try to blame for Cassio's injury upon Bianca's arrival?",
+        options: ["Roderigo", "Lodovico", "Bianca", "Gratiano"],
+        acceptableAnswers: ["Bianca"],
+        explanation:
+          "Iago quickly deflects suspicion onto Bianca, referring to her contemptuously: 'Gentlemen all, I do suspect this trash / To be a party in this injury.—' (Shakespeare 5.1.87-88).",
       },
       {
         type: "multiple-choice",
@@ -1376,26 +1366,27 @@ export const quizTemplates: QuizTemplate[] = [
           "Tend to Cassio's wounds.",
           "Go find Othello immediately.",
           "Run to the citadel and tell Othello and Desdemona what happened.",
-          "Help him interrogate Bianca."
+          "Help him interrogate Bianca.",
         ],
         acceptableAnswers: [
-          "Run to the citadel and tell Othello and Desdemona what happened."
+          "Run to the citadel and tell Othello and Desdemona what happened.",
         ],
-        explanation: "As part of managing the chaotic scene, Iago dispatches Emilia with a specific task: 'Emilia, run you to the citadel / And tell my lord and lady what hath happed.—' (Shakespeare 5.1.129-130)."
+        explanation:
+          "As part of managing the chaotic scene, Iago dispatches Emilia with a specific task: 'Emilia, run you to the citadel / And tell my lord and lady what hath happed.—' (Shakespeare 5.1.129-130).",
       },
       {
         type: "multiple-choice",
-        question: "In his opening lines of Scene 2, Othello repeats 'It is the cause'. What is the 'cause' referring to?",
+        question:
+          "In his opening lines of Scene 2, Othello repeats 'It is the cause'. What is the 'cause' referring to?",
         options: [
           "His jealousy",
           "Iago's lies",
           "Desdemona's supposed infidelity",
-          "The loss of the handkerchief"
+          "The loss of the handkerchief",
         ],
-        acceptableAnswers: [
-          "Desdemona's supposed infidelity"
-        ],
-        explanation: "Othello refers to Desdemona's alleged unfaithfulness as the justification for killing her, believing it a necessary act to prevent her from corrupting others: 'It is the cause... Yet she must die, else she’ll betray more men' (Shakespeare 5.2.1-6)."
+        acceptableAnswers: ["Desdemona's supposed infidelity"],
+        explanation:
+          "Othello refers to Desdemona's alleged unfaithfulness as the justification for killing her, believing it a necessary act to prevent her from corrupting others: 'It is the cause... Yet she must die, else she’ll betray more men' (Shakespeare 5.2.1-6).",
       },
       {
         type: "multiple-choice",
@@ -1404,40 +1395,39 @@ export const quizTemplates: QuizTemplate[] = [
           "He wants to join her in prayer.",
           "He hopes she is innocent.",
           "He doesn't want to kill her soul.",
-          "He is stalling for time."
+          "He is stalling for time.",
         ],
-        acceptableAnswers: [
-          "He doesn't want to kill her soul."
-        ],
-        explanation: "Othello, despite his murderous intent, expresses a desire for Desdemona to make peace with God before dying: 'I would not kill thy unpreparèd spirit. / No, heaven forfend! I would not kill thy soul' (Shakespeare 5.2.32-33)."
+        acceptableAnswers: ["He doesn't want to kill her soul."],
+        explanation:
+          "Othello, despite his murderous intent, expresses a desire for Desdemona to make peace with God before dying: 'I would not kill thy unpreparèd spirit. / No, heaven forfend! I would not kill thy soul' (Shakespeare 5.2.32-33).",
       },
       {
         type: "multiple-choice",
-        question: "What item does Othello mention as the primary proof of Desdemona's guilt?",
+        question:
+          "What item does Othello mention as the primary proof of Desdemona's guilt?",
         options: [
           "A love letter from Cassio",
           "The handkerchief",
           "A sworn statement from Iago",
-          "A ring she gave Cassio"
+          "A ring she gave Cassio",
         ],
-        acceptableAnswers: [
-          "The handkerchief"
-        ],
-        explanation: "Othello repeatedly focuses on the handkerchief as the concrete evidence of her betrayal, stating, 'That handkerchief / Which I so loved, and gave thee, thou gav’st to / Cassio' (Shakespeare 5.2.49-51)."
+        acceptableAnswers: ["The handkerchief"],
+        explanation:
+          "Othello repeatedly focuses on the handkerchief as the concrete evidence of her betrayal, stating, 'That handkerchief / Which I so loved, and gave thee, thou gav’st to / Cassio' (Shakespeare 5.2.49-51).",
       },
       {
         type: "multiple-choice",
-        question: "What does Othello claim Cassio has done regarding Desdemona?",
+        question:
+          "What does Othello claim Cassio has done regarding Desdemona?",
         options: [
           "Stolen the handkerchief",
           "Confessed to the affair",
           "Written love poems to her",
-          "Tried to poison Othello"
+          "Tried to poison Othello",
         ],
-        acceptableAnswers: [
-          "Confessed to the affair"
-        ],
-        explanation: "When Desdemona pleads for Cassio to be summoned to attest to her innocence, Othello falsely claims Cassio has already admitted guilt: 'OTHELLO / He hath confessed. / DESDEMONA / What, my lord? / OTHELLO / That he hath used thee' (Shakespeare 5.2.74-76)."
+        acceptableAnswers: ["Confessed to the affair"],
+        explanation:
+          "When Desdemona pleads for Cassio to be summoned to attest to her innocence, Othello falsely claims Cassio has already admitted guilt: 'OTHELLO / He hath confessed. / DESDEMONA / What, my lord? / OTHELLO / That he hath used thee' (Shakespeare 5.2.74-76).",
       },
       {
         type: "multiple-choice",
@@ -1446,138 +1436,121 @@ export const quizTemplates: QuizTemplate[] = [
           "He stabs her.",
           "He poisons her.",
           "He smothers her.",
-          "He strangles her."
+          "He strangles her.",
         ],
-        acceptableAnswers: [
-          "He smothers her."
-        ],
-        explanation: "After Desdemona's pleas for mercy fail, Othello cuts her off, and the stage direction confirms the method: 'OTHELLO / It is too late. / He smothers her' (Shakespeare 5.2.92 SD)."
+        acceptableAnswers: ["He smothers her."],
+        explanation:
+          "After Desdemona's pleas for mercy fail, Othello cuts her off, and the stage direction confirms the method: 'OTHELLO / It is too late. / He smothers her' (Shakespeare 5.2.92 SD).",
       },
       {
         type: "multiple-choice",
-        question: "Who is the first person to enter Desdemona's bedroom after Othello kills her?",
-        options: [
-          "Iago",
-          "Cassio",
-          "Lodovico",
-          "Emilia"
-        ],
-        acceptableAnswers: [
-          "Emilia"
-        ],
-        explanation: "Emilia calls from outside the door immediately after Desdemona is smothered ('EMILIA, within / My lord, my lord? What ho! My lord, my lord!' - Shakespeare 5.2.93) and then enters shortly after ('Enter Emilia' - Shakespeare 5.2.109 SD)."
+        question:
+          "Who is the first person to enter Desdemona's bedroom after Othello kills her?",
+        options: ["Iago", "Cassio", "Lodovico", "Emilia"],
+        acceptableAnswers: ["Emilia"],
+        explanation:
+          "Emilia calls from outside the door immediately after Desdemona is smothered ('EMILIA, within / My lord, my lord? What ho! My lord, my lord!' - Shakespeare 5.2.93) and then enters shortly after ('Enter Emilia' - Shakespeare 5.2.109 SD).",
       },
       {
         type: "multiple-choice",
-        question: "What initial news does Emilia bring Othello from the street?",
+        question:
+          "What initial news does Emilia bring Othello from the street?",
         options: [
           "Cassio has killed Roderigo.",
           "Iago has been wounded.",
           "Roderigo has killed Cassio.",
-          "Bianca has been arrested."
+          "Bianca has been arrested.",
         ],
-        acceptableAnswers: [
-          "Cassio has killed Roderigo."
-        ],
-        explanation: "Emilia enters to report the violence outside, telling Othello, 'EMILIA / Cassio, my lord, hath killed / A young Venetian called Roderigo' (Shakespeare 5.2.117-118)."
+        acceptableAnswers: ["Cassio has killed Roderigo."],
+        explanation:
+          "Emilia enters to report the violence outside, telling Othello, 'EMILIA / Cassio, my lord, hath killed / A young Venetian called Roderigo' (Shakespeare 5.2.117-118).",
       },
       {
         type: "multiple-choice",
         question: "With her dying breaths, who does Desdemona say killed her?",
-        options: [
-          "Othello",
-          "Iago",
-          "Nobody. I myself.",
-          "Cassio"
-        ],
-        acceptableAnswers: [
-          "Nobody. I myself."
-        ],
-        explanation: "When Emilia asks who committed the deed, Desdemona protects Othello to the very end: 'DESDEMONA / Nobody. I myself. Farewell. / Commend me to my kind lord. O, farewell' (Shakespeare 5.2.137-138)."
+        options: ["Othello", "Iago", "Nobody. I myself.", "Cassio"],
+        acceptableAnswers: ["Nobody. I myself."],
+        explanation:
+          "When Emilia asks who committed the deed, Desdemona protects Othello to the very end: 'DESDEMONA / Nobody. I myself. Farewell. / Commend me to my kind lord. O, farewell' (Shakespeare 5.2.137-138).",
       },
       {
         type: "multiple-choice",
-        question: "When Othello admits to Emilia that he killed Desdemona, what reason does he give?",
+        question:
+          "When Othello admits to Emilia that he killed Desdemona, what reason does he give?",
         options: [
           "She begged him to do it.",
           "She was plotting against him.",
           "She was a whore and false.",
-          "It was an accident."
+          "It was an accident.",
         ],
-        acceptableAnswers: [
-          "She was a whore and false."
-        ],
-        explanation: "After Desdemona dies, Othello drops the pretense and tells Emilia his justification: ''Twas I that killed her... She turned to folly, and she was a whore' (Shakespeare 5.2.144-145)."
+        acceptableAnswers: ["She was a whore and false."],
+        explanation:
+          "After Desdemona dies, Othello drops the pretense and tells Emilia his justification: ''Twas I that killed her... She turned to folly, and she was a whore' (Shakespeare 5.2.144-145).",
       },
       {
         type: "multiple-choice",
-        question: "What is Emilia's immediate reaction when Othello says Iago told him Desdemona was false?",
+        question:
+          "What is Emilia's immediate reaction when Othello says Iago told him Desdemona was false?",
         options: [
           "Agreement and sorrow",
           "Disbelief and asking 'My husband?' repeatedly",
           "Accusing Othello of lying",
-          "Fainting from shock"
+          "Fainting from shock",
         ],
-        acceptableAnswers: [
-          "Disbelief and asking 'My husband?' repeatedly"
-        ],
-        explanation: "Emilia is utterly stunned that her husband is the source of the slander, repeating in disbelief, 'My husband?' (Shakespeare 5.2.154, 159, 163) before erupting in anger."
+        acceptableAnswers: ["Disbelief and asking 'My husband?' repeatedly"],
+        explanation:
+          "Emilia is utterly stunned that her husband is the source of the slander, repeating in disbelief, 'My husband?' (Shakespeare 5.2.154, 159, 163) before erupting in anger.",
       },
       {
         type: "multiple-choice",
-        question: "Who confirms to Emilia that Iago did indeed tell Othello that Desdemona was false with Cassio?",
-        options: [
-          "Othello",
-          "Montano",
-          "Iago himself",
-          "Gratiano"
-        ],
-        acceptableAnswers: [
-          "Iago himself"
-        ],
-        explanation: "When confronted directly by Emilia ('But did you ever tell him she was false?'), Iago admits his role: 'IAGO / I did' (Shakespeare 5.2.192-193)."
+        question:
+          "Who confirms to Emilia that Iago did indeed tell Othello that Desdemona was false with Cassio?",
+        options: ["Othello", "Montano", "Iago himself", "Gratiano"],
+        acceptableAnswers: ["Iago himself"],
+        explanation:
+          "When confronted directly by Emilia ('But did you ever tell him she was false?'), Iago admits his role: 'IAGO / I did' (Shakespeare 5.2.192-193).",
       },
       {
         type: "multiple-choice",
-        question: "What crucial information does Emilia reveal about the handkerchief?",
+        question:
+          "What crucial information does Emilia reveal about the handkerchief?",
         options: [
           "She saw Cassio steal it.",
           "Desdemona lost it accidentally.",
           "She found it and gave it to Iago.",
-          "Bianca planted it in Cassio's room."
+          "Bianca planted it in Cassio's room.",
         ],
-        acceptableAnswers: [
-          "She found it and gave it to Iago."
-        ],
-        explanation: "Emilia finally reveals the truth about the handkerchief's journey: 'EMILIA / ...that handkerchief thou speak’st / of / I found by fortune, and did give my husband... He begged of me to steal ’t' (Shakespeare 5.2.244-249)."
+        acceptableAnswers: ["She found it and gave it to Iago."],
+        explanation:
+          "Emilia finally reveals the truth about the handkerchief's journey: 'EMILIA / ...that handkerchief thou speak’st / of / I found by fortune, and did give my husband... He begged of me to steal ’t' (Shakespeare 5.2.244-249).",
       },
       {
         type: "multiple-choice",
-        question: "What happens to Emilia after she reveals the truth about Iago and the handkerchief?",
+        question:
+          "What happens to Emilia after she reveals the truth about Iago and the handkerchief?",
         options: [
           "She runs away.",
           "Othello kills her.",
           "Iago kills her.",
-          "She is arrested."
+          "She is arrested.",
         ],
-        acceptableAnswers: [
-          "Iago kills her."
-        ],
-        explanation: "To silence her permanently after her devastating revelation, Iago attacks his wife. The stage direction notes: 'Iago kills his wife' (Shakespeare 5.2.254 SD)."
+        acceptableAnswers: ["Iago kills her."],
+        explanation:
+          "To silence her permanently after her devastating revelation, Iago attacks his wife. The stage direction notes: 'Iago kills his wife' (Shakespeare 5.2.254 SD).",
       },
       {
         type: "multiple-choice",
-        question: "What news does Gratiano share about Desdemona's father, Brabantio?",
+        question:
+          "What news does Gratiano share about Desdemona's father, Brabantio?",
         options: [
           "He is coming to Cyprus.",
           "He has forgiven Desdemona.",
           "He died of grief over the marriage.",
-          "He has disowned Desdemona."
+          "He has disowned Desdemona.",
         ],
-        acceptableAnswers: [
-          "He died of grief over the marriage."
-        ],
-        explanation: "Upon seeing the tragedy, Gratiano reveals offstage news: 'Poor Desdemon, I am glad thy father’s dead. / Thy match was mortal to him, and pure grief / Shore his old thread in twain' (Shakespeare 5.2.223-225)."
+        acceptableAnswers: ["He died of grief over the marriage."],
+        explanation:
+          "Upon seeing the tragedy, Gratiano reveals offstage news: 'Poor Desdemon, I am glad thy father’s dead. / Thy match was mortal to him, and pure grief / Shore his old thread in twain' (Shakespeare 5.2.223-225).",
       },
       {
         type: "multiple-choice",
@@ -1586,12 +1559,11 @@ export const quizTemplates: QuizTemplate[] = [
           "He takes it from Gratiano.",
           "He had another hidden in the chamber.",
           "Emilia gives him one.",
-          "Cassio lends him his sword."
+          "Cassio lends him his sword.",
         ],
-        acceptableAnswers: [
-          "He had another hidden in the chamber."
-        ],
-        explanation: "Othello reveals he was not entirely defenseless, stating, 'I have another weapon in this chamber. / It is a sword of Spain... O, here it is' (Shakespeare 5.2.273-275)."
+        acceptableAnswers: ["He had another hidden in the chamber."],
+        explanation:
+          "Othello reveals he was not entirely defenseless, stating, 'I have another weapon in this chamber. / It is a sword of Spain... O, here it is' (Shakespeare 5.2.273-275).",
       },
       {
         type: "multiple-choice",
@@ -1600,40 +1572,39 @@ export const quizTemplates: QuizTemplate[] = [
           "O, I am slain!",
           "I bleed, sir, but not killed.",
           "Villainy, villainy!",
-          "Demand me nothing."
+          "Demand me nothing.",
         ],
-        acceptableAnswers: [
-          "I bleed, sir, but not killed."
-        ],
-        explanation: "Even after being stabbed by Othello, Iago remains defiant and points out Othello's failure to kill him: 'IAGO / I bleed, sir, but not killed' (Shakespeare 5.2.299)."
+        acceptableAnswers: ["I bleed, sir, but not killed."],
+        explanation:
+          "Even after being stabbed by Othello, Iago remains defiant and points out Othello's failure to kill him: 'IAGO / I bleed, sir, but not killed' (Shakespeare 5.2.299).",
       },
       {
         type: "multiple-choice",
-        question: "What evidence found on Roderigo's body helps confirm Iago's guilt?",
+        question:
+          "What evidence found on Roderigo's body helps confirm Iago's guilt?",
         options: [
           "Desdemona's handkerchief",
           "A map of the citadel",
           "Letters detailing Iago's plots",
-          "A large sum of money"
+          "A large sum of money",
         ],
-        acceptableAnswers: [
-          "Letters detailing Iago's plots"
-        ],
-        explanation: "Lodovico presents incriminating documents found on Roderigo: 'Here is a letter / Found in the pocket of the slain Roderigo, / And here another... The one of / them imports / The death of Cassio, to be undertook / By Roderigo' (Shakespeare 5.2.307-311)."
+        acceptableAnswers: ["Letters detailing Iago's plots"],
+        explanation:
+          "Lodovico presents incriminating documents found on Roderigo: 'Here is a letter / Found in the pocket of the slain Roderigo, / And here another... The one of / them imports / The death of Cassio, to be undertook / By Roderigo' (Shakespeare 5.2.307-311).",
       },
       {
         type: "multiple-choice",
-        question: "In his final speech, how does Othello ask Lodovico to describe him?",
+        question:
+          "In his final speech, how does Othello ask Lodovico to describe him?",
         options: [
           "As a valiant soldier betrayed.",
           "As one that loved not wisely, but too well.",
           "As a victim of circumstance.",
-          "As an honorable murderer seeking justice."
+          "As an honorable murderer seeking justice.",
         ],
-        acceptableAnswers: [
-          "As one that loved not wisely, but too well."
-        ],
-        explanation: "Othello attempts to shape his legacy, requesting they report him as 'one that loved not wisely, but too well; / Of one not easily jealous, but being wrought, / Perplexed in the extreme' (Shakespeare 5.2.344-347)."
+        acceptableAnswers: ["As one that loved not wisely, but too well."],
+        explanation:
+          "Othello attempts to shape his legacy, requesting they report him as 'one that loved not wisely, but too well; / Of one not easily jealous, but being wrought, / Perplexed in the extreme' (Shakespeare 5.2.344-347).",
       },
       {
         type: "multiple-choice",
@@ -1642,29 +1613,768 @@ export const quizTemplates: QuizTemplate[] = [
           "He curses Iago.",
           "He asks Cassio for forgiveness.",
           "He kisses Desdemona.",
-          "He prays for his soul."
+          "He prays for his soul.",
         ],
-        acceptableAnswers: [
-          "He kisses Desdemona."
-        ],
-        explanation: "Othello turns to Desdemona one last time, stating, 'I kissed thee ere I killed thee. No way but this, / Killing myself, to die upon a kiss' (Shakespeare 5.2.358-359), and then dies."
+        acceptableAnswers: ["He kisses Desdemona."],
+        explanation:
+          "Othello turns to Desdemona one last time, stating, 'I kissed thee ere I killed thee. No way but this, / Killing myself, to die upon a kiss' (Shakespeare 5.2.358-359), and then dies.",
       },
       {
         type: "multiple-choice",
-        question: "Who is appointed to rule in Cyprus and decide Iago's punishment at the very end of the play?",
+        question:
+          "Who is appointed to rule in Cyprus and decide Iago's punishment at the very end of the play?",
+        options: ["Lodovico", "Gratiano", "Montano", "Cassio"],
+        acceptableAnswers: ["Cassio"],
+        explanation:
+          "Lodovico strips Othello of his position and designates Cassio as the new authority: 'Your power and your command is taken off, / And Cassio rules in Cyprus... To you, lord / governor, / Remains the censure of this hellish villain' (Shakespeare 5.2.330-336).",
+      },
+    ],
+  },
+  {
+    id: "fahrenheit-451-part-1-quiz",
+    name: "Fahrenheit 451 Part 1: Hearth of the Salamander Quiz",
+    category: "Literature",
+    description:
+      "A multiple-choice quiz covering key events and characters in Part 1 of Ray Bradbury's Fahrenheit 451, 'Hearth of the Salamander'.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "Who does Montag meet on the way home at the beginning of the novel?",
         options: [
-          "Lodovico",
-          "Gratiano",
-          "Montano",
-          "Cassio"
+          "Captain Beatty",
+          "Mildred, his wife",
+          "Clarisse McClellan",
+          "Professor Faber",
+        ],
+        acceptableAnswers: ["Clarisse McClellan"],
+        explanation:
+          "Montag encounters Clarisse McClellan, his new seventeen-year-old neighbor, on his walk home from the fire station.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What detail about Clarisse's house surprises Montag?",
+        options: [
+          "It is much smaller than his own.",
+          "It is dark and quiet.",
+          "It has all the lights on and sounds of conversation.",
+          "It has a large, unruly garden.",
         ],
         acceptableAnswers: [
-          "Cassio"
+          "It has all the lights on and sounds of conversation.",
         ],
-        explanation: "Lodovico strips Othello of his position and designates Cassio as the new authority: 'Your power and your command is taken off, / And Cassio rules in Cyprus... To you, lord / governor, / Remains the censure of this hellish villain' (Shakespeare 5.2.330-336)."
-      }
-    ]
-  }
+        explanation:
+          "Montag notices that Clarisse's house is brightly lit and filled with the sounds of people talking, which is unusual in their society where most people sit silently in front of their parlor walls.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag realize about himself after his first interaction with Clarisse?",
+        options: [
+          "He wants to be a fireman forever.",
+          "He is deeply in love with his wife.",
+          "He is unhappy.",
+          "He wants to move away from the city.",
+        ],
+        acceptableAnswers: ["He is unhappy."],
+        explanation:
+          "After Clarisse asks if he's happy, Montag initially dismisses the question but later admits to himself, 'He was not happy. He said the words to himself. He knew it' (Bradbury 9).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why does Mildred need help when Montag gets home immediately after meeting Clarisse?",
+        options: [
+          "She has fallen and broken her leg.",
+          "She has attempted suicide by overdosing on sleeping pills.",
+          "She is experiencing a severe allergic reaction.",
+          "She has been robbed.",
+        ],
+        acceptableAnswers: [
+          "She has attempted suicide by overdosing on sleeping pills.",
+        ],
+        explanation:
+          "Montag finds Mildred unconscious on the bed, having swallowed an entire bottle of sleeping pills.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What help does Mildred receive after her overdose?",
+        options: [
+          "She is taken to a traditional hospital emergency room.",
+          "Two technicians arrive with machines to pump her stomach and replenish her blood.",
+          "Montag calls a family doctor who administers an antidote.",
+          "She is given cold compresses and left to sleep it off.",
+        ],
+        acceptableAnswers: [
+          "Two technicians arrive with machines to pump her stomach and replenish her blood.",
+        ],
+        explanation:
+          "Instead of doctors, two 'handymen' arrive with specialized machines: one to pump her stomach and another to replace her blood with fresh blood and serum.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does Mildred react after she wakes up from the previous night's experience?",
+        options: [
+          "She is deeply remorseful and apologetic.",
+          "She remembers everything and is terrified.",
+          "She has no memory of the event and feels hungry.",
+          "She is angry at Montag for not being there.",
+        ],
+        acceptableAnswers: ["She has no memory of the event and feels hungry."],
+        explanation:
+          "Mildred wakes up with no recollection of her overdose, feeling as if she had a hangover, and asks for toast.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How does Mildred primarily spend her days?",
+        options: [
+          "Reading books in secret.",
+          "Engaging in neighborhood gossip.",
+          "Watching and interacting with her 'family' on the parlor walls.",
+          "Working at a factory.",
+        ],
+        acceptableAnswers: [
+          "Watching and interacting with her 'family' on the parlor walls.",
+        ],
+        explanation:
+          "Mildred is engrossed in her 'parlor walls' – large wall-mounted television screens that display interactive programs featuring characters she refers to as her 'family'.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the Mechanical Hound? How does it react to Montag?",
+        options: [
+          "A robotic pet; it is affectionate towards Montag.",
+          "A police robot that tracks criminals; it ignores Montag.",
+          "A metallic watchdog that hunts and injects fugitives; it growls and lunges at Montag.",
+          "A cleaning robot; it cleans Montag's house.",
+        ],
+        acceptableAnswers: [
+          "A metallic watchdog that hunts and injects fugitives; it growls and lunges at Montag.",
+        ],
+        explanation:
+          "The Mechanical Hound is a programmable, eight-legged robot that serves as a hunter. It shows hostility towards Montag, growling and extending its needle, suggesting it has been programmed to react negatively to him.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why is Clarisse considered 'anti-social' by her society?",
+        options: [
+          "She refuses to attend school.",
+          "She doesn't participate in typical teenage activities and enjoys thinking and talking.",
+          "She often breaks the law.",
+          "She is extremely shy and avoids people.",
+        ],
+        acceptableAnswers: [
+          "She doesn't participate in typical teenage activities and enjoys thinking and talking.",
+        ],
+        explanation:
+          "Clarisse is labeled 'anti-social' because she prefers genuine conversation, observing nature, and thinking over the loud, superficial interactions and entertainment valued by her peers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What are the rules of the Firemen of America, according to their slogan?",
+        options: [
+          "'Burn brightly, burn fast, burn clean.'",
+          "'Light the world, ignite the future.'",
+          "'Monday burn Millay, Wednesday Whitman, Friday Faulkner, burn 'em all, burn 'em up, burn 'em to ashes, then burn the ashes.'",
+          "'Protect the public, preserve the peace, purge the past.'",
+        ],
+        acceptableAnswers: [
+          "'Monday burn Millay, Wednesday Whitman, Friday Faulkner, burn 'em all, burn 'em up, burn 'em to ashes, then burn the ashes.'",
+        ],
+        explanation:
+          "This specific mantra is stated by Beatty, outlining the firemen's duty to burn all books indiscriminately based on the day of the week.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag take during the fire at the old woman's house? How does he explain this action to himself?",
+        options: [
+          "A valuable piece of jewelry; he says he wanted to keep a souvenir.",
+          "A small, green book; he says his hand acted on its own.",
+          "A family photograph; he felt sorry for the woman.",
+          "A piece of burnt wood; he wanted to analyze the ashes.",
+        ],
+        acceptableAnswers: [
+          "A small, green book; he says his hand acted on its own.",
+        ],
+        explanation:
+          "Montag's hand 'acted on its own' and he slipped a small green book, likely a Bible, under his armpit before they burned the house down.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Who ultimately sets the fire at the old woman's house? Why?",
+        options: [
+          "Montag, out of anger.",
+          "Beatty, after she refuses to leave.",
+          "The woman herself, with a match, as an act of defiance.",
+          "The Mechanical Hound, by accident.",
+        ],
+        acceptableAnswers: [
+          "The woman herself, with a match, as an act of defiance.",
+        ],
+        explanation:
+          "The old woman famously tells the firemen, 'You can't have my books,' and then lights a match, choosing to burn with her books rather than live without them.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Mildred say happened to Clarisse? When did she find this out?",
+        options: [
+          "She moved away suddenly; a week ago.",
+          "She was arrested for dissent; last night.",
+          "She was run over by a car; four days ago.",
+          "She eloped with a boy; a few days ago.",
+        ],
+        acceptableAnswers: ["She was run over by a car; four days ago."],
+        explanation:
+          "Mildred casually mentions that Clarisse 'was run over by a car. Four days ago. I'm not sure. But I think she's dead.'\" (Bradbury 47).",
+      },
+      {
+        type: "multiple-choice",
+        question: "Who does Mildred call her 'family'?",
+        options: [
+          "Her distant relatives in another city.",
+          "The characters on her parlor wall televisions.",
+          "Her colleagues at her part-time job.",
+          "Her cats and dogs.",
+        ],
+        acceptableAnswers: ["The characters on her parlor wall televisions."],
+        explanation:
+          "Mildred refers to the fictional characters on her interactive parlor wall screens as her 'family,' indicating a disconnect from real human relationships.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag want Mildred to do for him the next morning after the old woman's burning?",
+        options: [
+          "Go for a walk with him.",
+          "Call Captain Beatty and quit her job.",
+          "Help him read the books he has hidden.",
+          "Buy him a new uniform.",
+        ],
+        acceptableAnswers: ["Help him read the books he has hidden."],
+        explanation:
+          "The morning after the old woman's death, Montag expresses his deep unease and asks Mildred to sit with him and help him read the books he has been secretly collecting.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Identify the factors that led to censorship in this society, according to Beatty.",
+        options: [
+          "Government decree and religious fundamentalism.",
+          "The rise of artificial intelligence and robotic control.",
+          "Mass media, acceleration of life, and the desire to avoid offending minorities.",
+          "An alien invasion and a need for absolute uniformity.",
+        ],
+        acceptableAnswers: [
+          "Mass media, acceleration of life, and the desire to avoid offending minorities.",
+        ],
+        explanation:
+          "Beatty explains that books were shortened, then adapted, and eventually banned because people preferred instant gratification from mass media, life sped up, and various minority groups found things in books offensive, leading to a demand for their removal to ensure 'happiness' and uniformity.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How does Beatty explain what happened to Clarisse?",
+        options: [
+          "He confirms she was run over by a car, as Mildred said.",
+          "He says she was a rebel and her kind are better off gone.",
+          "He implies she was killed by the Mechanical Hound for suspicious behavior.",
+          "He claims she was a normal, well-adjusted girl who simply moved away.",
+        ],
+        acceptableAnswers: [
+          "He says she was a rebel and her kind are better off gone.",
+        ],
+        explanation:
+          "Beatty dismisses Clarisse as a 'parlor wall' case, calling her 'a time bomb' and 'a lot of nonsense,' implying her unique way of thinking made her a problem that 'had to go.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does Beatty explain what happens to a fireman who takes a book home with him?",
+        options: [
+          "They are immediately executed.",
+          "They are given 24 hours to read it, then must burn it or face consequences.",
+          "They are put on immediate suspension and sent for re-education.",
+          "They are fined heavily.",
+        ],
+        acceptableAnswers: [
+          "They are given 24 hours to read it, then must burn it or face consequences.",
+        ],
+        explanation:
+          "Beatty tells Montag, 'Every fireman, at least once in his career, gets that itch. What do the books say, what do they mean? They say nothing! So if you've got that itch, Montag, take a book, read it. Then, of course, burn it, and we'll say nothing' (Bradbury 59).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag take from behind the ventilator grill? How does Mildred react?",
+        options: [
+          "His old fireman's helmet; Mildred is annoyed he hasn't cleaned it.",
+          "A stash of hidden books; Mildred is shocked and horrified.",
+          "A photo album; Mildred is nostalgic.",
+          "A hidden gun; Mildred is scared.",
+        ],
+        acceptableAnswers: [
+          "A stash of hidden books; Mildred is shocked and horrified.",
+        ],
+        explanation:
+          "After Beatty leaves, Montag reveals a large stack of books hidden in the ventilator grill, much to Mildred's utter shock and horror.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag ask of Mildred after revealing his hidden books?",
+        options: [
+          "That she hide them for him.",
+          "That she report him to Captain Beatty.",
+          "That she help him burn them immediately.",
+          "That they sit and read them together.",
+        ],
+        acceptableAnswers: ["That they sit and read them together."],
+        explanation:
+          "Montag, distraught and seeking understanding, pleads with Mildred, 'Let's sit down and think. Let's get it all straight in our minds. It's not books we need, it's some of the things that once were in books' (Bradbury 69). He wants her to read with him.",
+      },
+    ],
+  },
+  {
+    id: "fahrenheit-451-part-2-quiz",
+    name: "Fahrenheit 451 Part 2: The Sieve and the Sand Quiz",
+    category: "Literature",
+    description:
+      "A multiple-choice quiz covering key events and themes in Part 2 of Ray Bradbury's Fahrenheit 451, 'The Sieve and the Sand'.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "What is the dynamic between Montag and Mildred after Beatty's visit?",
+        options: [
+          "They are closer and more understanding of each other.",
+          "Mildred is supportive of Montag's new interest in books.",
+          "Montag is trying to engage Mildred, but she remains detached and oblivious.",
+          "They are constantly arguing and fighting.",
+        ],
+        acceptableAnswers: [
+          "Montag is trying to engage Mildred, but she remains detached and oblivious.",
+        ],
+        explanation:
+          "Montag desperately tries to get Mildred to read and understand the books, but she is completely disengaged, concerned only with her parlor walls and superficial matters, making their relationship strained and distant.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why does Montag want to read books? What is he hoping to learn from them?",
+        options: [
+          "He wants to become a writer.",
+          "He seeks answers and understanding about the world's problems and his own unhappiness.",
+          "He wants to prove Beatty wrong about their worthlessness.",
+          "He is looking for specific instructions on how to overthrow the government.",
+        ],
+        acceptableAnswers: [
+          "He seeks answers and understanding about the world's problems and his own unhappiness.",
+        ],
+        explanation:
+          "Montag feels a deep void and expresses a desperate need for knowledge, truth, and genuine meaning that he believes books might provide, especially after the old woman's death and Clarisse's influence.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Who is Faber? What memory does Montag recall of him?",
+        options: [
+          "A former fireman; Montag remembers him leading a book burning.",
+          "A retired professor; Montag remembers meeting him in a park a year ago.",
+          "A distant relative; Montag recalls a family gathering.",
+          "A journalist; Montag remembers reading his articles.",
+        ],
+        acceptableAnswers: [
+          "A retired professor; Montag remembers meeting him in a park a year ago.",
+        ],
+        explanation:
+          "Montag recalls meeting Faber, a former English professor, in a park about a year prior, where Faber was briefly engaged in conversation and recited poetry before fleeing in fear.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag ask when he calls Faber? How does Faber react?",
+        options: [
+          "He asks for advice on how to hide books; Faber is angry and refuses.",
+          "He asks how many copies of Shakespeare are left; Faber is suspicious and hangs up.",
+          "He asks if there are any remaining copies of the Bible; Faber is cautious and denies knowing.",
+          "He asks for an appointment to discuss literature; Faber is eager and inviting.",
+        ],
+        acceptableAnswers: [
+          "He asks if there are any remaining copies of the Bible; Faber is cautious and denies knowing.",
+        ],
+        explanation:
+          "Montag asks Faber if there are any original copies of the Bible left in the country. Faber, fearing a trap, initially denies knowing anything about it.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is Montag trying to do on the train? What keeps interrupting him?",
+        options: [
+          "He's trying to memorize a book; a loud advertisement for Denham's Dentifrice.",
+          "He's trying to write a letter; constant chatter from other passengers.",
+          "He's trying to sleep; the train's jerky movements.",
+          "He's trying to solve a puzzle; the lack of light.",
+        ],
+        acceptableAnswers: [
+          "He's trying to memorize a book; a loud advertisement for Denham's Dentifrice.",
+        ],
+        explanation:
+          "Montag desperately tries to memorize the book of Ecclesiastes on the subway, but a relentless, blaring advertisement for 'Denham's Dentifrice' prevents him from concentrating, illustrating the 'sieve and the sand' metaphor.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why does Faber call himself a coward?",
+        options: [
+          "He was too scared to join the firemen.",
+          "He didn't speak up when books were being burned and society declined.",
+          "He ran away from Montag in the park.",
+          "He is afraid to leave his house.",
+        ],
+        acceptableAnswers: [
+          "He didn't speak up when books were being burned and society declined.",
+        ],
+        explanation:
+          "Faber admits his cowardice, stating, 'I saw the way things were going, a long time back. I said nothing. I’m a coward' (Bradbury 78). He regrets not taking action when he could have.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag mean when he tells Faber his wife is dying?",
+        options: [
+          "She has a terminal illness.",
+          "Her spirit and ability to connect with life are fading due to a lack of substance.",
+          "She is physically weak from lack of proper nutrition.",
+          "She is losing her memory due to a psychological condition.",
+        ],
+        acceptableAnswers: [
+          "Her spirit and ability to connect with life are fading due to a lack of substance.",
+        ],
+        explanation:
+          "Montag means that Mildred is dying spiritually and emotionally due to her empty, unexamined life, devoid of real thought, meaning, or connection, a death far more profound than a physical one.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What are the three things Faber says are missing from society?",
+        options: [
+          "Money, power, and fame.",
+          "Nature, art, and music.",
+          "Quality of information, leisure to digest it, and the right to act on it.",
+          "Love, hope, and faith.",
+        ],
+        acceptableAnswers: [
+          "Quality of information, leisure to digest it, and the right to act on it.",
+        ],
+        explanation:
+          "Faber articulates the three missing elements: 'Number one: Quality, texture of information. Number two: Leisure to digest it. And number three: The right to carry out actions based on what we learn from the first two' (Bradbury 83-84).",
+      },
+      {
+        type: "multiple-choice",
+        question: "What plan does Montag suggest to Faber?",
+        options: [
+          "To secretly print and distribute books by planting them in firemen's houses.",
+          "To escape to the wilderness and start a new community.",
+          "To infiltrate the government and change laws from within.",
+          "To burn down all the firehouses.",
+        ],
+        acceptableAnswers: [
+          "To secretly print and distribute books by planting them in firemen's houses.",
+        ],
+        explanation:
+          "Montag proposes a risky plan to Faber: printing books and then planting them in the homes of firemen to discredit them and undermine the system.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag do with the pages of the Bible when Faber initially resists his plan? Why?",
+        options: [
+          "He burns them to prove his seriousness.",
+          "He tears them out one by one, threatening to destroy the book until Faber agrees to help.",
+          "He hides them, knowing Faber will eventually give in.",
+          "He offers them to Faber as a gift.",
+        ],
+        acceptableAnswers: [
+          "He tears them out one by one, threatening to destroy the book until Faber agrees to help.",
+        ],
+        explanation:
+          "Montag, in a desperate act of manipulation, begins tearing out pages of the Bible, knowing its immense value to Faber, until Faber agrees to help him with his plan.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What will Montag's money be used for, according to Faber?",
+        options: [
+          "To buy a new house for Montag.",
+          "To fund their escape from the city.",
+          "To pay a printer to reproduce books.",
+          "To buy more parlor walls for Mildred.",
+        ],
+        acceptableAnswers: ["To pay a printer to reproduce books."],
+        explanation:
+          "Faber agrees to use Montag's money to find a printer who can reproduce books quickly and secretly.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What has Faber designed? How is it different from Mildred's Seashell radio?",
+        options: [
+          "A device that projects books onto walls; it's larger and more immersive.",
+          "A two-way listening device resembling a Seashell; it allows communication, not just reception.",
+          "A silent book scanner; it scans books without noise.",
+          "A device that creates virtual reality experiences; it's more advanced.",
+        ],
+        acceptableAnswers: [
+          "A two-way listening device resembling a Seashell; it allows communication, not just reception.",
+        ],
+        explanation:
+          "Faber reveals a tiny two-way radio earpiece, similar in appearance to Mildred's Seashell radio, but capable of transmitting Faber's voice to Montag, allowing them to communicate secretly.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What concern does Montag voice to Faber over the radio before entering his home? What is the significance of this concern?",
+        options: [
+          "He's worried about the Mechanical Hound; it shows his growing paranoia.",
+          "He's worried about forgetting what to say; it highlights his lack of experience with real conversation.",
+          "He's worried about his lack of courage; it indicates his fear of facing the women.",
+          "He's worried about being too angry; it shows his struggle to control his emotions.",
+        ],
+        acceptableAnswers: [
+          "He's worried about forgetting what to say; it highlights his lack of experience with real conversation.",
+        ],
+        explanation:
+          "Montag expresses his concern, 'I don't know what to say. I just don't know what to say' (Bradbury 92), highlighting his lack of practice in meaningful, independent conversation and his dependence on Faber's guidance.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Faber begin to read to Montag over the radio while he is home?",
+        options: [
+          "Excerpts from the Bible.",
+          "Passages from classic poetry.",
+          "News headlines from the past.",
+          "Philosophical essays.",
+        ],
+        acceptableAnswers: ["Excerpts from the Bible."],
+        explanation:
+          "While Montag is with Mildred and her friends, Faber begins to read to him, starting with the book of Job from the Bible, providing a calm, spiritual counterpoint to the superficiality of the women.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who arrives at Montag's house shortly after Faber begins reading to him? For what purpose?",
+        options: [
+          "Captain Beatty; to check on Montag's loyalty.",
+          "Mildred's friends, Mrs. Phelps and Mrs. Bowles; for a social visit.",
+          "The police; to arrest Montag.",
+          "A delivery service; to bring more parlor wall scripts.",
+        ],
+        acceptableAnswers: [
+          "Mildred's friends, Mrs. Phelps and Mrs. Bowles; for a social visit.",
+        ],
+        explanation:
+          "Mildred's friends, Mrs. Phelps and Mrs. Bowles, arrive at the house to watch television and engage in their usual superficial conversations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What topics do the women discuss? Why do you think Bradbury has them discuss those topics in particular?",
+        options: [
+          "Politics, family, and war; to show their wisdom.",
+          "Their children, husbands, and the upcoming election; to highlight their superficiality and disconnect from reality.",
+          "Art, philosophy, and history; to demonstrate their intellectual curiosity.",
+          "Gardening, cooking, and fashion; to show their domesticity.",
+        ],
+        acceptableAnswers: [
+          "Their children, husbands, and the upcoming election; to highlight their superficiality and disconnect from reality.",
+        ],
+        explanation:
+          "The women discuss their children's distant upbringing, their husbands' departures for war with indifference, and their voting choices based solely on a candidate's appearance. Bradbury uses these topics to expose their complete lack of emotional depth, critical thinking, and engagement with the serious realities of their lives and society.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag leave to get during the dinner party? How does Faber react?",
+        options: [
+          "He leaves to get more drinks; Faber scolds him for being too accommodating.",
+          "He leaves to get a book; Faber warns him not to read it aloud.",
+          "He leaves to get an ice bucket; Faber is confused by his sudden departure.",
+          "He leaves to get a lighter; Faber is unconcerned.",
+        ],
+        acceptableAnswers: [
+          "He leaves to get a book; Faber warns him not to read it aloud.",
+        ],
+        explanation:
+          "Montag, enraged by the women's triviality, retrieves a book of poetry. Faber, through the earpiece, desperately tries to stop him from reading it aloud.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does Mildred explain Montag's behavior and the presence of the book to her friends?",
+        options: [
+          "She says he's sick and prone to strange outbursts.",
+          "She claims he is performing an experimental play for them.",
+          "She tells them he is demonstrating how foolish books are by reading one.",
+          "She confesses he's been secretly reading books.",
+        ],
+        acceptableAnswers: [
+          "She claims he is performing an experimental play for them.",
+        ],
+        explanation:
+          "To avoid suspicion, Mildred quickly covers for Montag, telling her friends that firemen are allowed to bring home one book a year to show how foolish they are and that Montag is merely 'reading us a poem, for fun.'\" (Bradbury 96).",
+      },
+      {
+        type: "multiple-choice",
+        question: "How do the women react to Montag's poetry reading?",
+        options: [
+          "They are deeply moved and ask for more.",
+          "They are confused and uncomfortable, and Mrs. Phelps cries.",
+          "They are bored and ask him to stop.",
+          "They applaud his dramatic reading.",
+        ],
+        acceptableAnswers: [
+          "They are confused and uncomfortable, and Mrs. Phelps cries.",
+        ],
+        explanation:
+          "The raw emotion and depth of the poem, 'Dover Beach,' are too much for the women. Mrs. Phelps bursts into tears, while Mrs. Bowles is outraged and accuses Montag of being cruel.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Faber call Montag after his outburst with the women?",
+        options: ["A genius.", "An idiot.", "A brave man.", "A fire starter."],
+        acceptableAnswers: ["An idiot."],
+        explanation:
+          "Faber, frustrated by Montag's impulsive behavior that risked their entire plan, calls him an 'idiot' through the earpiece for reading the poetry aloud.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What realization about himself does Montag have on his way to the firehouse?",
+        options: [
+          "He realizes he wants to burn more books.",
+          "He realizes he hates Beatty and wants to kill him.",
+          "He realizes he feels alive and invigorated by his defiance.",
+          "He realizes he should have never gotten involved with books.",
+        ],
+        acceptableAnswers: [
+          "He realizes he feels alive and invigorated by his defiance.",
+        ],
+        explanation:
+          "Despite the danger, Montag feels a strange sense of exhilaration and purpose after his confrontation with the women, a feeling of being truly alive for the first time.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does Montag feel about his hands at the end of Part 2? Why?",
+        options: [
+          "He feels proud of them for their strength.",
+          "He sees them as infected and guilty for stealing books.",
+          "He sees them as powerful tools for destruction.",
+          "He views them as beautiful because they hold books.",
+        ],
+        acceptableAnswers: [
+          "He sees them as infected and guilty for stealing books.",
+        ],
+        explanation:
+          "Montag obsessively looks at his hands, feeling as though they are 'gloved in blood,' recognizing them as the instruments of his rebellious actions and feeling immense guilt and fear about their future.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What dream does Beatty say he had? What is he trying to prove to Montag during his recollection of his dream?",
+        options: [
+          "He dreamed of a world with no books; he is trying to reassure Montag.",
+          "He dreamed of a fierce intellectual debate with Montag, where books were worthless; he is trying to overwhelm Montag with his knowledge.",
+          "He dreamed of a peaceful society; he is trying to show Montag the ideal.",
+          "He dreamed of being a fireman himself; he is trying to remind Montag of their shared purpose.",
+        ],
+        acceptableAnswers: [
+          "He dreamed of a fierce intellectual debate with Montag, where books were worthless; he is trying to overwhelm Montag with his knowledge.",
+        ],
+        explanation:
+          "Beatty recounts a vivid dream where he and Montag had a lengthy debate, citing various authors and intellectual arguments to demonstrate the contradictory and confusing nature of books, aiming to show Montag that books are useless and that his path is foolish.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Where does the firetruck stop at the very end of Part 2?",
+        options: [
+          "At the public library.",
+          "At Faber's house.",
+          "At the fire station, after their shift.",
+          "At Montag's house.",
+        ],
+        acceptableAnswers: ["At Montag's house."],
+        explanation:
+          "The alarm bell rings, and the firetruck speeds to its destination, pulling up directly in front of Montag's own house, signaling the climax of his rebellion.",
+      },
+    ],
+  },
+  {
+  "id": "fahrenheit-451-part-2-sand-sieve-close-read",
+  "name": "Fahrenheit 451 Part 2: The Sieve and the Sand Close Read",
+  "category": "Literature - Close Read",
+  "description": "A close-reading quiz focusing on the symbolism and significance of 'The Sieve and the Sand' in Part 2 of Fahrenheit 451.",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What is a sieve?",
+      "options": [
+        "A type of cooking pot.",
+        "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones.",
+        "A measuring device for sand.",
+        "A tool for digging."
+      ],
+      "acceptableAnswers": [
+        "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones."
+      ],
+      "explanation": "A sieve is a tool with a mesh or perforations, used to separate desired elements from undesired ones by allowing finer particles to pass through while retaining larger ones. The core function is to filter or separate."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Why is 'The Sieve and the Sand' the title of Part II?",
+      "options": [
+        "It literally describes a scene where Montag plays with sand and a sieve.",
+        "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away.",
+        "It refers to the process of filtering out 'bad' ideas from books.",
+        "It describes the literal act of firemen sieving through ashes."
+      ],
+      "acceptableAnswers": [
+        "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away."
+      ],
+      "explanation": "The title refers to Montag's childhood memory of trying to fill a sieve with sand, a task he realized was impossible. This mirrors his current struggle to absorb and retain the complex ideas from the books he is reading, as his mind, conditioned by years of simplistic media, feels incapable of holding onto the 'sand' of knowledge."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Is there a specific moment in the text where a character discusses or experiences the 'sieve and the sand' concept directly? If so, why is it relevant?",
+      "options": [
+        "No, it's only a symbolic title that is never explicitly mentioned.",
+        "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning.",
+        "Yes, Faber explains the concept to Montag as a metaphor for society's decline.",
+        "Yes, Beatty uses the metaphor to mock Montag's attempts to read."
+      ],
+      "acceptableAnswers": [
+        "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning."
+      ],
+      "explanation": "The concept is explicitly discussed by Montag himself on the subway. He thinks, 'Once as a child he had sat upon a yellow dune ... and tried to fill a sieve with sand... And now he was in the subway, sitting there, and the thought had come to him again. He was trying to read the Bible, and he was trying to remember what he read, and what he read was sliding in through the bottom of the sieve...' (Bradbury 74-75). This direct connection makes the metaphor central to his internal conflict."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "How is the 'sieve and the sand' concept related to the conflict that the character(s) face in this chapter?",
+      "options": [
+        "It represents the difficulty of physically hiding books from the firemen.",
+        "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding.",
+        "It symbolizes Faber's challenge in finding a printer willing to reproduce books.",
+        "It describes the government's efforts to sift out subversive individuals."
+      ],
+      "acceptableAnswers": [
+        "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding."
+      ],
+      "explanation": "The 'sieve and the sand' metaphor embodies Montag's primary conflict in Part II. He is desperate to absorb the wisdom of books, but his mind, accustomed to superficiality and bombarded by relentless distractions (like the Denham's Dentifrice jingle), feels incapable of holding onto the complex 'sand' of truth. This struggle underscores the profound impact of censorship and conditioning on intellectual capacity."
+    }
+  ]
+}
 ];
 
 export const categories = Array.from(
