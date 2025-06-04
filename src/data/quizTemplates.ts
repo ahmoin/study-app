@@ -2312,69 +2312,349 @@ export const quizTemplates: QuizTemplate[] = [
     ],
   },
   {
-  "id": "fahrenheit-451-part-2-sand-sieve-close-read",
-  "name": "Fahrenheit 451 Part 2: The Sieve and the Sand Close Read",
-  "category": "Literature - Close Read",
-  "description": "A close-reading quiz focusing on the symbolism and significance of 'The Sieve and the Sand' in Part 2 of Fahrenheit 451.",
-  "questions": [
-    {
-      "type": "multiple-choice",
-      "question": "What is a sieve?",
-      "options": [
-        "A type of cooking pot.",
-        "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones.",
-        "A measuring device for sand.",
-        "A tool for digging."
-      ],
-      "acceptableAnswers": [
-        "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones."
-      ],
-      "explanation": "A sieve is a tool with a mesh or perforations, used to separate desired elements from undesired ones by allowing finer particles to pass through while retaining larger ones. The core function is to filter or separate."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Why is 'The Sieve and the Sand' the title of Part II?",
-      "options": [
-        "It literally describes a scene where Montag plays with sand and a sieve.",
-        "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away.",
-        "It refers to the process of filtering out 'bad' ideas from books.",
-        "It describes the literal act of firemen sieving through ashes."
-      ],
-      "acceptableAnswers": [
-        "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away."
-      ],
-      "explanation": "The title refers to Montag's childhood memory of trying to fill a sieve with sand, a task he realized was impossible. This mirrors his current struggle to absorb and retain the complex ideas from the books he is reading, as his mind, conditioned by years of simplistic media, feels incapable of holding onto the 'sand' of knowledge."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Is there a specific moment in the text where a character discusses or experiences the 'sieve and the sand' concept directly? If so, why is it relevant?",
-      "options": [
-        "No, it's only a symbolic title that is never explicitly mentioned.",
-        "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning.",
-        "Yes, Faber explains the concept to Montag as a metaphor for society's decline.",
-        "Yes, Beatty uses the metaphor to mock Montag's attempts to read."
-      ],
-      "acceptableAnswers": [
-        "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning."
-      ],
-      "explanation": "The concept is explicitly discussed by Montag himself on the subway. He thinks, 'Once as a child he had sat upon a yellow dune ... and tried to fill a sieve with sand... And now he was in the subway, sitting there, and the thought had come to him again. He was trying to read the Bible, and he was trying to remember what he read, and what he read was sliding in through the bottom of the sieve...' (Bradbury 74-75). This direct connection makes the metaphor central to his internal conflict."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "How is the 'sieve and the sand' concept related to the conflict that the character(s) face in this chapter?",
-      "options": [
-        "It represents the difficulty of physically hiding books from the firemen.",
-        "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding.",
-        "It symbolizes Faber's challenge in finding a printer willing to reproduce books.",
-        "It describes the government's efforts to sift out subversive individuals."
-      ],
-      "acceptableAnswers": [
-        "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding."
-      ],
-      "explanation": "The 'sieve and the sand' metaphor embodies Montag's primary conflict in Part II. He is desperate to absorb the wisdom of books, but his mind, accustomed to superficiality and bombarded by relentless distractions (like the Denham's Dentifrice jingle), feels incapable of holding onto the complex 'sand' of truth. This struggle underscores the profound impact of censorship and conditioning on intellectual capacity."
-    }
-  ]
-}
+    id: "fahrenheit-451-part-2-sand-sieve-close-read",
+    name: "Fahrenheit 451 Part 2: The Sieve and the Sand Close Read",
+    category: "Literature - Close Read",
+    description:
+      "A close-reading quiz focusing on the symbolism and significance of 'The Sieve and the Sand' in Part 2 of Fahrenheit 451.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What is a sieve?",
+        options: [
+          "A type of cooking pot.",
+          "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones.",
+          "A measuring device for sand.",
+          "A tool for digging.",
+        ],
+        acceptableAnswers: [
+          "A fine mesh strainer used to separate solids from liquids or finer particles from coarser ones.",
+        ],
+        explanation:
+          "A sieve is a tool with a mesh or perforations, used to separate desired elements from undesired ones by allowing finer particles to pass through while retaining larger ones. The core function is to filter or separate.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why is 'The Sieve and the Sand' the title of Part II?",
+        options: [
+          "It literally describes a scene where Montag plays with sand and a sieve.",
+          "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away.",
+          "It refers to the process of filtering out 'bad' ideas from books.",
+          "It describes the literal act of firemen sieving through ashes.",
+        ],
+        acceptableAnswers: [
+          "It symbolizes Montag's futile attempt to retain knowledge in a mind that lets it slip away.",
+        ],
+        explanation:
+          "The title refers to Montag's childhood memory of trying to fill a sieve with sand, a task he realized was impossible. This mirrors his current struggle to absorb and retain the complex ideas from the books he is reading, as his mind, conditioned by years of simplistic media, feels incapable of holding onto the 'sand' of knowledge.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Is there a specific moment in the text where a character discusses or experiences the 'sieve and the sand' concept directly? If so, why is it relevant?",
+        options: [
+          "No, it's only a symbolic title that is never explicitly mentioned.",
+          "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning.",
+          "Yes, Faber explains the concept to Montag as a metaphor for society's decline.",
+          "Yes, Beatty uses the metaphor to mock Montag's attempts to read.",
+        ],
+        acceptableAnswers: [
+          "Yes, Montag recalls a childhood memory on the subway where he tried to fill a sieve with sand, relating it to his inability to grasp the book's meaning.",
+        ],
+        explanation:
+          "The concept is explicitly discussed by Montag himself on the subway. He thinks, 'Once as a child he had sat upon a yellow dune ... and tried to fill a sieve with sand... And now he was in the subway, sitting there, and the thought had come to him again. He was trying to read the Bible, and he was trying to remember what he read, and what he read was sliding in through the bottom of the sieve...' (Bradbury 74-75). This direct connection makes the metaphor central to his internal conflict.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How is the 'sieve and the sand' concept related to the conflict that the character(s) face in this chapter?",
+        options: [
+          "It represents the difficulty of physically hiding books from the firemen.",
+          "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding.",
+          "It symbolizes Faber's challenge in finding a printer willing to reproduce books.",
+          "It describes the government's efforts to sift out subversive individuals.",
+        ],
+        acceptableAnswers: [
+          "It highlights Montag's internal struggle to comprehend and retain the knowledge from books in a society designed to prevent such understanding.",
+        ],
+        explanation:
+          "The 'sieve and the sand' metaphor embodies Montag's primary conflict in Part II. He is desperate to absorb the wisdom of books, but his mind, accustomed to superficiality and bombarded by relentless distractions (like the Denham's Dentifrice jingle), feels incapable of holding onto the complex 'sand' of truth. This struggle underscores the profound impact of censorship and conditioning on intellectual capacity.",
+      },
+    ],
+  },
+  {
+    id: "fahrenheit-451-part-3-quiz",
+    name: "Fahrenheit 451 Part 3: Burning Bright Quiz",
+    category: "Literature",
+    description:
+      "A multiple-choice quiz covering key events and the climax of Ray Bradbury's Fahrenheit 451, 'Burning Bright'.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "Who called in the alarm on Montag?",
+        options: [
+          "Clarisse's family.",
+          "Captain Beatty.",
+          "Mildred and her friends.",
+          "Professor Faber.",
+        ],
+        acceptableAnswers: ["Mildred and her friends."],
+        explanation:
+          "Beatty reveals that Mildred's friends had called in the first alarm, but Mildred herself called in the 'final, official alarm.'",
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Beatty make Montag do to his house?",
+        options: [
+          "Paint it white.",
+          "Burn it with a flamethrower.",
+          "Clean it thoroughly.",
+          "Repair the broken parlor walls.",
+        ],
+        acceptableAnswers: ["Burn it with a flamethrower."],
+        explanation:
+          "Beatty forces Montag to use a flamethrower to burn down his own house, taking pleasure in his forced participation in its destruction.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What happened to Montag's green bullet?",
+        options: [
+          "Beatty destroyed it by striking Montag.",
+          "Montag willingly gave it to Beatty.",
+          "It fell out of his ear and was lost in the fire.",
+          "It ran out of battery.",
+        ],
+        acceptableAnswers: ["Beatty destroyed it by striking Montag."],
+        explanation:
+          "Beatty strikes Montag, causing the green bullet to fall out of his ear. Beatty then picks it up and crushes it, preventing Montag from communicating with Faber.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did Montag burn Beatty? What realization does Montag later have about Beatty?",
+        options: [
+          "Beatty attacked Mildred; Montag realizes Beatty was secretly a book-lover.",
+          "Beatty threatened to track down Faber; Montag realizes Beatty wanted to die.",
+          "Beatty tried to arrest him; Montag realizes Beatty was a hero.",
+          "Beatty insulted him; Montag realizes Beatty was a coward.",
+        ],
+        acceptableAnswers: [
+          "Beatty threatened to track down Faber; Montag realizes Beatty wanted to die.",
+        ],
+        explanation:
+          "Montag burns Beatty because Beatty threatened to trace the green bullet and find Faber. Later, Montag realizes that Beatty may have deliberately provoked him to the point of killing him, effectively committing suicide by fireman, as Beatty himself seems to despise the life he lives.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag do with the books he saved from the house, and why?",
+        options: [
+          "He burns them all in remorse.",
+          "He gives them to Faber to hide.",
+          "He hides them in a fireman's house to incriminate him.",
+          "He buries them in his garden.",
+        ],
+        acceptableAnswers: [
+          "He hides them in a fireman's house to incriminate him.",
+        ],
+        explanation:
+          "Montag takes the books he managed to save and plants them in Fireman Black's house, then calls in an alarm, executing the plan he and Faber had discussed to sow discord and suspicion among the firemen.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What injury does Montag sustain from his showdown with the Mechanical Hound?",
+        options: [
+          "A broken leg.",
+          "A deep wound to his arm from its needle.",
+          "A severe electrical shock.",
+          "A fractured skull.",
+        ],
+        acceptableAnswers: ["A deep wound to his arm from its needle."],
+        explanation:
+          "Before Montag destroys it, the Mechanical Hound manages to inject him with its anesthetic needle, numbing his leg.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Where does Montag find himself running to after escaping the city?",
+        options: [
+          "The abandoned subway tunnels.",
+          "The desert.",
+          "Faber's house.",
+          "The river.",
+        ],
+        acceptableAnswers: ["Faber's house."],
+        explanation:
+          "Despite the danger, Montag's immediate instinct is to seek refuge and guidance from Faber after his traumatic escape.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What nearly happens to Montag on the road as he flees?",
+        options: [
+          "He is shot by a police sniper.",
+          "He is hit by a speeding car full of teenagers.",
+          "He is caught by the Mechanical Hound.",
+          "He falls into a ravine.",
+        ],
+        acceptableAnswers: ["He is hit by a speeding car full of teenagers."],
+        explanation:
+          "A car full of joy-riding teenagers attempts to run Montag over, deliberately swerving to hit him, demonstrating the casual violence and disregard for life in their society.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Faber plan to do with the money Montag gives him?",
+        options: [
+          "Use it to buy a new house.",
+          "Use it to fund his escape to St. Louis and begin printing books.",
+          "Donate it to a charity.",
+          "Invest it in the stock market.",
+        ],
+        acceptableAnswers: [
+          "Use it to fund his escape to St. Louis and begin printing books.",
+        ],
+        explanation:
+          "Faber intends to take a bus to St. Louis to meet a retired printer friend and begin reproducing books, using Montag's money to facilitate this plan.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does Montag plan to throw the Mechanical Hound off his scent after leaving Faber's house?",
+        options: [
+          "He covers himself in mud and leaves a false trail.",
+          "He tells Faber to burn anything he touched and uses alcohol to mask his scent.",
+          "He jumps into a cold river.",
+          "He gets a ride on a freight train.",
+        ],
+        acceptableAnswers: [
+          "He tells Faber to burn anything he touched and uses alcohol to mask his scent.",
+        ],
+        explanation:
+          "Montag instructs Faber to clean everything he touched with alcohol and burn the furniture to erase his scent. Montag also douses himself with whiskey from Faber's house.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag see happen at Faber's house while watching TV?",
+        options: [
+          "Faber being arrested.",
+          "The Mechanical Hound attacking Faber's house.",
+          "The news reporting Montag's escape.",
+          "A peaceful protest.",
+        ],
+        acceptableAnswers: ["The Mechanical Hound attacking Faber's house."],
+        explanation:
+          "Montag watches on a small TV screen as the Mechanical Hound and news helicopters descend upon Faber's house, though Faber has already escaped.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does the police use the community to try to find Montag?",
+        options: [
+          "They offer a large reward for his capture.",
+          "They broadcast his image and ask everyone to look out their windows simultaneously.",
+          "They set up roadblocks on all major highways.",
+          "They send out mass text messages with his description.",
+        ],
+        acceptableAnswers: [
+          "They broadcast his image and ask everyone to look out their windows simultaneously.",
+        ],
+        explanation:
+          "The police broadcast an appeal for all citizens to open their doors and look out their windows at a specific moment, hoping to spot Montag and participate in the hunt.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Montag do when he gets to the river?",
+        options: [
+          "He hides under a bridge.",
+          "He dives in and floats downstream.",
+          "He waits for a boat to pick him up.",
+          "He builds a raft.",
+        ],
+        acceptableAnswers: ["He dives in and floats downstream."],
+        explanation:
+          "Montag plunges into the cold river, letting the current carry him away from the city and the pursuing Mechanical Hound.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What realizations does Montag have as he floats along the river?",
+        options: [
+          "He misses Mildred and his old life.",
+          "He understands the cycle of life and death, and that he must change and grow.",
+          "He wishes he had never started reading books.",
+          "He fears he will never be truly free.",
+        ],
+        acceptableAnswers: [
+          "He understands the cycle of life and death, and that he must change and grow.",
+        ],
+        explanation:
+          "Floating in the river, Montag reflects on the sun burning without purpose and compares it to firemen, then realizes the moon and sun burn time. He acknowledges that nothing is truly destroyed and that he has to become a 'phoenix'—dying and being reborn—to find a new path forward.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who is Montag sure has also walked along the railroad tracks?",
+        options: [
+          "Captain Beatty.",
+          "Professor Faber.",
+          "Clarisse McClellan.",
+          "Mildred, his wife.",
+        ],
+        acceptableAnswers: ["Clarisse McClellan."],
+        explanation:
+          "As he follows the railroad tracks, Montag has a strong intuition that Clarisse had also walked this path, observing nature and thinking deeply, feeling her presence in the quiet environment.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who does Montag meet in the forest, and what are they doing?",
+        options: [
+          "A group of hunters; they are tracking animals.",
+          "A community of hobo-intellectuals; they are memorizing books.",
+          "A military patrol; they are searching for fugitives.",
+          "A group of artists; they are painting landscapes.",
+        ],
+        acceptableAnswers: [
+          "A community of hobo-intellectuals; they are memorizing books.",
+        ],
+        explanation:
+          "Montag encounters a group of exiled intellectuals, led by Granger, who are quietly living by the railroad tracks. Their purpose is to preserve literature by memorizing entire books, acting as living libraries.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does Montag witness on TV shortly after joining the book people?",
+        options: [
+          "News of a major political upheaval.",
+          "A live broadcast of the war escalating.",
+          "A fabricated report of his own capture and execution by a substitute victim.",
+          "Mildred being interviewed about his disappearance.",
+        ],
+        acceptableAnswers: [
+          "A fabricated report of his own capture and execution by a substitute victim.",
+        ],
+        explanation:
+          "To maintain public order and project an image of efficiency, the authorities stage a televised 'capture' and execution of a random innocent man, claiming it is Montag, ensuring the public believes the chase is over.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the general plan of the book people (Granger's group)?",
+        options: [
+          "To start a revolution and overthrow the government.",
+          "To peacefully wait for society to collapse and then rebuild it using the knowledge from their memorized books.",
+          "To publish a secret newspaper criticizing the government.",
+          "To escape to another country.",
+        ],
+        acceptableAnswers: [
+          "To peacefully wait for society to collapse and then rebuild it using the knowledge from their memorized books.",
+        ],
+        explanation:
+          "Their plan is to preserve the knowledge contained in books by memorizing them, passing them down orally until society is ready to rebuild itself after its inevitable collapse, and then to print the books again from memory.",
+      },
+    ],
+  },
 ];
 
 export const categories = Array.from(
