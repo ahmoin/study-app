@@ -2466,11 +2466,11 @@ export const quizTemplates: QuizTemplate[] = [
           "What injury does Montag sustain from his showdown with the Mechanical Hound?",
         options: [
           "A broken leg.",
-          "A deep wound to his arm from its needle.",
+          "A leg injected with anesthetic.",
           "A severe electrical shock.",
           "A fractured skull.",
         ],
-        acceptableAnswers: ["A deep wound to his arm from its needle."],
+        acceptableAnswers: ["A leg injected with anesthetic."],
         explanation:
           "Before Montag destroys it, the Mechanical Hound manages to inject him with its anesthetic needle, numbing his leg.",
       },
