@@ -24,6 +24,7 @@ import type {
 } from "@/types/quiz";
 import { activityTemplates } from "@/data/activityTemplates";
 import { ActivityPlayer } from "@/components/ActivityPlayer";
+import { ModeSwitcher } from "@/components/mode-switcher";
 
 export default function StudyApp() {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -250,6 +251,7 @@ export default function StudyApp() {
             <h1 className="text-xl font-bold">Study App</h1>
             {!quizMode && (
               <div className="flex gap-4">
+                <ModeSwitcher />
                 <Button
                   variant={activeTab === "browse" ? "default" : "ghost"}
                   onClick={() => setActiveTab("browse")}
