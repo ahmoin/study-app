@@ -38,6 +38,7 @@ export default function RootLayout({
           fontVariables,
         )}
       >
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=XBEed9Ik"></script>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
