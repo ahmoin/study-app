@@ -40,6 +40,7 @@ export default function StudyApp() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
+  const [blurAnswers, setBlurAnswers] = useState(true);
   const [quizName, setQuizName] = useState("");
   const [savedQuizzes, setSavedQuizzes] = useState<SavedQuiz[]>([]);
   const [selectedQuizId, setSelectedQuizId] = useState<string | null>(null);
@@ -98,10 +99,12 @@ export default function StudyApp() {
     setCurrentQuestionIndex(0);
     setUserAnswer("");
     setShowResult(false);
+    setBlurAnswers(true);
   };
 
   const handleAnswer = () => {
     setShowResult(true);
+    setBlurAnswers(false);
   };
 
   const nextQuestion = () => {
@@ -109,6 +112,7 @@ export default function StudyApp() {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setUserAnswer("");
       setShowResult(false);
+      setBlurAnswers(true);
     } else {
       setQuizMode(false);
     }
@@ -135,7 +139,9 @@ export default function StudyApp() {
     const quiz = savedQuizzes.find((q) => q.id === quizId);
     if (quiz) {
       setQuestions(quiz.questions);
+      setQuizName(quiz.name);
       setSelectedQuizId(quizId);
+      setActiveTab("create");
       setQuizMode(false);
     }
   };
@@ -950,27 +956,42 @@ export default function StudyApp() {
                     </div>
                     {questions[currentQuestionIndex].type ===
                     "multiple-choice" ? (
-                      <RadioGroup
-                        value={userAnswer}
-                        onValueChange={setUserAnswer}
-                      >
-                        {questions[currentQuestionIndex].options?.map(
-                          (option, index) => (
-                            <div
-                              key={index}
-                              className="flex items-center space-x-2"
-                            >
-                              <RadioGroupItem
-                                value={option}
-                                id={`option-${index}`}
-                              />
-                              <Label htmlFor={`option-${index}`}>
-                                {option}
-                              </Label>
-                            </div>
-                          ),
+                      <div className="relative">
+                        {blurAnswers && !showResult && (
+                          <div 
+                            className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10 flex items-center justify-center cursor-pointer"
+                            onClick={() => setBlurAnswers(false)}
+                          >
+                            <Button variant="outline">
+                              Show Answer Choices
+                            </Button>
+                          </div>
                         )}
-                      </RadioGroup>
+                        <div className={blurAnswers && !showResult ? 'opacity-50' : ''}>
+                          <RadioGroup
+                            value={userAnswer}
+                            onValueChange={setUserAnswer}
+                          >
+                            {questions[currentQuestionIndex].options?.map(
+                              (option, index) => (
+                                <div
+                                  key={index}
+                                  className="flex items-center space-x-2"
+                                >
+                                  <RadioGroupItem
+                                    value={option}
+                                    id={`option-${index}`}
+                                    disabled={blurAnswers}
+                                  />
+                                  <Label htmlFor={`option-${index}`}>
+                                    {option}
+                                  </Label>
+                                </div>
+                              ),
+                            )}
+                          </RadioGroup>
+                        </div>
+                      </div>
                     ) : (
                       <Input
                         value={userAnswer}
