@@ -14,6 +14,281 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "windows-os-history",
+    name: "Windows OS History",
+    category: "Computer Science",
+    description: "Comprehensive test on Windows Operating System history, features, and security",
+    questions: [
+      // Early Windows and MS-DOS
+      {
+        type: "multiple-choice",
+        question: "What was the primary storage method used by the first computers before disk drives?",
+        options: [
+          "USB Drives",
+          "Punch cards and paper tape",
+          "Hard disk drives",
+          "Magnetic core memory"
+        ],
+        acceptableAnswers: ["Punch cards and paper tape"],
+        explanation: "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the first version of Windows that ran on top of MS-DOS?",
+        options: [
+          "Windows 1.0",
+          "Windows 3.1",
+          "Windows 95",
+          "Windows NT"
+        ],
+        acceptableAnswers: ["Windows 1.0"],
+        explanation: "Windows 1.0, released in 1985, was the first version of Windows that ran as a graphical shell on top of MS-DOS."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the primary function of MS-DOS in early Windows versions?",
+        options: [
+          "Provide a graphical interface",
+          "Manage disk operations and file system",
+          "Enable networking capabilities",
+          "Run multimedia applications"
+        ],
+        acceptableAnswers: ["Manage disk operations and file system"],
+        explanation: "MS-DOS (Microsoft Disk Operating System) was responsible for managing disk operations and the file system in early Windows versions."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the file system used by MS-DOS?",
+        options: [
+          "NTFS",
+          "FAT",
+          "exFAT",
+          "ReFS"
+        ],
+        acceptableAnswers: ["FAT"],
+        explanation: "MS-DOS used the FAT (File Allocation Table) file system, while NTFS (New Technology File System) came later with Windows NT."
+      },
+
+      // Windows NT and Architecture
+      {
+        type: "multiple-choice",
+        question: "What does NT stand for in Windows NT?",
+        options: [
+          "New Technology",
+          "Network Terminal",
+          "Native Terminal",
+          "Network Technology"
+        ],
+        acceptableAnswers: ["New Technology"],
+        explanation: "NT stands for 'New Technology', representing Microsoft's shift to a more advanced operating system architecture."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the key difference between Windows NT and earlier Windows versions?",
+        options: [
+          "It had a Start Menu",
+          "It didn't rely on MS-DOS",
+          "It included Solitaire",
+          "It had color graphics"
+        ],
+        acceptableAnswers: ["It didn't rely on MS-DOS"],
+        explanation: "Windows NT was a complete operating system that didn't rely on MS-DOS, unlike earlier Windows versions that ran on top of DOS."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the theoretical maximum amount of RAM that 64-bit Windows can address?",
+        options: [
+          "4 GB",
+          "16 GB",
+          "128 GB",
+          "16.8 million TB"
+        ],
+        acceptableAnswers: ["16.8 million TB"],
+        explanation: "64-bit Windows can theoretically address up to 16.8 million terabytes of RAM, a significant increase over the 4 GB limit of 32-bit systems."
+      },
+
+      // Windows Features and Versions
+      {
+        type: "multiple-choice",
+        question: "Which Windows version was the first to introduce the Start Menu?",
+        options: [
+          "Windows 3.1",
+          "Windows 95",
+          "Windows 2000",
+          "Windows XP"
+        ],
+        acceptableAnswers: ["Windows 95"],
+        explanation: "Windows 95 introduced several key features including the Start Menu, Taskbar, and the concept of 'plug and play' hardware."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which Windows version was the first to support 64-bit computing?",
+        options: [
+          "Windows 2000",
+          "Windows XP",
+          "Windows Vista",
+          "Windows 7"
+        ],
+        acceptableAnswers: ["Windows XP"],
+        explanation: "Windows XP was the first Windows version to offer a 64-bit edition, though it wasn't widely adopted until later versions."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was Microsoft's statement about Windows 10's versioning?",
+        options: [
+          "It would be the last version of Windows",
+          "It would be replaced every year",
+          "It would be free forever",
+          "It would only receive security updates"
+        ],
+        acceptableAnswers: ["It would be the last version of Windows"],
+        explanation: "Microsoft stated that Windows 10 would be the last version of Windows, with the OS becoming a service that receives continuous updates."
+      },
+
+      // Windows GUI Elements
+      {
+        type: "multiple-choice",
+        question: "What is the name of the area at the bottom of the Windows desktop that contains the Start button?",
+        options: [
+          "Dock",
+          "Taskbar",
+          "Launcher",
+          "System Tray"
+        ],
+        acceptableAnswers: ["Taskbar"],
+        explanation: "The Taskbar is the horizontal bar at the bottom of the Windows desktop that contains the Start button, open application icons, and the notification area."
+      },
+      {
+        type: "multiple-choice",
+        question: "What happens when you right-click on the Windows desktop or an icon?",
+        options: [
+          "The Start Menu opens",
+          "A Context Menu appears",
+          "The Control Panel opens",
+          "The file properties are displayed"
+        ],
+        acceptableAnswers: ["A Context Menu appears"],
+        explanation: "Right-clicking on the desktop or an icon brings up a Context Menu with relevant options for the selected item."
+      },
+
+      // Windows Security
+      {
+        type: "multiple-choice",
+        question: "What is the name of the built-in Windows security feature that helps protect against malware?",
+        options: [
+          "Windows Firewall",
+          "Windows Defender",
+          "Windows Security Center",
+          "Windows Update"
+        ],
+        acceptableAnswers: ["Windows Defender"],
+        explanation: "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the name of the Windows component that manages network communication security?",
+        options: [
+          "Windows Firewall",
+          "Windows Defender",
+          "Windows Security Center",
+          "Windows Update"
+        ],
+        acceptableAnswers: ["Windows Firewall"],
+        explanation: "Windows Firewall is the built-in security system that monitors and controls incoming and outgoing network traffic."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following is NOT a Windows security vulnerability mentioned in the material?",
+        options: [
+          "Weak or no password",
+          "Logging in as Administrator",
+          "Using third-party web browsers",
+          "Unknown or unmanaged services"
+        ],
+        acceptableAnswers: ["Using third-party web browsers"],
+        explanation: "While browser security is important, using third-party browsers is not specifically mentioned as a Windows security vulnerability in the provided material."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following is a recommended Windows security practice?",
+        options: [
+          "Using the same password for all accounts",
+          "Logging in as Administrator for all tasks",
+          "Disabling Windows Firewall for better performance",
+          "Regularly updating the operating system"
+        ],
+        acceptableAnswers: ["Regularly updating the operating system"],
+        explanation: "Regularly updating the operating system is a key security practice as it ensures you have the latest security patches and improvements."
+      },
+
+      // File Systems and Storage
+      {
+        type: "multiple-choice",
+        question: "What is the maximum amount of RAM that 32-bit Windows can theoretically address?",
+        options: [
+          "2 GB",
+          "4 GB",
+          "8 GB",
+          "16 GB"
+        ],
+        acceptableAnswers: ["4 GB"],
+        explanation: "32-bit Windows can theoretically address up to 4 GB of RAM due to its 32-bit memory addressing limitation."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which file system was introduced with Windows NT?",
+        options: [
+          "FAT",
+          "FAT32",
+          "NTFS",
+          "exFAT"
+        ],
+        acceptableAnswers: ["NTFS"],
+        explanation: "NTFS (New Technology File System) was introduced with Windows NT and provided improved security, reliability, and performance over FAT."
+      },
+
+      // Windows Editions
+      {
+        type: "multiple-choice",
+        question: "Which of the following was NOT an edition of Windows 7?",
+        options: [
+          "Starter",
+          "Home Premium",
+          "Professional",
+          "Home Basic"
+        ],
+        acceptableAnswers: ["All of these were Windows 7 editions"],
+        explanation: "Windows 7 was offered in six editions: Starter, Home Basic, Home Premium, Professional, Enterprise, and Ultimate."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which Windows version introduced the Modern UI (formerly Metro) interface?",
+        options: [
+          "Windows 7",
+          "Windows 8",
+          "Windows 10",
+          "Windows Vista"
+        ],
+        acceptableAnswers: ["Windows 8"],
+        explanation: "Windows 8 introduced the Modern UI (formerly Metro) interface with its tile-based Start screen."
+      },
+
+      // Constructed Response Questions
+      {
+        type: "constructed-response",
+        question: "What is the name of the built-in Windows security feature that helps protect against malware?",
+        acceptableAnswers: ["Windows Defender"],
+        explanation: "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats."
+      },
+      {
+        type: "constructed-response",
+        question: "What is the name of the area in the Windows Taskbar that shows notifications and system icons?",
+        acceptableAnswers: ["Notification Area", "System Tray"],
+        explanation: "The Notification Area (previously called the System Tray) is the area on the right side of the Taskbar that shows notifications and system icons."
+      }
+    ]
+  },
+  {
     id: "universal-circular-motion",
     name: "Universal Circular Motion",
     category: "Physics",
