@@ -282,7 +282,7 @@ export default function StudyApp() {
         </div>
       </nav>
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container py-100 mx-auto px-4 sm:py-8">
         {activeActivity ? (
           <ActivityPlayer
             activity={activeActivity}
@@ -347,7 +347,7 @@ export default function StudyApp() {
                               <p className="text-sm text-muted-foreground mt-1">
                                 {template.questions.length} questions
                               </p>
-                              <div className="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                              <div className="absolute inset-0 flex items-center justify-center bg-black/5 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity rounded-lg">
                                 <Button
                                   variant="secondary"
                                   onClick={(e) => {
@@ -411,7 +411,7 @@ export default function StudyApp() {
                                 {template.wordPairs.length} word pairs •{" "}
                                 {template.variant}
                               </p>
-                              <div className="absolute inset-0 flex items-center justify-center bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                              <div className="absolute inset-0 flex items-center justify-center bg-black/5 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity rounded-lg">
                                 <Button
                                   variant="secondary"
                                   onClick={() =>
@@ -452,7 +452,7 @@ export default function StudyApp() {
                             <p className="text-sm text-muted-foreground">
                               {activity.wordPairs.length} word pairs
                             </p>
-                            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black/5 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity rounded-lg">
                               <Button
                                 variant="secondary"
                                 onClick={() => setActiveActivity(activity)}
@@ -518,7 +518,7 @@ export default function StudyApp() {
                             <p className="text-sm text-muted-foreground mt-1">
                               {quiz.questions.length} questions
                             </p>
-                            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
+                            <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black/5 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity rounded-lg">
                               <Button
                                 variant="secondary"
                                 onClick={() => loadQuiz(quiz.id)}
@@ -931,7 +931,7 @@ export default function StudyApp() {
                 >
                   <div className="flex justify-between items-center">
                     <div>
-                      <h2 className="text-2xl font-semibold">Quiz Mode</h2>
+                      {/* <h2 className="text-2xl font-semibold">Quiz Mode</h2> */}
                       <p className="text-muted-foreground">
                         Question {currentQuestionIndex + 1} of{" "}
                         {questions.length}
@@ -1002,6 +1002,21 @@ export default function StudyApp() {
                       />
                     )}
                   </div>
+
+                  <div className="flex justify-between">
+                    <Button
+                      onClick={handleAnswer}
+                      disabled={!userAnswer || showResult}
+                    >
+                      Submit Answer
+                    </Button>
+                    <Button onClick={nextQuestion} disabled={!showResult}>
+                      {currentQuestionIndex < questions.length - 1
+                        ? "Next Question"
+                        : "Finish Quiz"}
+                    </Button>
+                  </div>
+
                   {showResult && (
                     <div
                       className={`p-4 rounded-lg ${
@@ -1028,20 +1043,6 @@ export default function StudyApp() {
                           }`}
                     </div>
                   )}
-
-                  <div className="flex justify-between">
-                    <Button
-                      onClick={handleAnswer}
-                      disabled={!userAnswer || showResult}
-                    >
-                      Submit Answer
-                    </Button>
-                    <Button onClick={nextQuestion} disabled={!showResult}>
-                      {currentQuestionIndex < questions.length - 1
-                        ? "Next Question"
-                        : "Finish Quiz"}
-                    </Button>
-                  </div>
                 </div>
               </div>
             )}
