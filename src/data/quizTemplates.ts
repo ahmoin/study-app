@@ -289,6 +289,326 @@ export const quizTemplates: QuizTemplate[] = [
     ]
   },
   {
+    id: "windows-os-fundamentals",
+    name: "Windows Operating System Fundamentals",
+    category: "Cybersecurity",
+    description: "This module covers basic concepts of the Windows operating system, including its architecture, operation, configuration, monitoring, and security tools.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What is the Disk Operating System (DOS)?",
+        options: [
+          "A modern operating system like Windows 10.",
+          "An operating system that uses a Graphical User Interface (GUI).",
+          "An operating system that the computer uses to enable data storage devices to read and write files.",
+          "A proprietary Microsoft software developed in 1985."
+        ],
+        acceptableAnswers: [
+          "An operating system that the computer uses to enable data storage devices to read and write files."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following are types of MS-DOS commands and what are their primary uses?",
+        options: [
+          "dir (lists files), cd (changes directory), copy (copies files), del (deletes files), mkdir (creates directory), ren (renames file), help (displays commands).",
+          "ping (tests network connectivity), ipconfig (displays network configuration), tracert (traces route).",
+          "get-process (gets running processes), stop-service (stops services), new-item (creates new items).",
+          "netstat (displays network connections), nslookup (queries DNS), shutdown (shuts down computer)."
+        ],
+        acceptableAnswers: [
+          "dir (lists files), cd (changes directory), copy (copies files), del (deletes files), mkdir (creates directory), ren (renames file), help (displays commands)."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following is NOT a common type of Operating System Vulnerability mentioned?",
+        options: [
+          "Virus or malware protection being turned off.",
+          "Unmanaged or unknown services running.",
+          "Extensive use of strong, unique passwords.",
+          "Unencrypted data."
+        ],
+        acceptableAnswers: [
+          "Extensive use of strong, unique passwords."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the Hardware Abstraction Layer (HAL) and what is its primary use?",
+        options: [
+          "It is the core of the operating system that directly controls all hardware.",
+          "It is software that handles all of the communication between the hardware and the kernel.",
+          "It is a set of device drivers that run in user mode.",
+          "It is a component that manages memory allocation for applications."
+        ],
+        acceptableAnswers: [
+          "It is software that handles all of the communication between the hardware and the kernel."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a kernel and what is its purpose within an operating system?",
+        options: [
+          "A component that manages the graphical user interface.",
+          "The core of the operating system that has control over the entire computer, handling input/output requests, memory, and peripherals.",
+          "A user-mode application responsible for starting other programs.",
+          "A file system used for organizing data on disk drives."
+        ],
+        acceptableAnswers: [
+          "The core of the operating system that has control over the entire computer, handling input/output requests, memory, and peripherals."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the primary difference between user mode and kernel mode in Windows?",
+        options: [
+          "User mode is for system processes, while kernel mode is for applications.",
+          "Kernel mode has restricted access to hardware and memory, while user mode has unrestricted access.",
+          "Code executing in kernel mode has unrestricted access to underlying hardware and memory, while user mode code has no direct access.",
+          "Crashes in user mode stop the entire computer, while kernel mode crashes are recoverable."
+        ],
+        acceptableAnswers: [
+          "Code executing in kernel mode has unrestricted access to underlying hardware and memory, while user mode code has no direct access."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following are the four common types of Windows File Systems mentioned?",
+        options: [
+          "FAT, HFS+, EXT, NTFS",
+          "FAT16, FAT32, exFAT, NTFS",
+          "FAT, HFS+, EXT, exFAT",
+          "NTFS, exFAT, EXT, HFS+"
+        ],
+        acceptableAnswers: [
+          "FAT, HFS+, EXT, NTFS"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What are the two main types of Windows firmware?",
+        options: [
+          "CMOS and BIOS",
+          "MBR and GPT",
+          "BIOS and UEFI",
+          "RAM and ROM"
+        ],
+        acceptableAnswers: [
+          "BIOS and UEFI"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the difference between Shutdown, Restart, and Hibernate in Windows?",
+        options: [
+          "Shutdown saves an open state, Restart powers off, Hibernate reboots.",
+          "Shutdown powers off, Restart reboots, Hibernate saves current state to a file.",
+          "Shutdown reboots, Restart powers off, Hibernate closes all applications.",
+          "Shutdown closes all programs, Restart updates drivers, Hibernate powers off."
+        ],
+        acceptableAnswers: [
+          "Shutdown powers off, Restart reboots, Hibernate saves current state to a file."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the full name of the .exe file associated with the Windows CLI?",
+        options: [
+          "command.exe",
+          "cli.exe",
+          "prompt.exe",
+          "cmd.exe"
+        ],
+        acceptableAnswers: [
+          "cmd.exe"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What are the three types of commands that PowerShell can execute?",
+        options: [
+          "Batch files, executables, and scripts",
+          "Cmdlets, PowerShell scripts, and PowerShell functions",
+          "System commands, user commands, and network commands",
+          "Registry commands, file commands, and process commands"
+        ],
+        acceptableAnswers: [
+          "Cmdlets, PowerShell scripts, and PowerShell functions"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the name of the Windows tool that can be used to view running processes on your Windows system?",
+        options: [
+          "Event Viewer",
+          "Resource Monitor",
+          "Task Manager",
+          "System Configuration (Msconfig)"
+        ],
+        acceptableAnswers: [
+          "Task Manager"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the name of the tool that can be used to view memory allocation?",
+        options: [
+          "Task Manager",
+          "Performance Monitor",
+          "Resource Monitor",
+          "RAMMap"
+        ],
+        acceptableAnswers: [
+          "RAMMap"
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of the Performance Log Users group?",
+        options: [
+          "To manage user passwords and logon requirements.",
+          "To allow members to schedule logging of performance counters and collect logs.",
+          "To control access to shared network resources.",
+          "To start or stop network services."
+        ],
+        acceptableAnswers: [
+          "To allow members to schedule logging of performance counters and collect logs."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following correctly lists 7 common 'net' commands and their purposes?",
+        options: [
+          "net accounts (sets password requirements), net session (lists/disconnects sessions), net share (manages shared resources), net start (starts service), net stop (stops service), net use (connects to shared resources), net view (shows network devices).",
+          "net config (displays network configuration), net user (manages user accounts), net group (manages groups), net time (displays time), net computer (manages computers), net helpmsg (displays error messages), net statistics (displays network statistics).",
+          "netstat (displays network connections), netsh (configures network parameters), nslookup (queries DNS), netmon (monitors network traffic), netdom (manages domains), net logon (logs on to network), net print (manages print jobs).",
+          "net localgroup (manages local groups), net computer (adds/deletes computers), net config server (configures server), net continue (resumes service), net file (displays open files), net group (manages global groups), net print (manages print jobs)."
+        ],
+        acceptableAnswers: [
+          "net accounts (sets password requirements), net session (lists/disconnects sessions), net share (manages shared resources), net start (starts service), net stop (stops service), net use (connects to shared resources), net view (shows network devices)."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What will the nslookup command allow you to do?",
+        options: [
+          "Display active network connections.",
+          "Trace the route to a network destination.",
+          "Test Domain Name System (DNS) by translating hostnames to IP addresses.",
+          "Configure network adapter settings."
+        ],
+        acceptableAnswers: [
+          "Test Domain Name System (DNS) by translating hostnames to IP addresses."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What will the netstat command allow you to do?",
+        options: [
+          "View and modify network configuration parameters.",
+          "Display details of active network connections, open ports, and their status.",
+          "Test network connectivity to a remote host.",
+          "Manage local user accounts and groups."
+        ],
+        acceptableAnswers: [
+          "Display details of active network connections, open ports, and their status."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of the Remote Desktop Protocol (RDP)?",
+        options: [
+          "To share files and folders between computers on a network.",
+          "To provide a secure encrypted tunnel for internet browsing.",
+          "To permit remote users to control individual hosts as if they were local.",
+          "To manage network services like DNS and DHCP."
+        ],
+        acceptableAnswers: [
+          "To permit remote users to control individual hosts as if they were local."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following are common services that Windows Server provides?",
+        options: [
+          "Only file sharing and web hosting.",
+          "Network Services (DNS, DHCP, Terminal services), File Services (SMB, NFS, DFS), Web Services (FTP, HTTP, HTTPS), and Management (Group policy, Active Directory).",
+          "Only email and database services.",
+          "Gaming and multimedia streaming services."
+        ],
+        acceptableAnswers: [
+          "Network Services (DNS, DHCP, Terminal services), File Services (SMB, NFS, DFS), Web Services (FTP, HTTP, HTTPS), and Management (Group policy, Active Directory)."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What types of information will be displayed when you open a command prompt with administrative privileges and enter the 'netstat -abno' command?",
+        options: [
+          "Only active TCP connections without process IDs.",
+          "All active TCP and UDP connections, their current state, their associated process ID (PID), and the executable name of the process.",
+          "Network configuration details like IP addresses and subnet masks.",
+          "DNS cache entries and hostname resolutions."
+        ],
+        acceptableAnswers: [
+          "All active TCP and UDP connections, their current state, their associated process ID (PID), and the executable name of the process."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of the Windows Event Viewer?",
+        options: [
+          "To manage running processes and services.",
+          "To configure network adapter settings.",
+          "To log the history of application, security, and system events, providing troubleshooting information.",
+          "To install and manage software updates."
+        ],
+        acceptableAnswers: [
+          "To log the history of application, security, and system events, providing troubleshooting information."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a security policy?",
+        options: [
+          "A software program that blocks unauthorized network traffic.",
+          "A set of objectives that ensures the security of a network, data, and computer systems in an organization.",
+          "A tool for scanning and removing malware from a computer.",
+          "A feature that encrypts files and folders on a disk drive."
+        ],
+        acceptableAnswers: [
+          "A set of objectives that ensures the security of a network, data, and computer systems in an organization."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following are 5 (five) types of protection provided by Windows Defender (different from Windows Defender Firewall)?",
+        options: [
+          "Network traffic filtering, port blocking, VPN creation, IPsec, and network address translation.",
+          "Antivirus, adware protection, phishing protection, spyware protection, and trusted/untrusted sources warnings.",
+          "Disk encryption, secure boot, user account control, local security policy, and administrative shares.",
+          "Firewall rules, inbound rules, outbound rules, advanced security settings, and policy import/export."
+        ],
+        acceptableAnswers: [
+          "Antivirus, adware protection, phishing protection, spyware protection, and trusted/untrusted sources warnings."
+        ]
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of a firewall?",
+        options: [
+          "To accelerate internet browsing speed.",
+          "To selectively deny or permit traffic to a computer or network segment.",
+          "To manage memory allocation for running applications.",
+          "To backup and restore system files."
+        ],
+        acceptableAnswers: [
+          "To selectively deny or permit traffic to a computer or network segment."
+        ]
+      }
+    ]
+  },
+  {
     id: "universal-circular-motion",
     name: "Universal Circular Motion",
     category: "Physics",
