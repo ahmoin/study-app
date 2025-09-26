@@ -958,7 +958,7 @@ export default function StudyApp() {
                     "multiple-choice" ? (
                       <div className="relative">
                         {blurAnswers && !showResult && (
-                          <div 
+                          <div
                             className="absolute inset-0 bg-background/80 backdrop-blur-sm z-10 flex items-center justify-center cursor-pointer"
                             onClick={() => setBlurAnswers(false)}
                           >
@@ -967,7 +967,11 @@ export default function StudyApp() {
                             </Button>
                           </div>
                         )}
-                        <div className={blurAnswers && !showResult ? 'opacity-50' : ''}>
+                        <div
+                          className={
+                            blurAnswers && !showResult ? "opacity-50" : ""
+                          }
+                        >
                           <RadioGroup
                             value={userAnswer}
                             onValueChange={setUserAnswer}

@@ -17,56 +17,54 @@ export const quizTemplates: QuizTemplate[] = [
     id: "windows-os-history",
     name: "Windows OS History",
     category: "Computer Science",
-    description: "Comprehensive test on Windows Operating System history, features, and security",
+    description:
+      "Comprehensive test on Windows Operating System history, features, and security",
     questions: [
       // Early Windows and MS-DOS
       {
         type: "multiple-choice",
-        question: "What was the primary storage method used by the first computers before disk drives?",
+        question:
+          "What was the primary storage method used by the first computers before disk drives?",
         options: [
           "USB Drives",
           "Punch cards and paper tape",
           "Hard disk drives",
-          "Magnetic core memory"
+          "Magnetic core memory",
         ],
         acceptableAnswers: ["Punch cards and paper tape"],
-        explanation: "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed."
+        explanation:
+          "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed.",
       },
       {
         type: "multiple-choice",
-        question: "What was the first version of Windows that ran on top of MS-DOS?",
-        options: [
-          "Windows 1.0",
-          "Windows 3.1",
-          "Windows 95",
-          "Windows NT"
-        ],
+        question:
+          "What was the first version of Windows that ran on top of MS-DOS?",
+        options: ["Windows 1.0", "Windows 3.1", "Windows 95", "Windows NT"],
         acceptableAnswers: ["Windows 1.0"],
-        explanation: "Windows 1.0, released in 1985, was the first version of Windows that ran as a graphical shell on top of MS-DOS."
+        explanation:
+          "Windows 1.0, released in 1985, was the first version of Windows that ran as a graphical shell on top of MS-DOS.",
       },
       {
         type: "multiple-choice",
-        question: "What was the primary function of MS-DOS in early Windows versions?",
+        question:
+          "What was the primary function of MS-DOS in early Windows versions?",
         options: [
           "Provide a graphical interface",
           "Manage disk operations and file system",
           "Enable networking capabilities",
-          "Run multimedia applications"
+          "Run multimedia applications",
         ],
         acceptableAnswers: ["Manage disk operations and file system"],
-        explanation: "MS-DOS (Microsoft Disk Operating System) was responsible for managing disk operations and the file system in early Windows versions."
+        explanation:
+          "MS-DOS (Microsoft Disk Operating System) was responsible for managing disk operations and the file system in early Windows versions.",
       },
       {
         type: "multiple-choice",
         question: "What was the file system used by MS-DOS?",
-        options: [
-          "NTFS",
-          "FAT",
-          "exFAT",
-          "ReFS"
-        ],
+        options: ["NTFS", "FAT", "exFAT", "ReFS"],
         acceptableAnswers: ["FAT"],
-        explanation: "MS-DOS used the FAT (File Allocation Table) file system, while NTFS (New Technology File System) came later with Windows NT."
+        explanation:
+          "MS-DOS used the FAT (File Allocation Table) file system, while NTFS (New Technology File System) came later with Windows NT.",
       },
 
       // Windows NT and Architecture
@@ -77,222 +75,216 @@ export const quizTemplates: QuizTemplate[] = [
           "New Technology",
           "Network Terminal",
           "Native Terminal",
-          "Network Technology"
+          "Network Technology",
         ],
         acceptableAnswers: ["New Technology"],
-        explanation: "NT stands for 'New Technology', representing Microsoft's shift to a more advanced operating system architecture."
+        explanation:
+          "NT stands for 'New Technology', representing Microsoft's shift to a more advanced operating system architecture.",
       },
       {
         type: "multiple-choice",
-        question: "What was the key difference between Windows NT and earlier Windows versions?",
+        question:
+          "What was the key difference between Windows NT and earlier Windows versions?",
         options: [
           "It had a Start Menu",
           "It didn't rely on MS-DOS",
           "It included Solitaire",
-          "It had color graphics"
+          "It had color graphics",
         ],
         acceptableAnswers: ["It didn't rely on MS-DOS"],
-        explanation: "Windows NT was a complete operating system that didn't rely on MS-DOS, unlike earlier Windows versions that ran on top of DOS."
+        explanation:
+          "Windows NT was a complete operating system that didn't rely on MS-DOS, unlike earlier Windows versions that ran on top of DOS.",
       },
       {
         type: "multiple-choice",
-        question: "What is the theoretical maximum amount of RAM that 64-bit Windows can address?",
-        options: [
-          "4 GB",
-          "16 GB",
-          "128 GB",
-          "16.8 million TB"
-        ],
+        question:
+          "What is the theoretical maximum amount of RAM that 64-bit Windows can address?",
+        options: ["4 GB", "16 GB", "128 GB", "16.8 million TB"],
         acceptableAnswers: ["16.8 million TB"],
-        explanation: "64-bit Windows can theoretically address up to 16.8 million terabytes of RAM, a significant increase over the 4 GB limit of 32-bit systems."
+        explanation:
+          "64-bit Windows can theoretically address up to 16.8 million terabytes of RAM, a significant increase over the 4 GB limit of 32-bit systems.",
       },
 
       // Windows Features and Versions
       {
         type: "multiple-choice",
-        question: "Which Windows version was the first to introduce the Start Menu?",
-        options: [
-          "Windows 3.1",
-          "Windows 95",
-          "Windows 2000",
-          "Windows XP"
-        ],
+        question:
+          "Which Windows version was the first to introduce the Start Menu?",
+        options: ["Windows 3.1", "Windows 95", "Windows 2000", "Windows XP"],
         acceptableAnswers: ["Windows 95"],
-        explanation: "Windows 95 introduced several key features including the Start Menu, Taskbar, and the concept of 'plug and play' hardware."
+        explanation:
+          "Windows 95 introduced several key features including the Start Menu, Taskbar, and the concept of 'plug and play' hardware.",
       },
       {
         type: "multiple-choice",
-        question: "Which Windows version was the first to support 64-bit computing?",
-        options: [
-          "Windows 2000",
-          "Windows XP",
-          "Windows Vista",
-          "Windows 7"
-        ],
+        question:
+          "Which Windows version was the first to support 64-bit computing?",
+        options: ["Windows 2000", "Windows XP", "Windows Vista", "Windows 7"],
         acceptableAnswers: ["Windows XP"],
-        explanation: "Windows XP was the first Windows version to offer a 64-bit edition, though it wasn't widely adopted until later versions."
+        explanation:
+          "Windows XP was the first Windows version to offer a 64-bit edition, though it wasn't widely adopted until later versions.",
       },
       {
         type: "multiple-choice",
-        question: "What was Microsoft's statement about Windows 10's versioning?",
+        question:
+          "What was Microsoft's statement about Windows 10's versioning?",
         options: [
           "It would be the last version of Windows",
           "It would be replaced every year",
           "It would be free forever",
-          "It would only receive security updates"
+          "It would only receive security updates",
         ],
         acceptableAnswers: ["It would be the last version of Windows"],
-        explanation: "Microsoft stated that Windows 10 would be the last version of Windows, with the OS becoming a service that receives continuous updates."
+        explanation:
+          "Microsoft stated that Windows 10 would be the last version of Windows, with the OS becoming a service that receives continuous updates.",
       },
 
       // Windows GUI Elements
       {
         type: "multiple-choice",
-        question: "What is the name of the area at the bottom of the Windows desktop that contains the Start button?",
-        options: [
-          "Dock",
-          "Taskbar",
-          "Launcher",
-          "System Tray"
-        ],
+        question:
+          "What is the name of the area at the bottom of the Windows desktop that contains the Start button?",
+        options: ["Dock", "Taskbar", "Launcher", "System Tray"],
         acceptableAnswers: ["Taskbar"],
-        explanation: "The Taskbar is the horizontal bar at the bottom of the Windows desktop that contains the Start button, open application icons, and the notification area."
+        explanation:
+          "The Taskbar is the horizontal bar at the bottom of the Windows desktop that contains the Start button, open application icons, and the notification area.",
       },
       {
         type: "multiple-choice",
-        question: "What happens when you right-click on the Windows desktop or an icon?",
+        question:
+          "What happens when you right-click on the Windows desktop or an icon?",
         options: [
           "The Start Menu opens",
           "A Context Menu appears",
           "The Control Panel opens",
-          "The file properties are displayed"
+          "The file properties are displayed",
         ],
         acceptableAnswers: ["A Context Menu appears"],
-        explanation: "Right-clicking on the desktop or an icon brings up a Context Menu with relevant options for the selected item."
+        explanation:
+          "Right-clicking on the desktop or an icon brings up a Context Menu with relevant options for the selected item.",
       },
 
       // Windows Security
       {
         type: "multiple-choice",
-        question: "What is the name of the built-in Windows security feature that helps protect against malware?",
+        question:
+          "What is the name of the built-in Windows security feature that helps protect against malware?",
         options: [
           "Windows Firewall",
           "Windows Defender",
           "Windows Security Center",
-          "Windows Update"
+          "Windows Update",
         ],
         acceptableAnswers: ["Windows Defender"],
-        explanation: "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats."
+        explanation:
+          "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats.",
       },
       {
         type: "multiple-choice",
-        question: "What is the name of the Windows component that manages network communication security?",
+        question:
+          "What is the name of the Windows component that manages network communication security?",
         options: [
           "Windows Firewall",
           "Windows Defender",
           "Windows Security Center",
-          "Windows Update"
+          "Windows Update",
         ],
         acceptableAnswers: ["Windows Firewall"],
-        explanation: "Windows Firewall is the built-in security system that monitors and controls incoming and outgoing network traffic."
+        explanation:
+          "Windows Firewall is the built-in security system that monitors and controls incoming and outgoing network traffic.",
       },
       {
         type: "multiple-choice",
-        question: "Which of the following is NOT a Windows security vulnerability mentioned in the material?",
+        question:
+          "Which of the following is NOT a Windows security vulnerability mentioned in the material?",
         options: [
           "Weak or no password",
           "Logging in as Administrator",
           "Using third-party web browsers",
-          "Unknown or unmanaged services"
+          "Unknown or unmanaged services",
         ],
         acceptableAnswers: ["Using third-party web browsers"],
-        explanation: "While browser security is important, using third-party browsers is not specifically mentioned as a Windows security vulnerability in the provided material."
+        explanation:
+          "While browser security is important, using third-party browsers is not specifically mentioned as a Windows security vulnerability in the provided material.",
       },
       {
         type: "multiple-choice",
-        question: "Which of the following is a recommended Windows security practice?",
+        question:
+          "Which of the following is a recommended Windows security practice?",
         options: [
           "Using the same password for all accounts",
           "Logging in as Administrator for all tasks",
           "Disabling Windows Firewall for better performance",
-          "Regularly updating the operating system"
+          "Regularly updating the operating system",
         ],
         acceptableAnswers: ["Regularly updating the operating system"],
-        explanation: "Regularly updating the operating system is a key security practice as it ensures you have the latest security patches and improvements."
+        explanation:
+          "Regularly updating the operating system is a key security practice as it ensures you have the latest security patches and improvements.",
       },
 
       // File Systems and Storage
       {
         type: "multiple-choice",
-        question: "What is the maximum amount of RAM that 32-bit Windows can theoretically address?",
-        options: [
-          "2 GB",
-          "4 GB",
-          "8 GB",
-          "16 GB"
-        ],
+        question:
+          "What is the maximum amount of RAM that 32-bit Windows can theoretically address?",
+        options: ["2 GB", "4 GB", "8 GB", "16 GB"],
         acceptableAnswers: ["4 GB"],
-        explanation: "32-bit Windows can theoretically address up to 4 GB of RAM due to its 32-bit memory addressing limitation."
+        explanation:
+          "32-bit Windows can theoretically address up to 4 GB of RAM due to its 32-bit memory addressing limitation.",
       },
       {
         type: "multiple-choice",
         question: "Which file system was introduced with Windows NT?",
-        options: [
-          "FAT",
-          "FAT32",
-          "NTFS",
-          "exFAT"
-        ],
+        options: ["FAT", "FAT32", "NTFS", "exFAT"],
         acceptableAnswers: ["NTFS"],
-        explanation: "NTFS (New Technology File System) was introduced with Windows NT and provided improved security, reliability, and performance over FAT."
+        explanation:
+          "NTFS (New Technology File System) was introduced with Windows NT and provided improved security, reliability, and performance over FAT.",
       },
 
       // Windows Editions
       {
         type: "multiple-choice",
         question: "Which of the following was NOT an edition of Windows 7?",
-        options: [
-          "Starter",
-          "Home Premium",
-          "Professional",
-          "Home Basic"
-        ],
+        options: ["Starter", "Home Premium", "Professional", "Home Basic"],
         acceptableAnswers: ["All of these were Windows 7 editions"],
-        explanation: "Windows 7 was offered in six editions: Starter, Home Basic, Home Premium, Professional, Enterprise, and Ultimate."
+        explanation:
+          "Windows 7 was offered in six editions: Starter, Home Basic, Home Premium, Professional, Enterprise, and Ultimate.",
       },
       {
         type: "multiple-choice",
-        question: "Which Windows version introduced the Modern UI (formerly Metro) interface?",
-        options: [
-          "Windows 7",
-          "Windows 8",
-          "Windows 10",
-          "Windows Vista"
-        ],
+        question:
+          "Which Windows version introduced the Modern UI (formerly Metro) interface?",
+        options: ["Windows 7", "Windows 8", "Windows 10", "Windows Vista"],
         acceptableAnswers: ["Windows 8"],
-        explanation: "Windows 8 introduced the Modern UI (formerly Metro) interface with its tile-based Start screen."
+        explanation:
+          "Windows 8 introduced the Modern UI (formerly Metro) interface with its tile-based Start screen.",
       },
 
       // Constructed Response Questions
       {
         type: "constructed-response",
-        question: "What is the name of the built-in Windows security feature that helps protect against malware?",
+        question:
+          "What is the name of the built-in Windows security feature that helps protect against malware?",
         acceptableAnswers: ["Windows Defender"],
-        explanation: "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats."
+        explanation:
+          "Windows Defender is Microsoft's built-in anti-malware component that provides real-time protection against various threats.",
       },
       {
         type: "constructed-response",
-        question: "What is the name of the area in the Windows Taskbar that shows notifications and system icons?",
+        question:
+          "What is the name of the area in the Windows Taskbar that shows notifications and system icons?",
         acceptableAnswers: ["Notification Area", "System Tray"],
-        explanation: "The Notification Area (previously called the System Tray) is the area on the right side of the Taskbar that shows notifications and system icons."
-      }
-    ]
+        explanation:
+          "The Notification Area (previously called the System Tray) is the area on the right side of the Taskbar that shows notifications and system icons.",
+      },
+    ],
   },
   {
     id: "windows-os-fundamentals",
     name: "Windows Operating System Fundamentals",
     category: "Cybersecurity",
-    description: "This module covers basic concepts of the Windows operating system, including its architecture, operation, configuration, monitoring, and security tools.",
+    description:
+      "This module covers basic concepts of the Windows operating system, including its architecture, operation, configuration, monitoring, and security tools.",
     questions: [
       {
         type: "multiple-choice",
@@ -301,89 +293,91 @@ export const quizTemplates: QuizTemplate[] = [
           "A modern operating system like Windows 10.",
           "An operating system that uses a Graphical User Interface (GUI).",
           "An operating system that the computer uses to enable data storage devices to read and write files.",
-          "A proprietary Microsoft software developed in 1985."
+          "A proprietary Microsoft software developed in 1985.",
         ],
         acceptableAnswers: [
-          "An operating system that the computer uses to enable data storage devices to read and write files."
-        ]
+          "An operating system that the computer uses to enable data storage devices to read and write files.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following are types of MS-DOS commands and what are their primary uses?",
+        question:
+          "Which of the following are types of MS-DOS commands and what are their primary uses?",
         options: [
           "dir (lists files), cd (changes directory), copy (copies files), del (deletes files), mkdir (creates directory), ren (renames file), help (displays commands).",
           "ping (tests network connectivity), ipconfig (displays network configuration), tracert (traces route).",
           "get-process (gets running processes), stop-service (stops services), new-item (creates new items).",
-          "netstat (displays network connections), nslookup (queries DNS), shutdown (shuts down computer)."
+          "netstat (displays network connections), nslookup (queries DNS), shutdown (shuts down computer).",
         ],
         acceptableAnswers: [
-          "dir (lists files), cd (changes directory), copy (copies files), del (deletes files), mkdir (creates directory), ren (renames file), help (displays commands)."
-        ]
+          "dir (lists files), cd (changes directory), copy (copies files), del (deletes files), mkdir (creates directory), ren (renames file), help (displays commands).",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following is NOT a common type of Operating System Vulnerability mentioned?",
+        question:
+          "Which of the following is NOT a common type of Operating System Vulnerability mentioned?",
         options: [
           "Virus or malware protection being turned off.",
           "Unmanaged or unknown services running.",
           "Extensive use of strong, unique passwords.",
-          "Unencrypted data."
+          "Unencrypted data.",
         ],
-        acceptableAnswers: [
-          "Extensive use of strong, unique passwords."
-        ]
+        acceptableAnswers: ["Extensive use of strong, unique passwords."],
       },
       {
         type: "multiple-choice",
-        question: "What is the Hardware Abstraction Layer (HAL) and what is its primary use?",
+        question:
+          "What is the Hardware Abstraction Layer (HAL) and what is its primary use?",
         options: [
           "It is the core of the operating system that directly controls all hardware.",
           "It is software that handles all of the communication between the hardware and the kernel.",
           "It is a set of device drivers that run in user mode.",
-          "It is a component that manages memory allocation for applications."
+          "It is a component that manages memory allocation for applications.",
         ],
         acceptableAnswers: [
-          "It is software that handles all of the communication between the hardware and the kernel."
-        ]
+          "It is software that handles all of the communication between the hardware and the kernel.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "What is a kernel and what is its purpose within an operating system?",
+        question:
+          "What is a kernel and what is its purpose within an operating system?",
         options: [
           "A component that manages the graphical user interface.",
           "The core of the operating system that has control over the entire computer, handling input/output requests, memory, and peripherals.",
           "A user-mode application responsible for starting other programs.",
-          "A file system used for organizing data on disk drives."
+          "A file system used for organizing data on disk drives.",
         ],
         acceptableAnswers: [
-          "The core of the operating system that has control over the entire computer, handling input/output requests, memory, and peripherals."
-        ]
+          "The core of the operating system that has control over the entire computer, handling input/output requests, memory, and peripherals.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "What is the primary difference between user mode and kernel mode in Windows?",
+        question:
+          "What is the primary difference between user mode and kernel mode in Windows?",
         options: [
           "User mode is for system processes, while kernel mode is for applications.",
           "Kernel mode has restricted access to hardware and memory, while user mode has unrestricted access.",
           "Code executing in kernel mode has unrestricted access to underlying hardware and memory, while user mode code has no direct access.",
-          "Crashes in user mode stop the entire computer, while kernel mode crashes are recoverable."
+          "Crashes in user mode stop the entire computer, while kernel mode crashes are recoverable.",
         ],
         acceptableAnswers: [
-          "Code executing in kernel mode has unrestricted access to underlying hardware and memory, while user mode code has no direct access."
-        ]
+          "Code executing in kernel mode has unrestricted access to underlying hardware and memory, while user mode code has no direct access.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following are the four common types of Windows File Systems mentioned?",
+        question:
+          "Which of the following are the four common types of Windows File Systems mentioned?",
         options: [
           "FAT, HFS+, EXT, NTFS",
           "FAT16, FAT32, exFAT, NTFS",
           "FAT, HFS+, EXT, exFAT",
-          "NTFS, exFAT, EXT, HFS+"
+          "NTFS, exFAT, EXT, HFS+",
         ],
-        acceptableAnswers: [
-          "FAT, HFS+, EXT, NTFS"
-        ]
+        acceptableAnswers: ["FAT, HFS+, EXT, NTFS"],
       },
       {
         type: "multiple-choice",
@@ -392,76 +386,68 @@ export const quizTemplates: QuizTemplate[] = [
           "CMOS and BIOS",
           "MBR and GPT",
           "BIOS and UEFI",
-          "RAM and ROM"
+          "RAM and ROM",
         ],
-        acceptableAnswers: [
-          "BIOS and UEFI"
-        ]
+        acceptableAnswers: ["BIOS and UEFI"],
       },
       {
         type: "multiple-choice",
-        question: "What is the difference between Shutdown, Restart, and Hibernate in Windows?",
+        question:
+          "What is the difference between Shutdown, Restart, and Hibernate in Windows?",
         options: [
           "Shutdown saves an open state, Restart powers off, Hibernate reboots.",
           "Shutdown powers off, Restart reboots, Hibernate saves current state to a file.",
           "Shutdown reboots, Restart powers off, Hibernate closes all applications.",
-          "Shutdown closes all programs, Restart updates drivers, Hibernate powers off."
+          "Shutdown closes all programs, Restart updates drivers, Hibernate powers off.",
         ],
         acceptableAnswers: [
-          "Shutdown powers off, Restart reboots, Hibernate saves current state to a file."
-        ]
+          "Shutdown powers off, Restart reboots, Hibernate saves current state to a file.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "What is the full name of the .exe file associated with the Windows CLI?",
-        options: [
-          "command.exe",
-          "cli.exe",
-          "prompt.exe",
-          "cmd.exe"
-        ],
-        acceptableAnswers: [
-          "cmd.exe"
-        ]
+        question:
+          "What is the full name of the .exe file associated with the Windows CLI?",
+        options: ["command.exe", "cli.exe", "prompt.exe", "cmd.exe"],
+        acceptableAnswers: ["cmd.exe"],
       },
       {
         type: "multiple-choice",
-        question: "What are the three types of commands that PowerShell can execute?",
+        question:
+          "What are the three types of commands that PowerShell can execute?",
         options: [
           "Batch files, executables, and scripts",
           "Cmdlets, PowerShell scripts, and PowerShell functions",
           "System commands, user commands, and network commands",
-          "Registry commands, file commands, and process commands"
+          "Registry commands, file commands, and process commands",
         ],
         acceptableAnswers: [
-          "Cmdlets, PowerShell scripts, and PowerShell functions"
-        ]
+          "Cmdlets, PowerShell scripts, and PowerShell functions",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "What is the name of the Windows tool that can be used to view running processes on your Windows system?",
+        question:
+          "What is the name of the Windows tool that can be used to view running processes on your Windows system?",
         options: [
           "Event Viewer",
           "Resource Monitor",
           "Task Manager",
-          "System Configuration (Msconfig)"
+          "System Configuration (Msconfig)",
         ],
-        acceptableAnswers: [
-          "Task Manager"
-        ]
+        acceptableAnswers: ["Task Manager"],
       },
       {
         type: "multiple-choice",
-        question: "What is the name of the tool that can be used to view memory allocation?",
+        question:
+          "What is the name of the tool that can be used to view memory allocation?",
         options: [
           "Task Manager",
           "Performance Monitor",
           "Resource Monitor",
-          "RAMMap"
+          "RAMMap",
         ],
-        acceptableAnswers: [
-          "RAMMap"
-        ]
+        acceptableAnswers: ["RAMMap"],
       },
       {
         type: "multiple-choice",
@@ -470,24 +456,25 @@ export const quizTemplates: QuizTemplate[] = [
           "To manage user passwords and logon requirements.",
           "To allow members to schedule logging of performance counters and collect logs.",
           "To control access to shared network resources.",
-          "To start or stop network services."
+          "To start or stop network services.",
         ],
         acceptableAnswers: [
-          "To allow members to schedule logging of performance counters and collect logs."
-        ]
+          "To allow members to schedule logging of performance counters and collect logs.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following correctly lists 7 common 'net' commands and their purposes?",
+        question:
+          "Which of the following correctly lists 7 common 'net' commands and their purposes?",
         options: [
           "net accounts (sets password requirements), net session (lists/disconnects sessions), net share (manages shared resources), net start (starts service), net stop (stops service), net use (connects to shared resources), net view (shows network devices).",
           "net config (displays network configuration), net user (manages user accounts), net group (manages groups), net time (displays time), net computer (manages computers), net helpmsg (displays error messages), net statistics (displays network statistics).",
           "netstat (displays network connections), netsh (configures network parameters), nslookup (queries DNS), netmon (monitors network traffic), netdom (manages domains), net logon (logs on to network), net print (manages print jobs).",
-          "net localgroup (manages local groups), net computer (adds/deletes computers), net config server (configures server), net continue (resumes service), net file (displays open files), net group (manages global groups), net print (manages print jobs)."
+          "net localgroup (manages local groups), net computer (adds/deletes computers), net config server (configures server), net continue (resumes service), net file (displays open files), net group (manages global groups), net print (manages print jobs).",
         ],
         acceptableAnswers: [
-          "net accounts (sets password requirements), net session (lists/disconnects sessions), net share (manages shared resources), net start (starts service), net stop (stops service), net use (connects to shared resources), net view (shows network devices)."
-        ]
+          "net accounts (sets password requirements), net session (lists/disconnects sessions), net share (manages shared resources), net start (starts service), net stop (stops service), net use (connects to shared resources), net view (shows network devices).",
+        ],
       },
       {
         type: "multiple-choice",
@@ -496,11 +483,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Display active network connections.",
           "Trace the route to a network destination.",
           "Test Domain Name System (DNS) by translating hostnames to IP addresses.",
-          "Configure network adapter settings."
+          "Configure network adapter settings.",
         ],
         acceptableAnswers: [
-          "Test Domain Name System (DNS) by translating hostnames to IP addresses."
-        ]
+          "Test Domain Name System (DNS) by translating hostnames to IP addresses.",
+        ],
       },
       {
         type: "multiple-choice",
@@ -509,11 +496,11 @@ export const quizTemplates: QuizTemplate[] = [
           "View and modify network configuration parameters.",
           "Display details of active network connections, open ports, and their status.",
           "Test network connectivity to a remote host.",
-          "Manage local user accounts and groups."
+          "Manage local user accounts and groups.",
         ],
         acceptableAnswers: [
-          "Display details of active network connections, open ports, and their status."
-        ]
+          "Display details of active network connections, open ports, and their status.",
+        ],
       },
       {
         type: "multiple-choice",
@@ -522,37 +509,39 @@ export const quizTemplates: QuizTemplate[] = [
           "To share files and folders between computers on a network.",
           "To provide a secure encrypted tunnel for internet browsing.",
           "To permit remote users to control individual hosts as if they were local.",
-          "To manage network services like DNS and DHCP."
+          "To manage network services like DNS and DHCP.",
         ],
         acceptableAnswers: [
-          "To permit remote users to control individual hosts as if they were local."
-        ]
+          "To permit remote users to control individual hosts as if they were local.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following are common services that Windows Server provides?",
+        question:
+          "Which of the following are common services that Windows Server provides?",
         options: [
           "Only file sharing and web hosting.",
           "Network Services (DNS, DHCP, Terminal services), File Services (SMB, NFS, DFS), Web Services (FTP, HTTP, HTTPS), and Management (Group policy, Active Directory).",
           "Only email and database services.",
-          "Gaming and multimedia streaming services."
+          "Gaming and multimedia streaming services.",
         ],
         acceptableAnswers: [
-          "Network Services (DNS, DHCP, Terminal services), File Services (SMB, NFS, DFS), Web Services (FTP, HTTP, HTTPS), and Management (Group policy, Active Directory)."
-        ]
+          "Network Services (DNS, DHCP, Terminal services), File Services (SMB, NFS, DFS), Web Services (FTP, HTTP, HTTPS), and Management (Group policy, Active Directory).",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "What types of information will be displayed when you open a command prompt with administrative privileges and enter the 'netstat -abno' command?",
+        question:
+          "What types of information will be displayed when you open a command prompt with administrative privileges and enter the 'netstat -abno' command?",
         options: [
           "Only active TCP connections without process IDs.",
           "All active TCP and UDP connections, their current state, their associated process ID (PID), and the executable name of the process.",
           "Network configuration details like IP addresses and subnet masks.",
-          "DNS cache entries and hostname resolutions."
+          "DNS cache entries and hostname resolutions.",
         ],
         acceptableAnswers: [
-          "All active TCP and UDP connections, their current state, their associated process ID (PID), and the executable name of the process."
-        ]
+          "All active TCP and UDP connections, their current state, their associated process ID (PID), and the executable name of the process.",
+        ],
       },
       {
         type: "multiple-choice",
@@ -561,11 +550,11 @@ export const quizTemplates: QuizTemplate[] = [
           "To manage running processes and services.",
           "To configure network adapter settings.",
           "To log the history of application, security, and system events, providing troubleshooting information.",
-          "To install and manage software updates."
+          "To install and manage software updates.",
         ],
         acceptableAnswers: [
-          "To log the history of application, security, and system events, providing troubleshooting information."
-        ]
+          "To log the history of application, security, and system events, providing troubleshooting information.",
+        ],
       },
       {
         type: "multiple-choice",
@@ -574,24 +563,25 @@ export const quizTemplates: QuizTemplate[] = [
           "A software program that blocks unauthorized network traffic.",
           "A set of objectives that ensures the security of a network, data, and computer systems in an organization.",
           "A tool for scanning and removing malware from a computer.",
-          "A feature that encrypts files and folders on a disk drive."
+          "A feature that encrypts files and folders on a disk drive.",
         ],
         acceptableAnswers: [
-          "A set of objectives that ensures the security of a network, data, and computer systems in an organization."
-        ]
+          "A set of objectives that ensures the security of a network, data, and computer systems in an organization.",
+        ],
       },
       {
         type: "multiple-choice",
-        question: "Which of the following are 5 (five) types of protection provided by Windows Defender (different from Windows Defender Firewall)?",
+        question:
+          "Which of the following are 5 (five) types of protection provided by Windows Defender (different from Windows Defender Firewall)?",
         options: [
           "Network traffic filtering, port blocking, VPN creation, IPsec, and network address translation.",
           "Antivirus, adware protection, phishing protection, spyware protection, and trusted/untrusted sources warnings.",
           "Disk encryption, secure boot, user account control, local security policy, and administrative shares.",
-          "Firewall rules, inbound rules, outbound rules, advanced security settings, and policy import/export."
+          "Firewall rules, inbound rules, outbound rules, advanced security settings, and policy import/export.",
         ],
         acceptableAnswers: [
-          "Antivirus, adware protection, phishing protection, spyware protection, and trusted/untrusted sources warnings."
-        ]
+          "Antivirus, adware protection, phishing protection, spyware protection, and trusted/untrusted sources warnings.",
+        ],
       },
       {
         type: "multiple-choice",
@@ -600,13 +590,13 @@ export const quizTemplates: QuizTemplate[] = [
           "To accelerate internet browsing speed.",
           "To selectively deny or permit traffic to a computer or network segment.",
           "To manage memory allocation for running applications.",
-          "To backup and restore system files."
+          "To backup and restore system files.",
         ],
         acceptableAnswers: [
-          "To selectively deny or permit traffic to a computer or network segment."
-        ]
-      }
-    ]
+          "To selectively deny or permit traffic to a computer or network segment.",
+        ],
+      },
+    ],
   },
   {
     id: "universal-circular-motion",
@@ -2978,275 +2968,515 @@ export const quizTemplates: QuizTemplate[] = [
     ],
   },
   {
-    id: "fahrenheit-451-part-3-quiz",
-    name: "Fahrenheit 451 Part 3: Burning Bright Quiz",
-    category: "Literature",
+    id: "early-colonies-us-history",
+    name: "Early Colonies US History",
+    category: "US History",
     description:
-      "A multiple-choice quiz covering key events and the climax of Ray Bradbury's Fahrenheit 451, 'Burning Bright'.",
+      "A quiz focusing on the establishment and key events of the early European colonies in North America, particularly the English settlements.",
     questions: [
       {
         type: "multiple-choice",
-        question: "Who called in the alarm on Montag?",
-        options: [
-          "Clarisse's family.",
-          "Captain Beatty.",
-          "Mildred and her friends.",
-          "Professor Faber.",
-        ],
-        acceptableAnswers: ["Mildred and her friends."],
+        question:
+          "Which colony was the first permanent English settlement in the New World?",
+        options: ["Plymouth", "Roanoke", "Jamestown", "Massachusetts Bay"],
+        acceptableAnswers: ["Jamestown"],
         explanation:
-          "Beatty reveals that Mildred's friends had called in the first alarm, but Mildred herself called in the 'final, official alarm.'",
-      },
-      {
-        type: "multiple-choice",
-        question: "What does Beatty make Montag do to his house?",
-        options: [
-          "Paint it white.",
-          "Burn it with a flamethrower.",
-          "Clean it thoroughly.",
-          "Repair the broken parlor walls.",
-        ],
-        acceptableAnswers: ["Burn it with a flamethrower."],
-        explanation:
-          "Beatty forces Montag to use a flamethrower to burn down his own house, taking pleasure in his forced participation in its destruction.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What happened to Montag's green bullet?",
-        options: [
-          "Beatty destroyed it by striking Montag.",
-          "Montag willingly gave it to Beatty.",
-          "It fell out of his ear and was lost in the fire.",
-          "It ran out of battery.",
-        ],
-        acceptableAnswers: ["Beatty destroyed it by striking Montag."],
-        explanation:
-          "Beatty strikes Montag, causing the green bullet to fall out of his ear. Beatty then picks it up and crushes it, preventing Montag from communicating with Faber.",
+          "Jamestown, Virginia, founded in 1607, was the first permanent English settlement in North America.",
       },
       {
         type: "multiple-choice",
         question:
-          "Why did Montag burn Beatty? What realization does Montag later have about Beatty?",
+          "Which of the following was the first cash crop for the English in North America?",
+        options: ["Cotton", "Tobacco", "Sugar", "Indigo"],
+        acceptableAnswers: ["Tobacco"],
+        explanation:
+          "John Rolfe's experiments with tobacco cultivation in Jamestown led to it becoming a highly profitable cash crop for the English.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Roger Williams was most associated with which principle?",
         options: [
-          "Beatty attacked Mildred; Montag realizes Beatty was secretly a book-lover.",
-          "Beatty threatened to track down Faber; Montag realizes Beatty wanted to die.",
-          "Beatty tried to arrest him; Montag realizes Beatty was a hero.",
-          "Beatty insulted him; Montag realizes Beatty was a coward.",
+          "Strict adherence to Puritan religious law",
+          "The divine right of kings",
+          "Separation of church and state",
+          "Abolition of slavery",
+        ],
+        acceptableAnswers: ["Separation of church and state"],
+        explanation:
+          "Roger Williams advocated for religious freedom and the separation of church and state, leading him to found Providence (Rhode Island) where these principles were guaranteed.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why was Anne Hutchinson banished from Massachusetts Bay?",
+        options: [
+          "She committed treason against the colony.",
+          "She argued for Native American land rights.",
+          "Her religious teachings challenged the authority of Puritan ministers.",
+          "She refused to attend church services.",
         ],
         acceptableAnswers: [
-          "Beatty threatened to track down Faber; Montag realizes Beatty wanted to die.",
+          "Her religious teachings challenged the authority of Puritan ministers.",
         ],
         explanation:
-          "Montag burns Beatty because Beatty threatened to trace the green bullet and find Faber. Later, Montag realizes that Beatty may have deliberately provoked him to the point of killing him, effectively committing suicide by fireman, as Beatty himself seems to despise the life he lives.",
+          "Anne Hutchinson was banished for her belief that individuals could have a direct relationship with God without the need for ministers to interpret the Bible, which undermined the authority of the Puritan clergy.",
       },
       {
         type: "multiple-choice",
         question:
-          "What does Montag do with the books he saved from the house, and why?",
+          "Before New York City was surrendered by the Dutch, it was known by what name?",
         options: [
-          "He burns them all in remorse.",
-          "He gives them to Faber to hide.",
-          "He hides them in a fireman's house to incriminate him.",
-          "He buries them in his garden.",
+          "New Holland",
+          "New Amsterdam",
+          "New Rotterdam",
+          "New Utrecht",
+        ],
+        acceptableAnswers: ["New Amsterdam"],
+        explanation:
+          "The Dutch settlement on Manhattan Island was originally called New Amsterdam before it was surrendered to the English in 1664 and renamed New York.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following led to an increase in English migration to the New World?",
+        options: [
+          "The decline of the English economy",
+          "Overcrowding and religious persecution in England",
+          "The discovery of gold in Virginia",
+          "Improved relations with Native American tribes",
         ],
         acceptableAnswers: [
-          "He hides them in a fireman's house to incriminate him.",
+          "Overcrowding and religious persecution in England",
         ],
         explanation:
-          "Montag takes the books he managed to save and plants them in Fireman Black's house, then calls in an alarm, executing the plan he and Faber had discussed to sow discord and suspicion among the firemen.",
+          "Many English sought new opportunities and religious freedom in the New World due to factors like overpopulation, economic hardship, and religious intolerance (especially for Puritans and Separatists) in England.",
       },
       {
         type: "multiple-choice",
         question:
-          "What injury does Montag sustain from his showdown with the Mechanical Hound?",
-        options: [
-          "A broken leg.",
-          "A leg injected with anesthetic.",
-          "A severe electrical shock.",
-          "A fractured skull.",
-        ],
-        acceptableAnswers: ["A leg injected with anesthetic."],
+          "Which modern-day state did the Pilgrims originally intend to go to?",
+        options: ["Massachusetts", "New York", "Virginia", "Florida"],
+        acceptableAnswers: ["Virginia"],
         explanation:
-          "Before Montag destroys it, the Mechanical Hound manages to inject him with its anesthetic needle, numbing his leg.",
+          "The Pilgrims aboard the Mayflower originally had a charter from the Virginia Company and intended to settle in the northern part of Virginia, but they were blown off course and landed in Massachusetts.",
       },
       {
         type: "multiple-choice",
         question:
-          "Where does Montag find himself running to after escaping the city?",
+          "Two major conflicts between the Puritans and Native Americans took place in 1637 and 1676. What was the result?",
         options: [
-          "The abandoned subway tunnels.",
-          "The desert.",
-          "Faber's house.",
-          "The river.",
-        ],
-        acceptableAnswers: ["Faber's house."],
-        explanation:
-          "Despite the danger, Montag's immediate instinct is to seek refuge and guidance from Faber after his traumatic escape.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What nearly happens to Montag on the road as he flees?",
-        options: [
-          "He is shot by a police sniper.",
-          "He is hit by a speeding car full of teenagers.",
-          "He is caught by the Mechanical Hound.",
-          "He falls into a ravine.",
-        ],
-        acceptableAnswers: ["He is hit by a speeding car full of teenagers."],
-        explanation:
-          "A car full of joy-riding teenagers attempts to run Montag over, deliberately swerving to hit him, demonstrating the casual violence and disregard for life in their society.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What does Faber plan to do with the money Montag gives him?",
-        options: [
-          "Use it to buy a new house.",
-          "Use it to fund his escape to St. Louis and begin printing books.",
-          "Donate it to a charity.",
-          "Invest it in the stock market.",
+          "A lasting peace treaty between all parties",
+          "The establishment of Native American self-governance",
+          "Significant reduction of Native American power and land in New England",
+          "The forced removal of all Puritans from New England",
         ],
         acceptableAnswers: [
-          "Use it to fund his escape to St. Louis and begin printing books.",
+          "Significant reduction of Native American power and land in New England",
         ],
         explanation:
-          "Faber intends to take a bus to St. Louis to meet a retired printer friend and begin reproducing books, using Montag's money to facilitate this plan.",
+          "The Pequot War (1637) and King Philip's War (1675-1676) resulted in devastating losses for Native American tribes in New England, severely diminishing their power and leading to further colonial expansion.",
       },
       {
         type: "multiple-choice",
         question:
-          "How does Montag plan to throw the Mechanical Hound off his scent after leaving Faber's house?",
+          "What did the Mayflower Compact and the Virginia House of Burgesses have in common?",
         options: [
-          "He covers himself in mud and leaves a false trail.",
-          "He tells Faber to burn anything he touched and uses alcohol to mask his scent.",
-          "He jumps into a cold river.",
-          "He gets a ride on a freight train.",
+          "Both were documents guaranteeing religious freedom.",
+          "Both were forms of early representative government or self-governance.",
+          "Both were established by royal decree.",
+          "Both focused primarily on trade agreements with Native Americans.",
         ],
         acceptableAnswers: [
-          "He tells Faber to burn anything he touched and uses alcohol to mask his scent.",
+          "Both were forms of early representative government or self-governance.",
         ],
         explanation:
-          "Montag instructs Faber to clean everything he touched with alcohol and burn the furniture to erase his scent. Montag also douses himself with whiskey from Faber's house.",
+          "The Mayflower Compact established a framework for self-governance based on majority rule, and the Virginia House of Burgesses was the first elected legislative body in colonial America, both demonstrating early steps towards representative government.",
       },
       {
         type: "multiple-choice",
-        question:
-          "What does Montag see happen at Faber's house while watching TV?",
+        question: "Why was the Georgia Colony founded?",
         options: [
-          "Faber being arrested.",
-          "The Mechanical Hound attacking Faber's house.",
-          "The news reporting Montag's escape.",
-          "A peaceful protest.",
-        ],
-        acceptableAnswers: ["The Mechanical Hound attacking Faber's house."],
-        explanation:
-          "Montag watches on a small TV screen as the Mechanical Hound and news helicopters descend upon Faber's house, though Faber has already escaped.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "How does the police use the community to try to find Montag?",
-        options: [
-          "They offer a large reward for his capture.",
-          "They broadcast his image and ask everyone to look out their windows simultaneously.",
-          "They set up roadblocks on all major highways.",
-          "They send out mass text messages with his description.",
+          "As a haven for religious dissenters",
+          "To discover gold and silver deposits",
+          "As a debtor's colony and a buffer against Spanish Florida",
+          "For the cultivation of cotton plantations",
         ],
         acceptableAnswers: [
-          "They broadcast his image and ask everyone to look out their windows simultaneously.",
+          "As a debtor's colony and a buffer against Spanish Florida",
         ],
         explanation:
-          "The police broadcast an appeal for all citizens to open their doors and look out their windows at a specific moment, hoping to spot Montag and participate in the hunt.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What does Montag do when he gets to the river?",
-        options: [
-          "He hides under a bridge.",
-          "He dives in and floats downstream.",
-          "He waits for a boat to pick him up.",
-          "He builds a raft.",
-        ],
-        acceptableAnswers: ["He dives in and floats downstream."],
-        explanation:
-          "Montag plunges into the cold river, letting the current carry him away from the city and the pursuing Mechanical Hound.",
+          "Georgia was founded by James Oglethorpe as a philanthropic endeavor to give English debtors a fresh start and also served as a military buffer between the English colonies and Spanish Florida.",
       },
       {
         type: "multiple-choice",
         question:
-          "What realizations does Montag have as he floats along the river?",
+          "Which colony was the first European settlement in the New World?",
+        options: ["Jamestown", "Plymouth", "St. Augustine", "Quebec"],
+        acceptableAnswers: ["St. Augustine"],
+        explanation:
+          "St. Augustine, Florida, founded by the Spanish in 1565, is considered the oldest continuously inhabited European-established settlement in the United States.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was the main reason for the Puritans' emigration to America?",
         options: [
-          "He misses Mildred and his old life.",
-          "He understands the cycle of life and death, and that he must change and grow.",
-          "He wishes he had never started reading books.",
-          "He fears he will never be truly free.",
+          "To seek gold and silver",
+          "To establish a fur trade with Native Americans",
+          "To create a model 'holy' community and escape religious persecution",
+          "To escape debts and imprisonment",
         ],
         acceptableAnswers: [
-          "He understands the cycle of life and death, and that he must change and grow.",
+          "To create a model 'holy' community and escape religious persecution",
         ],
         explanation:
-          "Floating in the river, Montag reflects on the sun burning without purpose and compares it to firemen, then realizes the moon and sun burn time. He acknowledges that nothing is truly destroyed and that he has to become a 'phoenix'—dying and being reborn—to find a new path forward.",
+          "Unlike the profit-minded colonists at Jamestown, the Puritans emigrated to create a model new society—what John Winthrop called a 'City upon a Hill'—and escape increasing religious persecution in England.",
       },
       {
         type: "multiple-choice",
         question:
-          "Who is Montag sure has also walked along the railroad tracks?",
+          "What was the primary difference between Separatists (Pilgrims) and other Puritans?",
         options: [
-          "Captain Beatty.",
-          "Professor Faber.",
-          "Clarisse McClellan.",
-          "Mildred, his wife.",
-        ],
-        acceptableAnswers: ["Clarisse McClellan."],
-        explanation:
-          "As he follows the railroad tracks, Montag has a strong intuition that Clarisse had also walked this path, observing nature and thinking deeply, feeling her presence in the quiet environment.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Who does Montag meet in the forest, and what are they doing?",
-        options: [
-          "A group of hunters; they are tracking animals.",
-          "A community of hobo-intellectuals; they are memorizing books.",
-          "A military patrol; they are searching for fugitives.",
-          "A group of artists; they are painting landscapes.",
+          "Separatists wanted to abolish the Church of England, while other Puritans wanted to reform it from within.",
+          "Separatists believed in predestination, while other Puritans did not.",
+          "Separatists only settled in Plymouth, while other Puritans settled in Massachusetts Bay.",
+          "Separatists practiced religious tolerance, while other Puritans did not.",
         ],
         acceptableAnswers: [
-          "A community of hobo-intellectuals; they are memorizing books.",
+          "Separatists wanted to abolish the Church of England, while other Puritans wanted to reform it from within.",
         ],
         explanation:
-          "Montag encounters a group of exiled intellectuals, led by Granger, who are quietly living by the railroad tracks. Their purpose is to preserve literature by memorizing entire books, acting as living libraries.",
+          "Separatists believed it was not possible to reform the Church of England from within and chose to form independent congregations, while other Puritans hoped to purify the Anglican church of its Catholic traces.",
       },
       {
         type: "multiple-choice",
         question:
-          "What does Montag witness on TV shortly after joining the book people?",
+          "The concept of 'City upon a Hill' was articulated by which Puritan leader?",
         options: [
-          "News of a major political upheaval.",
-          "A live broadcast of the war escalating.",
-          "A fabricated report of his own capture and execution by a substitute victim.",
-          "Mildred being interviewed about his disappearance.",
+          "Roger Williams",
+          "William Bradford",
+          "John Winthrop",
+          "Anne Hutchinson",
         ],
-        acceptableAnswers: [
-          "A fabricated report of his own capture and execution by a substitute victim.",
-        ],
+        acceptableAnswers: ["John Winthrop"],
         explanation:
-          "To maintain public order and project an image of efficiency, the authorities stage a televised 'capture' and execution of a random innocent man, claiming it is Montag, ensuring the public believes the chase is over.",
+          "John Winthrop, the first governor of the Massachusetts Bay Colony, famously articulated the vision of their settlement as a 'City upon a Hill,' a model society for others to emulate.",
       },
       {
         type: "multiple-choice",
         question:
-          "What is the general plan of the book people (Granger's group)?",
+          "Who were considered 'freemen' with the right to vote in the Massachusetts Bay Colony?",
         options: [
-          "To start a revolution and overthrow the government.",
-          "To peacefully wait for society to collapse and then rebuild it using the knowledge from their memorized books.",
-          "To publish a secret newspaper criticizing the government.",
-          "To escape to another country.",
+          "All adult male colonists",
+          "Only stockholders of the Massachusetts Bay Company",
+          "Only adult males who belonged to the Puritan church",
+          "All landowning citizens, male and female",
         ],
         acceptableAnswers: [
-          "To peacefully wait for society to collapse and then rebuild it using the knowledge from their memorized books.",
+          "Only adult males who belonged to the Puritan church",
         ],
         explanation:
-          "Their plan is to preserve the knowledge contained in books by memorizing them, passing them down orally until society is ready to rebuild itself after its inevitable collapse, and then to print the books again from memory.",
+          "The Massachusetts Bay Company extended the right to vote to not only stockholders but to all adult males who belonged to the Puritan church, which was roughly 40 percent of the colony's men.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was a significant difference in family structure between early Virginia and Puritan New England settlements?",
+        options: [
+          "Virginia settlers brought their families, while Puritans came as single men.",
+          "Puritans generally crossed the Atlantic as families, while Virginia settlers were often single men.",
+          "Both colonies discouraged family units for several decades.",
+          "Native American families were integrated into both colonial structures.",
+        ],
+        acceptableAnswers: [
+          "Puritans generally crossed the Atlantic as families, while Virginia settlers were often single men.",
+        ],
+        explanation:
+          "Unlike settlers in Virginia, Puritans generally crossed the Atlantic as families rather than as single men or women, leading to a different social and community structure.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did Native Americans generally view land treaties with Europeans?",
+        options: [
+          "As permanent sales of land ownership",
+          "As agreements to share the land for a limited time",
+          "As declarations of war",
+          "As opportunities to claim European land",
+        ],
+        acceptableAnswers: [
+          "As agreements to share the land for a limited time",
+        ],
+        explanation:
+          "Native Americans saw land treaties as agreements to share the land for a limited time in exchange for gifts, whereas Europeans viewed them as permanent sales of land.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the outcome of the Pequot War in 1637?",
+        options: [
+          "A peaceful resolution and land sharing agreement.",
+          "The near destruction of the Pequot nation.",
+          "The forced migration of Puritan settlers from Connecticut.",
+          "An alliance between the Pequot and the English against other tribes.",
+        ],
+        acceptableAnswers: ["The near destruction of the Pequot nation."],
+        explanation:
+          "The Pequot War resulted in the near destruction of the Pequot nation, with many men, women, and children killed by colonists and their Native American allies.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Who was Metacom, also known by the English as King Philip?",
+        options: [
+          "A Puritan governor of Massachusetts Bay",
+          "A Wampanoag chief who led an alliance against English settlers",
+          "A Quaker leader who promoted peace with Native Americans",
+          "An English explorer who mapped New England",
+        ],
+        acceptableAnswers: [
+          "A Wampanoag chief who led an alliance against English settlers",
+        ],
+        explanation:
+          "Metacom, the Wampanoag chief known as King Philip, organized an alliance of tribes in a last-ditch effort to resist English colonial expansion in New England, leading to King Philip's War.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was a primary characteristic of New Netherland as a colony?",
+        options: [
+          "Strict religious uniformity",
+          "A focus solely on agricultural exports",
+          "A diverse population and religious tolerance",
+          "Hostile relations with all Native American tribes",
+        ],
+        acceptableAnswers: ["A diverse population and religious tolerance"],
+        explanation:
+          "New Netherland was slow to attract Dutch colonists, so it opened its doors to a variety of people, including Germans, French, Scandinavians, and Africans, and generally enjoyed friendlier relations with some Native Americans.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was William Penn's 'holy experiment' in Pennsylvania?",
+        options: [
+          "An attempt to convert all Native Americans to Quakerism",
+          "A colony without a landowning aristocracy, with representative government and religious freedom",
+          "A military outpost to defend against French expansion",
+          "A strict Puritan society with no tolerance for other faiths",
+        ],
+        acceptableAnswers: [
+          "A colony without a landowning aristocracy, with representative government and religious freedom",
+        ],
+        explanation:
+          "Penn envisioned Pennsylvania as a 'holy experiment' based on Quaker principles of equality, cooperation, religious toleration, and representative government, providing every adult male settler 50 acres of land and the right to vote.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did William Penn's approach to Native Americans differ from that of the Puritans?",
+        options: [
+          "Penn sought to conquer Native Americans, while Puritans sought peaceful coexistence.",
+          "Penn paid Native Americans for land and fostered friendship, while Puritans often clashed with them.",
+          "Both Penn and Puritans believed in forced conversion of Native Americans.",
+          "Penn ignored Native American claims, while Puritans respected them.",
+        ],
+        acceptableAnswers: [
+          "Penn paid Native Americans for land and fostered friendship, while Puritans often clashed with them.",
+        ],
+        explanation:
+          "Penn believed in treating Native Americans fairly, paying them for land, and regulating trade, leading to over 50 years of peaceful relations in Pennsylvania, in contrast to the frequent conflicts between Puritans and Native Americans.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which English monarch granted William Penn the charter for Pennsylvania?",
+        options: [
+          "King James I",
+          "Queen Elizabeth I",
+          "King Charles I",
+          "King Charles II",
+        ],
+        acceptableAnswers: ["King Charles II"],
+        explanation:
+          "King Charles II, who owed Penn's father money, granted William Penn a charter for the land that became Pennsylvania in 1681.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was a significant challenge faced by the early Jamestown colonists that contributed to the 'starving time'?",
+        options: [
+          "An overabundance of gold, distracting them from farming",
+          "Severe drought, contaminated water, and a lack of farming effort by colonists",
+          "Constant raids by Spanish forces",
+          "Extreme cold temperatures year-round",
+        ],
+        acceptableAnswers: [
+          "Severe drought, contaminated water, and a lack of farming effort by colonists",
+        ],
+        explanation:
+          "Jamestown suffered from a severe drought, contaminated river water, and the colonists' unwillingness to farm, leading to widespread disease and hunger during the 'starving time'.",
+      },
+    ],
+  },
+  {
+    id: "calculus-asymptotes",
+    name: "Calculus Asymptotes",
+    category: "Mathematics (Calculus)",
+    description:
+      "A comprehensive quiz on identifying and understanding different types of asymptotes (vertical, horizontal, holes, slant) for rational functions and other common functions in calculus.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "How do you typically find a vertical asymptote of a rational function?",
+        options: [
+          "By setting the numerator equal to zero and solving for x.",
+          "By examining the degrees of the numerator and denominator.",
+          "By setting the denominator equal to zero and ensuring the numerator is non-zero at that point.",
+          "By performing polynomial long division.",
+        ],
+        acceptableAnswers: [
+          "By setting the denominator equal to zero and ensuring the numerator is non-zero at that point.",
+        ],
+        explanation:
+          "Vertical asymptotes occur at x-values where the denominator is zero and the numerator is non-zero, leading to a division by zero that causes the function's value to approach infinity.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "When does a rational function have a horizontal asymptote at y = 0?",
+        options: [
+          "When the degree of the numerator is greater than the degree of the denominator.",
+          "When the degree of the numerator is less than the degree of the denominator.",
+          "When the degrees of the numerator and denominator are equal.",
+          "When there is a hole in the graph.",
+        ],
+        acceptableAnswers: [
+          "When the degree of the numerator is less than the degree of the denominator.",
+        ],
+        explanation:
+          "If the degree of the numerator (n) is less than the degree of the denominator (m) (n < m), the horizontal asymptote is y = 0.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How do you find the horizontal asymptote when the degree of the numerator equals the degree of the denominator?",
+        options: [
+          "y = 0",
+          "There is no horizontal asymptote.",
+          "y = (leading coefficient of numerator) / (leading coefficient of denominator)",
+          "y = (constant term of numerator) / (constant term of denominator)",
+        ],
+        acceptableAnswers: [
+          "y = (leading coefficient of numerator) / (leading coefficient of denominator)",
+        ],
+        explanation:
+          "When the degrees are equal (n = m), the horizontal asymptote is the ratio of the leading coefficients of the numerator and denominator.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a 'hole' (removable discontinuity) in the graph of a rational function?",
+        options: [
+          "A point where the function approaches infinity.",
+          "A vertical line that the graph approaches.",
+          "A single point where the function is undefined, occurring when a factor cancels out in the numerator and denominator.",
+          "A horizontal line that the graph approaches.",
+        ],
+        acceptableAnswers: [
+          "A single point where the function is undefined, occurring when a factor cancels out in the numerator and denominator.",
+        ],
+        explanation:
+          "A hole occurs when a common factor (x-c) exists in both the numerator and denominator. Setting this factor to zero gives the x-coordinate of the hole. The y-coordinate is found by plugging this x-value into the simplified function.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "When does a rational function have a slant (oblique) asymptote?",
+        options: [
+          "When the degree of the numerator is equal to the degree of the denominator.",
+          "When the degree of the numerator is exactly one greater than the degree of the denominator.",
+          "When the degree of the numerator is less than the degree of the denominator.",
+          "When the denominator has no real roots.",
+        ],
+        acceptableAnswers: [
+          "When the degree of the numerator is exactly one greater than the degree of the denominator.",
+        ],
+        explanation:
+          "A slant asymptote exists if the degree of the numerator (n) is exactly one greater than the degree of the denominator (m) (n = m + 1). It is found by performing polynomial long division.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How is the equation of a slant asymptote typically found?",
+        options: [
+          "By finding the roots of the numerator.",
+          "By finding the roots of the denominator.",
+          "By taking the ratio of the leading coefficients.",
+          "By performing polynomial long division of the numerator by the denominator.",
+        ],
+        acceptableAnswers: [
+          "By performing polynomial long division of the numerator by the denominator.",
+        ],
+        explanation:
+          "The equation of the slant asymptote is the quotient (ignoring the remainder) obtained from polynomial long division when the numerator's degree is one greater than the denominator's.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "For the function f(x) = (x^2 + 1) / (x - 2), what type of asymptote(s) does it have?",
+        options: [
+          "Only a vertical asymptote at x=2",
+          "A vertical asymptote at x=2 and a horizontal asymptote at y=1",
+          "A vertical asymptote at x=2 and a slant asymptote",
+          "No asymptotes",
+        ],
+        acceptableAnswers: [
+          "A vertical asymptote at x=2 and a slant asymptote",
+        ],
+        explanation:
+          "The denominator is zero at x=2, and the numerator is non-zero, so there is a vertical asymptote at x=2. The degree of the numerator (2) is one greater than the degree of the denominator (1), so there is a slant asymptote. (Polynomial long division would yield y = x + 2 as the slant asymptote).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "For the function g(x) = (3x + 5) / (2x^2 - 8), what type of asymptote(s) does it have?",
+        options: [
+          "Only a horizontal asymptote at y=0",
+          "Vertical asymptotes at x=2, x=-2 and a horizontal asymptote at y=3/2",
+          "Vertical asymptotes at x=2, x=-2 and a horizontal asymptote at y=0",
+          "A slant asymptote",
+        ],
+        acceptableAnswers: [
+          "Vertical asymptotes at x=2, x=-2 and a horizontal asymptote at y=0",
+        ],
+        explanation:
+          "The denominator 2x^2 - 8 = 2(x^2 - 4) = 2(x-2)(x+2) is zero at x=2 and x=-2, and the numerator is non-zero at these points, giving vertical asymptotes. The degree of the numerator (1) is less than the degree of the denominator (2), so the horizontal asymptote is y=0.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "For the function h(x) = (x - 3) / (x^2 - 9), what discontinuity exists?",
+        options: [
+          "A vertical asymptote at x=3",
+          "A hole at x=3 and a vertical asymptote at x=-3",
+          "A horizontal asymptote at y=0",
+          "A slant asymptote",
+        ],
+        acceptableAnswers: ["A hole at x=3 and a vertical asymptote at x=-3"],
+        explanation:
+          "The function can be factored as h(x) = (x - 3) / ((x - 3)(x + 3)). The (x - 3) factor cancels, indicating a hole at x=3. The (x + 3) factor remains in the denominator, indicating a vertical asymptote at x=-3. Also, the degree of the numerator (0 for the simplified form) is less than the denominator (1 for the simplified form), so y=0 is the horizontal asymptote.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What happens when the degree of the numerator is two or more greater than the degree of the denominator?",
+        options: [
+          "There is a slant asymptote.",
+          "There is no horizontal or slant asymptote, but a curvilinear asymptote.",
+          "The horizontal asymptote is y = 0.",
+          "There are always multiple vertical asymptotes.",
+        ],
+        acceptableAnswers: [
+          "There is no horizontal or slant asymptote, but a curvilinear asymptote.",
+        ],
+        explanation:
+          "When the degree of the numerator is two or more greater than the degree of the denominator, there is neither a horizontal nor a slant asymptote. Instead, the function approaches a non-linear (curvilinear) asymptote, found by polynomial long division.",
       },
     ],
   },
