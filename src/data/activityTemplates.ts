@@ -208,4 +208,186 @@ export const activityTemplates: Activity[] = [
       { word: "bueno", translation: "well, good" },
     ],
   },
+
+  {
+  "id": "linux-commands-and-networking-ports-match",
+  "name": "Linux Commands and Networking Ports Matching",
+  "category": "Cybersecurity",
+  "description": "Match Linux commands to their functions and networking ports to their protocols/services.",
+  "variant": "four-choice",
+  "wordPairs": [
+    {
+      "word": "cd",
+      "translation": "Changes the current working directory."
+    },
+    {
+      "word": "ls",
+      "translation": "Lists files in a directory."
+    },
+    {
+      "word": "ls -a",
+      "translation": "Lists all files, including hidden ones."
+    },
+    {
+      "word": "ls -l",
+      "translation": "Lists files in a long format, showing details like permissions, ownership, and size."
+    },
+    {
+      "word": "ls -R",
+      "translation": "Lists the contents of directories recursively."
+    },
+    {
+      "word": "rmdir",
+      "translation": "Removes an empty directory."
+    },
+    {
+      "word": "mkdir",
+      "translation": "Creates a new directory."
+    },
+    {
+      "word": "rm",
+      "translation": "Removes files or directories."
+    },
+    {
+      "word": "mv",
+      "translation": "Moves or renames files and directories."
+    },
+    {
+      "word": "cp",
+      "translation": "Copies files and directories."
+    },
+    {
+      "word": "cat",
+      "translation": "Displays the contents of a file."
+    },
+    {
+      "word": "grep",
+      "translation": "Searches for patterns in files."
+    },
+    {
+      "word": "touch",
+      "translation": "Creates a new empty file or updates the timestamp of an existing file."
+    },
+    {
+      "word": "nano",
+      "translation": "A simple, easy-to-use text editor."
+    },
+    {
+      "word": "vim",
+      "translation": "A powerful, highly configurable text editor."
+    },
+    {
+      "word": "history",
+      "translation": "Displays a list of previously executed commands."
+    },
+    {
+      "word": "pwd",
+      "translation": "Prints the name of the current working directory."
+    },
+    {
+      "word": "whoami",
+      "translation": "Displays the effective username of the current user."
+    },
+    {
+      "word": "head",
+      "translation": "Displays the first few lines of a file."
+    },
+    {
+      "word": "tail",
+      "translation": "Displays the last few lines of a file."
+    },
+    {
+      "word": "more",
+      "translation": "Displays output one screen at a time."
+    },
+    {
+      "word": "wc",
+      "translation": "Counts lines, words, and characters in files."
+    },
+    {
+      "word": "chmod",
+      "translation": "Changes file permissions."
+    },
+    {
+      "word": "chown",
+      "translation": "Changes file ownership."
+    },
+    {
+      "word": "ps",
+      "translation": "Displays information about currently running processes."
+    },
+    {
+      "word": "ps aux",
+      "translation": "Displays all running processes on the system, including those of other users."
+    },
+    {
+      "word": "uname",
+      "translation": "Displays system information."
+    },
+    {
+      "word": "date",
+      "translation": "Displays or sets the system date and time."
+    },
+    {
+      "word": "uptime",
+      "translation": "Displays how long the system has been running."
+    },
+    {
+      "word": "w",
+      "translation": "Shows who is logged on and what they are doing."
+    },
+    {
+      "word": "Port 20/21",
+      "translation": "File Transfer Protocol (FTP)"
+    },
+    {
+      "word": "Port 22",
+      "translation": "Secure Shell (SSH)"
+    },
+    {
+      "word": "Port 23",
+      "translation": "Telnet remote login service"
+    },
+    {
+      "word": "Port 25",
+      "translation": "Simple Mail Transfer Protocol (SMTP)"
+    },
+    {
+      "word": "Port 53",
+      "translation": "Domain Name System (DNS)"
+    },
+    {
+      "word": "Port 67/68",
+      "translation": "Dynamic Host Configuration Protocol (DHCP)"
+    },
+    {
+      "word": "Port 69",
+      "translation": "Trivial File Transfer Protocol (TFTP)"
+    },
+    {
+      "word": "Port 80",
+      "translation": "Hypertext Transfer Protocol (HTTP)"
+    },
+    {
+      "word": "Port 110",
+      "translation": "Post Office Protocol version 3 (POP3)"
+    },
+    {
+      "word": "Port 123",
+      "translation": "Network Time Protocol (NTP)"
+    },
+    {
+      "word": "Port 143",
+      "translation": "Internet Message Access Protocol (IMAP)"
+    },
+    {
+      "word": "Port 161/162",
+      "translation": "Simple Network Management Protocol (SNMP)"
+    },
+    {
+      "word": "Port 443",
+      "translation": "HTTP Secure (HTTPS)"
+    }
+  ]
+}
 ];
