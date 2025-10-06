@@ -3480,6 +3480,444 @@ export const quizTemplates: QuizTemplate[] = [
       },
     ],
   },
+
+  {
+  "id": "linux-fundamentals-and-networking-ports",
+  "name": "Linux Fundamentals and Networking Ports",
+  "category": "Cybersecurity",
+  "description": "This module covers fundamental Linux commands, concepts, and common networking port functions.",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "Why would a rootkit be used by a hacker?",
+      "options": [
+        "To encrypt files for ransomware attacks.",
+        "To perform denial-of-service attacks.",
+        "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors.",
+        "To create new user accounts on a compromised system."
+      ],
+      "acceptableAnswers": [
+        "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Why is Kali Linux a popular choice in testing the network security of an organization?",
+      "options": [
+        "It is designed for everyday desktop use and productivity.",
+        "It comes pre-installed with a wide array of penetration testing and ethical hacking tools.",
+        "It offers superior graphical interface customization compared to other Linux distributions.",
+        "It is the most lightweight Linux distribution available."
+      ],
+      "acceptableAnswers": [
+        "It comes pre-installed with a wide array of penetration testing and ethical hacking tools."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A system administrator issues the 'ps' command on a server that is running the Linux operating system. What is the purpose of this command?",
+      "options": [
+        "To display network connections.",
+        "To list files in the current directory.",
+        "To display information about currently running processes.",
+        "To change file permissions."
+      ],
+      "acceptableAnswers": [
+        "To display information about currently running processes."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A system administrator issues the 'apt-get upgrade' command on a Linux operating system. What is the purpose of this command?",
+      "options": [
+        "To install new software packages.",
+        "To remove existing software packages.",
+        "To update all installed packages to their newest versions.",
+        "To check the status of system services."
+      ],
+      "acceptableAnswers": [
+        "To update all installed packages to their newest versions."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which Linux command can be used to display the name of the current working directory?",
+      "options": [
+        "ls",
+        "cd",
+        "pwd",
+        "whoami"
+      ],
+      "acceptableAnswers": [
+        "pwd"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which file system is the primary file system used by Apple in current Macintosh computers?",
+      "options": [
+        "NTFS",
+        "exFAT",
+        "HFS+",
+        "EXT4"
+      ],
+      "acceptableAnswers": [
+        "HFS+"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "In the context of a Linux operating system, which command can be used to display the syntax and parameters for a specific command?",
+      "options": [
+        "help <command>",
+        "man <command>",
+        "info <command>",
+        "docs <command>"
+      ],
+      "acceptableAnswers": [
+        "man <command>"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which user can override file permissions on a Linux computer?",
+      "options": [
+        "Any user in the 'sudo' group.",
+        "The file owner only.",
+        "The root user.",
+        "Any user with write access to the directory."
+      ],
+      "acceptableAnswers": [
+        "The root user."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Consider the result of the 'ls -l' command in the Linux output below. What are the group file permissions assigned to the analyst.txt file?\n\nResult: \nls -l analyst.txt\n-rwxrw-r-- sales staff 1028 May 28 15:50 analyst.txt",
+      "options": [
+        "Read, write, and execute.",
+        "Read and write.",
+        "Read only.",
+        "No permissions."
+      ],
+      "acceptableAnswers": [
+        "Read and write."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is a benefit of Linux being an open-source operating system?",
+      "options": [
+        "It is always free of charge to use.",
+        "Its source code is publicly available, allowing for community review, modification, and improvement.",
+        "It provides a more secure graphical user interface.",
+        "It has exclusive hardware compatibility."
+      ],
+      "acceptableAnswers": [
+        "Its source code is publicly available, allowing for community review, modification, and improvement."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which of the following are three benefits of using symbolic links over hard links in Linux?",
+      "options": [
+        "Can link across filesystems, can link to directories, deleting the target does not delete the link.",
+        "Consume less disk space, faster access, automatically update if the target moves.",
+        "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data.",
+        "Maintain data integrity better, provide higher security, easier to create."
+      ],
+      "acceptableAnswers": [
+        "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which type of tool is used by a Linux administrator to attack a computer or network to find vulnerabilities?",
+      "options": [
+        "Productivity suite.",
+        "Word processor.",
+        "Penetration testing tool.",
+        "System monitoring tool."
+      ],
+      "acceptableAnswers": [
+        "Penetration testing tool."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is a daemon in the context of a Linux operating system?",
+      "options": [
+        "A malicious program hidden on the system.",
+        "A background process that performs system-related tasks, often without direct user interaction.",
+        "A graphical user interface component.",
+        "A command-line utility for managing files."
+      ],
+      "acceptableAnswers": [
+        "A background process that performs system-related tasks, often without direct user interaction."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "A technician has captured packets on a network that has been running slowly when accessing the internet. Which port numbers should the technician look for within the captured material to locate HTTP packets?",
+      "options": [
+        "20 and 21",
+        "22",
+        "23",
+        "80"
+      ],
+      "acceptableAnswers": [
+        "80"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which port number is used for the Secure Shell (SSH) protocol?",
+      "options": [
+        "20/21",
+        "22",
+        "23",
+        "25"
+      ],
+      "acceptableAnswers": [
+        "22"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the primary function of port 23?",
+      "options": [
+        "File Transfer Protocol (FTP)",
+        "Secure Shell (SSH)",
+        "Telnet remote login service",
+        "Simple Mail Transfer Protocol (SMTP)"
+      ],
+      "acceptableAnswers": [
+        "Telnet remote login service"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which port number is associated with the Simple Mail Transfer Protocol (SMTP)?",
+      "options": [
+        "22",
+        "23",
+        "25",
+        "53"
+      ],
+      "acceptableAnswers": [
+        "25"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What protocol uses port 53?",
+      "options": [
+        "HTTP",
+        "DNS",
+        "DHCP",
+        "NTP"
+      ],
+      "acceptableAnswers": [
+        "DNS"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which port numbers are used by the Dynamic Host Configuration Protocol (DHCP)?",
+      "options": [
+        "67/68",
+        "69",
+        "80",
+        "110"
+      ],
+      "acceptableAnswers": [
+        "67/68"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What service operates on port 69?",
+      "options": [
+        "Hypertext Transfer Protocol (HTTP)",
+        "Post Office Protocol version 3 (POP3)",
+        "Trivial File Transfer Protocol (TFTP)",
+        "Network Time Protocol (NTP)"
+      ],
+      "acceptableAnswers": [
+        "Trivial File Transfer Protocol (TFTP)"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the function of port 110?",
+      "options": [
+        "Internet Message Access Protocol (IMAP)",
+        "Simple Network Management Protocol (SNMP)",
+        "Post Office Protocol version 3 (POP3)",
+        "HTTP Secure (HTTPS)"
+      ],
+      "acceptableAnswers": [
+        "Post Office Protocol version 3 (POP3)"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which protocol uses port 123?",
+      "options": [
+        "SMTP",
+        "DNS",
+        "NTP",
+        "IMAP"
+      ],
+      "acceptableAnswers": [
+        "NTP"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the description for port 143?",
+      "options": [
+        "Simple Mail Transfer Protocol (SMTP)",
+        "Internet Message Access Protocol (IMAP)",
+        "Post Office Protocol version 3 (POP3)",
+        "Network Time Protocol (NTP)"
+      ],
+      "acceptableAnswers": [
+        "Internet Message Access Protocol (IMAP)"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which port numbers are used for Simple Network Management Protocol (SNMP)?",
+      "options": [
+        "123",
+        "143",
+        "161/162",
+        "443"
+      ],
+      "acceptableAnswers": [
+        "161/162"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is HTTP Secure (HTTPS) associated with?",
+      "options": [
+        "Port 80",
+        "Port 110",
+        "Port 143",
+        "Port 443"
+      ],
+      "acceptableAnswers": [
+        "Port 443"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which port(s) are used by the File Transfer Protocol (FTP)?",
+      "options": [
+        "20/21",
+        "22",
+        "23",
+        "25"
+      ],
+      "acceptableAnswers": [
+        "20/21"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does the 'cd' command do in Linux?",
+      "options": [
+        "Lists files in a directory.",
+        "Changes the current working directory.",
+        "Creates a new directory.",
+        "Removes a file."
+      ],
+      "acceptableAnswers": [
+        "Changes the current working directory."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does the 'ls -a' command reveal?",
+      "options": [
+        "Files in a long format.",
+        "All files, including hidden ones.",
+        "Files in reverse order.",
+        "Files in a tree-like structure."
+      ],
+      "acceptableAnswers": [
+        "All files, including hidden ones."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "To remove an empty directory in Linux, which command would you use?",
+      "options": [
+        "rm -r",
+        "rmdir",
+        "del",
+        "remove"
+      ],
+      "acceptableAnswers": [
+        "rmdir"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the purpose of the 'grep' command in Linux?",
+      "options": [
+        "To copy files.",
+        "To search for patterns in files.",
+        "To display the contents of a file.",
+        "To create new files."
+      ],
+      "acceptableAnswers": [
+        "To search for patterns in files."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which command is used to change the ownership of a file or directory in Linux?",
+      "options": [
+        "chmod",
+        "chown",
+        "chgrp",
+        "mv"
+      ],
+      "acceptableAnswers": [
+        "chown"
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What does the 'uname -a' command output?",
+      "options": [
+        "Only the kernel name.",
+        "The current date and time.",
+        "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system.",
+        "The uptime of the system."
+      ],
+      "acceptableAnswers": [
+        "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system."
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "How can you view the last few lines of a text file in Linux?",
+      "options": [
+        "head",
+        "more",
+        "tail",
+        "cat"
+      ],
+      "acceptableAnswers": [
+        "tail"
+      ]
+    }
+  ]
+}
 ];
 
 export const categories = Array.from(
