@@ -14,6 +14,896 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "introduction-to-networks",
+    name: "Introduction to Networks",
+    category: "Networking",
+    description: "Comprehensive quiz covering network fundamentals, topologies, architectures, and network types",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What is the basic definition of a network in the computer world?",
+        options: [
+          "A single computer with internet access",
+          "Two or more connected computers that can share resources such as data and applications",
+          "A group of computers in the same room",
+          "A collection of servers only"
+        ],
+        acceptableAnswers: [
+          "Two or more connected computers that can share resources such as data and applications"
+        ],
+        explanation: "A network is defined as two or more connected computers that can share resources such as data and applications, office machines, an Internet connection, or some combination of these."
+      },
+      {
+        type: "multiple-choice",
+        question: "What language do computers use to communicate with each other on a network?",
+        options: [
+          "English",
+          "Binary code",
+          "ASCII",
+          "Hexadecimal"
+        ],
+        acceptableAnswers: [
+          "Binary code"
+        ],
+        explanation: "Computers 'talk' to each other using a computer language called binary code, which consists of lots of 1s and 0s in a specific order."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does LAN stand for?",
+        options: [
+          "Long Area Network",
+          "Local Area Network",
+          "Large Access Network",
+          "Linked Application Network"
+        ],
+        acceptableAnswers: [
+          "Local Area Network"
+        ],
+        explanation: "LAN stands for Local Area Network, which is usually restricted to spanning a particular geographic location such as an office building or a home office."
+      },
+      {
+        type: "multiple-choice",
+        question: "What device is used to connect two separate LANs together?",
+        options: [
+          "Hub",
+          "Switch",
+          "Router",
+          "Bridge"
+        ],
+        acceptableAnswers: [
+          "Router"
+        ],
+        explanation: "A router is used to connect two LANs together, allowing hosts from one LAN to access resources on another LAN."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following is NOT typically a component found in networks?",
+        options: [
+          "Workstations",
+          "Servers",
+          "Hosts",
+          "All of these are common network components"
+        ],
+        acceptableAnswers: [
+          "All of these are common network components"
+        ],
+        explanation: "Workstations, servers, and hosts are all common network components. Workstations are powerful computers, servers provide network services, and hosts are devices with IP addresses."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the key difference between a workstation and a server?",
+        options: [
+          "Servers are always more powerful than workstations",
+          "Servers run specialized network operating system software and serve the network",
+          "Workstations cannot be clients",
+          "There is no difference"
+        ],
+        acceptableAnswers: [
+          "Servers run specialized network operating system software and serve the network"
+        ],
+        explanation: "Servers get their name because they are 'at the service' of the network and run specialized software known as the network operating system to maintain and control the network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a host in TCP/IP terminology?",
+        options: [
+          "Any powerful computer",
+          "Any network device with an IP address",
+          "A server only",
+          "A workstation only"
+        ],
+        acceptableAnswers: [
+          "Any network device with an IP address"
+        ],
+        explanation: "In TCP/IP-speak, host means any network device with an IP address, including workstations and servers."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which type of server handles email functions?",
+        options: [
+          "File Server",
+          "Mail Server",
+          "Print Server",
+          "Web Server"
+        ],
+        acceptableAnswers: [
+          "Mail Server"
+        ],
+        explanation: "A Mail Server is the network's post office; it handles email functions."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a Metropolitan Area Network (MAN)?",
+        options: [
+          "A network covering a metropolitan area used to interconnect various buildings and facilities",
+          "A network within a single building",
+          "A worldwide network",
+          "A personal device network"
+        ],
+        acceptableAnswers: [
+          "A network covering a metropolitan area used to interconnect various buildings and facilities"
+        ],
+        explanation: "A MAN is a network covering a metropolitan area used to interconnect various buildings and facilities usually over a carrier provider network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the primary example of a WAN that most people use daily?",
+        options: [
+          "Corporate intranet",
+          "The Internet",
+          "Campus network",
+          "Home network"
+        ],
+        acceptableAnswers: [
+          "The Internet"
+        ],
+        explanation: "The Internet is the prime example of a WAN that most people use every day."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of the following is a key difference between WANs and LANs?",
+        options: [
+          "WANs are always faster than LANs",
+          "WANs usually need a router port or ports",
+          "LANs span larger geographic areas",
+          "WANs cannot use routers"
+        ],
+        acceptableAnswers: [
+          "WANs usually need a router port or ports"
+        ],
+        explanation: "WANs usually need a router port or ports, span larger geographic areas, and are usually slower than LANs."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the term 'internetwork' refer to?",
+        options: [
+          "The Internet only",
+          "A type of LAN and/or WAN that connects a bunch of networks, or intranets",
+          "A single network",
+          "A wireless network"
+        ],
+        acceptableAnswers: [
+          "A type of LAN and/or WAN that connects a bunch of networks, or intranets"
+        ],
+        explanation: "An internetwork is a type of LAN and/or WAN that connects a bunch of networks, or intranets."
+      },
+      {
+        type: "multiple-choice",
+        question: "What type of network is used for close proximity connections like connecting smartphones and laptops in a conference room?",
+        options: [
+          "LAN",
+          "WAN",
+          "PAN (Personal Area Network)",
+          "MAN"
+        ],
+        acceptableAnswers: [
+          "PAN (Personal Area Network)"
+        ],
+        explanation: "PANs (Personal Area Networks) are used for close proximity connections and commonly use short distance wireless connections such as Bluetooth, infrared, or ZigBee."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does CAN stand for in networking?",
+        options: [
+          "Computer Access Network",
+          "Campus Area Network",
+          "Connected Area Network",
+          "Central Access Network"
+        ],
+        acceptableAnswers: [
+          "Campus Area Network"
+        ],
+        explanation: "CAN stands for Campus Area Network, which covers a limited geographical network such as a college or corporate campus."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a SAN designed for?",
+        options: [
+          "General purpose networking",
+          "Storage systems exclusively",
+          "Internet connectivity",
+          "Wireless connections"
+        ],
+        acceptableAnswers: [
+          "Storage systems exclusively"
+        ],
+        explanation: "A SAN (Storage Area Network) is designed for, and used exclusively by, storage systems, interconnecting servers to storage arrays."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which protocol is most prevalent in SANs?",
+        options: [
+          "Ethernet",
+          "Fibre Channel",
+          "TCP/IP",
+          "Wi-Fi"
+        ],
+        acceptableAnswers: [
+          "Fibre Channel"
+        ],
+        explanation: "Fibre Channel is the most prevalent protocol in SANs, along with iSCSI, designed specifically for storage traffic."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does SDWAN stand for?",
+        options: [
+          "Secure Data Wide Area Network",
+          "Software-Defined Wide Area Network",
+          "Standard Digital Wide Area Network",
+          "System Dynamic Wide Area Network"
+        ],
+        acceptableAnswers: [
+          "Software-Defined Wide Area Network"
+        ],
+        explanation: "SDWAN stands for Software-Defined Wide Area Network, a virtual WAN architecture that uses software to manage connectivity, devices, and services."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does MPLS stand for?",
+        options: [
+          "Multi-Protocol Label Switching",
+          "Multiprotocol Label Switching",
+          "Multiple Protocol Layer Switching",
+          "Multi-Path Label System"
+        ],
+        acceptableAnswers: [
+          "Multiprotocol Label Switching"
+        ],
+        explanation: "MPLS stands for Multiprotocol Label Switching, a switching mechanism that imposes labels (numbers) to data and then uses those labels to forward data."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a key advantage of MPLS?",
+        options: [
+          "It only works on physical links",
+          "It prioritizes data based on labels",
+          "It cannot provide redundancy",
+          "It requires dedicated hardware only"
+        ],
+        acceptableAnswers: [
+          "It prioritizes data based on labels"
+        ],
+        explanation: "Prioritizing data is a huge advantage of MPLS; for example, voice data could have priority over basic data based on the labels."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does mGRE stand for?",
+        options: [
+          "Multipoint Generic Routing Encapsulation",
+          "Multiple Gateway Routing Extension",
+          "Multi-Group Routing Exchange",
+          "Multicast Gateway Routing Engine"
+        ],
+        acceptableAnswers: [
+          "Multipoint Generic Routing Encapsulation"
+        ],
+        explanation: "mGRE stands for Multipoint Generic Routing Encapsulation, used in Dynamic Multipoint VPN deployments to dynamically create and terminate connections."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a peer-to-peer network, what characterizes the computers?",
+        options: [
+          "They have a central authority",
+          "They do not have any central or special authority—they're all peers",
+          "They all connect to one main server",
+          "They cannot share resources"
+        ],
+        acceptableAnswers: [
+          "They do not have any central or special authority—they're all peers"
+        ],
+        explanation: "Computers connected in peer-to-peer networks do not have any central or special authority—they're all peers, meaning that when it comes to authority, they're all equals."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a major drawback of peer-to-peer networks?",
+        options: [
+          "They are too fast",
+          "Security is not centrally governed",
+          "They require expensive equipment",
+          "They cannot share printers"
+        ],
+        acceptableAnswers: [
+          "Security is not centrally governed"
+        ],
+        explanation: "A major drawback of peer-to-peer networks is that security is not centrally governed, requiring each user to remember and maintain a list of users and passwords on each machine."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a client-server network, what manages the whole network?",
+        options: [
+          "Each individual client",
+          "A single server using a network operating system",
+          "A group of workstations",
+          "The Internet"
+        ],
+        acceptableAnswers: [
+          "A single server using a network operating system"
+        ],
+        explanation: "In client-server networks, a single server uses a network operating system for managing the whole network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the physical topology of a network?",
+        options: [
+          "How data flows through the network",
+          "A type of map that defines where all workstations and devices are located and the arrangement of physical media",
+          "The logical structure of the network",
+          "The IP addressing scheme"
+        ],
+        acceptableAnswers: [
+          "A type of map that defines where all workstations and devices are located and the arrangement of physical media"
+        ],
+        explanation: "The physical topology of a network is a type of map that defines the specific characteristics of a network, such as where all the workstations and other devices are located and the precise arrangement of all the physical media such as cables."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a bus topology, what is a major disadvantage?",
+        options: [
+          "It requires too many cables",
+          "Any fault in the cable would bring down the whole network",
+          "It is too expensive",
+          "It requires a central device"
+        ],
+        acceptableAnswers: [
+          "Any fault in the cable would bring down the whole network"
+        ],
+        explanation: "A major drawback of bus topology is that it doesn't offer much fault tolerance because everything is connected to that single cable, meaning any fault in the cable would bring down the whole network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What topology is also known as hub-and-spoke?",
+        options: [
+          "Bus",
+          "Star",
+          "Ring",
+          "Mesh"
+        ],
+        acceptableAnswers: [
+          "Star"
+        ],
+        explanation: "A star (hub-and-spoke) topology's computers are connected to a central point with their own individual cables or wireless connections."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a major advantage of star topology?",
+        options: [
+          "It is the cheapest topology",
+          "A single cable failure won't bring down the entire network",
+          "It doesn't require a central device",
+          "It uses the least amount of cable"
+        ],
+        acceptableAnswers: [
+          "A single cable failure won't bring down the entire network"
+        ],
+        explanation: "A major advantage of star topology is that because each computer or network segment is connected to the central device individually, if the cable fails, it brings down only the machine or network segment related to the point of failure."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the single point of failure in a star topology?",
+        options: [
+          "Any individual cable",
+          "Any individual computer",
+          "The hub or other central device such as a switch",
+          "There is no single point of failure"
+        ],
+        acceptableAnswers: [
+          "The hub or other central device such as a switch"
+        ],
+        explanation: "The central hub or switch at the center of a star topology network can give the most grief if something goes wrong with it—if it fails, down comes the whole network."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a ring topology, what happens if you want to add to the network?",
+        options: [
+          "You can easily add devices without interruption",
+          "You have no choice but to break the cable ring, which is likely to bring down the entire network",
+          "You simply plug in a new device",
+          "You need special permission"
+        ],
+        acceptableAnswers: [
+          "You have no choice but to break the cable ring, which is likely to bring down the entire network"
+        ],
+        explanation: "The ring topology has a lot in common with the bus topology because if you want to add to the network, you have no choice but to break the cable ring, which is likely to bring down the entire network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a characteristic of mesh topology?",
+        options: [
+          "It has the fewest connections per device",
+          "There's a path from every machine to every other one in the network",
+          "It is the simplest topology",
+          "It is only used in LANs"
+        ],
+        acceptableAnswers: [
+          "There's a path from every machine to every other one in the network"
+        ],
+        explanation: "In mesh topology, you'll find that there's a path from every machine to every other one in the network, which creates a lot of connections."
+      },
+      {
+        type: "multiple-choice",
+        question: "For a network with 4 computers in a full mesh topology, how many connections are there?",
+        options: [
+          "4",
+          "6",
+          "8",
+          "12"
+        ],
+        acceptableAnswers: [
+          "6"
+        ],
+        explanation: "For each n locations or hosts, you end up with n(n–1)/2 connections. For 4 computers: 4(4–1)/2 = 6 connections."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a point-to-point topology?",
+        options: [
+          "A connection between many routers",
+          "A direct connection between two routers or switches",
+          "A connection through the Internet",
+          "A wireless only connection"
+        ],
+        acceptableAnswers: [
+          "A direct connection between two routers or switches"
+        ],
+        explanation: "In a point-to-point topology, you have a direct connection between two routers or switches, giving you one communication path."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a point-to-multipoint topology?",
+        options: [
+          "A connection between two devices only",
+          "A succession of connections between an interface on one router and multiple destination routers",
+          "A mesh network",
+          "A bus network"
+        ],
+        acceptableAnswers: [
+          "A succession of connections between an interface on one router and multiple destination routers"
+        ],
+        explanation: "A point-to-multipoint topology consists of a succession of connections between an interface on one router and multiple destination routers—one point of connection to multiple points of connection."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a hybrid topology?",
+        options: [
+          "A combination of only two topologies",
+          "A combination of two or more types of physical or logical network topologies working together",
+          "Only wireless topologies",
+          "Only wired topologies"
+        ],
+        acceptableAnswers: [
+          "A combination of two or more types of physical or logical network topologies working together"
+        ],
+        explanation: "Hybrid topology means a combination of two or more types of physical or logical network topologies working together within the same network."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is fault tolerance?",
+        options: [
+          "The ability to prevent all errors",
+          "The capability of a computer or network system to respond to a condition automatically, often resolving it",
+          "The speed of the network",
+          "The cost of network equipment"
+        ],
+        acceptableAnswers: [
+          "The capability of a computer or network system to respond to a condition automatically, often resolving it"
+        ],
+        explanation: "Fault tolerance is the capability of a computer or a network system to respond to a condition automatically, often resolving it, which reduces the impact on the system."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the network backbone?",
+        options: [
+          "A type of cable",
+          "What all the network segments and servers connect to, giving the network its structure",
+          "A single server",
+          "The Internet connection"
+        ],
+        acceptableAnswers: [
+          "What all the network segments and servers connect to, giving the network its structure"
+        ],
+        explanation: "The network backbone is what all the network segments and servers connect to and what gives the network its structure."
+      },
+      {
+        type: "multiple-choice",
+        question: "What technology is commonly used for network backbones due to speed requirements?",
+        options: [
+          "10Base-T Ethernet",
+          "Wireless",
+          "Gigabit Ethernet or faster",
+          "DSL"
+        ],
+        acceptableAnswers: [
+          "Gigabit Ethernet or faster"
+        ],
+        explanation: "The backbone must use some kind of seriously fast, robust technology—often Gigabit Ethernet or faster."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a network segment?",
+        options: [
+          "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone",
+          "The backbone itself",
+          "A single computer",
+          "The Internet"
+        ],
+        acceptableAnswers: [
+          "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone"
+        ],
+        explanation: "When we refer to a segment, we can mean any small section of the network that may be connected to, but isn't actually a piece of, the backbone."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the common term for the service entry point where a carrier hands off a connection?",
+        options: [
+          "Entry point",
+          "Demarcation point or demarc",
+          "Connection point",
+          "Termination point"
+        ],
+        acceptableAnswers: [
+          "Demarcation point or demarc"
+        ],
+        explanation: "The service entry point defines the point of responsibility. The common term used is the demarcation point, or demarc for short."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a smart jack?",
+        options: [
+          "A type of network cable",
+          "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects",
+          "A network switch",
+          "A router"
+        ],
+        acceptableAnswers: [
+          "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects"
+        ],
+        explanation: "A carrier will usually terminate with a piece of equipment called a smart jack that allows them to run diagnostics up to the physical point where the customer's network connects."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a leased line?",
+        options: [
+          "A shared Internet connection",
+          "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer",
+          "A wireless connection",
+          "A dial-up connection"
+        ],
+        acceptableAnswers: [
+          "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer"
+        ],
+        explanation: "When the provider installs a leased line, it is either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer; there is no shared bandwidth."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a vSwitch?",
+        options: [
+          "A physical switch",
+          "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor",
+          "A type of router",
+          "A wireless access point"
+        ],
+        acceptableAnswers: [
+          "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor"
+        ],
+        explanation: "Companies such as VMware offer virtual switch (vSwitch) technology that provides the Ethernet switched and routing functions on the hypervisor, eliminating the need for external networking hardware."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a vNIC?",
+        options: [
+          "A physical network interface card",
+          "A virtual network interface card installed to connect the virtual device to the hypervisor",
+          "A type of cable",
+          "A network protocol"
+        ],
+        acceptableAnswers: [
+          "A virtual network interface card installed to connect the virtual device to the hypervisor"
+        ],
+        explanation: "A virtual network interface card (vNIC) is installed to connect the virtual device to the hypervisor and, from there, out to the LAN."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does NFV stand for?",
+        options: [
+          "Network Function Virtualization",
+          "Network File Verification",
+          "Network Flow Validation",
+          "Network Frequency Variable"
+        ],
+        acceptableAnswers: [
+          "Network Function Virtualization"
+        ],
+        explanation: "Network function virtualization (NFV) is the process of taking networking functions such as routers, switches, firewalls, load balancers, and controllers and virtualizing them."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a hypervisor?",
+        options: [
+          "A type of network cable",
+          "Software that is installed directly on a bare-metal server and allows for many virtual machines to run",
+          "A physical server",
+          "A network protocol"
+        ],
+        acceptableAnswers: [
+          "Software that is installed directly on a bare-metal server and allows for many virtual machines to run"
+        ],
+        explanation: "The hypervisor is software that is installed directly on a bare-metal server and allows for many virtual machines (VMs) to run, thinking they are using the server's hardware directly."
+      },
+      {
+        type: "multiple-choice",
+        question: "What are the three layers in the three-tiered networking model?",
+        options: [
+          "Physical, Data Link, Network",
+          "Core, Distribution, Access",
+          "Application, Presentation, Session",
+          "Input, Process, Output"
+        ],
+        acceptableAnswers: [
+          "Core, Distribution, Access"
+        ],
+        explanation: "The three-tiered networking model consists of the Core Layer, Distribution Layer, and Access Layer."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the core layer also considered?",
+        options: [
+          "The access layer",
+          "The backbone of the network",
+          "The distribution layer",
+          "The edge layer"
+        ],
+        acceptableAnswers: [
+          "The backbone of the network"
+        ],
+        explanation: "The core layer is also considered the backbone of the network. It is where you will find connectivity between geographic areas with WAN lines."
+      },
+      {
+        type: "multiple-choice",
+        question: "What should be done at the core layer?",
+        options: [
+          "Packet filtering and security policies",
+          "Only routing and switching of the entire network—nothing should slow it down",
+          "Connecting end-user hosts",
+          "Creating collision domains"
+        ],
+        acceptableAnswers: [
+          "Only routing and switching of the entire network—nothing should slow it down"
+        ],
+        explanation: "The core layer should be designed for high availability and only provides routing and switching of the entire network. Nothing should be done at the core layer to slow it down!"
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the distribution layer also referred to as?",
+        options: [
+          "The core layer",
+          "The workgroup layer or the aggregation layer",
+          "The access layer",
+          "The edge layer"
+        ],
+        acceptableAnswers: [
+          "The workgroup layer or the aggregation layer"
+        ],
+        explanation: "The distribution layer is often referred to as the workgroup layer or the aggregation layer because it allows for connectivity to multiple access layer switches."
+      },
+      {
+        type: "multiple-choice",
+        question: "Where is the control plane located in the three-tier model?",
+        options: [
+          "Core layer",
+          "Distribution layer",
+          "Access layer",
+          "All layers"
+        ],
+        acceptableAnswers: [
+          "Distribution layer"
+        ],
+        explanation: "The distribution layer is where the control plane is located and is where packet filtering, security policies, routing between VLANs, and defining of broadcast domains are performed."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the access layer also referred to as?",
+        options: [
+          "The core layer",
+          "The distribution layer",
+          "The edge switching layer",
+          "The aggregation layer"
+        ],
+        acceptableAnswers: [
+          "The edge switching layer"
+        ],
+        explanation: "The access layer is often referred to as the edge switching layer, and it connects the end-user hosts."
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the access layer provide support for?",
+        options: [
+          "WAN connectivity only",
+          "Core routing only",
+          "Quality of service (QoS), power over Ethernet (PoE), and security",
+          "Distribution switching only"
+        ],
+        acceptableAnswers: [
+          "Quality of service (QoS), power over Ethernet (PoE), and security"
+        ],
+        explanation: "The access layer provides local switching and the creation of collision domains. It is simply designed for access to the network and it is where support begins for quality of service (QoS), power over Ethernet (PoE), and security."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the collapsed-core model?",
+        options: [
+          "A model that separates core and distribution",
+          "A model that condenses the core and distribution layers into one piece of switching equipment",
+          "A model without an access layer",
+          "A model with only two layers"
+        ],
+        acceptableAnswers: [
+          "A model that condenses the core and distribution layers into one piece of switching equipment"
+        ],
+        explanation: "The collapsed-core model condenses the core and distribution tiers into one tier by supporting both the core layer and the distribution layer on the same piece of network switching equipment."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why was the collapsed-core model adopted?",
+        options: [
+          "To increase complexity",
+          "To save cost and complexity in networks",
+          "To slow down networks",
+          "To reduce security"
+        ],
+        acceptableAnswers: [
+          "To save cost and complexity in networks"
+        ],
+        explanation: "The collapsed-core model was adopted to save cost and complexity in networks. With the powerful switching of today, we can support both the core layer and the distribution layer on the same piece of network switching equipment."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is spine-leaf switching also referred to as?",
+        options: [
+          "A three-tier model",
+          "A CLOS network",
+          "A collapsed-core model",
+          "A hybrid topology"
+        ],
+        acceptableAnswers: [
+          "A CLOS network"
+        ],
+        explanation: "The concept of spine-leaf switching is often referred to as a CLOS network, named after Charles Clos, who formalized the concept in 1938 of multistage circuit-switching."
+      },
+      {
+        type: "multiple-choice",
+        question: "Where is spine-leaf switching almost exclusively used?",
+        options: [
+          "In campus networks",
+          "In data center network architecture",
+          "In home networks",
+          "In MANs"
+        ],
+        acceptableAnswers: [
+          "In data center network architecture"
+        ],
+        explanation: "Spine and leaf switching provides extremely fast networking switching, and it is almost exclusively used in data center network architecture."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a spine-leaf network, can leaf switches directly talk to other leaf switches?",
+        options: [
+          "Yes, always",
+          "No, leaf switches always need to talk through the spine",
+          "Only sometimes",
+          "Only in full mesh configuration"
+        ],
+        acceptableAnswers: [
+          "No, leaf switches always need to talk through the spine"
+        ],
+        explanation: "A leaf switch will never directly talk to another leaf switch; it will always need to talk through the backbone or spine of the network."
+      },
+      {
+        type: "multiple-choice",
+        question: "In a spine-leaf network, can servers be connected directly to the spine?",
+        options: [
+          "Yes, always",
+          "No, servers are always connected through a leaf switch",
+          "Only in special configurations",
+          "Only for certain types of servers"
+        ],
+        acceptableAnswers: [
+          "No, servers are always connected through a leaf switch"
+        ],
+        explanation: "Servers will never be connected to the spine of the network directly. Servers are always connected through a leaf switch."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is north-south traffic?",
+        options: [
+          "Traffic between servers in a data center",
+          "Traffic found entering and leaving your internal network",
+          "Traffic within a single LAN",
+          "Traffic between leaf switches"
+        ],
+        acceptableAnswers: [
+          "Traffic found entering and leaving your internal network"
+        ],
+        explanation: "North-South traffic is found entering and leaving your internal network. The southbound traffic enters through a firewall and routers. Northbound traffic is routed from your internal network to the Internet."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is east-west traffic?",
+        options: [
+          "Traffic entering and leaving the network",
+          "The lateral traffic coming between server farms and data centers",
+          "Traffic through the core layer only",
+          "Internet traffic only"
+        ],
+        acceptableAnswers: [
+          "The lateral traffic coming between server farms and data centers"
+        ],
+        explanation: "East-west traffic is still important to understand that many types of attacks, particularly from the inside, must be taken seriously. You need to inspect the lateral traffic coming between server farms and data centers."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which type of traffic is initially most important for security?",
+        options: [
+          "East-west traffic",
+          "North-south traffic",
+          "Both equally",
+          "Neither"
+        ],
+        acceptableAnswers: [
+          "North-south traffic"
+        ],
+        explanation: "At first, the most important point for security will be the north-south traffic because data is flowing to and from your enterprise network to the outside Internet."
+      },
+      {
+        type: "multiple-choice",
+        question: "What are examples of east-west data transfer?",
+        options: [
+          "Web browsing only",
+          "Email only",
+          "Database replication, file transfers, and inter-process communication",
+          "Internet downloads only"
+        ],
+        acceptableAnswers: [
+          "Database replication, file transfers, and inter-process communication"
+        ],
+        explanation: "Examples of east-west data transfer are database replication, file transfers, and inter-process communication."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the original storage method used by the first computers before disk drives?",
+        options: [
+          "USB drives",
+          "Hard disk drives",
+          "Punch cards and paper tape",
+          "Solid state drives"
+        ],
+        acceptableAnswers: [
+          "Punch cards and paper tape"
+        ],
+        explanation: "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed."
+      }
+    ]
+  },
+  {
     id: "windows-os-history",
     name: "Windows OS History",
     category: "Computer Science",
@@ -3918,896 +4808,6 @@ export const quizTemplates: QuizTemplate[] = [
     }
   ]
 },
-{
-  id: "introduction-to-networks",
-  name: "Introduction to Networks",
-  category: "Networking",
-  description: "Comprehensive quiz covering network fundamentals, topologies, architectures, and network types",
-  questions: [
-    {
-      type: "multiple-choice",
-      question: "What is the basic definition of a network in the computer world?",
-      options: [
-        "A single computer with internet access",
-        "Two or more connected computers that can share resources such as data and applications",
-        "A group of computers in the same room",
-        "A collection of servers only"
-      ],
-      acceptableAnswers: [
-        "Two or more connected computers that can share resources such as data and applications"
-      ],
-      explanation: "A network is defined as two or more connected computers that can share resources such as data and applications, office machines, an Internet connection, or some combination of these."
-    },
-    {
-      type: "multiple-choice",
-      question: "What language do computers use to communicate with each other on a network?",
-      options: [
-        "English",
-        "Binary code",
-        "ASCII",
-        "Hexadecimal"
-      ],
-      acceptableAnswers: [
-        "Binary code"
-      ],
-      explanation: "Computers 'talk' to each other using a computer language called binary code, which consists of lots of 1s and 0s in a specific order."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does LAN stand for?",
-      options: [
-        "Long Area Network",
-        "Local Area Network",
-        "Large Access Network",
-        "Linked Application Network"
-      ],
-      acceptableAnswers: [
-        "Local Area Network"
-      ],
-      explanation: "LAN stands for Local Area Network, which is usually restricted to spanning a particular geographic location such as an office building or a home office."
-    },
-    {
-      type: "multiple-choice",
-      question: "What device is used to connect two separate LANs together?",
-      options: [
-        "Hub",
-        "Switch",
-        "Router",
-        "Bridge"
-      ],
-      acceptableAnswers: [
-        "Router"
-      ],
-      explanation: "A router is used to connect two LANs together, allowing hosts from one LAN to access resources on another LAN."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which of the following is NOT typically a component found in networks?",
-      options: [
-        "Workstations",
-        "Servers",
-        "Hosts",
-        "All of these are common network components"
-      ],
-      acceptableAnswers: [
-        "All of these are common network components"
-      ],
-      explanation: "Workstations, servers, and hosts are all common network components. Workstations are powerful computers, servers provide network services, and hosts are devices with IP addresses."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the key difference between a workstation and a server?",
-      options: [
-        "Servers are always more powerful than workstations",
-        "Servers run specialized network operating system software and serve the network",
-        "Workstations cannot be clients",
-        "There is no difference"
-      ],
-      acceptableAnswers: [
-        "Servers run specialized network operating system software and serve the network"
-      ],
-      explanation: "Servers get their name because they are 'at the service' of the network and run specialized software known as the network operating system to maintain and control the network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a host in TCP/IP terminology?",
-      options: [
-        "Any powerful computer",
-        "Any network device with an IP address",
-        "A server only",
-        "A workstation only"
-      ],
-      acceptableAnswers: [
-        "Any network device with an IP address"
-      ],
-      explanation: "In TCP/IP-speak, host means any network device with an IP address, including workstations and servers."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which type of server handles email functions?",
-      options: [
-        "File Server",
-        "Mail Server",
-        "Print Server",
-        "Web Server"
-      ],
-      acceptableAnswers: [
-        "Mail Server"
-      ],
-      explanation: "A Mail Server is the network's post office; it handles email functions."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a Metropolitan Area Network (MAN)?",
-      options: [
-        "A network covering a metropolitan area used to interconnect various buildings and facilities",
-        "A network within a single building",
-        "A worldwide network",
-        "A personal device network"
-      ],
-      acceptableAnswers: [
-        "A network covering a metropolitan area used to interconnect various buildings and facilities"
-      ],
-      explanation: "A MAN is a network covering a metropolitan area used to interconnect various buildings and facilities usually over a carrier provider network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the primary example of a WAN that most people use daily?",
-      options: [
-        "Corporate intranet",
-        "The Internet",
-        "Campus network",
-        "Home network"
-      ],
-      acceptableAnswers: [
-        "The Internet"
-      ],
-      explanation: "The Internet is the prime example of a WAN that most people use every day."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which of the following is a key difference between WANs and LANs?",
-      options: [
-        "WANs are always faster than LANs",
-        "WANs usually need a router port or ports",
-        "LANs span larger geographic areas",
-        "WANs cannot use routers"
-      ],
-      acceptableAnswers: [
-        "WANs usually need a router port or ports"
-      ],
-      explanation: "WANs usually need a router port or ports, span larger geographic areas, and are usually slower than LANs."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does the term 'internetwork' refer to?",
-      options: [
-        "The Internet only",
-        "A type of LAN and/or WAN that connects a bunch of networks, or intranets",
-        "A single network",
-        "A wireless network"
-      ],
-      acceptableAnswers: [
-        "A type of LAN and/or WAN that connects a bunch of networks, or intranets"
-      ],
-      explanation: "An internetwork is a type of LAN and/or WAN that connects a bunch of networks, or intranets."
-    },
-    {
-      type: "multiple-choice",
-      question: "What type of network is used for close proximity connections like connecting smartphones and laptops in a conference room?",
-      options: [
-        "LAN",
-        "WAN",
-        "PAN (Personal Area Network)",
-        "MAN"
-      ],
-      acceptableAnswers: [
-        "PAN (Personal Area Network)"
-      ],
-      explanation: "PANs (Personal Area Networks) are used for close proximity connections and commonly use short distance wireless connections such as Bluetooth, infrared, or ZigBee."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does CAN stand for in networking?",
-      options: [
-        "Computer Access Network",
-        "Campus Area Network",
-        "Connected Area Network",
-        "Central Access Network"
-      ],
-      acceptableAnswers: [
-        "Campus Area Network"
-      ],
-      explanation: "CAN stands for Campus Area Network, which covers a limited geographical network such as a college or corporate campus."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a SAN designed for?",
-      options: [
-        "General purpose networking",
-        "Storage systems exclusively",
-        "Internet connectivity",
-        "Wireless connections"
-      ],
-      acceptableAnswers: [
-        "Storage systems exclusively"
-      ],
-      explanation: "A SAN (Storage Area Network) is designed for, and used exclusively by, storage systems, interconnecting servers to storage arrays."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which protocol is most prevalent in SANs?",
-      options: [
-        "Ethernet",
-        "Fibre Channel",
-        "TCP/IP",
-        "Wi-Fi"
-      ],
-      acceptableAnswers: [
-        "Fibre Channel"
-      ],
-      explanation: "Fibre Channel is the most prevalent protocol in SANs, along with iSCSI, designed specifically for storage traffic."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does SDWAN stand for?",
-      options: [
-        "Secure Data Wide Area Network",
-        "Software-Defined Wide Area Network",
-        "Standard Digital Wide Area Network",
-        "System Dynamic Wide Area Network"
-      ],
-      acceptableAnswers: [
-        "Software-Defined Wide Area Network"
-      ],
-      explanation: "SDWAN stands for Software-Defined Wide Area Network, a virtual WAN architecture that uses software to manage connectivity, devices, and services."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does MPLS stand for?",
-      options: [
-        "Multi-Protocol Label Switching",
-        "Multiprotocol Label Switching",
-        "Multiple Protocol Layer Switching",
-        "Multi-Path Label System"
-      ],
-      acceptableAnswers: [
-        "Multiprotocol Label Switching"
-      ],
-      explanation: "MPLS stands for Multiprotocol Label Switching, a switching mechanism that imposes labels (numbers) to data and then uses those labels to forward data."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a key advantage of MPLS?",
-      options: [
-        "It only works on physical links",
-        "It prioritizes data based on labels",
-        "It cannot provide redundancy",
-        "It requires dedicated hardware only"
-      ],
-      acceptableAnswers: [
-        "It prioritizes data based on labels"
-      ],
-      explanation: "Prioritizing data is a huge advantage of MPLS; for example, voice data could have priority over basic data based on the labels."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does mGRE stand for?",
-      options: [
-        "Multipoint Generic Routing Encapsulation",
-        "Multiple Gateway Routing Extension",
-        "Multi-Group Routing Exchange",
-        "Multicast Gateway Routing Engine"
-      ],
-      acceptableAnswers: [
-        "Multipoint Generic Routing Encapsulation"
-      ],
-      explanation: "mGRE stands for Multipoint Generic Routing Encapsulation, used in Dynamic Multipoint VPN deployments to dynamically create and terminate connections."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a peer-to-peer network, what characterizes the computers?",
-      options: [
-        "They have a central authority",
-        "They do not have any central or special authority—they're all peers",
-        "They all connect to one main server",
-        "They cannot share resources"
-      ],
-      acceptableAnswers: [
-        "They do not have any central or special authority—they're all peers"
-      ],
-      explanation: "Computers connected in peer-to-peer networks do not have any central or special authority—they're all peers, meaning that when it comes to authority, they're all equals."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a major drawback of peer-to-peer networks?",
-      options: [
-        "They are too fast",
-        "Security is not centrally governed",
-        "They require expensive equipment",
-        "They cannot share printers"
-      ],
-      acceptableAnswers: [
-        "Security is not centrally governed"
-      ],
-      explanation: "A major drawback of peer-to-peer networks is that security is not centrally governed, requiring each user to remember and maintain a list of users and passwords on each machine."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a client-server network, what manages the whole network?",
-      options: [
-        "Each individual client",
-        "A single server using a network operating system",
-        "A group of workstations",
-        "The Internet"
-      ],
-      acceptableAnswers: [
-        "A single server using a network operating system"
-      ],
-      explanation: "In client-server networks, a single server uses a network operating system for managing the whole network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the physical topology of a network?",
-      options: [
-        "How data flows through the network",
-        "A type of map that defines where all workstations and devices are located and the arrangement of physical media",
-        "The logical structure of the network",
-        "The IP addressing scheme"
-      ],
-      acceptableAnswers: [
-        "A type of map that defines where all workstations and devices are located and the arrangement of physical media"
-      ],
-      explanation: "The physical topology of a network is a type of map that defines the specific characteristics of a network, such as where all the workstations and other devices are located and the precise arrangement of all the physical media such as cables."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a bus topology, what is a major disadvantage?",
-      options: [
-        "It requires too many cables",
-        "Any fault in the cable would bring down the whole network",
-        "It is too expensive",
-        "It requires a central device"
-      ],
-      acceptableAnswers: [
-        "Any fault in the cable would bring down the whole network"
-      ],
-      explanation: "A major drawback of bus topology is that it doesn't offer much fault tolerance because everything is connected to that single cable, meaning any fault in the cable would bring down the whole network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What topology is also known as hub-and-spoke?",
-      options: [
-        "Bus",
-        "Star",
-        "Ring",
-        "Mesh"
-      ],
-      acceptableAnswers: [
-        "Star"
-      ],
-      explanation: "A star (hub-and-spoke) topology's computers are connected to a central point with their own individual cables or wireless connections."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a major advantage of star topology?",
-      options: [
-        "It is the cheapest topology",
-        "A single cable failure won't bring down the entire network",
-        "It doesn't require a central device",
-        "It uses the least amount of cable"
-      ],
-      acceptableAnswers: [
-        "A single cable failure won't bring down the entire network"
-      ],
-      explanation: "A major advantage of star topology is that because each computer or network segment is connected to the central device individually, if the cable fails, it brings down only the machine or network segment related to the point of failure."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the single point of failure in a star topology?",
-      options: [
-        "Any individual cable",
-        "Any individual computer",
-        "The hub or other central device such as a switch",
-        "There is no single point of failure"
-      ],
-      acceptableAnswers: [
-        "The hub or other central device such as a switch"
-      ],
-      explanation: "The central hub or switch at the center of a star topology network can give the most grief if something goes wrong with it—if it fails, down comes the whole network."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a ring topology, what happens if you want to add to the network?",
-      options: [
-        "You can easily add devices without interruption",
-        "You have no choice but to break the cable ring, which is likely to bring down the entire network",
-        "You simply plug in a new device",
-        "You need special permission"
-      ],
-      acceptableAnswers: [
-        "You have no choice but to break the cable ring, which is likely to bring down the entire network"
-      ],
-      explanation: "The ring topology has a lot in common with the bus topology because if you want to add to the network, you have no choice but to break the cable ring, which is likely to bring down the entire network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a characteristic of mesh topology?",
-      options: [
-        "It has the fewest connections per device",
-        "There's a path from every machine to every other one in the network",
-        "It is the simplest topology",
-        "It is only used in LANs"
-      ],
-      acceptableAnswers: [
-        "There's a path from every machine to every other one in the network"
-      ],
-      explanation: "In mesh topology, you'll find that there's a path from every machine to every other one in the network, which creates a lot of connections."
-    },
-    {
-      type: "multiple-choice",
-      question: "For a network with 4 computers in a full mesh topology, how many connections are there?",
-      options: [
-        "4",
-        "6",
-        "8",
-        "12"
-      ],
-      acceptableAnswers: [
-        "6"
-      ],
-      explanation: "For each n locations or hosts, you end up with n(n–1)/2 connections. For 4 computers: 4(4–1)/2 = 6 connections."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a point-to-point topology?",
-      options: [
-        "A connection between many routers",
-        "A direct connection between two routers or switches",
-        "A connection through the Internet",
-        "A wireless only connection"
-      ],
-      acceptableAnswers: [
-        "A direct connection between two routers or switches"
-      ],
-      explanation: "In a point-to-point topology, you have a direct connection between two routers or switches, giving you one communication path."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a point-to-multipoint topology?",
-      options: [
-        "A connection between two devices only",
-        "A succession of connections between an interface on one router and multiple destination routers",
-        "A mesh network",
-        "A bus network"
-      ],
-      acceptableAnswers: [
-        "A succession of connections between an interface on one router and multiple destination routers"
-      ],
-      explanation: "A point-to-multipoint topology consists of a succession of connections between an interface on one router and multiple destination routers—one point of connection to multiple points of connection."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a hybrid topology?",
-      options: [
-        "A combination of only two topologies",
-        "A combination of two or more types of physical or logical network topologies working together",
-        "Only wireless topologies",
-        "Only wired topologies"
-      ],
-      acceptableAnswers: [
-        "A combination of two or more types of physical or logical network topologies working together"
-      ],
-      explanation: "Hybrid topology means a combination of two or more types of physical or logical network topologies working together within the same network."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is fault tolerance?",
-      options: [
-        "The ability to prevent all errors",
-        "The capability of a computer or network system to respond to a condition automatically, often resolving it",
-        "The speed of the network",
-        "The cost of network equipment"
-      ],
-      acceptableAnswers: [
-        "The capability of a computer or network system to respond to a condition automatically, often resolving it"
-      ],
-      explanation: "Fault tolerance is the capability of a computer or a network system to respond to a condition automatically, often resolving it, which reduces the impact on the system."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the network backbone?",
-      options: [
-        "A type of cable",
-        "What all the network segments and servers connect to, giving the network its structure",
-        "A single server",
-        "The Internet connection"
-      ],
-      acceptableAnswers: [
-        "What all the network segments and servers connect to, giving the network its structure"
-      ],
-      explanation: "The network backbone is what all the network segments and servers connect to and what gives the network its structure."
-    },
-    {
-      type: "multiple-choice",
-      question: "What technology is commonly used for network backbones due to speed requirements?",
-      options: [
-        "10Base-T Ethernet",
-        "Wireless",
-        "Gigabit Ethernet or faster",
-        "DSL"
-      ],
-      acceptableAnswers: [
-        "Gigabit Ethernet or faster"
-      ],
-      explanation: "The backbone must use some kind of seriously fast, robust technology—often Gigabit Ethernet or faster."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a network segment?",
-      options: [
-        "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone",
-        "The backbone itself",
-        "A single computer",
-        "The Internet"
-      ],
-      acceptableAnswers: [
-        "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone"
-      ],
-      explanation: "When we refer to a segment, we can mean any small section of the network that may be connected to, but isn't actually a piece of, the backbone."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the common term for the service entry point where a carrier hands off a connection?",
-      options: [
-        "Entry point",
-        "Demarcation point or demarc",
-        "Connection point",
-        "Termination point"
-      ],
-      acceptableAnswers: [
-        "Demarcation point or demarc"
-      ],
-      explanation: "The service entry point defines the point of responsibility. The common term used is the demarcation point, or demarc for short."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a smart jack?",
-      options: [
-        "A type of network cable",
-        "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects",
-        "A network switch",
-        "A router"
-      ],
-      acceptableAnswers: [
-        "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects"
-      ],
-      explanation: "A carrier will usually terminate with a piece of equipment called a smart jack that allows them to run diagnostics up to the physical point where the customer's network connects."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a leased line?",
-      options: [
-        "A shared Internet connection",
-        "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer",
-        "A wireless connection",
-        "A dial-up connection"
-      ],
-      acceptableAnswers: [
-        "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer"
-      ],
-      explanation: "When the provider installs a leased line, it is either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer; there is no shared bandwidth."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a vSwitch?",
-      options: [
-        "A physical switch",
-        "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor",
-        "A type of router",
-        "A wireless access point"
-      ],
-      acceptableAnswers: [
-        "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor"
-      ],
-      explanation: "Companies such as VMware offer virtual switch (vSwitch) technology that provides the Ethernet switched and routing functions on the hypervisor, eliminating the need for external networking hardware."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a vNIC?",
-      options: [
-        "A physical network interface card",
-        "A virtual network interface card installed to connect the virtual device to the hypervisor",
-        "A type of cable",
-        "A network protocol"
-      ],
-      acceptableAnswers: [
-        "A virtual network interface card installed to connect the virtual device to the hypervisor"
-      ],
-      explanation: "A virtual network interface card (vNIC) is installed to connect the virtual device to the hypervisor and, from there, out to the LAN."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does NFV stand for?",
-      options: [
-        "Network Function Virtualization",
-        "Network File Verification",
-        "Network Flow Validation",
-        "Network Frequency Variable"
-      ],
-      acceptableAnswers: [
-        "Network Function Virtualization"
-      ],
-      explanation: "Network function virtualization (NFV) is the process of taking networking functions such as routers, switches, firewalls, load balancers, and controllers and virtualizing them."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is a hypervisor?",
-      options: [
-        "A type of network cable",
-        "Software that is installed directly on a bare-metal server and allows for many virtual machines to run",
-        "A physical server",
-        "A network protocol"
-      ],
-      acceptableAnswers: [
-        "Software that is installed directly on a bare-metal server and allows for many virtual machines to run"
-      ],
-      explanation: "The hypervisor is software that is installed directly on a bare-metal server and allows for many virtual machines (VMs) to run, thinking they are using the server's hardware directly."
-    },
-    {
-      type: "multiple-choice",
-      question: "What are the three layers in the three-tiered networking model?",
-      options: [
-        "Physical, Data Link, Network",
-        "Core, Distribution, Access",
-        "Application, Presentation, Session",
-        "Input, Process, Output"
-      ],
-      acceptableAnswers: [
-        "Core, Distribution, Access"
-      ],
-      explanation: "The three-tiered networking model consists of the Core Layer, Distribution Layer, and Access Layer."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the core layer also considered?",
-      options: [
-        "The access layer",
-        "The backbone of the network",
-        "The distribution layer",
-        "The edge layer"
-      ],
-      acceptableAnswers: [
-        "The backbone of the network"
-      ],
-      explanation: "The core layer is also considered the backbone of the network. It is where you will find connectivity between geographic areas with WAN lines."
-    },
-    {
-      type: "multiple-choice",
-      question: "What should be done at the core layer?",
-      options: [
-        "Packet filtering and security policies",
-        "Only routing and switching of the entire network—nothing should slow it down",
-        "Connecting end-user hosts",
-        "Creating collision domains"
-      ],
-      acceptableAnswers: [
-        "Only routing and switching of the entire network—nothing should slow it down"
-      ],
-      explanation: "The core layer should be designed for high availability and only provides routing and switching of the entire network. Nothing should be done at the core layer to slow it down!"
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the distribution layer also referred to as?",
-      options: [
-        "The core layer",
-        "The workgroup layer or the aggregation layer",
-        "The access layer",
-        "The edge layer"
-      ],
-      acceptableAnswers: [
-        "The workgroup layer or the aggregation layer"
-      ],
-      explanation: "The distribution layer is often referred to as the workgroup layer or the aggregation layer because it allows for connectivity to multiple access layer switches."
-    },
-    {
-      type: "multiple-choice",
-      question: "Where is the control plane located in the three-tier model?",
-      options: [
-        "Core layer",
-        "Distribution layer",
-        "Access layer",
-        "All layers"
-      ],
-      acceptableAnswers: [
-        "Distribution layer"
-      ],
-      explanation: "The distribution layer is where the control plane is located and is where packet filtering, security policies, routing between VLANs, and defining of broadcast domains are performed."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the access layer also referred to as?",
-      options: [
-        "The core layer",
-        "The distribution layer",
-        "The edge switching layer",
-        "The aggregation layer"
-      ],
-      acceptableAnswers: [
-        "The edge switching layer"
-      ],
-      explanation: "The access layer is often referred to as the edge switching layer, and it connects the end-user hosts."
-    },
-    {
-      type: "multiple-choice",
-      question: "What does the access layer provide support for?",
-      options: [
-        "WAN connectivity only",
-        "Core routing only",
-        "Quality of service (QoS), power over Ethernet (PoE), and security",
-        "Distribution switching only"
-      ],
-      acceptableAnswers: [
-        "Quality of service (QoS), power over Ethernet (PoE), and security"
-      ],
-      explanation: "The access layer provides local switching and the creation of collision domains. It is simply designed for access to the network and it is where support begins for quality of service (QoS), power over Ethernet (PoE), and security."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the collapsed-core model?",
-      options: [
-        "A model that separates core and distribution",
-        "A model that condenses the core and distribution layers into one piece of switching equipment",
-        "A model without an access layer",
-        "A model with only two layers"
-      ],
-      acceptableAnswers: [
-        "A model that condenses the core and distribution layers into one piece of switching equipment"
-      ],
-      explanation: "The collapsed-core model condenses the core and distribution tiers into one tier by supporting both the core layer and the distribution layer on the same piece of network switching equipment."
-    },
-    {
-      type: "multiple-choice",
-      question: "Why was the collapsed-core model adopted?",
-      options: [
-        "To increase complexity",
-        "To save cost and complexity in networks",
-        "To slow down networks",
-        "To reduce security"
-      ],
-      acceptableAnswers: [
-        "To save cost and complexity in networks"
-      ],
-      explanation: "The collapsed-core model was adopted to save cost and complexity in networks. With the powerful switching of today, we can support both the core layer and the distribution layer on the same piece of network switching equipment."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is spine-leaf switching also referred to as?",
-      options: [
-        "A three-tier model",
-        "A CLOS network",
-        "A collapsed-core model",
-        "A hybrid topology"
-      ],
-      acceptableAnswers: [
-        "A CLOS network"
-      ],
-      explanation: "The concept of spine-leaf switching is often referred to as a CLOS network, named after Charles Clos, who formalized the concept in 1938 of multistage circuit-switching."
-    },
-    {
-      type: "multiple-choice",
-      question: "Where is spine-leaf switching almost exclusively used?",
-      options: [
-        "In campus networks",
-        "In data center network architecture",
-        "In home networks",
-        "In MANs"
-      ],
-      acceptableAnswers: [
-        "In data center network architecture"
-      ],
-      explanation: "Spine and leaf switching provides extremely fast networking switching, and it is almost exclusively used in data center network architecture."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a spine-leaf network, can leaf switches directly talk to other leaf switches?",
-      options: [
-        "Yes, always",
-        "No, leaf switches always need to talk through the spine",
-        "Only sometimes",
-        "Only in full mesh configuration"
-      ],
-      acceptableAnswers: [
-        "No, leaf switches always need to talk through the spine"
-      ],
-      explanation: "A leaf switch will never directly talk to another leaf switch; it will always need to talk through the backbone or spine of the network."
-    },
-    {
-      type: "multiple-choice",
-      question: "In a spine-leaf network, can servers be connected directly to the spine?",
-      options: [
-        "Yes, always",
-        "No, servers are always connected through a leaf switch",
-        "Only in special configurations",
-        "Only for certain types of servers"
-      ],
-      acceptableAnswers: [
-        "No, servers are always connected through a leaf switch"
-      ],
-      explanation: "Servers will never be connected to the spine of the network directly. Servers are always connected through a leaf switch."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is north-south traffic?",
-      options: [
-        "Traffic between servers in a data center",
-        "Traffic found entering and leaving your internal network",
-        "Traffic within a single LAN",
-        "Traffic between leaf switches"
-      ],
-      acceptableAnswers: [
-        "Traffic found entering and leaving your internal network"
-      ],
-      explanation: "North-South traffic is found entering and leaving your internal network. The southbound traffic enters through a firewall and routers. Northbound traffic is routed from your internal network to the Internet."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is east-west traffic?",
-      options: [
-        "Traffic entering and leaving the network",
-        "The lateral traffic coming between server farms and data centers",
-        "Traffic through the core layer only",
-        "Internet traffic only"
-      ],
-      acceptableAnswers: [
-        "The lateral traffic coming between server farms and data centers"
-      ],
-      explanation: "East-west traffic is still important to understand that many types of attacks, particularly from the inside, must be taken seriously. You need to inspect the lateral traffic coming between server farms and data centers."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which type of traffic is initially most important for security?",
-      options: [
-        "East-west traffic",
-        "North-south traffic",
-        "Both equally",
-        "Neither"
-      ],
-      acceptableAnswers: [
-        "North-south traffic"
-      ],
-      explanation: "At first, the most important point for security will be the north-south traffic because data is flowing to and from your enterprise network to the outside Internet."
-    },
-    {
-      type: "multiple-choice",
-      question: "What are examples of east-west data transfer?",
-      options: [
-        "Web browsing only",
-        "Email only",
-        "Database replication, file transfers, and inter-process communication",
-        "Internet downloads only"
-      ],
-      acceptableAnswers: [
-        "Database replication, file transfers, and inter-process communication"
-      ],
-      explanation: "Examples of east-west data transfer are database replication, file transfers, and inter-process communication."
-    },
-    {
-      type: "multiple-choice",
-      question: "What was the original storage method used by the first computers before disk drives?",
-      options: [
-        "USB drives",
-        "Hard disk drives",
-        "Punch cards and paper tape",
-        "Solid state drives"
-      ],
-      acceptableAnswers: [
-        "Punch cards and paper tape"
-      ],
-      explanation: "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed."
-    }
-  ]
-}
 ];
 
 export const categories = Array.from(
