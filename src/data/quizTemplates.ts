@@ -4808,6 +4808,308 @@ export const quizTemplates: QuizTemplate[] = [
     }
   ]
 },
+{
+  id: "lives-of-the-dead",
+  name: "Lives of the Dead",
+  category: "Literature",
+  description: "Step-by-step quiz to memorize constructing the TAR response for 'Lives of the Dead' - from first sentence to last",
+  questions: [
+    {
+      type: "multiple-choice",
+      question: "What should the FIRST sentence of Paragraph 1 establish?",
+      options: [
+        "The thesis statement",
+        "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life",
+        "Evidence from the text",
+        "The central idea"
+      ],
+      acceptableAnswers: [
+        "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life"
+      ],
+      explanation: "The first sentence should provide chapter-specific context. Example: 'In the chapter \"Lives of the Dead,\" O'Brien reflects on how encounters with death throughout his life—from Linda's death as a child to the soldiers he witnessed dying in Vietnam—taught him the power of storytelling to resurrect the dead.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should the SECOND sentence of Paragraph 1 explain?",
+      options: [
+        "The literary devices used",
+        "How stories bring the dead back to life through narrative and memory",
+        "The evidence to be used",
+        "The theme only"
+      ],
+      acceptableAnswers: [
+        "How stories bring the dead back to life through narrative and memory"
+      ],
+      explanation: "The second sentence should continue the context and show how stories function. Example: 'Through narrative and memory, O'Brien demonstrates how stories can bring the deceased back to life, allowing them to speak, smile, and exist beyond physical death.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What TWO literary devices should be used in the thesis (sentence 3 of Paragraph 1)?",
+      options: [
+        "Motif and symbolism",
+        "Motif of storytelling and characterization",
+        "Characterization and conflict",
+        "Symbolism and tone"
+      ],
+      acceptableAnswers: [
+        "Motif of storytelling and characterization"
+      ],
+      explanation: "The thesis should use the motif of storytelling and characterization. These are the two literary devices that best support the central idea about stories resurrecting the dead."
+    },
+    {
+      type: "multiple-choice",
+      question: "What should the CENTRAL IDEA be for 'Lives of the Dead'?",
+      options: [
+        "Death is final and cannot be overcome",
+        "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation",
+        "War changes people permanently",
+        "Childhood experiences shape who we become"
+      ],
+      acceptableAnswers: [
+        "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation"
+      ],
+      explanation: "The central idea must be a complete sentence that ties together all elements. For 'Lives of the Dead,' it is: 'Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should the complete THESIS sentence (Paragraph 1, Sentence 3) say?",
+      options: [
+        "In \"Lives of the Dead,\" Tim O'Brien uses stories to show death is final.",
+        "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.",
+        "O'Brien tells stories about dead people.",
+        "The chapter is about Linda's death."
+      ],
+      acceptableAnswers: [
+        "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation."
+      ],
+      explanation: "The thesis must follow the format: In \"Chapter Name,\" [Author]'s use of [literary device 1] and [literary device 2] conveys that [central idea]."
+    },
+    {
+      type: "multiple-choice",
+      question: "What should Paragraph 2, Sentence 1 (topic sentence) introduce?",
+      options: [
+        "The second literary device",
+        "The first literary device (motif of storytelling) with initial evidence about stories saving us",
+        "The central idea",
+        "Background information"
+      ],
+      acceptableAnswers: [
+        "The first literary device (motif of storytelling) with initial evidence about stories saving us"
+      ],
+      explanation: "Paragraph 2 Sentence 1 should be a topic sentence introducing the motif of storytelling with evidence. Example: 'The motif of storytelling as a means of resurrection captures how narratives can bring the dead back to life, as O'Brien establishes early in the chapter when he declares, \"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\"'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should Paragraph 2, Sentence 2 explain?",
+      options: [
+        "The second literary device",
+        "How stories connect to dreams and function as a form of dreaming that transcends death",
+        "Character development",
+        "The conclusion"
+      ],
+      acceptableAnswers: [
+        "How stories connect to dreams and function as a form of dreaming that transcends death"
+      ],
+      explanation: "Sentence 2 should analyze/explain the first piece of evidence. Example: 'O'Brien connects stories directly to dreams, revealing that narrative functions as a form of dreaming that transcends death.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What evidence should Paragraph 2, Sentence 3 include about how stories create 'the illusion of aliveness'?",
+      options: [
+        "Evidence about characterization",
+        "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'",
+        "Evidence about war only",
+        "No evidence needed"
+      ],
+      acceptableAnswers: [
+        "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'"
+      ],
+      explanation: "Sentence 3 should provide additional evidence. Example: 'The motif continues as O'Brien explains how stories create \"the illusion of aliveness,\" describing how \"the bodies are animated\" and \"you make the dead talk\" through narrative.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What evidence should Paragraph 2, Sentence 4 include to show how soldiers use stories to cope?",
+      options: [
+        "Evidence about Linda only",
+        "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow",
+        "Evidence about the old man only",
+        "Evidence about characterization"
+      ],
+      acceptableAnswers: [
+        "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow"
+      ],
+      explanation: "Sentence 4 should show the transformation in action. Example: 'This transformation is evident when O'Brien recounts the men's reaction to Ted Lavender's death, where they keep \"the dead alive with stories,\" pretending Lavender is still mellow and relaxed rather than dead, showing how stories rewrite reality to make loss bearable.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should Paragraph 2, Sentence 5 conclude about the motif?",
+      options: [
+        "That stories don't work",
+        "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'",
+        "That only physical resurrection is possible",
+        "That characterization is more important"
+      ],
+      acceptableAnswers: [
+        "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'"
+      ],
+      explanation: "The final sentence should provide deeper analysis connecting to the central idea. Example: 'The motif reaches its fullest expression when O'Brien reveals that through stories, \"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world,\" demonstrating that narrative has the power to literally resurrect the deceased, allowing them to exist in an eternal present where they can speak and interact as if never having died.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should Paragraph 3, Sentence 1 (topic sentence) introduce?",
+      options: [
+        "The first literary device again",
+        "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence",
+        "New plot information",
+        "The central idea again"
+      ],
+      acceptableAnswers: [
+        "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence"
+      ],
+      explanation: "Paragraph 3 Sentence 1 should introduce characterization. Example: 'O'Brien's use of characterization highlights the transformation from Timmy, the traumatized child, to Tim, the writer who uses narrative to save the dead, revealing how encounters with death shape identity and purpose.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What evidence should Paragraph 3, Sentence 2 include about Timmy's first encounter with death?",
+      options: [
+        "Evidence about the soldiers only",
+        "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'",
+        "Evidence about the movie only",
+        "No evidence needed"
+      ],
+      acceptableAnswers: [
+        "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'"
+      ],
+      explanation: "Sentence 2 should show Timmy's initial inability to process loss. Example: 'As a nine-year-old, Timmy experiences death for the first time when Linda dies of a brain tumor, and O'Brien shows his initial inability to process loss when he visits the funeral home and finds Linda's body \"bloated\" and unrecognizable, thinking \"It didn't seem real. A mistake, I thought.\"'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What should Paragraph 3, Sentence 3 explain about Timmy's response to trauma?",
+      options: [
+        "That he forgot about Linda",
+        "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'",
+        "That he moved on immediately",
+        "That he avoided stories"
+      ],
+      acceptableAnswers: [
+        "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'"
+      ],
+      explanation: "Sentence 3 should show how Timmy's response becomes the foundation of his future identity. Example: 'Timmy's response to this trauma becomes the foundation of his future identity, as he begins \"to practice the magic of stories\" through dreams where Linda comes alive, making him \"begin going to bed earlier and earlier\" because his dreams had \"become a secret meeting place\" where death could be reversed.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What evidence should Paragraph 3, Sentence 4 include about Timmy's evolution to Tim?",
+      options: [
+        "Evidence about Linda only",
+        "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need",
+        "Evidence about war only",
+        "No evolution needed"
+      ],
+      acceptableAnswers: [
+        "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need"
+      ],
+      explanation: "Sentence 4 should show the connection between child and adult. Example: 'The characterization shows Timmy's evolution when O'Brien reflects, \"I was Timmy then; now I'm Tim. But the essence remains the same,\" revealing that the adult writer maintains the child's need to resurrect the dead, but has transformed this need into his vocation.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What evidence should Paragraph 3, Sentence 5 include to conclude the characterization analysis?",
+      options: [
+        "Evidence about stories not working",
+        "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'",
+        "Evidence about the movie only",
+        "Evidence about war trauma only"
+      ],
+      acceptableAnswers: [
+        "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'"
+      ],
+      explanation: "Sentence 5 should tie characterization back to the central idea. Example: 'As Tim the writer, O'Brien states, \"I want to save Linda's life. Not her body—her life,\" demonstrating how encounters with death in childhood shaped his understanding that stories offer immortality, allowing him to \"steal her soul\" and \"revive, at least briefly, that which is absolute and unchanging\" through narrative. By the end, O'Brien reveals that the entire chapter \"is as Tim trying to save Timmy's life with a story,\" showing that his encounters with death not only influenced his future but became the very foundation of his identity as a writer who uses stories to preserve the dead and heal the living.'"
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quote should be used in Paragraph 2 about stories saving us?",
+      options: [
+        "\"I was Timmy then; now I'm Tim\"",
+        "\"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\"",
+        "\"It didn't seem real\"",
+        "\"Timmy, stop crying\""
+      ],
+      acceptableAnswers: [
+        "\"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\""
+      ],
+      explanation: "This is the key opening quote that establishes the motif of storytelling and should be used in Paragraph 2, Sentence 1."
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quote should be used in Paragraph 2 about how stories animate the dead?",
+      options: [
+        "\"I want to save Linda's life\"",
+        "\"the bodies are animated\" and \"you make the dead talk\"",
+        "\"I was Timmy then\"",
+        "\"It didn't seem real\""
+      ],
+      acceptableAnswers: [
+        "\"the bodies are animated\" and \"you make the dead talk\""
+      ],
+      explanation: "This quote from Paragraph 2, Sentence 3 shows how stories create 'the illusion of aliveness' and should be included when discussing how stories work."
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quote should be used in Paragraph 2 about the dead returning to the world?",
+      options: [
+        "\"I was Timmy then; now I'm Tim\"",
+        "\"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world\"",
+        "\"It didn't seem real\"",
+        "\"Timmy, stop crying\""
+      ],
+      acceptableAnswers: [
+        "\"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world\""
+      ],
+      explanation: "This quote should be used in Paragraph 2, Sentence 5 as the fullest expression of the motif showing how stories literally resurrect the dead."
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quote should be used in Paragraph 3 about Timmy's inability to recognize Linda's body?",
+      options: [
+        "\"stories can save us\"",
+        "\"It didn't seem real. A mistake, I thought.\"",
+        "\"I was Timmy then; now I'm Tim\"",
+        "\"the bodies are animated\""
+      ],
+      acceptableAnswers: [
+        "\"It didn't seem real. A mistake, I thought.\""
+      ],
+      explanation: "This quote from Paragraph 3, Sentence 2 shows Timmy's initial trauma and inability to process Linda's death when he sees her bloated, unrecognizable body at the funeral home."
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quotes should be used in Paragraph 3 about Timmy practicing the magic of stories?",
+      options: [
+        "\"to practice the magic of stories\" and dreams had \"become a secret meeting place\"",
+        "\"stories can save us\"",
+        "\"the bodies are animated\"",
+        "\"It didn't seem real\""
+      ],
+      acceptableAnswers: [
+        "\"to practice the magic of stories\" and dreams had \"become a secret meeting place\""
+      ],
+      explanation: "These quotes from Paragraph 3, Sentence 3 show how Timmy begins using stories as a coping mechanism, making his dreams a place where Linda comes alive."
+    },
+    {
+      type: "multiple-choice",
+      question: "What key quotes should be used in Paragraph 3, Sentence 5 to conclude the characterization?",
+      options: [
+        "\"stories can save us\"",
+        "\"I want to save Linda's life. Not her body—her life\" and \"steal her soul\" and \"is as Tim trying to save Timmy's life with a story\"",
+        "\"It didn't seem real\"",
+        "\"the bodies are animated\""
+      ],
+      acceptableAnswers: [
+        "\"I want to save Linda's life. Not her body—her life\" and \"steal her soul\" and \"is as Tim trying to save Timmy's life with a story\""
+      ],
+      explanation: "These quotes from Paragraph 3, Sentence 5 show Tim's transformation into a writer who uses stories to save the dead, and the final quote reveals that the entire chapter itself is an act of storytelling that saves Timmy's life."
+    }
+  ]
+},
 ];
 
 export const categories = Array.from(
