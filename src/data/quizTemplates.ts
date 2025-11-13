@@ -5110,6 +5110,584 @@ export const quizTemplates: QuizTemplate[] = [
     }
   ]
 },
+{
+  id: "us-constitution",
+  name: "U.S. Constitution",
+  category: "US History",
+  description: "Comprehensive quiz covering the U.S. Constitution, including the three branches of government, amendments, and key constitutional principles",
+  questions: [
+    {
+      type: "multiple-choice",
+      question: "What is the purpose of the Preamble?",
+      options: [
+        "To establish the three branches of government",
+        "To outline the goals and purposes of the Constitution",
+        "To list the rights of citizens",
+        "To define the powers of Congress"
+      ],
+      acceptableAnswers: [
+        "To outline the goals and purposes of the Constitution"
+      ],
+      explanation: "The Preamble introduces the Constitution and states its goals: to form a more perfect union, establish justice, ensure domestic tranquility, provide for the common defense, promote the general welfare, and secure the blessings of liberty."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the function of the Legislative Branch?",
+      options: [
+        "To enforce laws",
+        "To make laws",
+        "To interpret laws",
+        "To execute laws"
+      ],
+      acceptableAnswers: ["To make laws"]
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the function of the Executive Branch?",
+      options: [
+        "To make laws",
+        "To enforce laws",
+        "To interpret laws",
+        "To create laws"
+      ],
+      acceptableAnswers: ["To enforce laws"]
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the function of the Judicial Branch?",
+      options: [
+        "To make laws",
+        "To enforce laws",
+        "To interpret laws",
+        "To execute laws"
+      ],
+      acceptableAnswers: ["To interpret laws"]
+    },
+    {
+      type: "multiple-choice",
+      question: "What term is used to identify a two-house legislature?",
+      options: [
+        "Unicameral",
+        "Bicameral",
+        "Tricameral",
+        "Multicameral"
+      ],
+      acceptableAnswers: ["Bicameral"],
+      explanation: "A bicameral legislature consists of two separate chambers or houses, such as the U.S. Congress with the House of Representatives and the Senate."
+    },
+    {
+      type: "constructed-response",
+      question: "List the qualifications to become a US Representative.",
+      acceptableAnswers: [
+        "At least 25 years old, U.S. citizen for at least 7 years, resident of the state they represent",
+        "25 years old, citizen for 7 years, resident of state",
+        "Must be 25 years of age, a citizen of the United States for at least 7 years, and an inhabitant of the state in which they are elected"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List the qualifications to become a US Senator.",
+      acceptableAnswers: [
+        "At least 30 years old, U.S. citizen for at least 9 years, resident of the state they represent",
+        "30 years old, citizen for 9 years, resident of state",
+        "Must be 30 years of age, a citizen of the United States for at least 9 years, and an inhabitant of the state in which they are elected"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the term of office for a US Representative?",
+      options: [
+        "2 years",
+        "4 years",
+        "6 years",
+        "8 years"
+      ],
+      acceptableAnswers: ["2 years"]
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the term of office for a US Senator?",
+      options: [
+        "2 years",
+        "4 years",
+        "6 years",
+        "8 years"
+      ],
+      acceptableAnswers: ["6 years"]
+    },
+    {
+      type: "multiple-choice",
+      question: "How many terms may representatives or senators run for?",
+      options: [
+        "No limit",
+        "2 terms",
+        "3 terms",
+        "4 terms"
+      ],
+      acceptableAnswers: ["No limit"],
+      explanation: "There are no term limits for members of Congress. Representatives and senators can be re-elected indefinitely."
+    },
+    {
+      type: "multiple-choice",
+      question: "How is representation in the House of Representatives determined?",
+      options: [
+        "Equal representation for each state",
+        "Based on population",
+        "Based on land area",
+        "Based on state wealth"
+      ],
+      acceptableAnswers: ["Based on population"],
+      explanation: "Representation in the House is based on each state's population, with each state guaranteed at least one representative."
+    },
+    {
+      type: "multiple-choice",
+      question: "How many senators does each state get?",
+      options: [
+        "1",
+        "2",
+        "3",
+        "Based on population"
+      ],
+      acceptableAnswers: ["2"],
+      explanation: "Each state has exactly two senators, regardless of population, ensuring equal representation in the Senate."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the maximum number of representatives a state can have in the House of Representatives?",
+      options: [
+        "50",
+        "100",
+        "435",
+        "There is no maximum"
+      ],
+      acceptableAnswers: ["There is no maximum"],
+      explanation: "While the total number of representatives is fixed at 435, there is no constitutional maximum for a single state. However, the total House membership is capped at 435 by law."
+    },
+    {
+      type: "constructed-response",
+      question: "Explain the impeachment process. Which house has the sole power of impeachment?",
+      acceptableAnswers: [
+        "The House of Representatives has the sole power of impeachment (bringing charges). The Senate then holds the trial and can remove the official from office with a two-thirds vote.",
+        "House impeaches, Senate tries",
+        "The House of Representatives impeaches, and the Senate conducts the trial"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List powers given to the House of Representatives.",
+      acceptableAnswers: [
+        "Power to impeach, originate revenue bills, elect the president if no candidate receives a majority of electoral votes",
+        "Impeachment, revenue bills, elect president in case of tie",
+        "Sole power of impeachment, power to originate bills for raising revenue, power to elect the president in case of electoral college tie"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List powers given to the Senate.",
+      acceptableAnswers: [
+        "Power to try impeachments, approve treaties, approve presidential appointments, elect the vice president if no candidate receives a majority",
+        "Try impeachments, approve treaties and appointments, elect vice president in case of tie",
+        "Sole power to try impeachments, power to approve treaties with two-thirds vote, power to approve presidential appointments, power to elect the vice president in case of electoral college tie"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List the powers of Congress.",
+      acceptableAnswers: [
+        "Power to tax, borrow money, regulate commerce, coin money, declare war, raise and support armies, make all laws necessary and proper",
+        "Tax, borrow, regulate commerce, coin money, declare war, raise armies, necessary and proper clause",
+        "Power to lay and collect taxes, borrow money, regulate interstate and foreign commerce, coin money, declare war, raise and support armies and navies, and make all laws necessary and proper for carrying out these powers"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "Explain the purpose of the Elastic Clause.",
+      options: [
+        "To allow Congress to stretch the Constitution",
+        "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers",
+        "To allow the president to expand his powers",
+        "To give states more flexibility"
+      ],
+      acceptableAnswers: [
+        "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers"
+      ],
+      explanation: "The Elastic Clause (Necessary and Proper Clause) allows Congress to make laws that are necessary and proper for executing its enumerated powers, giving Congress flexibility to address new situations."
+    },
+    {
+      type: "constructed-response",
+      question: "What is Congress not permitted to do?",
+      acceptableAnswers: [
+        "Pass ex post facto laws, suspend writ of habeas corpus except in cases of rebellion or invasion, grant titles of nobility, tax exports",
+        "Ex post facto laws, suspend habeas corpus, grant titles of nobility, tax exports",
+        "Congress cannot pass ex post facto laws, suspend the writ of habeas corpus (except in cases of rebellion or invasion), grant titles of nobility, or tax exports from states"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List the qualifications for president and vice president.",
+      acceptableAnswers: [
+        "At least 35 years old, natural-born U.S. citizen, resident of the United States for at least 14 years",
+        "35 years old, natural-born citizen, 14 years resident",
+        "Must be at least 35 years of age, a natural-born citizen of the United States, and have been a resident of the United States for at least 14 years"
+      ]
+    },
+    {
+      type: "constructed-response",
+      question: "List powers of the president.",
+      acceptableAnswers: [
+        "Commander in chief of the military, power to veto legislation, power to make treaties (with Senate approval), power to appoint officials (with Senate approval), power to grant pardons",
+        "Commander in chief, veto, make treaties, appoint officials, grant pardons",
+        "Serves as commander in chief of the armed forces, can veto bills passed by Congress, can make treaties with Senate approval, can appoint federal officials with Senate approval, can grant pardons and reprieves"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the only official role played by the vice president?",
+      options: [
+        "To serve as commander in chief",
+        "To preside over the Senate and cast tie-breaking votes",
+        "To veto legislation",
+        "To appoint Supreme Court justices"
+      ],
+      acceptableAnswers: [
+        "To preside over the Senate and cast tie-breaking votes"
+      ],
+      explanation: "The vice president's only constitutional duty is to serve as president of the Senate, with the power to cast a vote only in case of a tie."
+    },
+    {
+      type: "constructed-response",
+      question: "Explain the Electoral College. How does a state know how many electors they are entitled to?",
+      acceptableAnswers: [
+        "The Electoral College elects the president. Each state gets electors equal to the number of its senators plus representatives. The total is 538 electors (435 representatives + 100 senators + 3 for DC).",
+        "Electors equal to senators plus representatives",
+        "The Electoral College is the body that elects the president. Each state receives a number of electors equal to its total number of senators and representatives in Congress. The District of Columbia also receives 3 electors."
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "According to the original Constitution, how many terms could a person serve as president?",
+      options: [
+        "1 term",
+        "2 terms",
+        "3 terms",
+        "No limit"
+      ],
+      acceptableAnswers: ["No limit"],
+      explanation: "The original Constitution did not set term limits for the presidency. The 22nd Amendment, ratified in 1951, limited presidents to two terms."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the maximum number of years a person can be president today?",
+      options: [
+        "4 years",
+        "8 years",
+        "10 years",
+        "12 years"
+      ],
+      acceptableAnswers: ["10 years"],
+      explanation: "A person can serve a maximum of 10 years: up to 2 years completing another president's term plus 2 full terms (8 years) = 10 years total."
+    },
+    {
+      type: "multiple-choice",
+      question: "According to the original Constitution, who were the only people in the Federal government directly elected by the people?",
+      options: [
+        "The president and vice president",
+        "US Representatives",
+        "US Senators",
+        "Federal judges"
+      ],
+      acceptableAnswers: ["US Representatives"],
+      explanation: "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures, and the president was chosen by the Electoral College."
+    },
+    {
+      type: "constructed-response",
+      question: "List the qualifications to be a Federal judge.",
+      acceptableAnswers: [
+        "There are no specific qualifications listed in the Constitution",
+        "No qualifications specified",
+        "The Constitution does not specify any qualifications for federal judges, unlike the requirements for members of Congress or the president"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "How long do Federal judges serve?",
+      options: [
+        "4 years",
+        "6 years",
+        "8 years",
+        "For life (during good behavior)"
+      ],
+      acceptableAnswers: ["For life (during good behavior)"],
+      explanation: "Federal judges serve for life, as long as they maintain 'good behavior,' which allows them to make decisions without political pressure."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the only court established in the Constitution?",
+      options: [
+        "The Supreme Court",
+        "The Court of Appeals",
+        "The District Court",
+        "The Federal Court"
+      ],
+      acceptableAnswers: ["The Supreme Court"],
+      explanation: "The Constitution only explicitly establishes the Supreme Court. All other federal courts were created by Congress."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the only crime mentioned in the Constitution?",
+      options: [
+        "Murder",
+        "Treason",
+        "Theft",
+        "Perjury"
+      ],
+      acceptableAnswers: ["Treason"],
+      explanation: "Treason is the only crime specifically defined in the Constitution, which states it consists of levying war against the United States or giving aid and comfort to its enemies."
+    },
+    {
+      type: "multiple-choice",
+      question: "What was the one part of the Articles of Confederation that became part of the Constitution?",
+      options: [
+        "The unicameral legislature",
+        "The requirement for unanimous consent to amend",
+        "The full faith and credit clause",
+        "The power to tax"
+      ],
+      acceptableAnswers: ["The full faith and credit clause"],
+      explanation: "The Full Faith and Credit Clause, which requires states to recognize the public acts, records, and judicial proceedings of other states, was carried over from the Articles of Confederation."
+    },
+    {
+      type: "constructed-response",
+      question: "How can the Constitution be amended?",
+      acceptableAnswers: [
+        "An amendment can be proposed by a two-thirds vote of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or conventions",
+        "Two-thirds of Congress proposes, three-fourths of states ratify",
+        "An amendment must be proposed by either two-thirds of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or by conventions in three-fourths of the states"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "How many amendments make up the Bill of Rights?",
+      options: [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      acceptableAnswers: ["10"],
+      explanation: "The Bill of Rights consists of the first 10 amendments to the Constitution, which protect individual liberties and limit the power of the federal government."
+    },
+    {
+      type: "multiple-choice",
+      question: "How many amendments are part of the Constitution today?",
+      options: [
+        "10",
+        "25",
+        "27",
+        "30"
+      ],
+      acceptableAnswers: ["27"],
+      explanation: "There are currently 27 amendments to the U.S. Constitution, with the most recent being the 27th Amendment regarding congressional pay."
+    },
+    {
+      type: "multiple-choice",
+      question: "What is the Supremacy Clause?",
+      options: [
+        "The clause that makes the president supreme over Congress",
+        "The clause that establishes the Constitution and federal laws as the supreme law of the land",
+        "The clause that gives states power over the federal government",
+        "The clause that makes the Supreme Court the highest court"
+      ],
+      acceptableAnswers: [
+        "The clause that establishes the Constitution and federal laws as the supreme law of the land"
+      ],
+      explanation: "The Supremacy Clause establishes that the Constitution, federal laws, and treaties are the supreme law of the land, taking precedence over state laws."
+    },
+    {
+      type: "multiple-choice",
+      question: "How many states were needed to ratify the Constitution?",
+      options: [
+        "7",
+        "9",
+        "10",
+        "13"
+      ],
+      acceptableAnswers: ["9"],
+      explanation: "The Constitution required ratification by 9 out of 13 states to go into effect, as specified in Article VII."
+    },
+    {
+      type: "constructed-response",
+      question: "List the four freedoms/rights in the 1st Amendment.",
+      acceptableAnswers: [
+        "Freedom of speech, freedom of religion, freedom of the press, freedom of assembly, and the right to petition the government",
+        "Speech, religion, press, assembly, petition",
+        "The First Amendment protects freedom of speech, freedom of religion (establishment and free exercise), freedom of the press, freedom of assembly, and the right to petition the government for redress of grievances"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "Explain Reserved Powers.",
+      options: [
+        "Powers reserved for the federal government",
+        "Powers reserved for the president",
+        "Powers reserved for the states under the 10th Amendment",
+        "Powers reserved for Congress"
+      ],
+      acceptableAnswers: [
+        "Powers reserved for the states under the 10th Amendment"
+      ],
+      explanation: "Reserved powers are those not delegated to the federal government nor prohibited to the states, and are therefore reserved for the states under the 10th Amendment."
+    },
+    {
+      type: "multiple-choice",
+      question: "Which amendment has never had to be enforced or challenged in court?",
+      options: [
+        "The 1st Amendment",
+        "The 3rd Amendment",
+        "The 5th Amendment",
+        "The 8th Amendment"
+      ],
+      acceptableAnswers: ["The 3rd Amendment"],
+      explanation: "The 3rd Amendment, which prohibits the quartering of soldiers in private homes without consent, has rarely been litigated and has never been the basis for a Supreme Court decision."
+    },
+    {
+      type: "constructed-response",
+      question: "List the rights protected in the 5th Amendment.",
+      acceptableAnswers: [
+        "Right to grand jury, protection against double jeopardy, protection against self-incrimination, due process of law, and just compensation for private property taken for public use",
+        "Grand jury, double jeopardy, self-incrimination, due process, just compensation",
+        "The 5th Amendment protects: the right to a grand jury indictment for serious crimes, protection against double jeopardy, protection against self-incrimination, the right to due process of law, and the requirement of just compensation when private property is taken for public use"
+      ]
+    },
+    {
+      type: "multiple-choice",
+      question: "Why is the 8th Amendment so frequently debated?",
+      options: [
+        "It protects against excessive bail and fines",
+        "It prohibits cruel and unusual punishment, which is subject to interpretation",
+        "It guarantees the right to a speedy trial",
+        "It protects against unreasonable searches"
+      ],
+      acceptableAnswers: [
+        "It prohibits cruel and unusual punishment, which is subject to interpretation"
+      ],
+      explanation: "The 8th Amendment's prohibition of 'cruel and unusual punishment' is frequently debated because what constitutes cruel and unusual punishment is open to interpretation and changes over time."
+    },
+    {
+      type: "multiple-choice",
+      question: "If police believe illegal activities are taking place in a person's home, what must they obtain from a judge before entering?",
+      options: [
+        "A warrant",
+        "Permission from the homeowner",
+        "A subpoena",
+        "A summons"
+      ],
+      acceptableAnswers: ["A warrant"],
+      explanation: "The 4th Amendment requires police to obtain a search warrant from a judge before entering a person's home, unless there are exigent circumstances."
+    },
+    {
+      type: "multiple-choice",
+      question: "The Miranda Rights are an example of ___________ ______________.",
+      options: [
+        "Due process",
+        "Procedural due process",
+        "Substantive due process",
+        "Equal protection"
+      ],
+      acceptableAnswers: ["Procedural due process"],
+      explanation: "Miranda Rights, which require police to inform suspects of their rights, are an example of procedural due process - ensuring fair procedures are followed."
+    },
+    {
+      type: "multiple-choice",
+      question: "Which state benefited the most from the 3/5 Compromise?",
+      options: [
+        "Massachusetts",
+        "New York",
+        "Rhode Island",
+        "North Carolina"
+      ],
+      acceptableAnswers: ["North Carolina"],
+      explanation: "Southern states with large slave populations, like North Carolina, benefited most from the 3/5 Compromise because it increased their representation in the House of Representatives."
+    },
+    {
+      type: "multiple-choice",
+      question: "Anti-Federalists were critical of the Constitution because most power was given to the:",
+      options: [
+        "State legislatures",
+        "Delegates to the Constitutional Convention",
+        "President's Cabinet",
+        "National government"
+      ],
+      acceptableAnswers: ["National government"],
+      explanation: "Anti-Federalists feared that the Constitution gave too much power to the national government at the expense of state governments and individual liberties."
+    },
+    {
+      type: "multiple-choice",
+      question: "According to the original Constitution, who were the only Federal Officials to be directly elected by the people?",
+      options: [
+        "Vice President",
+        "US Representatives",
+        "Senators",
+        "President"
+      ],
+      acceptableAnswers: ["US Representatives"],
+      explanation: "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures until the 17th Amendment."
+    },
+    {
+      type: "multiple-choice",
+      question: "Which grouping is in the correct order?",
+      options: [
+        "Declaration of Independence, US Constitution, Articles of Confederation",
+        "Declaration of Independence, Articles of Confederation, US Constitution",
+        "Articles of Confederation, Declaration of Independence, US Constitution",
+        "US Constitution, Articles of Confederation, Declaration of Independence"
+      ],
+      acceptableAnswers: [
+        "Declaration of Independence, Articles of Confederation, US Constitution"
+      ],
+      explanation: "The Declaration of Independence was adopted in 1776, the Articles of Confederation were ratified in 1781, and the U.S. Constitution was ratified in 1788."
+    },
+    {
+      type: "multiple-choice",
+      question: "A senator must be at least how many years old?",
+      options: [
+        "25",
+        "30",
+        "35",
+        "40"
+      ],
+      acceptableAnswers: ["30"]
+    },
+    {
+      type: "multiple-choice",
+      question: "Under the US Constitution, the states are given the power to:",
+      options: [
+        "Declare war",
+        "Coin money",
+        "Regulate intrastate commerce and conduct elections",
+        "Make treaties with foreign nations"
+      ],
+      acceptableAnswers: [
+        "Regulate intrastate commerce and conduct elections"
+      ],
+      explanation: "States have reserved powers including regulating commerce within their borders and conducting elections, while powers like declaring war and coining money belong to the federal government."
+    },
+    {
+      type: "multiple-choice",
+      question: "Congress created the US Air Force by using which section of the Constitution?",
+      options: [
+        "The Commerce Clause",
+        "The Necessary and Proper Clause (Elastic Clause)",
+        "The Supremacy Clause",
+        "The Full Faith and Credit Clause"
+      ],
+      acceptableAnswers: [
+        "The Necessary and Proper Clause (Elastic Clause)"
+      ],
+      explanation: "Congress used the Necessary and Proper Clause (Elastic Clause) to create the Air Force, as it was necessary and proper for carrying out Congress's power to raise and support armies."
+    }
+  ]
+},
 ];
 
 export const categories = Array.from(
