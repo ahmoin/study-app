@@ -17,35 +17,33 @@ export const quizTemplates: QuizTemplate[] = [
     id: "introduction-to-networks",
     name: "Introduction to Networks",
     category: "Networking",
-    description: "Comprehensive quiz covering network fundamentals, topologies, architectures, and network types",
+    description:
+      "Comprehensive quiz covering network fundamentals, topologies, architectures, and network types",
     questions: [
       {
         type: "multiple-choice",
-        question: "What is the basic definition of a network in the computer world?",
+        question:
+          "What is the basic definition of a network in the computer world?",
         options: [
           "A single computer with internet access",
           "Two or more connected computers that can share resources such as data and applications",
           "A group of computers in the same room",
-          "A collection of servers only"
+          "A collection of servers only",
         ],
         acceptableAnswers: [
-          "Two or more connected computers that can share resources such as data and applications"
+          "Two or more connected computers that can share resources such as data and applications",
         ],
-        explanation: "A network is defined as two or more connected computers that can share resources such as data and applications, office machines, an Internet connection, or some combination of these."
+        explanation:
+          "A network is defined as two or more connected computers that can share resources such as data and applications, office machines, an Internet connection, or some combination of these.",
       },
       {
         type: "multiple-choice",
-        question: "What language do computers use to communicate with each other on a network?",
-        options: [
-          "English",
-          "Binary code",
-          "ASCII",
-          "Hexadecimal"
-        ],
-        acceptableAnswers: [
-          "Binary code"
-        ],
-        explanation: "Computers 'talk' to each other using a computer language called binary code, which consists of lots of 1s and 0s in a specific order."
+        question:
+          "What language do computers use to communicate with each other on a network?",
+        options: ["English", "Binary code", "ASCII", "Hexadecimal"],
+        acceptableAnswers: ["Binary code"],
+        explanation:
+          "Computers 'talk' to each other using a computer language called binary code, which consists of lots of 1s and 0s in a specific order.",
       },
       {
         type: "multiple-choice",
@@ -54,54 +52,49 @@ export const quizTemplates: QuizTemplate[] = [
           "Long Area Network",
           "Local Area Network",
           "Large Access Network",
-          "Linked Application Network"
+          "Linked Application Network",
         ],
-        acceptableAnswers: [
-          "Local Area Network"
-        ],
-        explanation: "LAN stands for Local Area Network, which is usually restricted to spanning a particular geographic location such as an office building or a home office."
+        acceptableAnswers: ["Local Area Network"],
+        explanation:
+          "LAN stands for Local Area Network, which is usually restricted to spanning a particular geographic location such as an office building or a home office.",
       },
       {
         type: "multiple-choice",
         question: "What device is used to connect two separate LANs together?",
-        options: [
-          "Hub",
-          "Switch",
-          "Router",
-          "Bridge"
-        ],
-        acceptableAnswers: [
-          "Router"
-        ],
-        explanation: "A router is used to connect two LANs together, allowing hosts from one LAN to access resources on another LAN."
+        options: ["Hub", "Switch", "Router", "Bridge"],
+        acceptableAnswers: ["Router"],
+        explanation:
+          "A router is used to connect two LANs together, allowing hosts from one LAN to access resources on another LAN.",
       },
       {
         type: "multiple-choice",
-        question: "Which of the following is NOT typically a component found in networks?",
+        question:
+          "Which of the following is NOT typically a component found in networks?",
         options: [
           "Workstations",
           "Servers",
           "Hosts",
-          "All of these are common network components"
+          "All of these are common network components",
         ],
-        acceptableAnswers: [
-          "All of these are common network components"
-        ],
-        explanation: "Workstations, servers, and hosts are all common network components. Workstations are powerful computers, servers provide network services, and hosts are devices with IP addresses."
+        acceptableAnswers: ["All of these are common network components"],
+        explanation:
+          "Workstations, servers, and hosts are all common network components. Workstations are powerful computers, servers provide network services, and hosts are devices with IP addresses.",
       },
       {
         type: "multiple-choice",
-        question: "What is the key difference between a workstation and a server?",
+        question:
+          "What is the key difference between a workstation and a server?",
         options: [
           "Servers are always more powerful than workstations",
           "Servers run specialized network operating system software and serve the network",
           "Workstations cannot be clients",
-          "There is no difference"
+          "There is no difference",
         ],
         acceptableAnswers: [
-          "Servers run specialized network operating system software and serve the network"
+          "Servers run specialized network operating system software and serve the network",
         ],
-        explanation: "Servers get their name because they are 'at the service' of the network and run specialized software known as the network operating system to maintain and control the network."
+        explanation:
+          "Servers get their name because they are 'at the service' of the network and run specialized software known as the network operating system to maintain and control the network.",
       },
       {
         type: "multiple-choice",
@@ -110,26 +103,19 @@ export const quizTemplates: QuizTemplate[] = [
           "Any powerful computer",
           "Any network device with an IP address",
           "A server only",
-          "A workstation only"
+          "A workstation only",
         ],
-        acceptableAnswers: [
-          "Any network device with an IP address"
-        ],
-        explanation: "In TCP/IP-speak, host means any network device with an IP address, including workstations and servers."
+        acceptableAnswers: ["Any network device with an IP address"],
+        explanation:
+          "In TCP/IP-speak, host means any network device with an IP address, including workstations and servers.",
       },
       {
         type: "multiple-choice",
         question: "Which type of server handles email functions?",
-        options: [
-          "File Server",
-          "Mail Server",
-          "Print Server",
-          "Web Server"
-        ],
-        acceptableAnswers: [
-          "Mail Server"
-        ],
-        explanation: "A Mail Server is the network's post office; it handles email functions."
+        options: ["File Server", "Mail Server", "Print Server", "Web Server"],
+        acceptableAnswers: ["Mail Server"],
+        explanation:
+          "A Mail Server is the network's post office; it handles email functions.",
       },
       {
         type: "multiple-choice",
@@ -138,40 +124,41 @@ export const quizTemplates: QuizTemplate[] = [
           "A network covering a metropolitan area used to interconnect various buildings and facilities",
           "A network within a single building",
           "A worldwide network",
-          "A personal device network"
+          "A personal device network",
         ],
         acceptableAnswers: [
-          "A network covering a metropolitan area used to interconnect various buildings and facilities"
+          "A network covering a metropolitan area used to interconnect various buildings and facilities",
         ],
-        explanation: "A MAN is a network covering a metropolitan area used to interconnect various buildings and facilities usually over a carrier provider network."
+        explanation:
+          "A MAN is a network covering a metropolitan area used to interconnect various buildings and facilities usually over a carrier provider network.",
       },
       {
         type: "multiple-choice",
-        question: "What is the primary example of a WAN that most people use daily?",
+        question:
+          "What is the primary example of a WAN that most people use daily?",
         options: [
           "Corporate intranet",
           "The Internet",
           "Campus network",
-          "Home network"
+          "Home network",
         ],
-        acceptableAnswers: [
-          "The Internet"
-        ],
-        explanation: "The Internet is the prime example of a WAN that most people use every day."
+        acceptableAnswers: ["The Internet"],
+        explanation:
+          "The Internet is the prime example of a WAN that most people use every day.",
       },
       {
         type: "multiple-choice",
-        question: "Which of the following is a key difference between WANs and LANs?",
+        question:
+          "Which of the following is a key difference between WANs and LANs?",
         options: [
           "WANs are always faster than LANs",
           "WANs usually need a router port or ports",
           "LANs span larger geographic areas",
-          "WANs cannot use routers"
+          "WANs cannot use routers",
         ],
-        acceptableAnswers: [
-          "WANs usually need a router port or ports"
-        ],
-        explanation: "WANs usually need a router port or ports, span larger geographic areas, and are usually slower than LANs."
+        acceptableAnswers: ["WANs usually need a router port or ports"],
+        explanation:
+          "WANs usually need a router port or ports, span larger geographic areas, and are usually slower than LANs.",
       },
       {
         type: "multiple-choice",
@@ -180,26 +167,22 @@ export const quizTemplates: QuizTemplate[] = [
           "The Internet only",
           "A type of LAN and/or WAN that connects a bunch of networks, or intranets",
           "A single network",
-          "A wireless network"
+          "A wireless network",
         ],
         acceptableAnswers: [
-          "A type of LAN and/or WAN that connects a bunch of networks, or intranets"
+          "A type of LAN and/or WAN that connects a bunch of networks, or intranets",
         ],
-        explanation: "An internetwork is a type of LAN and/or WAN that connects a bunch of networks, or intranets."
+        explanation:
+          "An internetwork is a type of LAN and/or WAN that connects a bunch of networks, or intranets.",
       },
       {
         type: "multiple-choice",
-        question: "What type of network is used for close proximity connections like connecting smartphones and laptops in a conference room?",
-        options: [
-          "LAN",
-          "WAN",
-          "PAN (Personal Area Network)",
-          "MAN"
-        ],
-        acceptableAnswers: [
-          "PAN (Personal Area Network)"
-        ],
-        explanation: "PANs (Personal Area Networks) are used for close proximity connections and commonly use short distance wireless connections such as Bluetooth, infrared, or ZigBee."
+        question:
+          "What type of network is used for close proximity connections like connecting smartphones and laptops in a conference room?",
+        options: ["LAN", "WAN", "PAN (Personal Area Network)", "MAN"],
+        acceptableAnswers: ["PAN (Personal Area Network)"],
+        explanation:
+          "PANs (Personal Area Networks) are used for close proximity connections and commonly use short distance wireless connections such as Bluetooth, infrared, or ZigBee.",
       },
       {
         type: "multiple-choice",
@@ -208,12 +191,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Computer Access Network",
           "Campus Area Network",
           "Connected Area Network",
-          "Central Access Network"
+          "Central Access Network",
         ],
-        acceptableAnswers: [
-          "Campus Area Network"
-        ],
-        explanation: "CAN stands for Campus Area Network, which covers a limited geographical network such as a college or corporate campus."
+        acceptableAnswers: ["Campus Area Network"],
+        explanation:
+          "CAN stands for Campus Area Network, which covers a limited geographical network such as a college or corporate campus.",
       },
       {
         type: "multiple-choice",
@@ -222,26 +204,19 @@ export const quizTemplates: QuizTemplate[] = [
           "General purpose networking",
           "Storage systems exclusively",
           "Internet connectivity",
-          "Wireless connections"
+          "Wireless connections",
         ],
-        acceptableAnswers: [
-          "Storage systems exclusively"
-        ],
-        explanation: "A SAN (Storage Area Network) is designed for, and used exclusively by, storage systems, interconnecting servers to storage arrays."
+        acceptableAnswers: ["Storage systems exclusively"],
+        explanation:
+          "A SAN (Storage Area Network) is designed for, and used exclusively by, storage systems, interconnecting servers to storage arrays.",
       },
       {
         type: "multiple-choice",
         question: "Which protocol is most prevalent in SANs?",
-        options: [
-          "Ethernet",
-          "Fibre Channel",
-          "TCP/IP",
-          "Wi-Fi"
-        ],
-        acceptableAnswers: [
-          "Fibre Channel"
-        ],
-        explanation: "Fibre Channel is the most prevalent protocol in SANs, along with iSCSI, designed specifically for storage traffic."
+        options: ["Ethernet", "Fibre Channel", "TCP/IP", "Wi-Fi"],
+        acceptableAnswers: ["Fibre Channel"],
+        explanation:
+          "Fibre Channel is the most prevalent protocol in SANs, along with iSCSI, designed specifically for storage traffic.",
       },
       {
         type: "multiple-choice",
@@ -250,12 +225,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Secure Data Wide Area Network",
           "Software-Defined Wide Area Network",
           "Standard Digital Wide Area Network",
-          "System Dynamic Wide Area Network"
+          "System Dynamic Wide Area Network",
         ],
-        acceptableAnswers: [
-          "Software-Defined Wide Area Network"
-        ],
-        explanation: "SDWAN stands for Software-Defined Wide Area Network, a virtual WAN architecture that uses software to manage connectivity, devices, and services."
+        acceptableAnswers: ["Software-Defined Wide Area Network"],
+        explanation:
+          "SDWAN stands for Software-Defined Wide Area Network, a virtual WAN architecture that uses software to manage connectivity, devices, and services.",
       },
       {
         type: "multiple-choice",
@@ -264,12 +238,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Multi-Protocol Label Switching",
           "Multiprotocol Label Switching",
           "Multiple Protocol Layer Switching",
-          "Multi-Path Label System"
+          "Multi-Path Label System",
         ],
-        acceptableAnswers: [
-          "Multiprotocol Label Switching"
-        ],
-        explanation: "MPLS stands for Multiprotocol Label Switching, a switching mechanism that imposes labels (numbers) to data and then uses those labels to forward data."
+        acceptableAnswers: ["Multiprotocol Label Switching"],
+        explanation:
+          "MPLS stands for Multiprotocol Label Switching, a switching mechanism that imposes labels (numbers) to data and then uses those labels to forward data.",
       },
       {
         type: "multiple-choice",
@@ -278,12 +251,11 @@ export const quizTemplates: QuizTemplate[] = [
           "It only works on physical links",
           "It prioritizes data based on labels",
           "It cannot provide redundancy",
-          "It requires dedicated hardware only"
+          "It requires dedicated hardware only",
         ],
-        acceptableAnswers: [
-          "It prioritizes data based on labels"
-        ],
-        explanation: "Prioritizing data is a huge advantage of MPLS; for example, voice data could have priority over basic data based on the labels."
+        acceptableAnswers: ["It prioritizes data based on labels"],
+        explanation:
+          "Prioritizing data is a huge advantage of MPLS; for example, voice data could have priority over basic data based on the labels.",
       },
       {
         type: "multiple-choice",
@@ -292,26 +264,27 @@ export const quizTemplates: QuizTemplate[] = [
           "Multipoint Generic Routing Encapsulation",
           "Multiple Gateway Routing Extension",
           "Multi-Group Routing Exchange",
-          "Multicast Gateway Routing Engine"
+          "Multicast Gateway Routing Engine",
         ],
-        acceptableAnswers: [
-          "Multipoint Generic Routing Encapsulation"
-        ],
-        explanation: "mGRE stands for Multipoint Generic Routing Encapsulation, used in Dynamic Multipoint VPN deployments to dynamically create and terminate connections."
+        acceptableAnswers: ["Multipoint Generic Routing Encapsulation"],
+        explanation:
+          "mGRE stands for Multipoint Generic Routing Encapsulation, used in Dynamic Multipoint VPN deployments to dynamically create and terminate connections.",
       },
       {
         type: "multiple-choice",
-        question: "In a peer-to-peer network, what characterizes the computers?",
+        question:
+          "In a peer-to-peer network, what characterizes the computers?",
         options: [
           "They have a central authority",
           "They do not have any central or special authority—they're all peers",
           "They all connect to one main server",
-          "They cannot share resources"
+          "They cannot share resources",
         ],
         acceptableAnswers: [
-          "They do not have any central or special authority—they're all peers"
+          "They do not have any central or special authority—they're all peers",
         ],
-        explanation: "Computers connected in peer-to-peer networks do not have any central or special authority—they're all peers, meaning that when it comes to authority, they're all equals."
+        explanation:
+          "Computers connected in peer-to-peer networks do not have any central or special authority—they're all peers, meaning that when it comes to authority, they're all equals.",
       },
       {
         type: "multiple-choice",
@@ -320,12 +293,11 @@ export const quizTemplates: QuizTemplate[] = [
           "They are too fast",
           "Security is not centrally governed",
           "They require expensive equipment",
-          "They cannot share printers"
+          "They cannot share printers",
         ],
-        acceptableAnswers: [
-          "Security is not centrally governed"
-        ],
-        explanation: "A major drawback of peer-to-peer networks is that security is not centrally governed, requiring each user to remember and maintain a list of users and passwords on each machine."
+        acceptableAnswers: ["Security is not centrally governed"],
+        explanation:
+          "A major drawback of peer-to-peer networks is that security is not centrally governed, requiring each user to remember and maintain a list of users and passwords on each machine.",
       },
       {
         type: "multiple-choice",
@@ -334,12 +306,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Each individual client",
           "A single server using a network operating system",
           "A group of workstations",
-          "The Internet"
+          "The Internet",
         ],
-        acceptableAnswers: [
-          "A single server using a network operating system"
-        ],
-        explanation: "In client-server networks, a single server uses a network operating system for managing the whole network."
+        acceptableAnswers: ["A single server using a network operating system"],
+        explanation:
+          "In client-server networks, a single server uses a network operating system for managing the whole network.",
       },
       {
         type: "multiple-choice",
@@ -348,12 +319,13 @@ export const quizTemplates: QuizTemplate[] = [
           "How data flows through the network",
           "A type of map that defines where all workstations and devices are located and the arrangement of physical media",
           "The logical structure of the network",
-          "The IP addressing scheme"
+          "The IP addressing scheme",
         ],
         acceptableAnswers: [
-          "A type of map that defines where all workstations and devices are located and the arrangement of physical media"
+          "A type of map that defines where all workstations and devices are located and the arrangement of physical media",
         ],
-        explanation: "The physical topology of a network is a type of map that defines the specific characteristics of a network, such as where all the workstations and other devices are located and the precise arrangement of all the physical media such as cables."
+        explanation:
+          "The physical topology of a network is a type of map that defines the specific characteristics of a network, such as where all the workstations and other devices are located and the precise arrangement of all the physical media such as cables.",
       },
       {
         type: "multiple-choice",
@@ -362,26 +334,21 @@ export const quizTemplates: QuizTemplate[] = [
           "It requires too many cables",
           "Any fault in the cable would bring down the whole network",
           "It is too expensive",
-          "It requires a central device"
+          "It requires a central device",
         ],
         acceptableAnswers: [
-          "Any fault in the cable would bring down the whole network"
+          "Any fault in the cable would bring down the whole network",
         ],
-        explanation: "A major drawback of bus topology is that it doesn't offer much fault tolerance because everything is connected to that single cable, meaning any fault in the cable would bring down the whole network."
+        explanation:
+          "A major drawback of bus topology is that it doesn't offer much fault tolerance because everything is connected to that single cable, meaning any fault in the cable would bring down the whole network.",
       },
       {
         type: "multiple-choice",
         question: "What topology is also known as hub-and-spoke?",
-        options: [
-          "Bus",
-          "Star",
-          "Ring",
-          "Mesh"
-        ],
-        acceptableAnswers: [
-          "Star"
-        ],
-        explanation: "A star (hub-and-spoke) topology's computers are connected to a central point with their own individual cables or wireless connections."
+        options: ["Bus", "Star", "Ring", "Mesh"],
+        acceptableAnswers: ["Star"],
+        explanation:
+          "A star (hub-and-spoke) topology's computers are connected to a central point with their own individual cables or wireless connections.",
       },
       {
         type: "multiple-choice",
@@ -390,12 +357,13 @@ export const quizTemplates: QuizTemplate[] = [
           "It is the cheapest topology",
           "A single cable failure won't bring down the entire network",
           "It doesn't require a central device",
-          "It uses the least amount of cable"
+          "It uses the least amount of cable",
         ],
         acceptableAnswers: [
-          "A single cable failure won't bring down the entire network"
+          "A single cable failure won't bring down the entire network",
         ],
-        explanation: "A major advantage of star topology is that because each computer or network segment is connected to the central device individually, if the cable fails, it brings down only the machine or network segment related to the point of failure."
+        explanation:
+          "A major advantage of star topology is that because each computer or network segment is connected to the central device individually, if the cable fails, it brings down only the machine or network segment related to the point of failure.",
       },
       {
         type: "multiple-choice",
@@ -404,26 +372,27 @@ export const quizTemplates: QuizTemplate[] = [
           "Any individual cable",
           "Any individual computer",
           "The hub or other central device such as a switch",
-          "There is no single point of failure"
+          "There is no single point of failure",
         ],
-        acceptableAnswers: [
-          "The hub or other central device such as a switch"
-        ],
-        explanation: "The central hub or switch at the center of a star topology network can give the most grief if something goes wrong with it—if it fails, down comes the whole network."
+        acceptableAnswers: ["The hub or other central device such as a switch"],
+        explanation:
+          "The central hub or switch at the center of a star topology network can give the most grief if something goes wrong with it—if it fails, down comes the whole network.",
       },
       {
         type: "multiple-choice",
-        question: "In a ring topology, what happens if you want to add to the network?",
+        question:
+          "In a ring topology, what happens if you want to add to the network?",
         options: [
           "You can easily add devices without interruption",
           "You have no choice but to break the cable ring, which is likely to bring down the entire network",
           "You simply plug in a new device",
-          "You need special permission"
+          "You need special permission",
         ],
         acceptableAnswers: [
-          "You have no choice but to break the cable ring, which is likely to bring down the entire network"
+          "You have no choice but to break the cable ring, which is likely to bring down the entire network",
         ],
-        explanation: "The ring topology has a lot in common with the bus topology because if you want to add to the network, you have no choice but to break the cable ring, which is likely to bring down the entire network."
+        explanation:
+          "The ring topology has a lot in common with the bus topology because if you want to add to the network, you have no choice but to break the cable ring, which is likely to bring down the entire network.",
       },
       {
         type: "multiple-choice",
@@ -432,26 +401,22 @@ export const quizTemplates: QuizTemplate[] = [
           "It has the fewest connections per device",
           "There's a path from every machine to every other one in the network",
           "It is the simplest topology",
-          "It is only used in LANs"
+          "It is only used in LANs",
         ],
         acceptableAnswers: [
-          "There's a path from every machine to every other one in the network"
+          "There's a path from every machine to every other one in the network",
         ],
-        explanation: "In mesh topology, you'll find that there's a path from every machine to every other one in the network, which creates a lot of connections."
+        explanation:
+          "In mesh topology, you'll find that there's a path from every machine to every other one in the network, which creates a lot of connections.",
       },
       {
         type: "multiple-choice",
-        question: "For a network with 4 computers in a full mesh topology, how many connections are there?",
-        options: [
-          "4",
-          "6",
-          "8",
-          "12"
-        ],
-        acceptableAnswers: [
-          "6"
-        ],
-        explanation: "For each n locations or hosts, you end up with n(n–1)/2 connections. For 4 computers: 4(4–1)/2 = 6 connections."
+        question:
+          "For a network with 4 computers in a full mesh topology, how many connections are there?",
+        options: ["4", "6", "8", "12"],
+        acceptableAnswers: ["6"],
+        explanation:
+          "For each n locations or hosts, you end up with n(n–1)/2 connections. For 4 computers: 4(4–1)/2 = 6 connections.",
       },
       {
         type: "multiple-choice",
@@ -460,12 +425,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A connection between many routers",
           "A direct connection between two routers or switches",
           "A connection through the Internet",
-          "A wireless only connection"
+          "A wireless only connection",
         ],
         acceptableAnswers: [
-          "A direct connection between two routers or switches"
+          "A direct connection between two routers or switches",
         ],
-        explanation: "In a point-to-point topology, you have a direct connection between two routers or switches, giving you one communication path."
+        explanation:
+          "In a point-to-point topology, you have a direct connection between two routers or switches, giving you one communication path.",
       },
       {
         type: "multiple-choice",
@@ -474,12 +440,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A connection between two devices only",
           "A succession of connections between an interface on one router and multiple destination routers",
           "A mesh network",
-          "A bus network"
+          "A bus network",
         ],
         acceptableAnswers: [
-          "A succession of connections between an interface on one router and multiple destination routers"
+          "A succession of connections between an interface on one router and multiple destination routers",
         ],
-        explanation: "A point-to-multipoint topology consists of a succession of connections between an interface on one router and multiple destination routers—one point of connection to multiple points of connection."
+        explanation:
+          "A point-to-multipoint topology consists of a succession of connections between an interface on one router and multiple destination routers—one point of connection to multiple points of connection.",
       },
       {
         type: "multiple-choice",
@@ -488,12 +455,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A combination of only two topologies",
           "A combination of two or more types of physical or logical network topologies working together",
           "Only wireless topologies",
-          "Only wired topologies"
+          "Only wired topologies",
         ],
         acceptableAnswers: [
-          "A combination of two or more types of physical or logical network topologies working together"
+          "A combination of two or more types of physical or logical network topologies working together",
         ],
-        explanation: "Hybrid topology means a combination of two or more types of physical or logical network topologies working together within the same network."
+        explanation:
+          "Hybrid topology means a combination of two or more types of physical or logical network topologies working together within the same network.",
       },
       {
         type: "multiple-choice",
@@ -502,12 +470,13 @@ export const quizTemplates: QuizTemplate[] = [
           "The ability to prevent all errors",
           "The capability of a computer or network system to respond to a condition automatically, often resolving it",
           "The speed of the network",
-          "The cost of network equipment"
+          "The cost of network equipment",
         ],
         acceptableAnswers: [
-          "The capability of a computer or network system to respond to a condition automatically, often resolving it"
+          "The capability of a computer or network system to respond to a condition automatically, often resolving it",
         ],
-        explanation: "Fault tolerance is the capability of a computer or a network system to respond to a condition automatically, often resolving it, which reduces the impact on the system."
+        explanation:
+          "Fault tolerance is the capability of a computer or a network system to respond to a condition automatically, often resolving it, which reduces the impact on the system.",
       },
       {
         type: "multiple-choice",
@@ -516,26 +485,27 @@ export const quizTemplates: QuizTemplate[] = [
           "A type of cable",
           "What all the network segments and servers connect to, giving the network its structure",
           "A single server",
-          "The Internet connection"
+          "The Internet connection",
         ],
         acceptableAnswers: [
-          "What all the network segments and servers connect to, giving the network its structure"
+          "What all the network segments and servers connect to, giving the network its structure",
         ],
-        explanation: "The network backbone is what all the network segments and servers connect to and what gives the network its structure."
+        explanation:
+          "The network backbone is what all the network segments and servers connect to and what gives the network its structure.",
       },
       {
         type: "multiple-choice",
-        question: "What technology is commonly used for network backbones due to speed requirements?",
+        question:
+          "What technology is commonly used for network backbones due to speed requirements?",
         options: [
           "10Base-T Ethernet",
           "Wireless",
           "Gigabit Ethernet or faster",
-          "DSL"
+          "DSL",
         ],
-        acceptableAnswers: [
-          "Gigabit Ethernet or faster"
-        ],
-        explanation: "The backbone must use some kind of seriously fast, robust technology—often Gigabit Ethernet or faster."
+        acceptableAnswers: ["Gigabit Ethernet or faster"],
+        explanation:
+          "The backbone must use some kind of seriously fast, robust technology—often Gigabit Ethernet or faster.",
       },
       {
         type: "multiple-choice",
@@ -544,26 +514,27 @@ export const quizTemplates: QuizTemplate[] = [
           "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone",
           "The backbone itself",
           "A single computer",
-          "The Internet"
+          "The Internet",
         ],
         acceptableAnswers: [
-          "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone"
+          "Any small section of the network that may be connected to, but isn't actually a piece of, the backbone",
         ],
-        explanation: "When we refer to a segment, we can mean any small section of the network that may be connected to, but isn't actually a piece of, the backbone."
+        explanation:
+          "When we refer to a segment, we can mean any small section of the network that may be connected to, but isn't actually a piece of, the backbone.",
       },
       {
         type: "multiple-choice",
-        question: "What is the common term for the service entry point where a carrier hands off a connection?",
+        question:
+          "What is the common term for the service entry point where a carrier hands off a connection?",
         options: [
           "Entry point",
           "Demarcation point or demarc",
           "Connection point",
-          "Termination point"
+          "Termination point",
         ],
-        acceptableAnswers: [
-          "Demarcation point or demarc"
-        ],
-        explanation: "The service entry point defines the point of responsibility. The common term used is the demarcation point, or demarc for short."
+        acceptableAnswers: ["Demarcation point or demarc"],
+        explanation:
+          "The service entry point defines the point of responsibility. The common term used is the demarcation point, or demarc for short.",
       },
       {
         type: "multiple-choice",
@@ -572,12 +543,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A type of network cable",
           "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects",
           "A network switch",
-          "A router"
+          "A router",
         ],
         acceptableAnswers: [
-          "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects"
+          "A piece of equipment that allows carriers to run diagnostics up to the physical point where the customer's network connects",
         ],
-        explanation: "A carrier will usually terminate with a piece of equipment called a smart jack that allows them to run diagnostics up to the physical point where the customer's network connects."
+        explanation:
+          "A carrier will usually terminate with a piece of equipment called a smart jack that allows them to run diagnostics up to the physical point where the customer's network connects.",
       },
       {
         type: "multiple-choice",
@@ -586,12 +558,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A shared Internet connection",
           "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer",
           "A wireless connection",
-          "A dial-up connection"
+          "A dial-up connection",
         ],
         acceptableAnswers: [
-          "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer"
+          "Either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer",
         ],
-        explanation: "When the provider installs a leased line, it is either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer; there is no shared bandwidth."
+        explanation:
+          "When the provider installs a leased line, it is either a copper or fiber termination that interconnects two endpoints and is exclusive to the customer; there is no shared bandwidth.",
       },
       {
         type: "multiple-choice",
@@ -600,12 +573,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A physical switch",
           "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor",
           "A type of router",
-          "A wireless access point"
+          "A wireless access point",
         ],
         acceptableAnswers: [
-          "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor"
+          "Virtual switch technology that provides Ethernet switched and routing functions on the hypervisor",
         ],
-        explanation: "Companies such as VMware offer virtual switch (vSwitch) technology that provides the Ethernet switched and routing functions on the hypervisor, eliminating the need for external networking hardware."
+        explanation:
+          "Companies such as VMware offer virtual switch (vSwitch) technology that provides the Ethernet switched and routing functions on the hypervisor, eliminating the need for external networking hardware.",
       },
       {
         type: "multiple-choice",
@@ -614,12 +588,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A physical network interface card",
           "A virtual network interface card installed to connect the virtual device to the hypervisor",
           "A type of cable",
-          "A network protocol"
+          "A network protocol",
         ],
         acceptableAnswers: [
-          "A virtual network interface card installed to connect the virtual device to the hypervisor"
+          "A virtual network interface card installed to connect the virtual device to the hypervisor",
         ],
-        explanation: "A virtual network interface card (vNIC) is installed to connect the virtual device to the hypervisor and, from there, out to the LAN."
+        explanation:
+          "A virtual network interface card (vNIC) is installed to connect the virtual device to the hypervisor and, from there, out to the LAN.",
       },
       {
         type: "multiple-choice",
@@ -628,12 +603,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Network Function Virtualization",
           "Network File Verification",
           "Network Flow Validation",
-          "Network Frequency Variable"
+          "Network Frequency Variable",
         ],
-        acceptableAnswers: [
-          "Network Function Virtualization"
-        ],
-        explanation: "Network function virtualization (NFV) is the process of taking networking functions such as routers, switches, firewalls, load balancers, and controllers and virtualizing them."
+        acceptableAnswers: ["Network Function Virtualization"],
+        explanation:
+          "Network function virtualization (NFV) is the process of taking networking functions such as routers, switches, firewalls, load balancers, and controllers and virtualizing them.",
       },
       {
         type: "multiple-choice",
@@ -642,26 +616,27 @@ export const quizTemplates: QuizTemplate[] = [
           "A type of network cable",
           "Software that is installed directly on a bare-metal server and allows for many virtual machines to run",
           "A physical server",
-          "A network protocol"
+          "A network protocol",
         ],
         acceptableAnswers: [
-          "Software that is installed directly on a bare-metal server and allows for many virtual machines to run"
+          "Software that is installed directly on a bare-metal server and allows for many virtual machines to run",
         ],
-        explanation: "The hypervisor is software that is installed directly on a bare-metal server and allows for many virtual machines (VMs) to run, thinking they are using the server's hardware directly."
+        explanation:
+          "The hypervisor is software that is installed directly on a bare-metal server and allows for many virtual machines (VMs) to run, thinking they are using the server's hardware directly.",
       },
       {
         type: "multiple-choice",
-        question: "What are the three layers in the three-tiered networking model?",
+        question:
+          "What are the three layers in the three-tiered networking model?",
         options: [
           "Physical, Data Link, Network",
           "Core, Distribution, Access",
           "Application, Presentation, Session",
-          "Input, Process, Output"
+          "Input, Process, Output",
         ],
-        acceptableAnswers: [
-          "Core, Distribution, Access"
-        ],
-        explanation: "The three-tiered networking model consists of the Core Layer, Distribution Layer, and Access Layer."
+        acceptableAnswers: ["Core, Distribution, Access"],
+        explanation:
+          "The three-tiered networking model consists of the Core Layer, Distribution Layer, and Access Layer.",
       },
       {
         type: "multiple-choice",
@@ -670,12 +645,11 @@ export const quizTemplates: QuizTemplate[] = [
           "The access layer",
           "The backbone of the network",
           "The distribution layer",
-          "The edge layer"
+          "The edge layer",
         ],
-        acceptableAnswers: [
-          "The backbone of the network"
-        ],
-        explanation: "The core layer is also considered the backbone of the network. It is where you will find connectivity between geographic areas with WAN lines."
+        acceptableAnswers: ["The backbone of the network"],
+        explanation:
+          "The core layer is also considered the backbone of the network. It is where you will find connectivity between geographic areas with WAN lines.",
       },
       {
         type: "multiple-choice",
@@ -684,12 +658,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Packet filtering and security policies",
           "Only routing and switching of the entire network—nothing should slow it down",
           "Connecting end-user hosts",
-          "Creating collision domains"
+          "Creating collision domains",
         ],
         acceptableAnswers: [
-          "Only routing and switching of the entire network—nothing should slow it down"
+          "Only routing and switching of the entire network—nothing should slow it down",
         ],
-        explanation: "The core layer should be designed for high availability and only provides routing and switching of the entire network. Nothing should be done at the core layer to slow it down!"
+        explanation:
+          "The core layer should be designed for high availability and only provides routing and switching of the entire network. Nothing should be done at the core layer to slow it down!",
       },
       {
         type: "multiple-choice",
@@ -698,12 +673,11 @@ export const quizTemplates: QuizTemplate[] = [
           "The core layer",
           "The workgroup layer or the aggregation layer",
           "The access layer",
-          "The edge layer"
+          "The edge layer",
         ],
-        acceptableAnswers: [
-          "The workgroup layer or the aggregation layer"
-        ],
-        explanation: "The distribution layer is often referred to as the workgroup layer or the aggregation layer because it allows for connectivity to multiple access layer switches."
+        acceptableAnswers: ["The workgroup layer or the aggregation layer"],
+        explanation:
+          "The distribution layer is often referred to as the workgroup layer or the aggregation layer because it allows for connectivity to multiple access layer switches.",
       },
       {
         type: "multiple-choice",
@@ -712,12 +686,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Core layer",
           "Distribution layer",
           "Access layer",
-          "All layers"
+          "All layers",
         ],
-        acceptableAnswers: [
-          "Distribution layer"
-        ],
-        explanation: "The distribution layer is where the control plane is located and is where packet filtering, security policies, routing between VLANs, and defining of broadcast domains are performed."
+        acceptableAnswers: ["Distribution layer"],
+        explanation:
+          "The distribution layer is where the control plane is located and is where packet filtering, security policies, routing between VLANs, and defining of broadcast domains are performed.",
       },
       {
         type: "multiple-choice",
@@ -726,12 +699,11 @@ export const quizTemplates: QuizTemplate[] = [
           "The core layer",
           "The distribution layer",
           "The edge switching layer",
-          "The aggregation layer"
+          "The aggregation layer",
         ],
-        acceptableAnswers: [
-          "The edge switching layer"
-        ],
-        explanation: "The access layer is often referred to as the edge switching layer, and it connects the end-user hosts."
+        acceptableAnswers: ["The edge switching layer"],
+        explanation:
+          "The access layer is often referred to as the edge switching layer, and it connects the end-user hosts.",
       },
       {
         type: "multiple-choice",
@@ -740,12 +712,13 @@ export const quizTemplates: QuizTemplate[] = [
           "WAN connectivity only",
           "Core routing only",
           "Quality of service (QoS), power over Ethernet (PoE), and security",
-          "Distribution switching only"
+          "Distribution switching only",
         ],
         acceptableAnswers: [
-          "Quality of service (QoS), power over Ethernet (PoE), and security"
+          "Quality of service (QoS), power over Ethernet (PoE), and security",
         ],
-        explanation: "The access layer provides local switching and the creation of collision domains. It is simply designed for access to the network and it is where support begins for quality of service (QoS), power over Ethernet (PoE), and security."
+        explanation:
+          "The access layer provides local switching and the creation of collision domains. It is simply designed for access to the network and it is where support begins for quality of service (QoS), power over Ethernet (PoE), and security.",
       },
       {
         type: "multiple-choice",
@@ -754,12 +727,13 @@ export const quizTemplates: QuizTemplate[] = [
           "A model that separates core and distribution",
           "A model that condenses the core and distribution layers into one piece of switching equipment",
           "A model without an access layer",
-          "A model with only two layers"
+          "A model with only two layers",
         ],
         acceptableAnswers: [
-          "A model that condenses the core and distribution layers into one piece of switching equipment"
+          "A model that condenses the core and distribution layers into one piece of switching equipment",
         ],
-        explanation: "The collapsed-core model condenses the core and distribution tiers into one tier by supporting both the core layer and the distribution layer on the same piece of network switching equipment."
+        explanation:
+          "The collapsed-core model condenses the core and distribution tiers into one tier by supporting both the core layer and the distribution layer on the same piece of network switching equipment.",
       },
       {
         type: "multiple-choice",
@@ -768,12 +742,11 @@ export const quizTemplates: QuizTemplate[] = [
           "To increase complexity",
           "To save cost and complexity in networks",
           "To slow down networks",
-          "To reduce security"
+          "To reduce security",
         ],
-        acceptableAnswers: [
-          "To save cost and complexity in networks"
-        ],
-        explanation: "The collapsed-core model was adopted to save cost and complexity in networks. With the powerful switching of today, we can support both the core layer and the distribution layer on the same piece of network switching equipment."
+        acceptableAnswers: ["To save cost and complexity in networks"],
+        explanation:
+          "The collapsed-core model was adopted to save cost and complexity in networks. With the powerful switching of today, we can support both the core layer and the distribution layer on the same piece of network switching equipment.",
       },
       {
         type: "multiple-choice",
@@ -782,12 +755,11 @@ export const quizTemplates: QuizTemplate[] = [
           "A three-tier model",
           "A CLOS network",
           "A collapsed-core model",
-          "A hybrid topology"
+          "A hybrid topology",
         ],
-        acceptableAnswers: [
-          "A CLOS network"
-        ],
-        explanation: "The concept of spine-leaf switching is often referred to as a CLOS network, named after Charles Clos, who formalized the concept in 1938 of multistage circuit-switching."
+        acceptableAnswers: ["A CLOS network"],
+        explanation:
+          "The concept of spine-leaf switching is often referred to as a CLOS network, named after Charles Clos, who formalized the concept in 1938 of multistage circuit-switching.",
       },
       {
         type: "multiple-choice",
@@ -796,40 +768,43 @@ export const quizTemplates: QuizTemplate[] = [
           "In campus networks",
           "In data center network architecture",
           "In home networks",
-          "In MANs"
+          "In MANs",
         ],
-        acceptableAnswers: [
-          "In data center network architecture"
-        ],
-        explanation: "Spine and leaf switching provides extremely fast networking switching, and it is almost exclusively used in data center network architecture."
+        acceptableAnswers: ["In data center network architecture"],
+        explanation:
+          "Spine and leaf switching provides extremely fast networking switching, and it is almost exclusively used in data center network architecture.",
       },
       {
         type: "multiple-choice",
-        question: "In a spine-leaf network, can leaf switches directly talk to other leaf switches?",
+        question:
+          "In a spine-leaf network, can leaf switches directly talk to other leaf switches?",
         options: [
           "Yes, always",
           "No, leaf switches always need to talk through the spine",
           "Only sometimes",
-          "Only in full mesh configuration"
+          "Only in full mesh configuration",
         ],
         acceptableAnswers: [
-          "No, leaf switches always need to talk through the spine"
+          "No, leaf switches always need to talk through the spine",
         ],
-        explanation: "A leaf switch will never directly talk to another leaf switch; it will always need to talk through the backbone or spine of the network."
+        explanation:
+          "A leaf switch will never directly talk to another leaf switch; it will always need to talk through the backbone or spine of the network.",
       },
       {
         type: "multiple-choice",
-        question: "In a spine-leaf network, can servers be connected directly to the spine?",
+        question:
+          "In a spine-leaf network, can servers be connected directly to the spine?",
         options: [
           "Yes, always",
           "No, servers are always connected through a leaf switch",
           "Only in special configurations",
-          "Only for certain types of servers"
+          "Only for certain types of servers",
         ],
         acceptableAnswers: [
-          "No, servers are always connected through a leaf switch"
+          "No, servers are always connected through a leaf switch",
         ],
-        explanation: "Servers will never be connected to the spine of the network directly. Servers are always connected through a leaf switch."
+        explanation:
+          "Servers will never be connected to the spine of the network directly. Servers are always connected through a leaf switch.",
       },
       {
         type: "multiple-choice",
@@ -838,12 +813,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Traffic between servers in a data center",
           "Traffic found entering and leaving your internal network",
           "Traffic within a single LAN",
-          "Traffic between leaf switches"
+          "Traffic between leaf switches",
         ],
         acceptableAnswers: [
-          "Traffic found entering and leaving your internal network"
+          "Traffic found entering and leaving your internal network",
         ],
-        explanation: "North-South traffic is found entering and leaving your internal network. The southbound traffic enters through a firewall and routers. Northbound traffic is routed from your internal network to the Internet."
+        explanation:
+          "North-South traffic is found entering and leaving your internal network. The southbound traffic enters through a firewall and routers. Northbound traffic is routed from your internal network to the Internet.",
       },
       {
         type: "multiple-choice",
@@ -852,26 +828,27 @@ export const quizTemplates: QuizTemplate[] = [
           "Traffic entering and leaving the network",
           "The lateral traffic coming between server farms and data centers",
           "Traffic through the core layer only",
-          "Internet traffic only"
+          "Internet traffic only",
         ],
         acceptableAnswers: [
-          "The lateral traffic coming between server farms and data centers"
+          "The lateral traffic coming between server farms and data centers",
         ],
-        explanation: "East-west traffic is still important to understand that many types of attacks, particularly from the inside, must be taken seriously. You need to inspect the lateral traffic coming between server farms and data centers."
+        explanation:
+          "East-west traffic is still important to understand that many types of attacks, particularly from the inside, must be taken seriously. You need to inspect the lateral traffic coming between server farms and data centers.",
       },
       {
         type: "multiple-choice",
-        question: "Which type of traffic is initially most important for security?",
+        question:
+          "Which type of traffic is initially most important for security?",
         options: [
           "East-west traffic",
           "North-south traffic",
           "Both equally",
-          "Neither"
+          "Neither",
         ],
-        acceptableAnswers: [
-          "North-south traffic"
-        ],
-        explanation: "At first, the most important point for security will be the north-south traffic because data is flowing to and from your enterprise network to the outside Internet."
+        acceptableAnswers: ["North-south traffic"],
+        explanation:
+          "At first, the most important point for security will be the north-south traffic because data is flowing to and from your enterprise network to the outside Internet.",
       },
       {
         type: "multiple-choice",
@@ -880,28 +857,564 @@ export const quizTemplates: QuizTemplate[] = [
           "Web browsing only",
           "Email only",
           "Database replication, file transfers, and inter-process communication",
-          "Internet downloads only"
+          "Internet downloads only",
         ],
         acceptableAnswers: [
-          "Database replication, file transfers, and inter-process communication"
+          "Database replication, file transfers, and inter-process communication",
         ],
-        explanation: "Examples of east-west data transfer are database replication, file transfers, and inter-process communication."
+        explanation:
+          "Examples of east-west data transfer are database replication, file transfers, and inter-process communication.",
       },
       {
         type: "multiple-choice",
-        question: "What was the original storage method used by the first computers before disk drives?",
+        question:
+          "What was the original storage method used by the first computers before disk drives?",
         options: [
           "USB drives",
           "Hard disk drives",
           "Punch cards and paper tape",
-          "Solid state drives"
+          "Solid state drives",
+        ],
+        acceptableAnswers: ["Punch cards and paper tape"],
+        explanation:
+          "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed.",
+      },
+    ],
+  },
+  {
+    id: "osi-model-networking",
+    name: "OSI Model and Networking Fundamentals",
+    category: "Networking",
+    description:
+      "Comprehensive quiz covering the OSI model layers, protocols, data encapsulation, and networking fundamentals",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "Flow control can be found at which layer of the OSI?",
+        options: ["Transport", "Network", "Data Link", "Session"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "Flow control manages data transmission rates between sender and receiver, which is a function of the Transport layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is required before TCP can begin sending segments?",
+        options: [
+          "Three-way handshake",
+          "Port agreement",
+          "Sequencing of segments",
+          "Acknowledgment of segments",
+        ],
+        acceptableAnswers: ["Three-way handshake"],
+        explanation:
+          "TCP uses a three-way handshake to establish a connection before data transfer.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer of the OSI is responsible for dialogue control of applications?",
+        options: ["Application", "Physical", "Session", "Network"],
+        acceptableAnswers: ["Session"],
+        explanation:
+          "The Session layer manages dialogues between applications, controlling start, maintenance, and termination.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer is responsible for compression and decompression?",
+        options: ["Application", "Physical", "Session", "Presentation"],
+        acceptableAnswers: ["Presentation"],
+        explanation:
+          "The Presentation layer handles data translation, encryption, compression, and formatting.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which OSI layer is responsible for logical addressing?",
+        options: ["Transport", "Network", "Application", "Data Link"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer provides logical addressing (IP) and routing functions.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "As information travels down the network stack from the Application layer to the Physical layer, what happens?",
+        options: ["Datagrams", "PDUs", "Encapsulation", "Decapsulation"],
+        acceptableAnswers: ["Encapsulation"],
+        explanation:
+          "Encapsulation occurs as each OSI layer adds its own header (and sometimes trailer) to the data.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer of the Data Link layer is responsible for identifying Network layer protocols?",
+        options: ["MAC", "LLC", "Data Link", "Session"],
+        acceptableAnswers: ["LLC"],
+        explanation:
+          "LLC (Logical Link Control) identifies the Network layer protocol (e.g., IP) within a frame.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which is not a benefit to the OSI model?",
+        options: [
+          "Multivendor development with a standardized model",
+          "Prevents a change in one layer from affecting other layers",
+          "Allows various network hardware and software to communicate",
+          "Allows software to run at network speeds",
+        ],
+        acceptableAnswers: ["Allows software to run at network speeds"],
+        explanation:
+          "OSI standardization improves interoperability but does not inherently increase software speed.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which three upper layers operate together?",
+        options: [
+          "Application, Presentation, and Session",
+          "Presentation, Session, and Transport",
+          "Transport, Session, and Application",
+          "Network, Data Link, and Physical",
+        ],
+        acceptableAnswers: ["Application, Presentation, and Session"],
+        explanation:
+          "The top three layers focus on user interaction, data representation, and session management.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which IEEE standard defines the Physical and Data Link layers for wireless LANs?",
+        options: ["802.2", "802.3", "802.15", "802.11"],
+        acceptableAnswers: ["802.11"],
+        explanation:
+          "IEEE 802.11 specifies Wi-Fi standards for wireless networking.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which concept describes transmitting multiple segments before the receiving host acknowledges the data?",
+        options: ["Sequencing", "Compression", "Windowing", "Encryption"],
+        acceptableAnswers: ["Windowing"],
+        explanation:
+          "Windowing allows multiple unacknowledged segments to be sent for efficient data flow.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which device will stop broadcasts from propagating across the network?",
+        options: ["Router", "Switch", "Hub", "WAP"],
+        acceptableAnswers: ["Router"],
+        explanation:
+          "Routers separate network segments and prevent broadcast traffic from crossing between them.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which is used to determine the best path to a destination network?",
+        options: ["Acknowledgment", "Network address", "Interface", "Metric"],
+        acceptableAnswers: ["Metric"],
+        explanation:
+          "Routing metrics help determine the most efficient path in a network.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which protocol data unit (PDU) is used to describe data at the Physical layer?",
+        options: ["Datagrams", "Bits", "Frames", "Segments"],
+        acceptableAnswers: ["Bits"],
+        explanation: "Physical layer transmits raw bits over a medium.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which OSI layers are responsible for framing data and transmitting the data?",
+        options: [
+          "LLC and Physical layers",
+          "Data Link and Physical layers",
+          "Network and Transport layers",
+          "Session and Transport layers",
+        ],
+        acceptableAnswers: ["Data Link and Physical layers"],
+        explanation:
+          "The Data Link layer frames data, while the Physical layer transmits it.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for creating a virtual circuit?",
+        options: ["Presentation", "Session", "Transport", "Network"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "Transport layer protocols like TCP can establish virtual circuits to manage reliable communication.",
+      },
+      {
+        type: "multiple-choice",
+        question: "TCP and UDP reside at which layer of the OSI model?",
+        options: ["Physical", "Session", "Network", "Transport"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "TCP and UDP are Transport-layer protocols providing end-to-end communication services.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the proper order of data encapsulation?",
+        options: [
+          "Datagram, segment, packet, frame, bits",
+          "Bits, frame, packet, segment, datagram",
+          "Segment, datagram, packet, frame, bits",
+          "Data → Segment → Packet → Frame → Bits",
+        ],
+        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
+        explanation:
+          "Data flows down the OSI layers, with each layer adding headers/trailers before transmission.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for routing data packets?",
+        options: ["Physical", "Data Link", "Transport", "Network"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer determines the best path and forwards packets toward the destination.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which IEEE standard specifies the protocol for CSMA/CD?",
+        options: ["802.2", "802.3", "802.5", "802.11"],
+        acceptableAnswers: ["802.3"],
+        explanation:
+          "IEEE 802.3 defines Ethernet, including CSMA/CD for collision detection.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the main advantage of using a layered network model?",
+        options: [
+          "It increases network speed",
+          "It breaks complex processes into manageable sections",
+          "It removes the need for network protocols",
+          "It eliminates network errors",
         ],
         acceptableAnswers: [
-          "Punch cards and paper tape"
+          "It breaks complex processes into manageable sections",
         ],
-        explanation: "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed."
-      }
-    ]
+        explanation:
+          "Layering simplifies networking by separating complex functions into manageable sections.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes a conceptual framework used to understand network interactions?",
+        options: [
+          "Protocol",
+          "Reference model",
+          "Data link",
+          "Network architecture",
+        ],
+        acceptableAnswers: ["Reference model"],
+        explanation:
+          "Reference models like OSI provide a framework for understanding network operations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The Application layer provides services for which type of software?",
+        options: [
+          "Operating systems",
+          "User-level network applications",
+          "Routers and switches",
+          "Physical devices",
+        ],
+        acceptableAnswers: ["User-level network applications"],
+        explanation:
+          "Application layer protocols are used by end-user applications like browsers and email clients.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Presentation layer is responsible for which function?",
+        options: [
+          "Routing",
+          "Session management",
+          "Data translation and formatting",
+          "Physical transmission",
+        ],
+        acceptableAnswers: ["Data translation and formatting"],
+        explanation:
+          "Presentation layer handles formatting, compression, and encryption of data.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer establishes, manages, and terminates communication sessions?",
+        options: ["Session", "Transport", "Application", "Network"],
+        acceptableAnswers: ["Session"],
+        explanation:
+          "Session layer manages dialogs between applications, including initiation, maintenance, and termination.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer provides reliable or unreliable communication depending on the protocol used?",
+        options: ["Physical", "Transport", "Network", "Data Link"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "TCP provides reliable, UDP provides unreliable transport services.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which transport mechanism sends data only after a connection is established?",
+        options: [
+          "Connectionless communication",
+          "Connection-oriented communication",
+          "Multiplexing",
+          "Flow control",
+        ],
+        acceptableAnswers: ["Connection-oriented communication"],
+        explanation:
+          "TCP is connection-oriented; it requires a connection before sending data.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Windowing is used primarily for:",
+        options: [
+          "Encrypting data",
+          "Limiting how many segments are sent before acknowledgment",
+          "Compressing data",
+          "Segment sequencing",
+        ],
+        acceptableAnswers: [
+          "Limiting how many segments are sent before acknowledgment",
+        ],
+        explanation:
+          "Windowing prevents overwhelming the receiver by controlling the number of unacknowledged segments.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Flow control prevents:",
+        options: [
+          "Data encryption",
+          "Packet loss",
+          "A sender from overwhelming the receiver",
+          "Routing loops",
+        ],
+        acceptableAnswers: ["A sender from overwhelming the receiver"],
+        explanation:
+          "Flow control ensures the sender transmits at a rate the receiver can handle.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes a signal confirming data has been received?",
+        options: ["Segment", "Acknowledgment", "Window", "Datagram"],
+        acceptableAnswers: ["Acknowledgment"],
+        explanation: "ACKs confirm receipt of transmitted segments.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which OSI layer is responsible for logical addressing and routing?",
+        options: ["Transport", "Data Link", "Network", "Session"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer assigns IP addresses and determines the best path.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer breaks packets into frames for transmission?",
+        options: ["Transport", "Data Link", "Network", "Physical"],
+        acceptableAnswers: ["Data Link"],
+        explanation:
+          "The Data Link layer frames packets and ensures delivery within the LAN.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Physical layer handles:",
+        options: [
+          "Frame sequencing",
+          "Signal transmission over a medium",
+          "Logical addressing",
+          "Data encryption",
+        ],
+        acceptableAnswers: ["Signal transmission over a medium"],
+        explanation:
+          "Physical layer deals with transmitting raw bits over a medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Encapsulation occurs when:",
+        options: [
+          "Each layer removes its header",
+          "Each layer adds its own header to data",
+          "Data is transmitted without modification",
+          "Data is compressed for transmission",
+        ],
+        acceptableAnswers: ["Each layer adds its own header to data"],
+        explanation:
+          "Encapsulation adds headers/trailers as data moves down the OSI layers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which process converts digital data into signals suitable for transmission?",
+        options: ["Encoding", "Modulation", "Multiplexing", "Framing"],
+        acceptableAnswers: ["Modulation"],
+        explanation:
+          "Modulation converts digital data to signals suitable for the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer is responsible for identifying which Network-layer protocol is being used?",
+        options: ["MAC", "LLC", "Data Link", "Session"],
+        acceptableAnswers: ["LLC"],
+        explanation: "LLC identifies the protocol carried within a frame.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The MAC sublayer's primary job is to:",
+        options: [
+          "Encrypt data",
+          "Control access to the physical medium",
+          "Determine network routes",
+          "Compress data",
+        ],
+        acceptableAnswers: ["Control access to the physical medium"],
+        explanation:
+          "MAC manages transmission timing and addressing on the LAN.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes the lowest-level electrical signaling of the OSI Model?",
+        options: ["Packet", "Bits", "Segment", "Frame"],
+        acceptableAnswers: ["Bits"],
+        explanation: "Physical layer transmits raw bits over the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for path determination?",
+        options: ["Data Link", "Physical", "Network", "Transport"],
+        acceptableAnswers: ["Network"],
+        explanation: "Routing is handled by the Network layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The main advantage of a reference model such as OSI is:",
+        options: [
+          "Increases network speed",
+          "It standardizes communication between vendors",
+          "Eliminates the need for IP addresses",
+          "Ensures error-free transmission",
+        ],
+        acceptableAnswers: ["It standardizes communication between vendors"],
+        explanation:
+          "Standardization allows different devices and vendors to communicate.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Connection-oriented communication requires:",
+        options: [
+          "Acknowledgments only",
+          "Flow control only",
+          "A session to be formed first",
+          "No setup before transmission",
+        ],
+        acceptableAnswers: ["A session to be formed first"],
+        explanation: "TCP must establish a session before sending data.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Modulation techniques operate at which OSI layer?",
+        options: ["Data Link", "Physical", "Transport", "Network"],
+        acceptableAnswers: ["Physical"],
+        explanation:
+          "Modulation occurs at the Physical layer to convert digital data to signals.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer converts packets to bits for transmission?",
+        options: ["Network", "Physical", "Transport", "Data Link"],
+        acceptableAnswers: ["Physical"],
+        explanation: "Physical layer sends bits over the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the PDU of the Data Link layer?",
+        options: ["Segment", "Frame", "Packet", "Bit"],
+        acceptableAnswers: ["Frame"],
+        explanation:
+          "Data Link layer sends frames; Network layer uses packets; Transport layer uses segments.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Layered Approach allows vendors to:",
+        options: [
+          "Avoid using protocols",
+          "Replace or upgrade layers independently",
+          "Increase transmission speed automatically",
+          "Eliminate physical errors",
+        ],
+        acceptableAnswers: ["Replace or upgrade layers independently"],
+        explanation:
+          "Each layer is independent, so changes to one layer don't require changes to others.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The encapsulation order from top to bottom is:",
+        options: [
+          "Frame → Packet → Segment → Data → Bits",
+          "Data → Segment → Packet → Frame → Bits",
+          "Bits → Frame → Packet → Segment → Data",
+          "Segment → Packet → Data → Frame → Bits",
+        ],
+        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
+        explanation:
+          "Encapsulation adds headers at each layer as data moves down the stack.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Data Link layer performs error detection using:",
+        options: [
+          "IP address",
+          "CRC (Cyclic Redundancy Check)",
+          "Sequence numbers",
+          "Port numbers",
+        ],
+        acceptableAnswers: ["CRC (Cyclic Redundancy Check)"],
+        explanation: "CRC allows frames to be checked for transmission errors.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Network layer relies on which addressing scheme?",
+        options: [
+          "MAC addresses",
+          "Port numbers",
+          "IP addresses",
+          "Frame numbers",
+        ],
+        acceptableAnswers: ["IP addresses"],
+        explanation: "Logical addressing (IP) is used by the Network layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Physical layer does NOT define:",
+        options: [
+          "Signal types",
+          "Connectors",
+          "Voltage levels",
+          "Routing protocols",
+        ],
+        acceptableAnswers: ["Routing protocols"],
+        explanation: "Routing is handled by the Network layer, not Physical.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer handles frame synchronization and addressing?",
+        options: ["LLC", "MAC", "Network", "Session"],
+        acceptableAnswers: ["MAC"],
+        explanation:
+          "MAC controls access to the medium and handles addressing and synchronization of frames.",
+      },
+    ],
   },
   {
     id: "windows-os-history",
@@ -4372,1322 +4885,1238 @@ export const quizTemplates: QuizTemplate[] = [
   },
 
   {
-  "id": "linux-fundamentals-and-networking-ports",
-  "name": "Linux Fundamentals and Networking Ports",
-  "category": "Cybersecurity",
-  "description": "This module covers fundamental Linux commands, concepts, and common networking port functions.",
-  "questions": [
-    {
-      "type": "multiple-choice",
-      "question": "Why would a rootkit be used by a hacker?",
-      "options": [
-        "To encrypt files for ransomware attacks.",
-        "To perform denial-of-service attacks.",
-        "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors.",
-        "To create new user accounts on a compromised system."
-      ],
-      "acceptableAnswers": [
-        "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Why is Kali Linux a popular choice in testing the network security of an organization?",
-      "options": [
-        "It is designed for everyday desktop use and productivity.",
-        "It comes pre-installed with a wide array of penetration testing and ethical hacking tools.",
-        "It offers superior graphical interface customization compared to other Linux distributions.",
-        "It is the most lightweight Linux distribution available."
-      ],
-      "acceptableAnswers": [
-        "It comes pre-installed with a wide array of penetration testing and ethical hacking tools."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "A system administrator issues the 'ps' command on a server that is running the Linux operating system. What is the purpose of this command?",
-      "options": [
-        "To display network connections.",
-        "To list files in the current directory.",
-        "To display information about currently running processes.",
-        "To change file permissions."
-      ],
-      "acceptableAnswers": [
-        "To display information about currently running processes."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "A system administrator issues the 'apt-get upgrade' command on a Linux operating system. What is the purpose of this command?",
-      "options": [
-        "To install new software packages.",
-        "To remove existing software packages.",
-        "To update all installed packages to their newest versions.",
-        "To check the status of system services."
-      ],
-      "acceptableAnswers": [
-        "To update all installed packages to their newest versions."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which Linux command can be used to display the name of the current working directory?",
-      "options": [
-        "ls",
-        "cd",
-        "pwd",
-        "whoami"
-      ],
-      "acceptableAnswers": [
-        "pwd"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which file system is the primary file system used by Apple in current Macintosh computers?",
-      "options": [
-        "NTFS",
-        "exFAT",
-        "HFS+",
-        "EXT4"
-      ],
-      "acceptableAnswers": [
-        "HFS+"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "In the context of a Linux operating system, which command can be used to display the syntax and parameters for a specific command?",
-      "options": [
-        "help <command>",
-        "man <command>",
-        "info <command>",
-        "docs <command>"
-      ],
-      "acceptableAnswers": [
-        "man <command>"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which user can override file permissions on a Linux computer?",
-      "options": [
-        "Any user in the 'sudo' group.",
-        "The file owner only.",
-        "The root user.",
-        "Any user with write access to the directory."
-      ],
-      "acceptableAnswers": [
-        "The root user."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Consider the result of the 'ls -l' command in the Linux output below. What are the group file permissions assigned to the analyst.txt file?\n\nResult: \nls -l analyst.txt\n-rwxrw-r-- sales staff 1028 May 28 15:50 analyst.txt",
-      "options": [
-        "Read, write, and execute.",
-        "Read and write.",
-        "Read only.",
-        "No permissions."
-      ],
-      "acceptableAnswers": [
-        "Read and write."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is a benefit of Linux being an open-source operating system?",
-      "options": [
-        "It is always free of charge to use.",
-        "Its source code is publicly available, allowing for community review, modification, and improvement.",
-        "It provides a more secure graphical user interface.",
-        "It has exclusive hardware compatibility."
-      ],
-      "acceptableAnswers": [
-        "Its source code is publicly available, allowing for community review, modification, and improvement."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which of the following are three benefits of using symbolic links over hard links in Linux?",
-      "options": [
-        "Can link across filesystems, can link to directories, deleting the target does not delete the link.",
-        "Consume less disk space, faster access, automatically update if the target moves.",
-        "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data.",
-        "Maintain data integrity better, provide higher security, easier to create."
-      ],
-      "acceptableAnswers": [
-        "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which type of tool is used by a Linux administrator to attack a computer or network to find vulnerabilities?",
-      "options": [
-        "Productivity suite.",
-        "Word processor.",
-        "Penetration testing tool.",
-        "System monitoring tool."
-      ],
-      "acceptableAnswers": [
-        "Penetration testing tool."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is a daemon in the context of a Linux operating system?",
-      "options": [
-        "A malicious program hidden on the system.",
-        "A background process that performs system-related tasks, often without direct user interaction.",
-        "A graphical user interface component.",
-        "A command-line utility for managing files."
-      ],
-      "acceptableAnswers": [
-        "A background process that performs system-related tasks, often without direct user interaction."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "A technician has captured packets on a network that has been running slowly when accessing the internet. Which port numbers should the technician look for within the captured material to locate HTTP packets?",
-      "options": [
-        "20 and 21",
-        "22",
-        "23",
-        "80"
-      ],
-      "acceptableAnswers": [
-        "80"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which port number is used for the Secure Shell (SSH) protocol?",
-      "options": [
-        "20/21",
-        "22",
-        "23",
-        "25"
-      ],
-      "acceptableAnswers": [
-        "22"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is the primary function of port 23?",
-      "options": [
-        "File Transfer Protocol (FTP)",
-        "Secure Shell (SSH)",
-        "Telnet remote login service",
-        "Simple Mail Transfer Protocol (SMTP)"
-      ],
-      "acceptableAnswers": [
-        "Telnet remote login service"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which port number is associated with the Simple Mail Transfer Protocol (SMTP)?",
-      "options": [
-        "22",
-        "23",
-        "25",
-        "53"
-      ],
-      "acceptableAnswers": [
-        "25"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What protocol uses port 53?",
-      "options": [
-        "HTTP",
-        "DNS",
-        "DHCP",
-        "NTP"
-      ],
-      "acceptableAnswers": [
-        "DNS"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which port numbers are used by the Dynamic Host Configuration Protocol (DHCP)?",
-      "options": [
-        "67/68",
-        "69",
-        "80",
-        "110"
-      ],
-      "acceptableAnswers": [
-        "67/68"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What service operates on port 69?",
-      "options": [
-        "Hypertext Transfer Protocol (HTTP)",
-        "Post Office Protocol version 3 (POP3)",
-        "Trivial File Transfer Protocol (TFTP)",
-        "Network Time Protocol (NTP)"
-      ],
-      "acceptableAnswers": [
-        "Trivial File Transfer Protocol (TFTP)"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is the function of port 110?",
-      "options": [
-        "Internet Message Access Protocol (IMAP)",
-        "Simple Network Management Protocol (SNMP)",
-        "Post Office Protocol version 3 (POP3)",
-        "HTTP Secure (HTTPS)"
-      ],
-      "acceptableAnswers": [
-        "Post Office Protocol version 3 (POP3)"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which protocol uses port 123?",
-      "options": [
-        "SMTP",
-        "DNS",
-        "NTP",
-        "IMAP"
-      ],
-      "acceptableAnswers": [
-        "NTP"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is the description for port 143?",
-      "options": [
-        "Simple Mail Transfer Protocol (SMTP)",
-        "Internet Message Access Protocol (IMAP)",
-        "Post Office Protocol version 3 (POP3)",
-        "Network Time Protocol (NTP)"
-      ],
-      "acceptableAnswers": [
-        "Internet Message Access Protocol (IMAP)"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which port numbers are used for Simple Network Management Protocol (SNMP)?",
-      "options": [
-        "123",
-        "143",
-        "161/162",
-        "443"
-      ],
-      "acceptableAnswers": [
-        "161/162"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is HTTP Secure (HTTPS) associated with?",
-      "options": [
-        "Port 80",
-        "Port 110",
-        "Port 143",
-        "Port 443"
-      ],
-      "acceptableAnswers": [
-        "Port 443"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which port(s) are used by the File Transfer Protocol (FTP)?",
-      "options": [
-        "20/21",
-        "22",
-        "23",
-        "25"
-      ],
-      "acceptableAnswers": [
-        "20/21"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What does the 'cd' command do in Linux?",
-      "options": [
-        "Lists files in a directory.",
-        "Changes the current working directory.",
-        "Creates a new directory.",
-        "Removes a file."
-      ],
-      "acceptableAnswers": [
-        "Changes the current working directory."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What does the 'ls -a' command reveal?",
-      "options": [
-        "Files in a long format.",
-        "All files, including hidden ones.",
-        "Files in reverse order.",
-        "Files in a tree-like structure."
-      ],
-      "acceptableAnswers": [
-        "All files, including hidden ones."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "To remove an empty directory in Linux, which command would you use?",
-      "options": [
-        "rm -r",
-        "rmdir",
-        "del",
-        "remove"
-      ],
-      "acceptableAnswers": [
-        "rmdir"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is the purpose of the 'grep' command in Linux?",
-      "options": [
-        "To copy files.",
-        "To search for patterns in files.",
-        "To display the contents of a file.",
-        "To create new files."
-      ],
-      "acceptableAnswers": [
-        "To search for patterns in files."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which command is used to change the ownership of a file or directory in Linux?",
-      "options": [
-        "chmod",
-        "chown",
-        "chgrp",
-        "mv"
-      ],
-      "acceptableAnswers": [
-        "chown"
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What does the 'uname -a' command output?",
-      "options": [
-        "Only the kernel name.",
-        "The current date and time.",
-        "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system.",
-        "The uptime of the system."
-      ],
-      "acceptableAnswers": [
-        "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system."
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "question": "How can you view the last few lines of a text file in Linux?",
-      "options": [
-        "head",
-        "more",
-        "tail",
-        "cat"
-      ],
-      "acceptableAnswers": [
-        "tail"
-      ]
-    }
-  ]
-},
-{
-  id: "lives-of-the-dead",
-  name: "Lives of the Dead",
-  category: "Literature",
-  description: "Step-by-step quiz to memorize constructing the TAR response for 'Lives of the Dead' - from first sentence to last",
-  questions: [
-    {
-      type: "multiple-choice",
-      question: "What should the FIRST sentence of Paragraph 1 establish?",
-      options: [
-        "The thesis statement",
-        "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life",
-        "Evidence from the text",
-        "The central idea"
-      ],
-      acceptableAnswers: [
-        "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life"
-      ],
-      explanation: "The first sentence should provide chapter-specific context. Example: 'In the chapter \"Lives of the Dead,\" O'Brien reflects on how encounters with death throughout his life—from Linda's death as a child to the soldiers he witnessed dying in Vietnam—taught him the power of storytelling to resurrect the dead.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should the SECOND sentence of Paragraph 1 explain?",
-      options: [
-        "The literary devices used",
-        "How stories bring the dead back to life through narrative and memory",
-        "The evidence to be used",
-        "The theme only"
-      ],
-      acceptableAnswers: [
-        "How stories bring the dead back to life through narrative and memory"
-      ],
-      explanation: "The second sentence should continue the context and show how stories function. Example: 'Through narrative and memory, O'Brien demonstrates how stories can bring the deceased back to life, allowing them to speak, smile, and exist beyond physical death.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What TWO literary devices should be used in the thesis (sentence 3 of Paragraph 1)?",
-      options: [
-        "Motif and symbolism",
-        "Motif of storytelling and characterization",
-        "Characterization and conflict",
-        "Symbolism and tone"
-      ],
-      acceptableAnswers: [
-        "Motif of storytelling and characterization"
-      ],
-      explanation: "The thesis should use the motif of storytelling and characterization. These are the two literary devices that best support the central idea about stories resurrecting the dead."
-    },
-    {
-      type: "multiple-choice",
-      question: "What should the CENTRAL IDEA be for 'Lives of the Dead'?",
-      options: [
-        "Death is final and cannot be overcome",
-        "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation",
-        "War changes people permanently",
-        "Childhood experiences shape who we become"
-      ],
-      acceptableAnswers: [
-        "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation"
-      ],
-      explanation: "The central idea must be a complete sentence that ties together all elements. For 'Lives of the Dead,' it is: 'Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should the complete THESIS sentence (Paragraph 1, Sentence 3) say?",
-      options: [
-        "In \"Lives of the Dead,\" Tim O'Brien uses stories to show death is final.",
-        "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.",
-        "O'Brien tells stories about dead people.",
-        "The chapter is about Linda's death."
-      ],
-      acceptableAnswers: [
-        "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation."
-      ],
-      explanation: "The thesis must follow the format: In \"Chapter Name,\" [Author]'s use of [literary device 1] and [literary device 2] conveys that [central idea]."
-    },
-    {
-      type: "multiple-choice",
-      question: "What should Paragraph 2, Sentence 1 (topic sentence) introduce?",
-      options: [
-        "The second literary device",
-        "The first literary device (motif of storytelling) with initial evidence about stories saving us",
-        "The central idea",
-        "Background information"
-      ],
-      acceptableAnswers: [
-        "The first literary device (motif of storytelling) with initial evidence about stories saving us"
-      ],
-      explanation: "Paragraph 2 Sentence 1 should be a topic sentence introducing the motif of storytelling with evidence. Example: 'The motif of storytelling as a means of resurrection captures how narratives can bring the dead back to life, as O'Brien establishes early in the chapter when he declares, \"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\"'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should Paragraph 2, Sentence 2 explain?",
-      options: [
-        "The second literary device",
-        "How stories connect to dreams and function as a form of dreaming that transcends death",
-        "Character development",
-        "The conclusion"
-      ],
-      acceptableAnswers: [
-        "How stories connect to dreams and function as a form of dreaming that transcends death"
-      ],
-      explanation: "Sentence 2 should analyze/explain the first piece of evidence. Example: 'O'Brien connects stories directly to dreams, revealing that narrative functions as a form of dreaming that transcends death.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What evidence should Paragraph 2, Sentence 3 include about how stories create 'the illusion of aliveness'?",
-      options: [
-        "Evidence about characterization",
-        "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'",
-        "Evidence about war only",
-        "No evidence needed"
-      ],
-      acceptableAnswers: [
-        "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'"
-      ],
-      explanation: "Sentence 3 should provide additional evidence. Example: 'The motif continues as O'Brien explains how stories create \"the illusion of aliveness,\" describing how \"the bodies are animated\" and \"you make the dead talk\" through narrative.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What evidence should Paragraph 2, Sentence 4 include to show how soldiers use stories to cope?",
-      options: [
-        "Evidence about Linda only",
-        "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow",
-        "Evidence about the old man only",
-        "Evidence about characterization"
-      ],
-      acceptableAnswers: [
-        "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow"
-      ],
-      explanation: "Sentence 4 should show the transformation in action. Example: 'This transformation is evident when O'Brien recounts the men's reaction to Ted Lavender's death, where they keep \"the dead alive with stories,\" pretending Lavender is still mellow and relaxed rather than dead, showing how stories rewrite reality to make loss bearable.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should Paragraph 2, Sentence 5 conclude about the motif?",
-      options: [
-        "That stories don't work",
-        "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'",
-        "That only physical resurrection is possible",
-        "That characterization is more important"
-      ],
-      acceptableAnswers: [
-        "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'"
-      ],
-      explanation: "The final sentence should provide deeper analysis connecting to the central idea. Example: 'The motif reaches its fullest expression when O'Brien reveals that through stories, \"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world,\" demonstrating that narrative has the power to literally resurrect the deceased, allowing them to exist in an eternal present where they can speak and interact as if never having died.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should Paragraph 3, Sentence 1 (topic sentence) introduce?",
-      options: [
-        "The first literary device again",
-        "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence",
-        "New plot information",
-        "The central idea again"
-      ],
-      acceptableAnswers: [
-        "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence"
-      ],
-      explanation: "Paragraph 3 Sentence 1 should introduce characterization. Example: 'O'Brien's use of characterization highlights the transformation from Timmy, the traumatized child, to Tim, the writer who uses narrative to save the dead, revealing how encounters with death shape identity and purpose.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What evidence should Paragraph 3, Sentence 2 include about Timmy's first encounter with death?",
-      options: [
-        "Evidence about the soldiers only",
-        "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'",
-        "Evidence about the movie only",
-        "No evidence needed"
-      ],
-      acceptableAnswers: [
-        "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'"
-      ],
-      explanation: "Sentence 2 should show Timmy's initial inability to process loss. Example: 'As a nine-year-old, Timmy experiences death for the first time when Linda dies of a brain tumor, and O'Brien shows his initial inability to process loss when he visits the funeral home and finds Linda's body \"bloated\" and unrecognizable, thinking \"It didn't seem real. A mistake, I thought.\"'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What should Paragraph 3, Sentence 3 explain about Timmy's response to trauma?",
-      options: [
-        "That he forgot about Linda",
-        "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'",
-        "That he moved on immediately",
-        "That he avoided stories"
-      ],
-      acceptableAnswers: [
-        "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'"
-      ],
-      explanation: "Sentence 3 should show how Timmy's response becomes the foundation of his future identity. Example: 'Timmy's response to this trauma becomes the foundation of his future identity, as he begins \"to practice the magic of stories\" through dreams where Linda comes alive, making him \"begin going to bed earlier and earlier\" because his dreams had \"become a secret meeting place\" where death could be reversed.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What evidence should Paragraph 3, Sentence 4 include about Timmy's evolution to Tim?",
-      options: [
-        "Evidence about Linda only",
-        "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need",
-        "Evidence about war only",
-        "No evolution needed"
-      ],
-      acceptableAnswers: [
-        "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need"
-      ],
-      explanation: "Sentence 4 should show the connection between child and adult. Example: 'The characterization shows Timmy's evolution when O'Brien reflects, \"I was Timmy then; now I'm Tim. But the essence remains the same,\" revealing that the adult writer maintains the child's need to resurrect the dead, but has transformed this need into his vocation.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What evidence should Paragraph 3, Sentence 5 include to conclude the characterization analysis?",
-      options: [
-        "Evidence about stories not working",
-        "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'",
-        "Evidence about the movie only",
-        "Evidence about war trauma only"
-      ],
-      acceptableAnswers: [
-        "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'"
-      ],
-      explanation: "Sentence 5 should tie characterization back to the central idea. Example: 'As Tim the writer, O'Brien states, \"I want to save Linda's life. Not her body—her life,\" demonstrating how encounters with death in childhood shaped his understanding that stories offer immortality, allowing him to \"steal her soul\" and \"revive, at least briefly, that which is absolute and unchanging\" through narrative. By the end, O'Brien reveals that the entire chapter \"is as Tim trying to save Timmy's life with a story,\" showing that his encounters with death not only influenced his future but became the very foundation of his identity as a writer who uses stories to preserve the dead and heal the living.'"
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quote should be used in Paragraph 2 about stories saving us?",
-      options: [
-        "\"I was Timmy then; now I'm Tim\"",
-        "\"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\"",
-        "\"It didn't seem real\"",
-        "\"Timmy, stop crying\""
-      ],
-      acceptableAnswers: [
-        "\"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\""
-      ],
-      explanation: "This is the key opening quote that establishes the motif of storytelling and should be used in Paragraph 2, Sentence 1."
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quote should be used in Paragraph 2 about how stories animate the dead?",
-      options: [
-        "\"I want to save Linda's life\"",
-        "\"the bodies are animated\" and \"you make the dead talk\"",
-        "\"I was Timmy then\"",
-        "\"It didn't seem real\""
-      ],
-      acceptableAnswers: [
-        "\"the bodies are animated\" and \"you make the dead talk\""
-      ],
-      explanation: "This quote from Paragraph 2, Sentence 3 shows how stories create 'the illusion of aliveness' and should be included when discussing how stories work."
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quote should be used in Paragraph 2 about the dead returning to the world?",
-      options: [
-        "\"I was Timmy then; now I'm Tim\"",
-        "\"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world\"",
-        "\"It didn't seem real\"",
-        "\"Timmy, stop crying\""
-      ],
-      acceptableAnswers: [
-        "\"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world\""
-      ],
-      explanation: "This quote should be used in Paragraph 2, Sentence 5 as the fullest expression of the motif showing how stories literally resurrect the dead."
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quote should be used in Paragraph 3 about Timmy's inability to recognize Linda's body?",
-      options: [
-        "\"stories can save us\"",
-        "\"It didn't seem real. A mistake, I thought.\"",
-        "\"I was Timmy then; now I'm Tim\"",
-        "\"the bodies are animated\""
-      ],
-      acceptableAnswers: [
-        "\"It didn't seem real. A mistake, I thought.\""
-      ],
-      explanation: "This quote from Paragraph 3, Sentence 2 shows Timmy's initial trauma and inability to process Linda's death when he sees her bloated, unrecognizable body at the funeral home."
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quotes should be used in Paragraph 3 about Timmy practicing the magic of stories?",
-      options: [
-        "\"to practice the magic of stories\" and dreams had \"become a secret meeting place\"",
-        "\"stories can save us\"",
-        "\"the bodies are animated\"",
-        "\"It didn't seem real\""
-      ],
-      acceptableAnswers: [
-        "\"to practice the magic of stories\" and dreams had \"become a secret meeting place\""
-      ],
-      explanation: "These quotes from Paragraph 3, Sentence 3 show how Timmy begins using stories as a coping mechanism, making his dreams a place where Linda comes alive."
-    },
-    {
-      type: "multiple-choice",
-      question: "What key quotes should be used in Paragraph 3, Sentence 5 to conclude the characterization?",
-      options: [
-        "\"stories can save us\"",
-        "\"I want to save Linda's life. Not her body—her life\" and \"steal her soul\" and \"is as Tim trying to save Timmy's life with a story\"",
-        "\"It didn't seem real\"",
-        "\"the bodies are animated\""
-      ],
-      acceptableAnswers: [
-        "\"I want to save Linda's life. Not her body—her life\" and \"steal her soul\" and \"is as Tim trying to save Timmy's life with a story\""
-      ],
-      explanation: "These quotes from Paragraph 3, Sentence 5 show Tim's transformation into a writer who uses stories to save the dead, and the final quote reveals that the entire chapter itself is an act of storytelling that saves Timmy's life."
-    }
-  ]
-},
-{
-  id: "us-constitution",
-  name: "U.S. Constitution",
-  category: "US History",
-  description: "Comprehensive quiz covering the U.S. Constitution, including the three branches of government, amendments, and key constitutional principles",
-  questions: [
-    {
-      type: "multiple-choice",
-      question: "What is the purpose of the Preamble?",
-      options: [
-        "To establish the three branches of government",
-        "To outline the goals and purposes of the Constitution",
-        "To list the rights of citizens",
-        "To define the powers of Congress"
-      ],
-      acceptableAnswers: [
-        "To outline the goals and purposes of the Constitution"
-      ],
-      explanation: "The Preamble introduces the Constitution and states its goals: to form a more perfect union, establish justice, ensure domestic tranquility, provide for the common defense, promote the general welfare, and secure the blessings of liberty."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the Legislative Branch?",
-      options: [
-        "To enforce laws",
-        "To make laws",
-        "To interpret laws",
-        "To execute laws"
-      ],
-      acceptableAnswers: ["To make laws"]
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the Executive Branch?",
-      options: [
-        "To make laws",
-        "To enforce laws",
-        "To interpret laws",
-        "To create laws"
-      ],
-      acceptableAnswers: ["To enforce laws"]
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the function of the Judicial Branch?",
-      options: [
-        "To make laws",
-        "To enforce laws",
-        "To interpret laws",
-        "To execute laws"
-      ],
-      acceptableAnswers: ["To interpret laws"]
-    },
-    {
-      type: "multiple-choice",
-      question: "What term is used to identify a two-house legislature?",
-      options: [
-        "Unicameral",
-        "Bicameral",
-        "Tricameral",
-        "Multicameral"
-      ],
-      acceptableAnswers: ["Bicameral"],
-      explanation: "A bicameral legislature consists of two separate chambers or houses, such as the U.S. Congress with the House of Representatives and the Senate."
-    },
-    {
-      type: "constructed-response",
-      question: "List the qualifications to become a US Representative.",
-      acceptableAnswers: [
-        "At least 25 years old, U.S. citizen for at least 7 years, resident of the state they represent",
-        "25 years old, citizen for 7 years, resident of state",
-        "Must be 25 years of age, a citizen of the United States for at least 7 years, and an inhabitant of the state in which they are elected"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List the qualifications to become a US Senator.",
-      acceptableAnswers: [
-        "At least 30 years old, U.S. citizen for at least 9 years, resident of the state they represent",
-        "30 years old, citizen for 9 years, resident of state",
-        "Must be 30 years of age, a citizen of the United States for at least 9 years, and an inhabitant of the state in which they are elected"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term of office for a US Representative?",
-      options: [
-        "2 years",
-        "4 years",
-        "6 years",
-        "8 years"
-      ],
-      acceptableAnswers: ["2 years"]
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the term of office for a US Senator?",
-      options: [
-        "2 years",
-        "4 years",
-        "6 years",
-        "8 years"
-      ],
-      acceptableAnswers: ["6 years"]
-    },
-    {
-      type: "multiple-choice",
-      question: "How many terms may representatives or senators run for?",
-      options: [
-        "No limit",
-        "2 terms",
-        "3 terms",
-        "4 terms"
-      ],
-      acceptableAnswers: ["No limit"],
-      explanation: "There are no term limits for members of Congress. Representatives and senators can be re-elected indefinitely."
-    },
-    {
-      type: "multiple-choice",
-      question: "How is representation in the House of Representatives determined?",
-      options: [
-        "Equal representation for each state",
-        "Based on population",
-        "Based on land area",
-        "Based on state wealth"
-      ],
-      acceptableAnswers: ["Based on population"],
-      explanation: "Representation in the House is based on each state's population, with each state guaranteed at least one representative."
-    },
-    {
-      type: "multiple-choice",
-      question: "How many senators does each state get?",
-      options: [
-        "1",
-        "2",
-        "3",
-        "Based on population"
-      ],
-      acceptableAnswers: ["2"],
-      explanation: "Each state has exactly two senators, regardless of population, ensuring equal representation in the Senate."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the maximum number of representatives a state can have in the House of Representatives?",
-      options: [
-        "50",
-        "100",
-        "435",
-        "There is no maximum"
-      ],
-      acceptableAnswers: ["There is no maximum"],
-      explanation: "While the total number of representatives is fixed at 435, there is no constitutional maximum for a single state. However, the total House membership is capped at 435 by law."
-    },
-    {
-      type: "constructed-response",
-      question: "Explain the impeachment process. Which house has the sole power of impeachment?",
-      acceptableAnswers: [
-        "The House of Representatives has the sole power of impeachment (bringing charges). The Senate then holds the trial and can remove the official from office with a two-thirds vote.",
-        "House impeaches, Senate tries",
-        "The House of Representatives impeaches, and the Senate conducts the trial"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List powers given to the House of Representatives.",
-      acceptableAnswers: [
-        "Power to impeach, originate revenue bills, elect the president if no candidate receives a majority of electoral votes",
-        "Impeachment, revenue bills, elect president in case of tie",
-        "Sole power of impeachment, power to originate bills for raising revenue, power to elect the president in case of electoral college tie"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List powers given to the Senate.",
-      acceptableAnswers: [
-        "Power to try impeachments, approve treaties, approve presidential appointments, elect the vice president if no candidate receives a majority",
-        "Try impeachments, approve treaties and appointments, elect vice president in case of tie",
-        "Sole power to try impeachments, power to approve treaties with two-thirds vote, power to approve presidential appointments, power to elect the vice president in case of electoral college tie"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List the powers of Congress.",
-      acceptableAnswers: [
-        "Power to tax, borrow money, regulate commerce, coin money, declare war, raise and support armies, make all laws necessary and proper",
-        "Tax, borrow, regulate commerce, coin money, declare war, raise armies, necessary and proper clause",
-        "Power to lay and collect taxes, borrow money, regulate interstate and foreign commerce, coin money, declare war, raise and support armies and navies, and make all laws necessary and proper for carrying out these powers"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "Explain the purpose of the Elastic Clause.",
-      options: [
-        "To allow Congress to stretch the Constitution",
-        "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers",
-        "To allow the president to expand his powers",
-        "To give states more flexibility"
-      ],
-      acceptableAnswers: [
-        "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers"
-      ],
-      explanation: "The Elastic Clause (Necessary and Proper Clause) allows Congress to make laws that are necessary and proper for executing its enumerated powers, giving Congress flexibility to address new situations."
-    },
-    {
-      type: "constructed-response",
-      question: "What is Congress not permitted to do?",
-      acceptableAnswers: [
-        "Pass ex post facto laws, suspend writ of habeas corpus except in cases of rebellion or invasion, grant titles of nobility, tax exports",
-        "Ex post facto laws, suspend habeas corpus, grant titles of nobility, tax exports",
-        "Congress cannot pass ex post facto laws, suspend the writ of habeas corpus (except in cases of rebellion or invasion), grant titles of nobility, or tax exports from states"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List the qualifications for president and vice president.",
-      acceptableAnswers: [
-        "At least 35 years old, natural-born U.S. citizen, resident of the United States for at least 14 years",
-        "35 years old, natural-born citizen, 14 years resident",
-        "Must be at least 35 years of age, a natural-born citizen of the United States, and have been a resident of the United States for at least 14 years"
-      ]
-    },
-    {
-      type: "constructed-response",
-      question: "List powers of the president.",
-      acceptableAnswers: [
-        "Commander in chief of the military, power to veto legislation, power to make treaties (with Senate approval), power to appoint officials (with Senate approval), power to grant pardons",
-        "Commander in chief, veto, make treaties, appoint officials, grant pardons",
-        "Serves as commander in chief of the armed forces, can veto bills passed by Congress, can make treaties with Senate approval, can appoint federal officials with Senate approval, can grant pardons and reprieves"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the only official role played by the vice president?",
-      options: [
-        "To serve as commander in chief",
-        "To preside over the Senate and cast tie-breaking votes",
-        "To veto legislation",
-        "To appoint Supreme Court justices"
-      ],
-      acceptableAnswers: [
-        "To preside over the Senate and cast tie-breaking votes"
-      ],
-      explanation: "The vice president's only constitutional duty is to serve as president of the Senate, with the power to cast a vote only in case of a tie."
-    },
-    {
-      type: "constructed-response",
-      question: "Explain the Electoral College. How does a state know how many electors they are entitled to?",
-      acceptableAnswers: [
-        "The Electoral College elects the president. Each state gets electors equal to the number of its senators plus representatives. The total is 538 electors (435 representatives + 100 senators + 3 for DC).",
-        "Electors equal to senators plus representatives",
-        "The Electoral College is the body that elects the president. Each state receives a number of electors equal to its total number of senators and representatives in Congress. The District of Columbia also receives 3 electors."
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "According to the original Constitution, how many terms could a person serve as president?",
-      options: [
-        "1 term",
-        "2 terms",
-        "3 terms",
-        "No limit"
-      ],
-      acceptableAnswers: ["No limit"],
-      explanation: "The original Constitution did not set term limits for the presidency. The 22nd Amendment, ratified in 1951, limited presidents to two terms."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the maximum number of years a person can be president today?",
-      options: [
-        "4 years",
-        "8 years",
-        "10 years",
-        "12 years"
-      ],
-      acceptableAnswers: ["10 years"],
-      explanation: "A person can serve a maximum of 10 years: up to 2 years completing another president's term plus 2 full terms (8 years) = 10 years total."
-    },
-    {
-      type: "multiple-choice",
-      question: "According to the original Constitution, who were the only people in the Federal government directly elected by the people?",
-      options: [
-        "The president and vice president",
-        "US Representatives",
-        "US Senators",
-        "Federal judges"
-      ],
-      acceptableAnswers: ["US Representatives"],
-      explanation: "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures, and the president was chosen by the Electoral College."
-    },
-    {
-      type: "constructed-response",
-      question: "List the qualifications to be a Federal judge.",
-      acceptableAnswers: [
-        "There are no specific qualifications listed in the Constitution",
-        "No qualifications specified",
-        "The Constitution does not specify any qualifications for federal judges, unlike the requirements for members of Congress or the president"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "How long do Federal judges serve?",
-      options: [
-        "4 years",
-        "6 years",
-        "8 years",
-        "For life (during good behavior)"
-      ],
-      acceptableAnswers: ["For life (during good behavior)"],
-      explanation: "Federal judges serve for life, as long as they maintain 'good behavior,' which allows them to make decisions without political pressure."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the only court established in the Constitution?",
-      options: [
-        "The Supreme Court",
-        "The Court of Appeals",
-        "The District Court",
-        "The Federal Court"
-      ],
-      acceptableAnswers: ["The Supreme Court"],
-      explanation: "The Constitution only explicitly establishes the Supreme Court. All other federal courts were created by Congress."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the only crime mentioned in the Constitution?",
-      options: [
-        "Murder",
-        "Treason",
-        "Theft",
-        "Perjury"
-      ],
-      acceptableAnswers: ["Treason"],
-      explanation: "Treason is the only crime specifically defined in the Constitution, which states it consists of levying war against the United States or giving aid and comfort to its enemies."
-    },
-    {
-      type: "multiple-choice",
-      question: "What was the one part of the Articles of Confederation that became part of the Constitution?",
-      options: [
-        "The unicameral legislature",
-        "The requirement for unanimous consent to amend",
-        "The full faith and credit clause",
-        "The power to tax"
-      ],
-      acceptableAnswers: ["The full faith and credit clause"],
-      explanation: "The Full Faith and Credit Clause, which requires states to recognize the public acts, records, and judicial proceedings of other states, was carried over from the Articles of Confederation."
-    },
-    {
-      type: "constructed-response",
-      question: "How can the Constitution be amended?",
-      acceptableAnswers: [
-        "An amendment can be proposed by a two-thirds vote of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or conventions",
-        "Two-thirds of Congress proposes, three-fourths of states ratify",
-        "An amendment must be proposed by either two-thirds of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or by conventions in three-fourths of the states"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "How many amendments make up the Bill of Rights?",
-      options: [
-        "8",
-        "10",
-        "12",
-        "15"
-      ],
-      acceptableAnswers: ["10"],
-      explanation: "The Bill of Rights consists of the first 10 amendments to the Constitution, which protect individual liberties and limit the power of the federal government."
-    },
-    {
-      type: "multiple-choice",
-      question: "How many amendments are part of the Constitution today?",
-      options: [
-        "10",
-        "25",
-        "27",
-        "30"
-      ],
-      acceptableAnswers: ["27"],
-      explanation: "There are currently 27 amendments to the U.S. Constitution, with the most recent being the 27th Amendment regarding congressional pay."
-    },
-    {
-      type: "multiple-choice",
-      question: "What is the Supremacy Clause?",
-      options: [
-        "The clause that makes the president supreme over Congress",
-        "The clause that establishes the Constitution and federal laws as the supreme law of the land",
-        "The clause that gives states power over the federal government",
-        "The clause that makes the Supreme Court the highest court"
-      ],
-      acceptableAnswers: [
-        "The clause that establishes the Constitution and federal laws as the supreme law of the land"
-      ],
-      explanation: "The Supremacy Clause establishes that the Constitution, federal laws, and treaties are the supreme law of the land, taking precedence over state laws."
-    },
-    {
-      type: "multiple-choice",
-      question: "How many states were needed to ratify the Constitution?",
-      options: [
-        "7",
-        "9",
-        "10",
-        "13"
-      ],
-      acceptableAnswers: ["9"],
-      explanation: "The Constitution required ratification by 9 out of 13 states to go into effect, as specified in Article VII."
-    },
-    {
-      type: "constructed-response",
-      question: "List the four freedoms/rights in the 1st Amendment.",
-      acceptableAnswers: [
-        "Freedom of speech, freedom of religion, freedom of the press, freedom of assembly, and the right to petition the government",
-        "Speech, religion, press, assembly, petition",
-        "The First Amendment protects freedom of speech, freedom of religion (establishment and free exercise), freedom of the press, freedom of assembly, and the right to petition the government for redress of grievances"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "Explain Reserved Powers.",
-      options: [
-        "Powers reserved for the federal government",
-        "Powers reserved for the president",
-        "Powers reserved for the states under the 10th Amendment",
-        "Powers reserved for Congress"
-      ],
-      acceptableAnswers: [
-        "Powers reserved for the states under the 10th Amendment"
-      ],
-      explanation: "Reserved powers are those not delegated to the federal government nor prohibited to the states, and are therefore reserved for the states under the 10th Amendment."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which amendment has never had to be enforced or challenged in court?",
-      options: [
-        "The 1st Amendment",
-        "The 3rd Amendment",
-        "The 5th Amendment",
-        "The 8th Amendment"
-      ],
-      acceptableAnswers: ["The 3rd Amendment"],
-      explanation: "The 3rd Amendment, which prohibits the quartering of soldiers in private homes without consent, has rarely been litigated and has never been the basis for a Supreme Court decision."
-    },
-    {
-      type: "constructed-response",
-      question: "List the rights protected in the 5th Amendment.",
-      acceptableAnswers: [
-        "Right to grand jury, protection against double jeopardy, protection against self-incrimination, due process of law, and just compensation for private property taken for public use",
-        "Grand jury, double jeopardy, self-incrimination, due process, just compensation",
-        "The 5th Amendment protects: the right to a grand jury indictment for serious crimes, protection against double jeopardy, protection against self-incrimination, the right to due process of law, and the requirement of just compensation when private property is taken for public use"
-      ]
-    },
-    {
-      type: "multiple-choice",
-      question: "Why is the 8th Amendment so frequently debated?",
-      options: [
-        "It protects against excessive bail and fines",
-        "It prohibits cruel and unusual punishment, which is subject to interpretation",
-        "It guarantees the right to a speedy trial",
-        "It protects against unreasonable searches"
-      ],
-      acceptableAnswers: [
-        "It prohibits cruel and unusual punishment, which is subject to interpretation"
-      ],
-      explanation: "The 8th Amendment's prohibition of 'cruel and unusual punishment' is frequently debated because what constitutes cruel and unusual punishment is open to interpretation and changes over time."
-    },
-    {
-      type: "multiple-choice",
-      question: "If police believe illegal activities are taking place in a person's home, what must they obtain from a judge before entering?",
-      options: [
-        "A warrant",
-        "Permission from the homeowner",
-        "A subpoena",
-        "A summons"
-      ],
-      acceptableAnswers: ["A warrant"],
-      explanation: "The 4th Amendment requires police to obtain a search warrant from a judge before entering a person's home, unless there are exigent circumstances."
-    },
-    {
-      type: "multiple-choice",
-      question: "The Miranda Rights are an example of ___________ ______________.",
-      options: [
-        "Due process",
-        "Procedural due process",
-        "Substantive due process",
-        "Equal protection"
-      ],
-      acceptableAnswers: ["Procedural due process"],
-      explanation: "Miranda Rights, which require police to inform suspects of their rights, are an example of procedural due process - ensuring fair procedures are followed."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which state benefited the most from the 3/5 Compromise?",
-      options: [
-        "Massachusetts",
-        "New York",
-        "Rhode Island",
-        "North Carolina"
-      ],
-      acceptableAnswers: ["North Carolina"],
-      explanation: "Southern states with large slave populations, like North Carolina, benefited most from the 3/5 Compromise because it increased their representation in the House of Representatives."
-    },
-    {
-      type: "multiple-choice",
-      question: "Anti-Federalists were critical of the Constitution because most power was given to the:",
-      options: [
-        "State legislatures",
-        "Delegates to the Constitutional Convention",
-        "President's Cabinet",
-        "National government"
-      ],
-      acceptableAnswers: ["National government"],
-      explanation: "Anti-Federalists feared that the Constitution gave too much power to the national government at the expense of state governments and individual liberties."
-    },
-    {
-      type: "multiple-choice",
-      question: "According to the original Constitution, who were the only Federal Officials to be directly elected by the people?",
-      options: [
-        "Vice President",
-        "US Representatives",
-        "Senators",
-        "President"
-      ],
-      acceptableAnswers: ["US Representatives"],
-      explanation: "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures until the 17th Amendment."
-    },
-    {
-      type: "multiple-choice",
-      question: "Which grouping is in the correct order?",
-      options: [
-        "Declaration of Independence, US Constitution, Articles of Confederation",
-        "Declaration of Independence, Articles of Confederation, US Constitution",
-        "Articles of Confederation, Declaration of Independence, US Constitution",
-        "US Constitution, Articles of Confederation, Declaration of Independence"
-      ],
-      acceptableAnswers: [
-        "Declaration of Independence, Articles of Confederation, US Constitution"
-      ],
-      explanation: "The Declaration of Independence was adopted in 1776, the Articles of Confederation were ratified in 1781, and the U.S. Constitution was ratified in 1788."
-    },
-    {
-      type: "multiple-choice",
-      question: "A senator must be at least how many years old?",
-      options: [
-        "25",
-        "30",
-        "35",
-        "40"
-      ],
-      acceptableAnswers: ["30"]
-    },
-    {
-      type: "multiple-choice",
-      question: "Under the US Constitution, the states are given the power to:",
-      options: [
-        "Declare war",
-        "Coin money",
-        "Regulate intrastate commerce and conduct elections",
-        "Make treaties with foreign nations"
-      ],
-      acceptableAnswers: [
-        "Regulate intrastate commerce and conduct elections"
-      ],
-      explanation: "States have reserved powers including regulating commerce within their borders and conducting elections, while powers like declaring war and coining money belong to the federal government."
-    },
-    {
-      type: "multiple-choice",
-      question: "Congress created the US Air Force by using which section of the Constitution?",
-      options: [
-        "The Commerce Clause",
-        "The Necessary and Proper Clause (Elastic Clause)",
-        "The Supremacy Clause",
-        "The Full Faith and Credit Clause"
-      ],
-      acceptableAnswers: [
-        "The Necessary and Proper Clause (Elastic Clause)"
-      ],
-      explanation: "Congress used the Necessary and Proper Clause (Elastic Clause) to create the Air Force, as it was necessary and proper for carrying out Congress's power to raise and support armies."
-    }
-  ]
-},
+    id: "linux-fundamentals-and-networking-ports",
+    name: "Linux Fundamentals and Networking Ports",
+    category: "Cybersecurity",
+    description:
+      "This module covers fundamental Linux commands, concepts, and common networking port functions.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "Why would a rootkit be used by a hacker?",
+        options: [
+          "To encrypt files for ransomware attacks.",
+          "To perform denial-of-service attacks.",
+          "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors.",
+          "To create new user accounts on a compromised system.",
+        ],
+        acceptableAnswers: [
+          "To increase unauthorized user's privileges, grant access to restricted software portions, and secure backdoors.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why is Kali Linux a popular choice in testing the network security of an organization?",
+        options: [
+          "It is designed for everyday desktop use and productivity.",
+          "It comes pre-installed with a wide array of penetration testing and ethical hacking tools.",
+          "It offers superior graphical interface customization compared to other Linux distributions.",
+          "It is the most lightweight Linux distribution available.",
+        ],
+        acceptableAnswers: [
+          "It comes pre-installed with a wide array of penetration testing and ethical hacking tools.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "A system administrator issues the 'ps' command on a server that is running the Linux operating system. What is the purpose of this command?",
+        options: [
+          "To display network connections.",
+          "To list files in the current directory.",
+          "To display information about currently running processes.",
+          "To change file permissions.",
+        ],
+        acceptableAnswers: [
+          "To display information about currently running processes.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "A system administrator issues the 'apt-get upgrade' command on a Linux operating system. What is the purpose of this command?",
+        options: [
+          "To install new software packages.",
+          "To remove existing software packages.",
+          "To update all installed packages to their newest versions.",
+          "To check the status of system services.",
+        ],
+        acceptableAnswers: [
+          "To update all installed packages to their newest versions.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which Linux command can be used to display the name of the current working directory?",
+        options: ["ls", "cd", "pwd", "whoami"],
+        acceptableAnswers: ["pwd"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which file system is the primary file system used by Apple in current Macintosh computers?",
+        options: ["NTFS", "exFAT", "HFS+", "EXT4"],
+        acceptableAnswers: ["HFS+"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In the context of a Linux operating system, which command can be used to display the syntax and parameters for a specific command?",
+        options: [
+          "help <command>",
+          "man <command>",
+          "info <command>",
+          "docs <command>",
+        ],
+        acceptableAnswers: ["man <command>"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which user can override file permissions on a Linux computer?",
+        options: [
+          "Any user in the 'sudo' group.",
+          "The file owner only.",
+          "The root user.",
+          "Any user with write access to the directory.",
+        ],
+        acceptableAnswers: ["The root user."],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Consider the result of the 'ls -l' command in the Linux output below. What are the group file permissions assigned to the analyst.txt file?\n\nResult: \nls -l analyst.txt\n-rwxrw-r-- sales staff 1028 May 28 15:50 analyst.txt",
+        options: [
+          "Read, write, and execute.",
+          "Read and write.",
+          "Read only.",
+          "No permissions.",
+        ],
+        acceptableAnswers: ["Read and write."],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a benefit of Linux being an open-source operating system?",
+        options: [
+          "It is always free of charge to use.",
+          "Its source code is publicly available, allowing for community review, modification, and improvement.",
+          "It provides a more secure graphical user interface.",
+          "It has exclusive hardware compatibility.",
+        ],
+        acceptableAnswers: [
+          "Its source code is publicly available, allowing for community review, modification, and improvement.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following are three benefits of using symbolic links over hard links in Linux?",
+        options: [
+          "Can link across filesystems, can link to directories, deleting the target does not delete the link.",
+          "Consume less disk space, faster access, automatically update if the target moves.",
+          "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data.",
+          "Maintain data integrity better, provide higher security, easier to create.",
+        ],
+        acceptableAnswers: [
+          "Can link across filesystems, can link to directories, deleting the target breaks the link but not the data.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which type of tool is used by a Linux administrator to attack a computer or network to find vulnerabilities?",
+        options: [
+          "Productivity suite.",
+          "Word processor.",
+          "Penetration testing tool.",
+          "System monitoring tool.",
+        ],
+        acceptableAnswers: ["Penetration testing tool."],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a daemon in the context of a Linux operating system?",
+        options: [
+          "A malicious program hidden on the system.",
+          "A background process that performs system-related tasks, often without direct user interaction.",
+          "A graphical user interface component.",
+          "A command-line utility for managing files.",
+        ],
+        acceptableAnswers: [
+          "A background process that performs system-related tasks, often without direct user interaction.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "A technician has captured packets on a network that has been running slowly when accessing the internet. Which port numbers should the technician look for within the captured material to locate HTTP packets?",
+        options: ["20 and 21", "22", "23", "80"],
+        acceptableAnswers: ["80"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which port number is used for the Secure Shell (SSH) protocol?",
+        options: ["20/21", "22", "23", "25"],
+        acceptableAnswers: ["22"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the primary function of port 23?",
+        options: [
+          "File Transfer Protocol (FTP)",
+          "Secure Shell (SSH)",
+          "Telnet remote login service",
+          "Simple Mail Transfer Protocol (SMTP)",
+        ],
+        acceptableAnswers: ["Telnet remote login service"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which port number is associated with the Simple Mail Transfer Protocol (SMTP)?",
+        options: ["22", "23", "25", "53"],
+        acceptableAnswers: ["25"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What protocol uses port 53?",
+        options: ["HTTP", "DNS", "DHCP", "NTP"],
+        acceptableAnswers: ["DNS"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which port numbers are used by the Dynamic Host Configuration Protocol (DHCP)?",
+        options: ["67/68", "69", "80", "110"],
+        acceptableAnswers: ["67/68"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What service operates on port 69?",
+        options: [
+          "Hypertext Transfer Protocol (HTTP)",
+          "Post Office Protocol version 3 (POP3)",
+          "Trivial File Transfer Protocol (TFTP)",
+          "Network Time Protocol (NTP)",
+        ],
+        acceptableAnswers: ["Trivial File Transfer Protocol (TFTP)"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the function of port 110?",
+        options: [
+          "Internet Message Access Protocol (IMAP)",
+          "Simple Network Management Protocol (SNMP)",
+          "Post Office Protocol version 3 (POP3)",
+          "HTTP Secure (HTTPS)",
+        ],
+        acceptableAnswers: ["Post Office Protocol version 3 (POP3)"],
+      },
+      {
+        type: "multiple-choice",
+        question: "Which protocol uses port 123?",
+        options: ["SMTP", "DNS", "NTP", "IMAP"],
+        acceptableAnswers: ["NTP"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the description for port 143?",
+        options: [
+          "Simple Mail Transfer Protocol (SMTP)",
+          "Internet Message Access Protocol (IMAP)",
+          "Post Office Protocol version 3 (POP3)",
+          "Network Time Protocol (NTP)",
+        ],
+        acceptableAnswers: ["Internet Message Access Protocol (IMAP)"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which port numbers are used for Simple Network Management Protocol (SNMP)?",
+        options: ["123", "143", "161/162", "443"],
+        acceptableAnswers: ["161/162"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is HTTP Secure (HTTPS) associated with?",
+        options: ["Port 80", "Port 110", "Port 143", "Port 443"],
+        acceptableAnswers: ["Port 443"],
+      },
+      {
+        type: "multiple-choice",
+        question: "Which port(s) are used by the File Transfer Protocol (FTP)?",
+        options: ["20/21", "22", "23", "25"],
+        acceptableAnswers: ["20/21"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the 'cd' command do in Linux?",
+        options: [
+          "Lists files in a directory.",
+          "Changes the current working directory.",
+          "Creates a new directory.",
+          "Removes a file.",
+        ],
+        acceptableAnswers: ["Changes the current working directory."],
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the 'ls -a' command reveal?",
+        options: [
+          "Files in a long format.",
+          "All files, including hidden ones.",
+          "Files in reverse order.",
+          "Files in a tree-like structure.",
+        ],
+        acceptableAnswers: ["All files, including hidden ones."],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "To remove an empty directory in Linux, which command would you use?",
+        options: ["rm -r", "rmdir", "del", "remove"],
+        acceptableAnswers: ["rmdir"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of the 'grep' command in Linux?",
+        options: [
+          "To copy files.",
+          "To search for patterns in files.",
+          "To display the contents of a file.",
+          "To create new files.",
+        ],
+        acceptableAnswers: ["To search for patterns in files."],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which command is used to change the ownership of a file or directory in Linux?",
+        options: ["chmod", "chown", "chgrp", "mv"],
+        acceptableAnswers: ["chown"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the 'uname -a' command output?",
+        options: [
+          "Only the kernel name.",
+          "The current date and time.",
+          "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system.",
+          "The uptime of the system.",
+        ],
+        acceptableAnswers: [
+          "All system information, including kernel name, network hostname, kernel release, kernel version, machine hardware name, processor, hardware platform, and operating system.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How can you view the last few lines of a text file in Linux?",
+        options: ["head", "more", "tail", "cat"],
+        acceptableAnswers: ["tail"],
+      },
+    ],
+  },
+  {
+    id: "lives-of-the-dead",
+    name: "Lives of the Dead",
+    category: "Literature",
+    description:
+      "Step-by-step quiz to memorize constructing the TAR response for 'Lives of the Dead' - from first sentence to last",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What should the FIRST sentence of Paragraph 1 establish?",
+        options: [
+          "The thesis statement",
+          "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life",
+          "Evidence from the text",
+          "The central idea",
+        ],
+        acceptableAnswers: [
+          "Chapter-specific context that sets the stage - O'Brien reflects on encounters with death throughout his life",
+        ],
+        explanation:
+          "The first sentence should provide chapter-specific context. Example: 'In the chapter \"Lives of the Dead,\" O'Brien reflects on how encounters with death throughout his life—from Linda's death as a child to the soldiers he witnessed dying in Vietnam—taught him the power of storytelling to resurrect the dead.'",
+      },
+      {
+        type: "multiple-choice",
+        question: "What should the SECOND sentence of Paragraph 1 explain?",
+        options: [
+          "The literary devices used",
+          "How stories bring the dead back to life through narrative and memory",
+          "The evidence to be used",
+          "The theme only",
+        ],
+        acceptableAnswers: [
+          "How stories bring the dead back to life through narrative and memory",
+        ],
+        explanation:
+          "The second sentence should continue the context and show how stories function. Example: 'Through narrative and memory, O'Brien demonstrates how stories can bring the deceased back to life, allowing them to speak, smile, and exist beyond physical death.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What TWO literary devices should be used in the thesis (sentence 3 of Paragraph 1)?",
+        options: [
+          "Motif and symbolism",
+          "Motif of storytelling and characterization",
+          "Characterization and conflict",
+          "Symbolism and tone",
+        ],
+        acceptableAnswers: ["Motif of storytelling and characterization"],
+        explanation:
+          "The thesis should use the motif of storytelling and characterization. These are the two literary devices that best support the central idea about stories resurrecting the dead.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What should the CENTRAL IDEA be for 'Lives of the Dead'?",
+        options: [
+          "Death is final and cannot be overcome",
+          "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation",
+          "War changes people permanently",
+          "Childhood experiences shape who we become",
+        ],
+        acceptableAnswers: [
+          "Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation",
+        ],
+        explanation:
+          "The central idea must be a complete sentence that ties together all elements. For 'Lives of the Dead,' it is: 'Stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should the complete THESIS sentence (Paragraph 1, Sentence 3) say?",
+        options: [
+          'In "Lives of the Dead," Tim O\'Brien uses stories to show death is final.',
+          "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.",
+          "O'Brien tells stories about dead people.",
+          "The chapter is about Linda's death.",
+        ],
+        acceptableAnswers: [
+          "In \"Lives of the Dead,\" Tim O'Brien's use of the motif of storytelling and characterization conveys that stories can resurrect the dead and preserve meaning, allowing the living to cope with loss and find purpose through narrative transformation.",
+        ],
+        explanation:
+          'The thesis must follow the format: In "Chapter Name," [Author]\'s use of [literary device 1] and [literary device 2] conveys that [central idea].',
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should Paragraph 2, Sentence 1 (topic sentence) introduce?",
+        options: [
+          "The second literary device",
+          "The first literary device (motif of storytelling) with initial evidence about stories saving us",
+          "The central idea",
+          "Background information",
+        ],
+        acceptableAnswers: [
+          "The first literary device (motif of storytelling) with initial evidence about stories saving us",
+        ],
+        explanation:
+          "Paragraph 2 Sentence 1 should be a topic sentence introducing the motif of storytelling with evidence. Example: 'The motif of storytelling as a means of resurrection captures how narratives can bring the dead back to life, as O'Brien establishes early in the chapter when he declares, \"But this too is true: stories can save us. I'm forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive.\"'",
+      },
+      {
+        type: "multiple-choice",
+        question: "What should Paragraph 2, Sentence 2 explain?",
+        options: [
+          "The second literary device",
+          "How stories connect to dreams and function as a form of dreaming that transcends death",
+          "Character development",
+          "The conclusion",
+        ],
+        acceptableAnswers: [
+          "How stories connect to dreams and function as a form of dreaming that transcends death",
+        ],
+        explanation:
+          "Sentence 2 should analyze/explain the first piece of evidence. Example: 'O'Brien connects stories directly to dreams, revealing that narrative functions as a form of dreaming that transcends death.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What evidence should Paragraph 2, Sentence 3 include about how stories create 'the illusion of aliveness'?",
+        options: [
+          "Evidence about characterization",
+          "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'",
+          "Evidence about war only",
+          "No evidence needed",
+        ],
+        acceptableAnswers: [
+          "Evidence about how stories create 'the illusion of aliveness' and describe how 'the bodies are animated' and 'you make the dead talk'",
+        ],
+        explanation:
+          'Sentence 3 should provide additional evidence. Example: \'The motif continues as O\'Brien explains how stories create "the illusion of aliveness," describing how "the bodies are animated" and "you make the dead talk" through narrative.\'',
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What evidence should Paragraph 2, Sentence 4 include to show how soldiers use stories to cope?",
+        options: [
+          "Evidence about Linda only",
+          "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow",
+          "Evidence about the old man only",
+          "Evidence about characterization",
+        ],
+        acceptableAnswers: [
+          "Evidence about how the men keep Ted Lavender alive with stories, pretending he is still mellow",
+        ],
+        explanation:
+          "Sentence 4 should show the transformation in action. Example: 'This transformation is evident when O'Brien recounts the men's reaction to Ted Lavender's death, where they keep \"the dead alive with stories,\" pretending Lavender is still mellow and relaxed rather than dead, showing how stories rewrite reality to make loss bearable.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should Paragraph 2, Sentence 5 conclude about the motif?",
+        options: [
+          "That stories don't work",
+          "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'",
+          "That only physical resurrection is possible",
+          "That characterization is more important",
+        ],
+        acceptableAnswers: [
+          "That the motif reaches its fullest expression when O'Brien reveals that through stories, 'in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world'",
+        ],
+        explanation:
+          "The final sentence should provide deeper analysis connecting to the central idea. Example: 'The motif reaches its fullest expression when O'Brien reveals that through stories, \"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world,\" demonstrating that narrative has the power to literally resurrect the deceased, allowing them to exist in an eternal present where they can speak and interact as if never having died.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should Paragraph 3, Sentence 1 (topic sentence) introduce?",
+        options: [
+          "The first literary device again",
+          "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence",
+          "New plot information",
+          "The central idea again",
+        ],
+        acceptableAnswers: [
+          "The second literary device (characterization) showing the transformation from Timmy to Tim with initial evidence",
+        ],
+        explanation:
+          "Paragraph 3 Sentence 1 should introduce characterization. Example: 'O'Brien's use of characterization highlights the transformation from Timmy, the traumatized child, to Tim, the writer who uses narrative to save the dead, revealing how encounters with death shape identity and purpose.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What evidence should Paragraph 3, Sentence 2 include about Timmy's first encounter with death?",
+        options: [
+          "Evidence about the soldiers only",
+          "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'",
+          "Evidence about the movie only",
+          "No evidence needed",
+        ],
+        acceptableAnswers: [
+          "Evidence about Timmy visiting the funeral home and finding Linda's body 'bloated' and unrecognizable, thinking 'It didn't seem real. A mistake, I thought.'",
+        ],
+        explanation:
+          "Sentence 2 should show Timmy's initial inability to process loss. Example: 'As a nine-year-old, Timmy experiences death for the first time when Linda dies of a brain tumor, and O'Brien shows his initial inability to process loss when he visits the funeral home and finds Linda's body \"bloated\" and unrecognizable, thinking \"It didn't seem real. A mistake, I thought.\"'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should Paragraph 3, Sentence 3 explain about Timmy's response to trauma?",
+        options: [
+          "That he forgot about Linda",
+          "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'",
+          "That he moved on immediately",
+          "That he avoided stories",
+        ],
+        acceptableAnswers: [
+          "That he begins 'to practice the magic of stories' through dreams where Linda comes alive, making his dreams 'a secret meeting place'",
+        ],
+        explanation:
+          'Sentence 3 should show how Timmy\'s response becomes the foundation of his future identity. Example: \'Timmy\'s response to this trauma becomes the foundation of his future identity, as he begins "to practice the magic of stories" through dreams where Linda comes alive, making him "begin going to bed earlier and earlier" because his dreams had "become a secret meeting place" where death could be reversed.\'',
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What evidence should Paragraph 3, Sentence 4 include about Timmy's evolution to Tim?",
+        options: [
+          "Evidence about Linda only",
+          "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need",
+          "Evidence about war only",
+          "No evolution needed",
+        ],
+        acceptableAnswers: [
+          "The quote 'I was Timmy then; now I'm Tim. But the essence remains the same' showing the adult writer maintains the child's need",
+        ],
+        explanation:
+          "Sentence 4 should show the connection between child and adult. Example: 'The characterization shows Timmy's evolution when O'Brien reflects, \"I was Timmy then; now I'm Tim. But the essence remains the same,\" revealing that the adult writer maintains the child's need to resurrect the dead, but has transformed this need into his vocation.'",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What evidence should Paragraph 3, Sentence 5 include to conclude the characterization analysis?",
+        options: [
+          "Evidence about stories not working",
+          "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'",
+          "Evidence about the movie only",
+          "Evidence about war trauma only",
+        ],
+        acceptableAnswers: [
+          "The quote 'I want to save Linda's life. Not her body—her life' and 'steal her soul' and the realization that the chapter 'is as Tim trying to save Timmy's life with a story'",
+        ],
+        explanation:
+          'Sentence 5 should tie characterization back to the central idea. Example: \'As Tim the writer, O\'Brien states, "I want to save Linda\'s life. Not her body—her life," demonstrating how encounters with death in childhood shaped his understanding that stories offer immortality, allowing him to "steal her soul" and "revive, at least briefly, that which is absolute and unchanging" through narrative. By the end, O\'Brien reveals that the entire chapter "is as Tim trying to save Timmy\'s life with a story," showing that his encounters with death not only influenced his future but became the very foundation of his identity as a writer who uses stories to preserve the dead and heal the living.\'',
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quote should be used in Paragraph 2 about stories saving us?",
+        options: [
+          '"I was Timmy then; now I\'m Tim"',
+          '"But this too is true: stories can save us. I\'m forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive."',
+          '"It didn\'t seem real"',
+          '"Timmy, stop crying"',
+        ],
+        acceptableAnswers: [
+          '"But this too is true: stories can save us. I\'m forty-three years old, and a writer now, and even still, right here, I keep dreaming Linda alive."',
+        ],
+        explanation:
+          "This is the key opening quote that establishes the motif of storytelling and should be used in Paragraph 2, Sentence 1.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quote should be used in Paragraph 2 about how stories animate the dead?",
+        options: [
+          '"I want to save Linda\'s life"',
+          '"the bodies are animated" and "you make the dead talk"',
+          '"I was Timmy then"',
+          '"It didn\'t seem real"',
+        ],
+        acceptableAnswers: [
+          '"the bodies are animated" and "you make the dead talk"',
+        ],
+        explanation:
+          "This quote from Paragraph 2, Sentence 3 shows how stories create 'the illusion of aliveness' and should be included when discussing how stories work.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quote should be used in Paragraph 2 about the dead returning to the world?",
+        options: [
+          '"I was Timmy then; now I\'m Tim"',
+          '"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world"',
+          '"It didn\'t seem real"',
+          '"Timmy, stop crying"',
+        ],
+        acceptableAnswers: [
+          '"in a story, which is a kind of dreaming, the dead sometimes smile and sit up and return to the world"',
+        ],
+        explanation:
+          "This quote should be used in Paragraph 2, Sentence 5 as the fullest expression of the motif showing how stories literally resurrect the dead.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quote should be used in Paragraph 3 about Timmy's inability to recognize Linda's body?",
+        options: [
+          '"stories can save us"',
+          '"It didn\'t seem real. A mistake, I thought."',
+          '"I was Timmy then; now I\'m Tim"',
+          '"the bodies are animated"',
+        ],
+        acceptableAnswers: ['"It didn\'t seem real. A mistake, I thought."'],
+        explanation:
+          "This quote from Paragraph 3, Sentence 2 shows Timmy's initial trauma and inability to process Linda's death when he sees her bloated, unrecognizable body at the funeral home.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quotes should be used in Paragraph 3 about Timmy practicing the magic of stories?",
+        options: [
+          '"to practice the magic of stories" and dreams had "become a secret meeting place"',
+          '"stories can save us"',
+          '"the bodies are animated"',
+          '"It didn\'t seem real"',
+        ],
+        acceptableAnswers: [
+          '"to practice the magic of stories" and dreams had "become a secret meeting place"',
+        ],
+        explanation:
+          "These quotes from Paragraph 3, Sentence 3 show how Timmy begins using stories as a coping mechanism, making his dreams a place where Linda comes alive.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What key quotes should be used in Paragraph 3, Sentence 5 to conclude the characterization?",
+        options: [
+          '"stories can save us"',
+          '"I want to save Linda\'s life. Not her body—her life" and "steal her soul" and "is as Tim trying to save Timmy\'s life with a story"',
+          '"It didn\'t seem real"',
+          '"the bodies are animated"',
+        ],
+        acceptableAnswers: [
+          '"I want to save Linda\'s life. Not her body—her life" and "steal her soul" and "is as Tim trying to save Timmy\'s life with a story"',
+        ],
+        explanation:
+          "These quotes from Paragraph 3, Sentence 5 show Tim's transformation into a writer who uses stories to save the dead, and the final quote reveals that the entire chapter itself is an act of storytelling that saves Timmy's life.",
+      },
+    ],
+  },
+  {
+    id: "us-constitution",
+    name: "U.S. Constitution",
+    category: "US History",
+    description:
+      "Comprehensive quiz covering the U.S. Constitution, including the three branches of government, amendments, and key constitutional principles",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of the Preamble?",
+        options: [
+          "To establish the three branches of government",
+          "To outline the goals and purposes of the Constitution",
+          "To list the rights of citizens",
+          "To define the powers of Congress",
+        ],
+        acceptableAnswers: [
+          "To outline the goals and purposes of the Constitution",
+        ],
+        explanation:
+          "The Preamble introduces the Constitution and states its goals: to form a more perfect union, establish justice, ensure domestic tranquility, provide for the common defense, promote the general welfare, and secure the blessings of liberty.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the function of the Legislative Branch?",
+        options: [
+          "To enforce laws",
+          "To make laws",
+          "To interpret laws",
+          "To execute laws",
+        ],
+        acceptableAnswers: ["To make laws"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the function of the Executive Branch?",
+        options: [
+          "To make laws",
+          "To enforce laws",
+          "To interpret laws",
+          "To create laws",
+        ],
+        acceptableAnswers: ["To enforce laws"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the function of the Judicial Branch?",
+        options: [
+          "To make laws",
+          "To enforce laws",
+          "To interpret laws",
+          "To execute laws",
+        ],
+        acceptableAnswers: ["To interpret laws"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What term is used to identify a two-house legislature?",
+        options: ["Unicameral", "Bicameral", "Tricameral", "Multicameral"],
+        acceptableAnswers: ["Bicameral"],
+        explanation:
+          "A bicameral legislature consists of two separate chambers or houses, such as the U.S. Congress with the House of Representatives and the Senate.",
+      },
+      {
+        type: "constructed-response",
+        question: "List the qualifications to become a US Representative.",
+        acceptableAnswers: [
+          "At least 25 years old, U.S. citizen for at least 7 years, resident of the state they represent",
+          "25 years old, citizen for 7 years, resident of state",
+          "Must be 25 years of age, a citizen of the United States for at least 7 years, and an inhabitant of the state in which they are elected",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List the qualifications to become a US Senator.",
+        acceptableAnswers: [
+          "At least 30 years old, U.S. citizen for at least 9 years, resident of the state they represent",
+          "30 years old, citizen for 9 years, resident of state",
+          "Must be 30 years of age, a citizen of the United States for at least 9 years, and an inhabitant of the state in which they are elected",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the term of office for a US Representative?",
+        options: ["2 years", "4 years", "6 years", "8 years"],
+        acceptableAnswers: ["2 years"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the term of office for a US Senator?",
+        options: ["2 years", "4 years", "6 years", "8 years"],
+        acceptableAnswers: ["6 years"],
+      },
+      {
+        type: "multiple-choice",
+        question: "How many terms may representatives or senators run for?",
+        options: ["No limit", "2 terms", "3 terms", "4 terms"],
+        acceptableAnswers: ["No limit"],
+        explanation:
+          "There are no term limits for members of Congress. Representatives and senators can be re-elected indefinitely.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How is representation in the House of Representatives determined?",
+        options: [
+          "Equal representation for each state",
+          "Based on population",
+          "Based on land area",
+          "Based on state wealth",
+        ],
+        acceptableAnswers: ["Based on population"],
+        explanation:
+          "Representation in the House is based on each state's population, with each state guaranteed at least one representative.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How many senators does each state get?",
+        options: ["1", "2", "3", "Based on population"],
+        acceptableAnswers: ["2"],
+        explanation:
+          "Each state has exactly two senators, regardless of population, ensuring equal representation in the Senate.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum number of representatives a state can have in the House of Representatives?",
+        options: ["50", "100", "435", "There is no maximum"],
+        acceptableAnswers: ["There is no maximum"],
+        explanation:
+          "While the total number of representatives is fixed at 435, there is no constitutional maximum for a single state. However, the total House membership is capped at 435 by law.",
+      },
+      {
+        type: "constructed-response",
+        question:
+          "Explain the impeachment process. Which house has the sole power of impeachment?",
+        acceptableAnswers: [
+          "The House of Representatives has the sole power of impeachment (bringing charges). The Senate then holds the trial and can remove the official from office with a two-thirds vote.",
+          "House impeaches, Senate tries",
+          "The House of Representatives impeaches, and the Senate conducts the trial",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List powers given to the House of Representatives.",
+        acceptableAnswers: [
+          "Power to impeach, originate revenue bills, elect the president if no candidate receives a majority of electoral votes",
+          "Impeachment, revenue bills, elect president in case of tie",
+          "Sole power of impeachment, power to originate bills for raising revenue, power to elect the president in case of electoral college tie",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List powers given to the Senate.",
+        acceptableAnswers: [
+          "Power to try impeachments, approve treaties, approve presidential appointments, elect the vice president if no candidate receives a majority",
+          "Try impeachments, approve treaties and appointments, elect vice president in case of tie",
+          "Sole power to try impeachments, power to approve treaties with two-thirds vote, power to approve presidential appointments, power to elect the vice president in case of electoral college tie",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List the powers of Congress.",
+        acceptableAnswers: [
+          "Power to tax, borrow money, regulate commerce, coin money, declare war, raise and support armies, make all laws necessary and proper",
+          "Tax, borrow, regulate commerce, coin money, declare war, raise armies, necessary and proper clause",
+          "Power to lay and collect taxes, borrow money, regulate interstate and foreign commerce, coin money, declare war, raise and support armies and navies, and make all laws necessary and proper for carrying out these powers",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "Explain the purpose of the Elastic Clause.",
+        options: [
+          "To allow Congress to stretch the Constitution",
+          "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers",
+          "To allow the president to expand his powers",
+          "To give states more flexibility",
+        ],
+        acceptableAnswers: [
+          "To give Congress the power to make all laws necessary and proper for carrying out its enumerated powers",
+        ],
+        explanation:
+          "The Elastic Clause (Necessary and Proper Clause) allows Congress to make laws that are necessary and proper for executing its enumerated powers, giving Congress flexibility to address new situations.",
+      },
+      {
+        type: "constructed-response",
+        question: "What is Congress not permitted to do?",
+        acceptableAnswers: [
+          "Pass ex post facto laws, suspend writ of habeas corpus except in cases of rebellion or invasion, grant titles of nobility, tax exports",
+          "Ex post facto laws, suspend habeas corpus, grant titles of nobility, tax exports",
+          "Congress cannot pass ex post facto laws, suspend the writ of habeas corpus (except in cases of rebellion or invasion), grant titles of nobility, or tax exports from states",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List the qualifications for president and vice president.",
+        acceptableAnswers: [
+          "At least 35 years old, natural-born U.S. citizen, resident of the United States for at least 14 years",
+          "35 years old, natural-born citizen, 14 years resident",
+          "Must be at least 35 years of age, a natural-born citizen of the United States, and have been a resident of the United States for at least 14 years",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question: "List powers of the president.",
+        acceptableAnswers: [
+          "Commander in chief of the military, power to veto legislation, power to make treaties (with Senate approval), power to appoint officials (with Senate approval), power to grant pardons",
+          "Commander in chief, veto, make treaties, appoint officials, grant pardons",
+          "Serves as commander in chief of the armed forces, can veto bills passed by Congress, can make treaties with Senate approval, can appoint federal officials with Senate approval, can grant pardons and reprieves",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the only official role played by the vice president?",
+        options: [
+          "To serve as commander in chief",
+          "To preside over the Senate and cast tie-breaking votes",
+          "To veto legislation",
+          "To appoint Supreme Court justices",
+        ],
+        acceptableAnswers: [
+          "To preside over the Senate and cast tie-breaking votes",
+        ],
+        explanation:
+          "The vice president's only constitutional duty is to serve as president of the Senate, with the power to cast a vote only in case of a tie.",
+      },
+      {
+        type: "constructed-response",
+        question:
+          "Explain the Electoral College. How does a state know how many electors they are entitled to?",
+        acceptableAnswers: [
+          "The Electoral College elects the president. Each state gets electors equal to the number of its senators plus representatives. The total is 538 electors (435 representatives + 100 senators + 3 for DC).",
+          "Electors equal to senators plus representatives",
+          "The Electoral College is the body that elects the president. Each state receives a number of electors equal to its total number of senators and representatives in Congress. The District of Columbia also receives 3 electors.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the original Constitution, how many terms could a person serve as president?",
+        options: ["1 term", "2 terms", "3 terms", "No limit"],
+        acceptableAnswers: ["No limit"],
+        explanation:
+          "The original Constitution did not set term limits for the presidency. The 22nd Amendment, ratified in 1951, limited presidents to two terms.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum number of years a person can be president today?",
+        options: ["4 years", "8 years", "10 years", "12 years"],
+        acceptableAnswers: ["10 years"],
+        explanation:
+          "A person can serve a maximum of 10 years: up to 2 years completing another president's term plus 2 full terms (8 years) = 10 years total.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the original Constitution, who were the only people in the Federal government directly elected by the people?",
+        options: [
+          "The president and vice president",
+          "US Representatives",
+          "US Senators",
+          "Federal judges",
+        ],
+        acceptableAnswers: ["US Representatives"],
+        explanation:
+          "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures, and the president was chosen by the Electoral College.",
+      },
+      {
+        type: "constructed-response",
+        question: "List the qualifications to be a Federal judge.",
+        acceptableAnswers: [
+          "There are no specific qualifications listed in the Constitution",
+          "No qualifications specified",
+          "The Constitution does not specify any qualifications for federal judges, unlike the requirements for members of Congress or the president",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "How long do Federal judges serve?",
+        options: [
+          "4 years",
+          "6 years",
+          "8 years",
+          "For life (during good behavior)",
+        ],
+        acceptableAnswers: ["For life (during good behavior)"],
+        explanation:
+          "Federal judges serve for life, as long as they maintain 'good behavior,' which allows them to make decisions without political pressure.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the only court established in the Constitution?",
+        options: [
+          "The Supreme Court",
+          "The Court of Appeals",
+          "The District Court",
+          "The Federal Court",
+        ],
+        acceptableAnswers: ["The Supreme Court"],
+        explanation:
+          "The Constitution only explicitly establishes the Supreme Court. All other federal courts were created by Congress.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the only crime mentioned in the Constitution?",
+        options: ["Murder", "Treason", "Theft", "Perjury"],
+        acceptableAnswers: ["Treason"],
+        explanation:
+          "Treason is the only crime specifically defined in the Constitution, which states it consists of levying war against the United States or giving aid and comfort to its enemies.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was the one part of the Articles of Confederation that became part of the Constitution?",
+        options: [
+          "The unicameral legislature",
+          "The requirement for unanimous consent to amend",
+          "The full faith and credit clause",
+          "The power to tax",
+        ],
+        acceptableAnswers: ["The full faith and credit clause"],
+        explanation:
+          "The Full Faith and Credit Clause, which requires states to recognize the public acts, records, and judicial proceedings of other states, was carried over from the Articles of Confederation.",
+      },
+      {
+        type: "constructed-response",
+        question: "How can the Constitution be amended?",
+        acceptableAnswers: [
+          "An amendment can be proposed by a two-thirds vote of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or conventions",
+          "Two-thirds of Congress proposes, three-fourths of states ratify",
+          "An amendment must be proposed by either two-thirds of both houses of Congress or by a convention called by two-thirds of state legislatures, then ratified by three-fourths of state legislatures or by conventions in three-fourths of the states",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "How many amendments make up the Bill of Rights?",
+        options: ["8", "10", "12", "15"],
+        acceptableAnswers: ["10"],
+        explanation:
+          "The Bill of Rights consists of the first 10 amendments to the Constitution, which protect individual liberties and limit the power of the federal government.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How many amendments are part of the Constitution today?",
+        options: ["10", "25", "27", "30"],
+        acceptableAnswers: ["27"],
+        explanation:
+          "There are currently 27 amendments to the U.S. Constitution, with the most recent being the 27th Amendment regarding congressional pay.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the Supremacy Clause?",
+        options: [
+          "The clause that makes the president supreme over Congress",
+          "The clause that establishes the Constitution and federal laws as the supreme law of the land",
+          "The clause that gives states power over the federal government",
+          "The clause that makes the Supreme Court the highest court",
+        ],
+        acceptableAnswers: [
+          "The clause that establishes the Constitution and federal laws as the supreme law of the land",
+        ],
+        explanation:
+          "The Supremacy Clause establishes that the Constitution, federal laws, and treaties are the supreme law of the land, taking precedence over state laws.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How many states were needed to ratify the Constitution?",
+        options: ["7", "9", "10", "13"],
+        acceptableAnswers: ["9"],
+        explanation:
+          "The Constitution required ratification by 9 out of 13 states to go into effect, as specified in Article VII.",
+      },
+      {
+        type: "constructed-response",
+        question: "List the four freedoms/rights in the 1st Amendment.",
+        acceptableAnswers: [
+          "Freedom of speech, freedom of religion, freedom of the press, freedom of assembly, and the right to petition the government",
+          "Speech, religion, press, assembly, petition",
+          "The First Amendment protects freedom of speech, freedom of religion (establishment and free exercise), freedom of the press, freedom of assembly, and the right to petition the government for redress of grievances",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "Explain Reserved Powers.",
+        options: [
+          "Powers reserved for the federal government",
+          "Powers reserved for the president",
+          "Powers reserved for the states under the 10th Amendment",
+          "Powers reserved for Congress",
+        ],
+        acceptableAnswers: [
+          "Powers reserved for the states under the 10th Amendment",
+        ],
+        explanation:
+          "Reserved powers are those not delegated to the federal government nor prohibited to the states, and are therefore reserved for the states under the 10th Amendment.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which amendment has never had to be enforced or challenged in court?",
+        options: [
+          "The 1st Amendment",
+          "The 3rd Amendment",
+          "The 5th Amendment",
+          "The 8th Amendment",
+        ],
+        acceptableAnswers: ["The 3rd Amendment"],
+        explanation:
+          "The 3rd Amendment, which prohibits the quartering of soldiers in private homes without consent, has rarely been litigated and has never been the basis for a Supreme Court decision.",
+      },
+      {
+        type: "constructed-response",
+        question: "List the rights protected in the 5th Amendment.",
+        acceptableAnswers: [
+          "Right to grand jury, protection against double jeopardy, protection against self-incrimination, due process of law, and just compensation for private property taken for public use",
+          "Grand jury, double jeopardy, self-incrimination, due process, just compensation",
+          "The 5th Amendment protects: the right to a grand jury indictment for serious crimes, protection against double jeopardy, protection against self-incrimination, the right to due process of law, and the requirement of just compensation when private property is taken for public use",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "Why is the 8th Amendment so frequently debated?",
+        options: [
+          "It protects against excessive bail and fines",
+          "It prohibits cruel and unusual punishment, which is subject to interpretation",
+          "It guarantees the right to a speedy trial",
+          "It protects against unreasonable searches",
+        ],
+        acceptableAnswers: [
+          "It prohibits cruel and unusual punishment, which is subject to interpretation",
+        ],
+        explanation:
+          "The 8th Amendment's prohibition of 'cruel and unusual punishment' is frequently debated because what constitutes cruel and unusual punishment is open to interpretation and changes over time.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If police believe illegal activities are taking place in a person's home, what must they obtain from a judge before entering?",
+        options: [
+          "A warrant",
+          "Permission from the homeowner",
+          "A subpoena",
+          "A summons",
+        ],
+        acceptableAnswers: ["A warrant"],
+        explanation:
+          "The 4th Amendment requires police to obtain a search warrant from a judge before entering a person's home, unless there are exigent circumstances.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The Miranda Rights are an example of ___________ ______________.",
+        options: [
+          "Due process",
+          "Procedural due process",
+          "Substantive due process",
+          "Equal protection",
+        ],
+        acceptableAnswers: ["Procedural due process"],
+        explanation:
+          "Miranda Rights, which require police to inform suspects of their rights, are an example of procedural due process - ensuring fair procedures are followed.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which state benefited the most from the 3/5 Compromise?",
+        options: [
+          "Massachusetts",
+          "New York",
+          "Rhode Island",
+          "North Carolina",
+        ],
+        acceptableAnswers: ["North Carolina"],
+        explanation:
+          "Southern states with large slave populations, like North Carolina, benefited most from the 3/5 Compromise because it increased their representation in the House of Representatives.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Anti-Federalists were critical of the Constitution because most power was given to the:",
+        options: [
+          "State legislatures",
+          "Delegates to the Constitutional Convention",
+          "President's Cabinet",
+          "National government",
+        ],
+        acceptableAnswers: ["National government"],
+        explanation:
+          "Anti-Federalists feared that the Constitution gave too much power to the national government at the expense of state governments and individual liberties.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the original Constitution, who were the only Federal Officials to be directly elected by the people?",
+        options: [
+          "Vice President",
+          "US Representatives",
+          "Senators",
+          "President",
+        ],
+        acceptableAnswers: ["US Representatives"],
+        explanation:
+          "Originally, only members of the House of Representatives were directly elected by the people. Senators were chosen by state legislatures until the 17th Amendment.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which grouping is in the correct order?",
+        options: [
+          "Declaration of Independence, US Constitution, Articles of Confederation",
+          "Declaration of Independence, Articles of Confederation, US Constitution",
+          "Articles of Confederation, Declaration of Independence, US Constitution",
+          "US Constitution, Articles of Confederation, Declaration of Independence",
+        ],
+        acceptableAnswers: [
+          "Declaration of Independence, Articles of Confederation, US Constitution",
+        ],
+        explanation:
+          "The Declaration of Independence was adopted in 1776, the Articles of Confederation were ratified in 1781, and the U.S. Constitution was ratified in 1788.",
+      },
+      {
+        type: "multiple-choice",
+        question: "A senator must be at least how many years old?",
+        options: ["25", "30", "35", "40"],
+        acceptableAnswers: ["30"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Under the US Constitution, the states are given the power to:",
+        options: [
+          "Declare war",
+          "Coin money",
+          "Regulate intrastate commerce and conduct elections",
+          "Make treaties with foreign nations",
+        ],
+        acceptableAnswers: [
+          "Regulate intrastate commerce and conduct elections",
+        ],
+        explanation:
+          "States have reserved powers including regulating commerce within their borders and conducting elections, while powers like declaring war and coining money belong to the federal government.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Congress created the US Air Force by using which section of the Constitution?",
+        options: [
+          "The Commerce Clause",
+          "The Necessary and Proper Clause (Elastic Clause)",
+          "The Supremacy Clause",
+          "The Full Faith and Credit Clause",
+        ],
+        acceptableAnswers: ["The Necessary and Proper Clause (Elastic Clause)"],
+        explanation:
+          "Congress used the Necessary and Proper Clause (Elastic Clause) to create the Air Force, as it was necessary and proper for carrying out Congress's power to raise and support armies.",
+      },
+    ],
+  },
 ];
 
 export const categories = Array.from(
