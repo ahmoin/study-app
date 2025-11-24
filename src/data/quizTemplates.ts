@@ -14,6 +14,541 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "osi-model-networking",
+    name: "OSI Model and Networking Fundamentals",
+    category: "Networking",
+    description:
+      "Comprehensive quiz covering the OSI model layers, protocols, data encapsulation, and networking fundamentals",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "Flow control can be found at which layer of the OSI?",
+        options: ["Transport", "Network", "Data Link", "Session"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "Flow control manages data transmission rates between sender and receiver, which is a function of the Transport layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is required before TCP can begin sending segments?",
+        options: [
+          "Three-way handshake",
+          "Port agreement",
+          "Sequencing of segments",
+          "Acknowledgment of segments",
+        ],
+        acceptableAnswers: ["Three-way handshake"],
+        explanation:
+          "TCP uses a three-way handshake to establish a connection before data transfer.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer of the OSI is responsible for dialogue control of applications?",
+        options: ["Application", "Physical", "Session", "Network"],
+        acceptableAnswers: ["Session"],
+        explanation:
+          "The Session layer manages dialogues between applications, controlling start, maintenance, and termination.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer is responsible for compression and decompression?",
+        options: ["Application", "Physical", "Session", "Presentation"],
+        acceptableAnswers: ["Presentation"],
+        explanation:
+          "The Presentation layer handles data translation, encryption, compression, and formatting.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which OSI layer is responsible for logical addressing?",
+        options: ["Transport", "Network", "Application", "Data Link"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer provides logical addressing (IP) and routing functions.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "As information travels down the network stack from the Application layer to the Physical layer, what happens?",
+        options: ["Datagrams", "PDUs", "Encapsulation", "Decapsulation"],
+        acceptableAnswers: ["Encapsulation"],
+        explanation:
+          "Encapsulation occurs as each OSI layer adds its own header (and sometimes trailer) to the data.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer of the Data Link layer is responsible for identifying Network layer protocols?",
+        options: ["MAC", "LLC", "Data Link", "Session"],
+        acceptableAnswers: ["LLC"],
+        explanation:
+          "LLC (Logical Link Control) identifies the Network layer protocol (e.g., IP) within a frame.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which is not a benefit to the OSI model?",
+        options: [
+          "Multivendor development with a standardized model",
+          "Prevents a change in one layer from affecting other layers",
+          "Allows various network hardware and software to communicate",
+          "Allows software to run at network speeds",
+        ],
+        acceptableAnswers: ["Allows software to run at network speeds"],
+        explanation:
+          "OSI standardization improves interoperability but does not inherently increase software speed.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which three upper layers operate together?",
+        options: [
+          "Application, Presentation, and Session",
+          "Presentation, Session, and Transport",
+          "Transport, Session, and Application",
+          "Network, Data Link, and Physical",
+        ],
+        acceptableAnswers: ["Application, Presentation, and Session"],
+        explanation:
+          "The top three layers focus on user interaction, data representation, and session management.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which IEEE standard defines the Physical and Data Link layers for wireless LANs?",
+        options: ["802.2", "802.3", "802.15", "802.11"],
+        acceptableAnswers: ["802.11"],
+        explanation:
+          "IEEE 802.11 specifies Wi-Fi standards for wireless networking.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which concept describes transmitting multiple segments before the receiving host acknowledges the data?",
+        options: ["Sequencing", "Compression", "Windowing", "Encryption"],
+        acceptableAnswers: ["Windowing"],
+        explanation:
+          "Windowing allows multiple unacknowledged segments to be sent for efficient data flow.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which device will stop broadcasts from propagating across the network?",
+        options: ["Router", "Switch", "Hub", "WAP"],
+        acceptableAnswers: ["Router"],
+        explanation:
+          "Routers separate network segments and prevent broadcast traffic from crossing between them.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which is used to determine the best path to a destination network?",
+        options: ["Acknowledgment", "Network address", "Interface", "Metric"],
+        acceptableAnswers: ["Metric"],
+        explanation:
+          "Routing metrics help determine the most efficient path in a network.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which protocol data unit (PDU) is used to describe data at the Physical layer?",
+        options: ["Datagrams", "Bits", "Frames", "Segments"],
+        acceptableAnswers: ["Bits"],
+        explanation: "Physical layer transmits raw bits over a medium.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which OSI layers are responsible for framing data and transmitting the data?",
+        options: [
+          "LLC and Physical layers",
+          "Data Link and Physical layers",
+          "Network and Transport layers",
+          "Session and Transport layers",
+        ],
+        acceptableAnswers: ["Data Link and Physical layers"],
+        explanation:
+          "The Data Link layer frames data, while the Physical layer transmits it.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for creating a virtual circuit?",
+        options: ["Presentation", "Session", "Transport", "Network"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "Transport layer protocols like TCP can establish virtual circuits to manage reliable communication.",
+      },
+      {
+        type: "multiple-choice",
+        question: "TCP and UDP reside at which layer of the OSI model?",
+        options: ["Physical", "Session", "Network", "Transport"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "TCP and UDP are Transport-layer protocols providing end-to-end communication services.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the proper order of data encapsulation?",
+        options: [
+          "Datagram, segment, packet, frame, bits",
+          "Bits, frame, packet, segment, datagram",
+          "Segment, datagram, packet, frame, bits",
+          "Data → Segment → Packet → Frame → Bits",
+        ],
+        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
+        explanation:
+          "Data flows down the OSI layers, with each layer adding headers/trailers before transmission.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for routing data packets?",
+        options: ["Physical", "Data Link", "Transport", "Network"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer determines the best path and forwards packets toward the destination.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which IEEE standard specifies the protocol for CSMA/CD?",
+        options: ["802.2", "802.3", "802.5", "802.11"],
+        acceptableAnswers: ["802.3"],
+        explanation:
+          "IEEE 802.3 defines Ethernet, including CSMA/CD for collision detection.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the main advantage of using a layered network model?",
+        options: [
+          "It increases network speed",
+          "It breaks complex processes into manageable sections",
+          "It removes the need for network protocols",
+          "It eliminates network errors",
+        ],
+        acceptableAnswers: [
+          "It breaks complex processes into manageable sections",
+        ],
+        explanation:
+          "Layering simplifies networking by separating complex functions into manageable sections.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes a conceptual framework used to understand network interactions?",
+        options: [
+          "Protocol",
+          "Reference model",
+          "Data link",
+          "Network architecture",
+        ],
+        acceptableAnswers: ["Reference model"],
+        explanation:
+          "Reference models like OSI provide a framework for understanding network operations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The Application layer provides services for which type of software?",
+        options: [
+          "Operating systems",
+          "User-level network applications",
+          "Routers and switches",
+          "Physical devices",
+        ],
+        acceptableAnswers: ["User-level network applications"],
+        explanation:
+          "Application layer protocols are used by end-user applications like browsers and email clients.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Presentation layer is responsible for which function?",
+        options: [
+          "Routing",
+          "Session management",
+          "Data translation and formatting",
+          "Physical transmission",
+        ],
+        acceptableAnswers: ["Data translation and formatting"],
+        explanation:
+          "Presentation layer handles formatting, compression, and encryption of data.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer establishes, manages, and terminates communication sessions?",
+        options: ["Session", "Transport", "Application", "Network"],
+        acceptableAnswers: ["Session"],
+        explanation:
+          "Session layer manages dialogs between applications, including initiation, maintenance, and termination.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which layer provides reliable or unreliable communication depending on the protocol used?",
+        options: ["Physical", "Transport", "Network", "Data Link"],
+        acceptableAnswers: ["Transport"],
+        explanation:
+          "TCP provides reliable, UDP provides unreliable transport services.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which transport mechanism sends data only after a connection is established?",
+        options: [
+          "Connectionless communication",
+          "Connection-oriented communication",
+          "Multiplexing",
+          "Flow control",
+        ],
+        acceptableAnswers: ["Connection-oriented communication"],
+        explanation:
+          "TCP is connection-oriented; it requires a connection before sending data.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Windowing is used primarily for:",
+        options: [
+          "Encrypting data",
+          "Limiting how many segments are sent before acknowledgment",
+          "Compressing data",
+          "Segment sequencing",
+        ],
+        acceptableAnswers: [
+          "Limiting how many segments are sent before acknowledgment",
+        ],
+        explanation:
+          "Windowing prevents overwhelming the receiver by controlling the number of unacknowledged segments.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Flow control prevents:",
+        options: [
+          "Data encryption",
+          "Packet loss",
+          "A sender from overwhelming the receiver",
+          "Routing loops",
+        ],
+        acceptableAnswers: ["A sender from overwhelming the receiver"],
+        explanation:
+          "Flow control ensures the sender transmits at a rate the receiver can handle.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes a signal confirming data has been received?",
+        options: ["Segment", "Acknowledgment", "Window", "Datagram"],
+        acceptableAnswers: ["Acknowledgment"],
+        explanation: "ACKs confirm receipt of transmitted segments.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which OSI layer is responsible for logical addressing and routing?",
+        options: ["Transport", "Data Link", "Network", "Session"],
+        acceptableAnswers: ["Network"],
+        explanation:
+          "The Network layer assigns IP addresses and determines the best path.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer breaks packets into frames for transmission?",
+        options: ["Transport", "Data Link", "Network", "Physical"],
+        acceptableAnswers: ["Data Link"],
+        explanation:
+          "The Data Link layer frames packets and ensures delivery within the LAN.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Physical layer handles:",
+        options: [
+          "Frame sequencing",
+          "Signal transmission over a medium",
+          "Logical addressing",
+          "Data encryption",
+        ],
+        acceptableAnswers: ["Signal transmission over a medium"],
+        explanation:
+          "Physical layer deals with transmitting raw bits over a medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Encapsulation occurs when:",
+        options: [
+          "Each layer removes its header",
+          "Each layer adds its own header to data",
+          "Data is transmitted without modification",
+          "Data is compressed for transmission",
+        ],
+        acceptableAnswers: ["Each layer adds its own header to data"],
+        explanation:
+          "Encapsulation adds headers/trailers as data moves down the OSI layers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which process converts digital data into signals suitable for transmission?",
+        options: ["Encoding", "Modulation", "Multiplexing", "Framing"],
+        acceptableAnswers: ["Modulation"],
+        explanation:
+          "Modulation converts digital data to signals suitable for the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer is responsible for identifying which Network-layer protocol is being used?",
+        options: ["MAC", "LLC", "Data Link", "Session"],
+        acceptableAnswers: ["LLC"],
+        explanation: "LLC identifies the protocol carried within a frame.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The MAC sublayer's primary job is to:",
+        options: [
+          "Encrypt data",
+          "Control access to the physical medium",
+          "Determine network routes",
+          "Compress data",
+        ],
+        acceptableAnswers: ["Control access to the physical medium"],
+        explanation:
+          "MAC manages transmission timing and addressing on the LAN.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes the lowest-level electrical signaling of the OSI Model?",
+        options: ["Packet", "Bits", "Segment", "Frame"],
+        acceptableAnswers: ["Bits"],
+        explanation: "Physical layer transmits raw bits over the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer is responsible for path determination?",
+        options: ["Data Link", "Physical", "Network", "Transport"],
+        acceptableAnswers: ["Network"],
+        explanation: "Routing is handled by the Network layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The main advantage of a reference model such as OSI is:",
+        options: [
+          "Increases network speed",
+          "It standardizes communication between vendors",
+          "Eliminates the need for IP addresses",
+          "Ensures error-free transmission",
+        ],
+        acceptableAnswers: ["It standardizes communication between vendors"],
+        explanation:
+          "Standardization allows different devices and vendors to communicate.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Connection-oriented communication requires:",
+        options: [
+          "Acknowledgments only",
+          "Flow control only",
+          "A session to be formed first",
+          "No setup before transmission",
+        ],
+        acceptableAnswers: ["A session to be formed first"],
+        explanation: "TCP must establish a session before sending data.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Modulation techniques operate at which OSI layer?",
+        options: ["Data Link", "Physical", "Transport", "Network"],
+        acceptableAnswers: ["Physical"],
+        explanation:
+          "Modulation occurs at the Physical layer to convert digital data to signals.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which layer converts packets to bits for transmission?",
+        options: ["Network", "Physical", "Transport", "Data Link"],
+        acceptableAnswers: ["Physical"],
+        explanation: "Physical layer sends bits over the medium.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the PDU of the Data Link layer?",
+        options: ["Segment", "Frame", "Packet", "Bit"],
+        acceptableAnswers: ["Frame"],
+        explanation:
+          "Data Link layer sends frames; Network layer uses packets; Transport layer uses segments.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Layered Approach allows vendors to:",
+        options: [
+          "Avoid using protocols",
+          "Replace or upgrade layers independently",
+          "Increase transmission speed automatically",
+          "Eliminate physical errors",
+        ],
+        acceptableAnswers: ["Replace or upgrade layers independently"],
+        explanation:
+          "Each layer is independent, so changes to one layer don't require changes to others.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The encapsulation order from top to bottom is:",
+        options: [
+          "Frame → Packet → Segment → Data → Bits",
+          "Data → Segment → Packet → Frame → Bits",
+          "Bits → Frame → Packet → Segment → Data",
+          "Segment → Packet → Data → Frame → Bits",
+        ],
+        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
+        explanation:
+          "Encapsulation adds headers at each layer as data moves down the stack.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Data Link layer performs error detection using:",
+        options: [
+          "IP address",
+          "CRC (Cyclic Redundancy Check)",
+          "Sequence numbers",
+          "Port numbers",
+        ],
+        acceptableAnswers: ["CRC (Cyclic Redundancy Check)"],
+        explanation: "CRC allows frames to be checked for transmission errors.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Network layer relies on which addressing scheme?",
+        options: [
+          "MAC addresses",
+          "Port numbers",
+          "IP addresses",
+          "Frame numbers",
+        ],
+        acceptableAnswers: ["IP addresses"],
+        explanation: "Logical addressing (IP) is used by the Network layer.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Physical layer does NOT define:",
+        options: [
+          "Signal types",
+          "Connectors",
+          "Voltage levels",
+          "Routing protocols",
+        ],
+        acceptableAnswers: ["Routing protocols"],
+        explanation: "Routing is handled by the Network layer, not Physical.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which sublayer handles frame synchronization and addressing?",
+        options: ["LLC", "MAC", "Network", "Session"],
+        acceptableAnswers: ["MAC"],
+        explanation:
+          "MAC controls access to the medium and handles addressing and synchronization of frames.",
+      },
+    ],
+  },
+  {
     id: "introduction-to-networks",
     name: "Introduction to Networks",
     category: "Networking",
@@ -878,541 +1413,6 @@ export const quizTemplates: QuizTemplate[] = [
         acceptableAnswers: ["Punch cards and paper tape"],
         explanation:
           "The first computers used primitive storage methods like punch cards, paper tape, magnetic tape, and audio cassettes before disk drives were developed.",
-      },
-    ],
-  },
-  {
-    id: "osi-model-networking",
-    name: "OSI Model and Networking Fundamentals",
-    category: "Networking",
-    description:
-      "Comprehensive quiz covering the OSI model layers, protocols, data encapsulation, and networking fundamentals",
-    questions: [
-      {
-        type: "multiple-choice",
-        question: "Flow control can be found at which layer of the OSI?",
-        options: ["Transport", "Network", "Data Link", "Session"],
-        acceptableAnswers: ["Transport"],
-        explanation:
-          "Flow control manages data transmission rates between sender and receiver, which is a function of the Transport layer.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What is required before TCP can begin sending segments?",
-        options: [
-          "Three-way handshake",
-          "Port agreement",
-          "Sequencing of segments",
-          "Acknowledgment of segments",
-        ],
-        acceptableAnswers: ["Three-way handshake"],
-        explanation:
-          "TCP uses a three-way handshake to establish a connection before data transfer.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which layer of the OSI is responsible for dialogue control of applications?",
-        options: ["Application", "Physical", "Session", "Network"],
-        acceptableAnswers: ["Session"],
-        explanation:
-          "The Session layer manages dialogues between applications, controlling start, maintenance, and termination.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which layer is responsible for compression and decompression?",
-        options: ["Application", "Physical", "Session", "Presentation"],
-        acceptableAnswers: ["Presentation"],
-        explanation:
-          "The Presentation layer handles data translation, encryption, compression, and formatting.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which OSI layer is responsible for logical addressing?",
-        options: ["Transport", "Network", "Application", "Data Link"],
-        acceptableAnswers: ["Network"],
-        explanation:
-          "The Network layer provides logical addressing (IP) and routing functions.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "As information travels down the network stack from the Application layer to the Physical layer, what happens?",
-        options: ["Datagrams", "PDUs", "Encapsulation", "Decapsulation"],
-        acceptableAnswers: ["Encapsulation"],
-        explanation:
-          "Encapsulation occurs as each OSI layer adds its own header (and sometimes trailer) to the data.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which sublayer of the Data Link layer is responsible for identifying Network layer protocols?",
-        options: ["MAC", "LLC", "Data Link", "Session"],
-        acceptableAnswers: ["LLC"],
-        explanation:
-          "LLC (Logical Link Control) identifies the Network layer protocol (e.g., IP) within a frame.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which is not a benefit to the OSI model?",
-        options: [
-          "Multivendor development with a standardized model",
-          "Prevents a change in one layer from affecting other layers",
-          "Allows various network hardware and software to communicate",
-          "Allows software to run at network speeds",
-        ],
-        acceptableAnswers: ["Allows software to run at network speeds"],
-        explanation:
-          "OSI standardization improves interoperability but does not inherently increase software speed.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which three upper layers operate together?",
-        options: [
-          "Application, Presentation, and Session",
-          "Presentation, Session, and Transport",
-          "Transport, Session, and Application",
-          "Network, Data Link, and Physical",
-        ],
-        acceptableAnswers: ["Application, Presentation, and Session"],
-        explanation:
-          "The top three layers focus on user interaction, data representation, and session management.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which IEEE standard defines the Physical and Data Link layers for wireless LANs?",
-        options: ["802.2", "802.3", "802.15", "802.11"],
-        acceptableAnswers: ["802.11"],
-        explanation:
-          "IEEE 802.11 specifies Wi-Fi standards for wireless networking.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which concept describes transmitting multiple segments before the receiving host acknowledges the data?",
-        options: ["Sequencing", "Compression", "Windowing", "Encryption"],
-        acceptableAnswers: ["Windowing"],
-        explanation:
-          "Windowing allows multiple unacknowledged segments to be sent for efficient data flow.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which device will stop broadcasts from propagating across the network?",
-        options: ["Router", "Switch", "Hub", "WAP"],
-        acceptableAnswers: ["Router"],
-        explanation:
-          "Routers separate network segments and prevent broadcast traffic from crossing between them.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which is used to determine the best path to a destination network?",
-        options: ["Acknowledgment", "Network address", "Interface", "Metric"],
-        acceptableAnswers: ["Metric"],
-        explanation:
-          "Routing metrics help determine the most efficient path in a network.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which protocol data unit (PDU) is used to describe data at the Physical layer?",
-        options: ["Datagrams", "Bits", "Frames", "Segments"],
-        acceptableAnswers: ["Bits"],
-        explanation: "Physical layer transmits raw bits over a medium.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which OSI layers are responsible for framing data and transmitting the data?",
-        options: [
-          "LLC and Physical layers",
-          "Data Link and Physical layers",
-          "Network and Transport layers",
-          "Session and Transport layers",
-        ],
-        acceptableAnswers: ["Data Link and Physical layers"],
-        explanation:
-          "The Data Link layer frames data, while the Physical layer transmits it.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which layer is responsible for creating a virtual circuit?",
-        options: ["Presentation", "Session", "Transport", "Network"],
-        acceptableAnswers: ["Transport"],
-        explanation:
-          "Transport layer protocols like TCP can establish virtual circuits to manage reliable communication.",
-      },
-      {
-        type: "multiple-choice",
-        question: "TCP and UDP reside at which layer of the OSI model?",
-        options: ["Physical", "Session", "Network", "Transport"],
-        acceptableAnswers: ["Transport"],
-        explanation:
-          "TCP and UDP are Transport-layer protocols providing end-to-end communication services.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What is the proper order of data encapsulation?",
-        options: [
-          "Datagram, segment, packet, frame, bits",
-          "Bits, frame, packet, segment, datagram",
-          "Segment, datagram, packet, frame, bits",
-          "Data → Segment → Packet → Frame → Bits",
-        ],
-        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
-        explanation:
-          "Data flows down the OSI layers, with each layer adding headers/trailers before transmission.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which layer is responsible for routing data packets?",
-        options: ["Physical", "Data Link", "Transport", "Network"],
-        acceptableAnswers: ["Network"],
-        explanation:
-          "The Network layer determines the best path and forwards packets toward the destination.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which IEEE standard specifies the protocol for CSMA/CD?",
-        options: ["802.2", "802.3", "802.5", "802.11"],
-        acceptableAnswers: ["802.3"],
-        explanation:
-          "IEEE 802.3 defines Ethernet, including CSMA/CD for collision detection.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "What is the main advantage of using a layered network model?",
-        options: [
-          "It increases network speed",
-          "It breaks complex processes into manageable sections",
-          "It removes the need for network protocols",
-          "It eliminates network errors",
-        ],
-        acceptableAnswers: [
-          "It breaks complex processes into manageable sections",
-        ],
-        explanation:
-          "Layering simplifies networking by separating complex functions into manageable sections.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which term describes a conceptual framework used to understand network interactions?",
-        options: [
-          "Protocol",
-          "Reference model",
-          "Data link",
-          "Network architecture",
-        ],
-        acceptableAnswers: ["Reference model"],
-        explanation:
-          "Reference models like OSI provide a framework for understanding network operations.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "The Application layer provides services for which type of software?",
-        options: [
-          "Operating systems",
-          "User-level network applications",
-          "Routers and switches",
-          "Physical devices",
-        ],
-        acceptableAnswers: ["User-level network applications"],
-        explanation:
-          "Application layer protocols are used by end-user applications like browsers and email clients.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Presentation layer is responsible for which function?",
-        options: [
-          "Routing",
-          "Session management",
-          "Data translation and formatting",
-          "Physical transmission",
-        ],
-        acceptableAnswers: ["Data translation and formatting"],
-        explanation:
-          "Presentation layer handles formatting, compression, and encryption of data.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which layer establishes, manages, and terminates communication sessions?",
-        options: ["Session", "Transport", "Application", "Network"],
-        acceptableAnswers: ["Session"],
-        explanation:
-          "Session layer manages dialogs between applications, including initiation, maintenance, and termination.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which layer provides reliable or unreliable communication depending on the protocol used?",
-        options: ["Physical", "Transport", "Network", "Data Link"],
-        acceptableAnswers: ["Transport"],
-        explanation:
-          "TCP provides reliable, UDP provides unreliable transport services.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which transport mechanism sends data only after a connection is established?",
-        options: [
-          "Connectionless communication",
-          "Connection-oriented communication",
-          "Multiplexing",
-          "Flow control",
-        ],
-        acceptableAnswers: ["Connection-oriented communication"],
-        explanation:
-          "TCP is connection-oriented; it requires a connection before sending data.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Windowing is used primarily for:",
-        options: [
-          "Encrypting data",
-          "Limiting how many segments are sent before acknowledgment",
-          "Compressing data",
-          "Segment sequencing",
-        ],
-        acceptableAnswers: [
-          "Limiting how many segments are sent before acknowledgment",
-        ],
-        explanation:
-          "Windowing prevents overwhelming the receiver by controlling the number of unacknowledged segments.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Flow control prevents:",
-        options: [
-          "Data encryption",
-          "Packet loss",
-          "A sender from overwhelming the receiver",
-          "Routing loops",
-        ],
-        acceptableAnswers: ["A sender from overwhelming the receiver"],
-        explanation:
-          "Flow control ensures the sender transmits at a rate the receiver can handle.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which term describes a signal confirming data has been received?",
-        options: ["Segment", "Acknowledgment", "Window", "Datagram"],
-        acceptableAnswers: ["Acknowledgment"],
-        explanation: "ACKs confirm receipt of transmitted segments.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which OSI layer is responsible for logical addressing and routing?",
-        options: ["Transport", "Data Link", "Network", "Session"],
-        acceptableAnswers: ["Network"],
-        explanation:
-          "The Network layer assigns IP addresses and determines the best path.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which layer breaks packets into frames for transmission?",
-        options: ["Transport", "Data Link", "Network", "Physical"],
-        acceptableAnswers: ["Data Link"],
-        explanation:
-          "The Data Link layer frames packets and ensures delivery within the LAN.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Physical layer handles:",
-        options: [
-          "Frame sequencing",
-          "Signal transmission over a medium",
-          "Logical addressing",
-          "Data encryption",
-        ],
-        acceptableAnswers: ["Signal transmission over a medium"],
-        explanation:
-          "Physical layer deals with transmitting raw bits over a medium.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Encapsulation occurs when:",
-        options: [
-          "Each layer removes its header",
-          "Each layer adds its own header to data",
-          "Data is transmitted without modification",
-          "Data is compressed for transmission",
-        ],
-        acceptableAnswers: ["Each layer adds its own header to data"],
-        explanation:
-          "Encapsulation adds headers/trailers as data moves down the OSI layers.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which process converts digital data into signals suitable for transmission?",
-        options: ["Encoding", "Modulation", "Multiplexing", "Framing"],
-        acceptableAnswers: ["Modulation"],
-        explanation:
-          "Modulation converts digital data to signals suitable for the medium.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which sublayer is responsible for identifying which Network-layer protocol is being used?",
-        options: ["MAC", "LLC", "Data Link", "Session"],
-        acceptableAnswers: ["LLC"],
-        explanation: "LLC identifies the protocol carried within a frame.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The MAC sublayer's primary job is to:",
-        options: [
-          "Encrypt data",
-          "Control access to the physical medium",
-          "Determine network routes",
-          "Compress data",
-        ],
-        acceptableAnswers: ["Control access to the physical medium"],
-        explanation:
-          "MAC manages transmission timing and addressing on the LAN.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which term describes the lowest-level electrical signaling of the OSI Model?",
-        options: ["Packet", "Bits", "Segment", "Frame"],
-        acceptableAnswers: ["Bits"],
-        explanation: "Physical layer transmits raw bits over the medium.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which layer is responsible for path determination?",
-        options: ["Data Link", "Physical", "Network", "Transport"],
-        acceptableAnswers: ["Network"],
-        explanation: "Routing is handled by the Network layer.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The main advantage of a reference model such as OSI is:",
-        options: [
-          "Increases network speed",
-          "It standardizes communication between vendors",
-          "Eliminates the need for IP addresses",
-          "Ensures error-free transmission",
-        ],
-        acceptableAnswers: ["It standardizes communication between vendors"],
-        explanation:
-          "Standardization allows different devices and vendors to communicate.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Connection-oriented communication requires:",
-        options: [
-          "Acknowledgments only",
-          "Flow control only",
-          "A session to be formed first",
-          "No setup before transmission",
-        ],
-        acceptableAnswers: ["A session to be formed first"],
-        explanation: "TCP must establish a session before sending data.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Modulation techniques operate at which OSI layer?",
-        options: ["Data Link", "Physical", "Transport", "Network"],
-        acceptableAnswers: ["Physical"],
-        explanation:
-          "Modulation occurs at the Physical layer to convert digital data to signals.",
-      },
-      {
-        type: "multiple-choice",
-        question: "Which layer converts packets to bits for transmission?",
-        options: ["Network", "Physical", "Transport", "Data Link"],
-        acceptableAnswers: ["Physical"],
-        explanation: "Physical layer sends bits over the medium.",
-      },
-      {
-        type: "multiple-choice",
-        question: "What is the PDU of the Data Link layer?",
-        options: ["Segment", "Frame", "Packet", "Bit"],
-        acceptableAnswers: ["Frame"],
-        explanation:
-          "Data Link layer sends frames; Network layer uses packets; Transport layer uses segments.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Layered Approach allows vendors to:",
-        options: [
-          "Avoid using protocols",
-          "Replace or upgrade layers independently",
-          "Increase transmission speed automatically",
-          "Eliminate physical errors",
-        ],
-        acceptableAnswers: ["Replace or upgrade layers independently"],
-        explanation:
-          "Each layer is independent, so changes to one layer don't require changes to others.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The encapsulation order from top to bottom is:",
-        options: [
-          "Frame → Packet → Segment → Data → Bits",
-          "Data → Segment → Packet → Frame → Bits",
-          "Bits → Frame → Packet → Segment → Data",
-          "Segment → Packet → Data → Frame → Bits",
-        ],
-        acceptableAnswers: ["Data → Segment → Packet → Frame → Bits"],
-        explanation:
-          "Encapsulation adds headers at each layer as data moves down the stack.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Data Link layer performs error detection using:",
-        options: [
-          "IP address",
-          "CRC (Cyclic Redundancy Check)",
-          "Sequence numbers",
-          "Port numbers",
-        ],
-        acceptableAnswers: ["CRC (Cyclic Redundancy Check)"],
-        explanation: "CRC allows frames to be checked for transmission errors.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Network layer relies on which addressing scheme?",
-        options: [
-          "MAC addresses",
-          "Port numbers",
-          "IP addresses",
-          "Frame numbers",
-        ],
-        acceptableAnswers: ["IP addresses"],
-        explanation: "Logical addressing (IP) is used by the Network layer.",
-      },
-      {
-        type: "multiple-choice",
-        question: "The Physical layer does NOT define:",
-        options: [
-          "Signal types",
-          "Connectors",
-          "Voltage levels",
-          "Routing protocols",
-        ],
-        acceptableAnswers: ["Routing protocols"],
-        explanation: "Routing is handled by the Network layer, not Physical.",
-      },
-      {
-        type: "multiple-choice",
-        question:
-          "Which sublayer handles frame synchronization and addressing?",
-        options: ["LLC", "MAC", "Network", "Session"],
-        acceptableAnswers: ["MAC"],
-        explanation:
-          "MAC controls access to the medium and handles addressing and synchronization of frames.",
       },
     ],
   },
