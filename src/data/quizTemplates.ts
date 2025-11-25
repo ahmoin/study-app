@@ -14,6 +14,449 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "spanish-preterite-imperfect",
+    name: "Spanish Preterite vs Imperfect",
+    category: "Languages",
+    description: "Comprehensive quiz on understanding when and how to use the preterite and imperfect tenses, including conjugation practice",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "The preterite tense is used for actions that are:",
+        options: [
+          "Ongoing or habitual in the past",
+          "Completed events in the past",
+          "Descriptions of weather or age",
+          "Background information or setting the scene"
+        ],
+        acceptableAnswers: ["Completed events in the past"],
+        explanation: "The preterite tense is used for completed events in the past, specific actions that happened at a certain point in time, and actions that were part of a sequence or interruption."
+      },
+      {
+        type: "multiple-choice",
+        question: "The imperfect tense is used for actions that are:",
+        options: [
+          "Completed events in the past",
+          "Specific actions that happened at a certain point in time",
+          "Ongoing or habitual in the past",
+          "Actions that were part of a sequence"
+        ],
+        acceptableAnswers: ["Ongoing or habitual in the past"],
+        explanation: "The imperfect tense is used for ongoing or habitual actions in the past, descriptions (weather, age, time), and background information or setting the scene."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which tense would you use to describe what the weather was like?",
+        options: [
+          "Preterite",
+          "Imperfect",
+          "Present",
+          "Future"
+        ],
+        acceptableAnswers: ["Imperfect"],
+        explanation: "The imperfect tense is used for descriptions such as weather, age, and time, as these provide background information."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which tense would you use for a specific action that happened once at a certain point in time?",
+        options: [
+          "Preterite",
+          "Imperfect",
+          "Present",
+          "Conditional"
+        ],
+        acceptableAnswers: ["Preterite"],
+        explanation: "The preterite is used for specific actions that happened at a certain point in time, as these are completed events."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando llegamos, _______ (llover) mucho.",
+        options: [
+          "llovió",
+          "llovía",
+          "llueve",
+          "lloverá"
+        ],
+        acceptableAnswers: ["llovía"],
+        explanation: "Use the imperfect 'llovía' because this describes the weather/background when they arrived - it was raining (ongoing state)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando era joven, _______ (tocar) la guitarra todos los días.",
+        options: [
+          "toqué",
+          "tocaba",
+          "toco",
+          "tocaré"
+        ],
+        acceptableAnswers: ["tocaba"],
+        explanation: "Use the imperfect 'tocaba' because this describes a habitual action in the past (used to play every day)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: La fiesta _______ (estar) muy divertida.",
+        options: [
+          "estuvo",
+          "estaba",
+          "está",
+          "estará"
+        ],
+        acceptableAnswers: ["estaba"],
+        explanation: "Use the imperfect 'estaba' because this describes the ongoing state/atmosphere of the party (background description)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Nosotros _______ (cenar) cuando él llegó.",
+        options: [
+          "cenamos",
+          "cenábamos",
+          "cenan",
+          "cenaremos"
+        ],
+        acceptableAnswers: ["cenábamos"],
+        explanation: "Use the imperfect 'cenábamos' because this describes an ongoing action (we were having dinner) that was interrupted by 'él llegó' (preterite - completed action)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando era niño, me _______ (gustar) mucho ir al cine.",
+        options: [
+          "gustó",
+          "gustaba",
+          "gusta",
+          "gustará"
+        ],
+        acceptableAnswers: ["gustaba"],
+        explanation: "Use the imperfect 'gustaba' because this describes a habitual feeling or preference in the past (used to like)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: El año pasado, nosotros _______ (viajar) a Italia.",
+        options: [
+          "viajamos",
+          "viajábamos",
+          "viajamos",
+          "viajaremos"
+        ],
+        acceptableAnswers: ["viajamos"],
+        explanation: "Use the preterite 'viajamos' because this is a completed action that happened at a specific time (last year)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Mientras tú _______ (estudiar), yo _______ (trabajar).",
+        options: [
+          "estudiaste, trabajé",
+          "estudiabas, trabajaba",
+          "estudias, trabajo",
+          "estudiarás, trabajaré"
+        ],
+        acceptableAnswers: ["estudiabas, trabajaba"],
+        explanation: "Use the imperfect for both verbs because they describe two ongoing actions happening simultaneously in the past."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Ayer, Marta _______ (tener) un accidente.",
+        options: [
+          "tuvo",
+          "tenía",
+          "tiene",
+          "tendrá"
+        ],
+        acceptableAnswers: ["tuvo"],
+        explanation: "Use the preterite 'tuvo' because this is a specific completed event that happened at a specific time (yesterday)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando llegamos, _______ (hacer) mucho frío.",
+        options: [
+          "hizo",
+          "hacía",
+          "hace",
+          "hará"
+        ],
+        acceptableAnswers: ["hacía"],
+        explanation: "Use the imperfect 'hacía' because this describes the weather/background condition when they arrived."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cada verano, mi familia _______ (ir) a la playa.",
+        options: [
+          "fue",
+          "iba",
+          "va",
+          "irá"
+        ],
+        acceptableAnswers: ["iba"],
+        explanation: "Use the imperfect 'iba' because this describes a habitual action in the past (every summer - repeated action)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Ayer, él _______ (comprar) una bicicleta nueva.",
+        options: [
+          "compró",
+          "compraba",
+          "compra",
+          "comprará"
+        ],
+        acceptableAnswers: ["compró"],
+        explanation: "Use the preterite 'compró' because this is a specific completed action that happened at a specific time (yesterday)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando yo _______ (tener) diez años, me _______ (gustar) ir al parque.",
+        options: [
+          "tuve, gustó",
+          "tenía, gustaba",
+          "tengo, gusta",
+          "tendré, gustará"
+        ],
+        acceptableAnswers: ["tenía, gustaba"],
+        explanation: "Use the imperfect for both: 'tenía' describes age (description), and 'gustaba' describes a habitual preference in the past."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Nosotros _______ (ver) la película cuando se _______ (apagar) la luz.",
+        options: [
+          "vimos, apagó",
+          "veíamos, apagaba",
+          "veíamos, se apagó",
+          "vimos, se apagaba"
+        ],
+        acceptableAnswers: ["veíamos, se apagó"],
+        explanation: "Use imperfect 'veíamos' for the ongoing action (we were watching) and preterite 'se apagó' for the interrupting completed action (the lights went off)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando era niño, siempre _______ (comer) pizza los viernes.",
+        options: [
+          "comí",
+          "comía",
+          "como",
+          "comeré"
+        ],
+        acceptableAnswers: ["comía"],
+        explanation: "Use the imperfect 'comía' because this describes a habitual action in the past (always ate - repeated action)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: El mes pasado, Marta _______ (viajar) a España para sus vacaciones.",
+        options: [
+          "viajó",
+          "viajaba",
+          "viaja",
+          "viajará"
+        ],
+        acceptableAnswers: ["viajó"],
+        explanation: "Use the preterite 'viajó' because this is a completed action that happened at a specific time (last month)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando _______ (ser) niños, jugábamos afuera todos los días.",
+        options: [
+          "fuimos",
+          "éramos",
+          "somos",
+          "seremos"
+        ],
+        acceptableAnswers: ["éramos"],
+        explanation: "Use the imperfect 'éramos' because this describes a state/condition in the past (when we were children - background description)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Anoche, Juan _______ (salir) con sus amigos.",
+        options: [
+          "salió",
+          "salía",
+          "sale",
+          "saldrá"
+        ],
+        acceptableAnswers: ["salió"],
+        explanation: "Use the preterite 'salió' because this is a specific completed action that happened at a specific time (last night)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: Cuando _______ (estar) en la escuela, siempre _______ (estudiar) mucho.",
+        options: [
+          "estuve, estudié",
+          "estaba, estudiaba",
+          "estoy, estudio",
+          "estaré, estudiaré"
+        ],
+        acceptableAnswers: ["estaba, estudiaba"],
+        explanation: "Use the imperfect for both: 'estaba' describes a past state/condition, and 'estudiaba' describes a habitual action in the past."
+      },
+      {
+        type: "multiple-choice",
+        question: "Complete: El sol _______ (brillar) y _______ (hacer) mucho calor.",
+        options: [
+          "brilló, hizo",
+          "brillaba, hacía",
+          "brilla, hace",
+          "brillará, hará"
+        ],
+        acceptableAnswers: ["brillaba, hacía"],
+        explanation: "Use the imperfect for both verbs because they describe ongoing background conditions (the sun was shining and it was hot)."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the preterite form of 'ser' for 'él/ella/usted'?",
+        options: [
+          "era",
+          "fue",
+          "es",
+          "será"
+        ],
+        acceptableAnswers: ["fue"],
+        explanation: "The preterite form of 'ser' (to be) for él/ella/usted is 'fue'. Note: 'ser' and 'ir' have the same preterite forms."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the imperfect form of 'estar' for 'nosotros'?",
+        options: [
+          "estamos",
+          "estuvimos",
+          "estábamos",
+          "estaremos"
+        ],
+        acceptableAnswers: ["estábamos"],
+        explanation: "The imperfect form of 'estar' (to be) for nosotros is 'estábamos'."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the preterite form of 'decir' for 'yo'?",
+        options: [
+          "decía",
+          "dije",
+          "digo",
+          "diré"
+        ],
+        acceptableAnswers: ["dije"],
+        explanation: "The preterite form of 'decir' (to say) for yo is 'dije'. Note: 'decir' is an irregular verb in the preterite."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the imperfect form of 'tener' for 'tú'?",
+        options: [
+          "tuviste",
+          "tenías",
+          "tienes",
+          "tendrás"
+        ],
+        acceptableAnswers: ["tenías"],
+        explanation: "The imperfect form of 'tener' (to have) for tú is 'tenías'."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the preterite form of 'empezar' for 'ellos/ellas/ustedes'?",
+        options: [
+          "empezaban",
+          "empezaron",
+          "empiezan",
+          "empezarán"
+        ],
+        acceptableAnswers: ["empezaron"],
+        explanation: "The preterite form of 'empezar' (to begin) for ellos/ellas/ustedes is 'empezaron'. Note: 'empezar' is a stem-changing verb (e→ie) but in the preterite, it only changes in the third person."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the imperfect form of 'ir' for 'nosotros'?",
+        options: [
+          "fuimos",
+          "íbamos",
+          "vamos",
+          "iremos"
+        ],
+        acceptableAnswers: ["íbamos"],
+        explanation: "The imperfect form of 'ir' (to go) for nosotros is 'íbamos'."
+      },
+      {
+        type: "multiple-choice",
+        question: "In the sentence 'Mientras yo leía, él llegó,' which action is ongoing and which is completed?",
+        options: [
+          "Both are ongoing",
+          "'leía' is ongoing (imperfect), 'llegó' is completed (preterite)",
+          "Both are completed",
+          "'llegó' is ongoing (imperfect), 'leía' is completed (preterite)"
+        ],
+        acceptableAnswers: ["'leía' is ongoing (imperfect), 'llegó' is completed (preterite)"],
+        explanation: "The imperfect 'leía' describes the ongoing action (I was reading), while the preterite 'llegó' describes the completed interrupting action (he arrived)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which sentence correctly uses both tenses?",
+        options: [
+          "Ayer, yo estudiaba cuando mi amigo llegó.",
+          "Ayer, yo estudié cuando mi amigo llegaba.",
+          "Ayer, yo estudié cuando mi amigo llegó.",
+          "Ayer, yo estudiaba cuando mi amigo llegaba."
+        ],
+        acceptableAnswers: ["Ayer, yo estudiaba cuando mi amigo llegó."],
+        explanation: "Use imperfect 'estudiaba' for the ongoing action (I was studying) and preterite 'llegó' for the interrupting completed action (my friend arrived)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Ayer, María _______ (despertarse) a las siete de la mañana.",
+        acceptableAnswers: ["se despertó", "despertó"],
+        explanation: "Use the preterite 'se despertó' because this is a specific completed action that happened at a specific time (yesterday at 7 AM)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Cuando era joven, yo siempre _______ (llevar) una camiseta azul.",
+        acceptableAnswers: ["llevaba"],
+        explanation: "Use the imperfect 'llevaba' because this describes a habitual action in the past (always wore - repeated action)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: El año pasado, ellos _______ (casarse) en una iglesia hermosa.",
+        acceptableAnswers: ["se casaron", "casaron"],
+        explanation: "Use the preterite 'se casaron' because this is a completed event that happened at a specific time (last year)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Mientras nosotros _______ (celebrar) la fiesta, llegó la policía.",
+        acceptableAnswers: ["celebrábamos"],
+        explanation: "Use the imperfect 'celebrábamos' because this describes an ongoing action (we were celebrating) that was interrupted by 'llegó' (preterite)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Cuando cumplí dieciocho años, mis padres me _______ (dar) un coche nuevo.",
+        acceptableAnswers: ["dieron", "me dieron"],
+        explanation: "Use the preterite 'dieron' because this is a specific completed action that happened at a specific point in time (when I turned 18)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Todos los sábados, mi hermana _______ (tocar) el piano por dos horas.",
+        acceptableAnswers: ["tocaba"],
+        explanation: "Use the imperfect 'tocaba' because this describes a habitual action in the past (every Saturday - repeated action)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Anoche, yo _______ (recibir) una carta de mi abuela.",
+        acceptableAnswers: ["recibí"],
+        explanation: "Use the preterite 'recibí' because this is a specific completed action that happened at a specific time (last night)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Cuando _______ (ser) las tres de la tarde, empezó a llover.",
+        acceptableAnswers: ["eran"],
+        explanation: "Use the imperfect 'eran' because this describes time (it was 3 PM - background description) before the interrupting action 'empezó' (preterite)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: El mes pasado, tú _______ (romper) la ventana jugando fútbol.",
+        acceptableAnswers: ["rompiste"],
+        explanation: "Use the preterite 'rompiste' because this is a completed action that happened at a specific time (last month)."
+      },
+      {
+        type: "constructed-response",
+        question: "Complete: Cuando yo _______ (estar) en la universidad, siempre _______ (cenar) a las ocho.",
+        acceptableAnswers: [
+          "estaba, cenaba",
+          "estaba cenaba"
+        ],
+        explanation: "Use the imperfect for both verbs: 'estaba' describes a past state/condition, and 'cenaba' describes a habitual action in the past (always had dinner at 8)."
+      }
+    ]
+  },
+  {
     id: "osi-model-networking",
     name: "OSI Model and Networking Fundamentals",
     category: "Networking",
