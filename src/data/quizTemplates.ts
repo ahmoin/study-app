@@ -13,6 +13,315 @@ export interface QuizTemplate {
 }
 
 export const quizTemplates: QuizTemplate[] = [
+  
+  {
+    id: "early-us-history-federalist-era",
+    name: "Early US History: Federalist Era and Early Republic",
+    category: "US History",
+    description: "Comprehensive quiz covering the Washington, Adams, and Jefferson administrations, early political parties, foreign policy, and key events from 1789-1815",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What did the Whiskey Rebellion prove?",
+        options: [
+          "That state governments were more powerful than the federal government",
+          "The federal government had the power and willingness to enforce its laws",
+          "That the Constitution needed to be amended",
+          "That farmers could successfully resist federal taxes"
+        ],
+        acceptableAnswers: ["The federal government had the power and willingness to enforce its laws"],
+        explanation: "The Whiskey Rebellion proved that the federal government had the power and willingness to enforce its laws, demonstrating the strength of the new federal government under the Constitution."
+      },
+      {
+        type: "multiple-choice",
+        question: "Describe the political beliefs of the Federalist Party.",
+        options: [
+          "Favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry",
+          "Favored states' rights, strict interpretation of the Constitution, and an agricultural economy",
+          "Favored a weak central government and strong state governments",
+          "Favored isolationism and avoiding foreign entanglements"
+        ],
+        acceptableAnswers: ["Favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry"],
+        explanation: "The Federalist Party favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry."
+      },
+      {
+        type: "multiple-choice",
+        question: "Describe the political beliefs of the Democratic-Republican Party.",
+        options: [
+          "Favored a strong national government and loose interpretation of the Constitution",
+          "Favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy",
+          "Favored industrialization and urban development",
+          "Favored permanent alliances with European powers"
+        ],
+        acceptableAnswers: ["Favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy"],
+        explanation: "The Democratic-Republican Party favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the XYZ Affair?",
+        options: [
+          "A diplomatic incident in which French agents demanded bribes from American diplomats to negotiate",
+          "A trade agreement between the US and France",
+          "A military alliance between the US and Britain",
+          "A treaty that ended the War of 1812"
+        ],
+        acceptableAnswers: ["A diplomatic incident in which French agents demanded bribes from American diplomats to negotiate"],
+        explanation: "The XYZ Affair was a diplomatic incident in which French agents demanded bribes from American diplomats to negotiate, leading to an undeclared naval war."
+      },
+      {
+        type: "multiple-choice",
+        question: "Which Supreme Court case established the doctrine of Judicial Review?",
+        options: [
+          "McCulloch v. Maryland",
+          "Marbury v. Madison",
+          "Gibbons v. Ogden",
+          "Dred Scott v. Sandford"
+        ],
+        acceptableAnswers: ["Marbury v. Madison"],
+        explanation: "Marbury v. Madison (1803) established the doctrine of judicial review, giving the Supreme Court the power to declare laws unconstitutional."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the purpose of the Erie Canal?",
+        options: [
+          "To connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion",
+          "To provide irrigation for western farms",
+          "To serve as a military defense line",
+          "To transport slaves from the South to the North"
+        ],
+        acceptableAnswers: ["To connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion"],
+        explanation: "The purpose of the Erie Canal was to connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why were many Americans not happy with Jay's Treaty?",
+        options: [
+          "They believed it favored France and hurt American trade",
+          "They believed it favored Britain and failed to protect American sailors",
+          "They thought it gave too much power to the states",
+          "They believed it violated the Constitution"
+        ],
+        acceptableAnswers: ["They believed it favored Britain and failed to protect American sailors"],
+        explanation: "Many Americans opposed Jay's Treaty because they believed it favored Britain and failed to protect American sailors from impressment."
+      },
+      {
+        type: "multiple-choice",
+        question: "What city was at the center of Pinckney's Treaty?",
+        options: [
+          "New York",
+          "New Orleans",
+          "Philadelphia",
+          "Charleston"
+        ],
+        acceptableAnswers: ["New Orleans"],
+        explanation: "New Orleans was the city at the center of Pinckney's Treaty, which secured American navigation rights on the Mississippi River and the right to deposit goods in New Orleans."
+      },
+      {
+        type: "multiple-choice",
+        question: "What were the four Federal departments created by George Washington? Who did he choose to head them?",
+        options: [
+          "State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)",
+          "State (John Adams), Treasury (Thomas Jefferson), War (George Washington), and Justice (James Madison)",
+          "State (Alexander Hamilton), Treasury (Thomas Jefferson), War (John Adams), and Justice (James Monroe)",
+          "State (Edmund Randolph), Treasury (Henry Knox), War (Alexander Hamilton), and Justice (Thomas Jefferson)"
+        ],
+        acceptableAnswers: ["State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)"],
+        explanation: "The four departments were State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why was the Sedition Act (1798) eventually overturned?",
+        options: [
+          "It violated the First Amendment's protection of free speech",
+          "It was too expensive to enforce",
+          "It only applied to federal officials",
+          "It conflicted with state laws"
+        ],
+        acceptableAnswers: ["It violated the First Amendment's protection of free speech"],
+        explanation: "The Sedition Act was overturned because it violated the First Amendment's protection of free speech, making it illegal to criticize the government."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why did President Jefferson have an internal conflict about making the Louisiana Purchase?",
+        options: [
+          "He believed the Constitution did not explicitly give him the power to buy foreign land",
+          "He thought the land was too expensive",
+          "He feared it would lead to war with Spain",
+          "He believed it would upset the balance of power between states"
+        ],
+        acceptableAnswers: ["He believed the Constitution did not explicitly give him the power to buy foreign land"],
+        explanation: "Jefferson struggled with the Louisiana Purchase because he believed the Constitution did not explicitly give him the power to buy foreign land, conflicting with his strict interpretation of the Constitution."
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the 'unwritten Constitution?'",
+        options: [
+          "Amendments that were never formally ratified",
+          "Traditions, customs, and precedents that guide government but are not written in the Constitution",
+          "Laws passed by Congress that contradict the Constitution",
+          "State constitutions that supplement the federal Constitution"
+        ],
+        acceptableAnswers: ["Traditions, customs, and precedents that guide government but are not written in the Constitution"],
+        explanation: "The 'unwritten Constitution' refers to traditions, customs, and precedents that guide government but are not written in the Constitution, such as the cabinet system and political parties."
+      },
+      {
+        type: "multiple-choice",
+        question: "Who were the War Hawks?",
+        options: [
+          "Federalist congressmen who opposed war with Britain",
+          "Young Democratic-Republican congressmen who pushed for war with Britain",
+          "Military leaders who advocated for peace",
+          "Diplomats who negotiated treaties with European powers"
+        ],
+        acceptableAnswers: ["Young Democratic-Republican congressmen who pushed for war with Britain"],
+        explanation: "The War Hawks were young Democratic-Republican congressmen who pushed for war with Britain, led by Henry Clay and John C. Calhoun."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why were Democratic-Republicans generally against the Bank of the United States?",
+        options: [
+          "They believed it was unconstitutional and favored the wealthy",
+          "They thought it would cause inflation",
+          "They believed it would lead to foreign control of the economy",
+          "They thought it would only benefit northern states"
+        ],
+        acceptableAnswers: ["They believed it was unconstitutional and favored the wealthy"],
+        explanation: "Democratic-Republicans opposed the Bank of the United States because they believed it was unconstitutional and favored the wealthy over common citizens."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the purpose of the Gadsden Purchase (1853)?",
+        options: [
+          "To acquire land from Mexico for a southern railroad route",
+          "To settle border disputes with Canada",
+          "To acquire Florida from Spain",
+          "To purchase Alaska from Russia"
+        ],
+        acceptableAnswers: ["To acquire land from Mexico for a southern railroad route"],
+        explanation: "The Gadsden Purchase was meant to acquire land from Mexico for a southern railroad route to connect the eastern United States with California."
+      },
+      {
+        type: "multiple-choice",
+        question: "What two capital cities were burned during the War of 1812?",
+        options: [
+          "Washington, D.C. and Philadelphia",
+          "Washington, D.C. and York (Toronto)",
+          "New York and Boston",
+          "Richmond and Baltimore"
+        ],
+        acceptableAnswers: ["Washington, D.C. and York (Toronto)"],
+        explanation: "Washington, D.C. and York (Toronto) were the two capital cities burned during the War of 1812."
+      },
+      {
+        type: "multiple-choice",
+        question: "What American general led American forces during the Battle of New Orleans?",
+        options: [
+          "George Washington",
+          "Andrew Jackson",
+          "William Henry Harrison",
+          "James Madison"
+        ],
+        acceptableAnswers: ["Andrew Jackson"],
+        explanation: "General Andrew Jackson led American forces at the Battle of New Orleans, achieving a decisive victory that made him a national hero."
+      },
+      {
+        type: "multiple-choice",
+        question: "List three ways in which the US Constitution is a flexible document.",
+        options: [
+          "Amendments, elastic clause interpretation, and judicial interpretation",
+          "Presidential decrees, congressional laws, and state constitutions",
+          "Military power, economic control, and foreign policy",
+          "Voting rights, taxation, and representation"
+        ],
+        acceptableAnswers: ["Amendments, elastic clause interpretation, and judicial interpretation"],
+        explanation: "The Constitution is flexible through amendments, elastic clause (Necessary and Proper Clause) interpretation, and judicial interpretation."
+      },
+      {
+        type: "multiple-choice",
+        question: "What are reserved powers?",
+        options: [
+          "Powers given exclusively to the federal government",
+          "Powers not given to the federal government and kept by the states under the Tenth Amendment",
+          "Powers shared between federal and state governments",
+          "Powers that can be exercised by either level of government"
+        ],
+        acceptableAnswers: ["Powers not given to the federal government and kept by the states under the Tenth Amendment"],
+        explanation: "Reserved powers are powers not given to the federal government and kept by the states under the Tenth Amendment."
+      },
+      {
+        type: "multiple-choice",
+        question: "What did the foreign policies of Washington, Adams and Jefferson all have in common?",
+        options: [
+          "They all tried to keep the United States neutral in foreign conflicts",
+          "They all sought permanent alliances with European powers",
+          "They all declared war on France",
+          "They all favored isolation from all foreign trade"
+        ],
+        acceptableAnswers: ["They all tried to keep the United States neutral in foreign conflicts"],
+        explanation: "Washington, Adams, and Jefferson all tried to keep the United States neutral in foreign conflicts, avoiding entanglement in European wars."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why did Washington advise the US to avoid permanent alliances with any part of the foreign world? When did the US break with Washington's policy of neutrality?",
+        options: [
+          "To avoid foreign entanglements; broke with policy by joining NATO in 1949 after World War II",
+          "To maintain trade relationships; broke with policy during the Civil War",
+          "To protect American interests; broke with policy in 1917 when entering World War I",
+          "To avoid military conflicts; broke with policy by joining the United Nations in 1945"
+        ],
+        acceptableAnswers: ["To avoid foreign entanglements; broke with policy by joining NATO in 1949 after World War II"],
+        explanation: "Washington warned against permanent alliances to avoid foreign entanglements, and the United States broke with this policy by joining NATO in 1949 after World War II."
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the main purpose of Hamilton's financial plan?",
+        options: [
+          "To strengthen the national economy and establish federal credit",
+          "To reduce the national debt to zero",
+          "To eliminate all state governments",
+          "To create a single national currency"
+        ],
+        acceptableAnswers: ["To strengthen the national economy and establish federal credit"],
+        explanation: "Hamilton's financial plan aimed to strengthen the national economy and establish federal credit through assumption of state debts, creation of a national bank, and tariffs."
+      },
+      {
+        type: "multiple-choice",
+        question: "Why did Adams support the Alien Act (1798)?",
+        options: [
+          "He feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power",
+          "He believed immigrants were causing economic problems",
+          "He thought immigrants were spies for foreign governments",
+          "He wanted to limit the number of people in the country"
+        ],
+        acceptableAnswers: ["He feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power"],
+        explanation: "Adams supported the Alien Act because he feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power."
+      },
+      {
+        type: "multiple-choice",
+        question: "Define Manifest Destiny.",
+        options: [
+          "The belief that the United States should remain isolated from world affairs",
+          "The belief that the United States was destined to expand westward across North America",
+          "The belief that slavery should expand to all territories",
+          "The belief that the Constitution should never be amended"
+        ],
+        acceptableAnswers: ["The belief that the United States was destined to expand westward across North America"],
+        explanation: "Manifest Destiny was the belief that the United States was destined to expand westward across North America, popularized in the 1840s."
+      },
+      {
+        type: "multiple-choice",
+        question: "In which Supreme Court case was the principle of Judicial Review expanded to cover state and local laws?",
+        options: [
+          "Marbury v. Madison",
+          "McCulloch v. Maryland",
+          "Gibbons v. Ogden",
+          "Dred Scott v. Sandford"
+        ],
+        acceptableAnswers: ["McCulloch v. Maryland"],
+        explanation: "McCulloch v. Maryland (1819) expanded judicial review to include state and local laws, establishing that states could not tax federal institutions."
+      }
+    ]
+  },
   {
     id: "spanish-preterite-imperfect",
     name: "Spanish Preterite vs Imperfect",
