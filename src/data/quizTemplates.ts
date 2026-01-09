@@ -13,7 +13,415 @@ export interface QuizTemplate {
 }
 
 export const quizTemplates: QuizTemplate[] = [
+  {
+    id: "regents-ela-text-analysis-comprehensive",
+    name: "Regents ELA Text Analysis - Comprehensive Review",
+    category: "English",
+    description:
+      "A 30-question multiple-choice quiz covering central ideas, literary devices, and key evidence from Under the Eye of the Clock and Life on the Mississippi (1901).",
+    questions: [
+      // ===== Q1-Q2: CENTRAL IDEAS =====
+      {
+        type: "multiple-choice",
+        question: "What is the central idea of Under the Eye of the Clock?",
+        options: [
+          "Disability prevents independence",
+          "Technology alone solves human problems",
+          "Perseverance and support can overcome severe physical limitations",
+          "Society fully understands disability",
+        ],
+        acceptableAnswers: [
+          "Perseverance and support can overcome severe physical limitations",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the central idea of Life on the Mississippi (1901)?",
+        options: [
+          "Nature is dangerous and uncontrollable",
+          "Professional knowledge can diminish wonder and beauty",
+          "Travel is more valuable than education",
+          "The river is unpredictable",
+        ],
+        acceptableAnswers: [
+          "Professional knowledge can diminish wonder and beauty",
+        ],
+      },
   
+      // ===== Q3-Q4: LITERARY DEVICES (Primary) =====
+      {
+        type: "multiple-choice",
+        question:
+          "Which literary device most strongly develops the central idea in Under the Eye of the Clock?",
+        options: [
+          "Simile",
+          "Extended metaphor",
+          "Alliteration",
+          "Hyperbole",
+        ],
+        acceptableAnswers: ["Extended metaphor"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which literary device is central to Life on the Mississippi (1901)?",
+        options: [
+          "Extended metaphor",
+          "Irony",
+          "Dialogue",
+          "Foreshadowing",
+        ],
+        acceptableAnswers: ["Extended metaphor"],
+      },
+  
+      // ===== Q5-Q10: UNDER THE EYE OF THE CLOCK: METAPHOR & EVIDENCE =====
+      {
+        type: "multiple-choice",
+        question: "Why does Nolan describe Joseph’s life as a 'battle'?",
+        options: [
+          "To show Joseph enjoys conflict",
+          "To portray Joseph’s struggle against his body and society",
+          "To compare Joseph to a soldier",
+          "To suggest physical violence",
+        ],
+        acceptableAnswers: [
+          "To portray Joseph’s struggle against his body and society",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What do 'man-made mountains' and 'socially constructed barriers' symbolize?",
+        options: [
+          "Natural obstacles",
+          "Medical conditions",
+          "Societal prejudice and expectations",
+          "Joseph’s imagination",
+        ],
+        acceptableAnswers: ["Societal prejudice and expectations"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What does typing symbolize for Joseph?",
+        options: [
+          "Entertainment",
+          "Academic success",
+          "Freedom and self-expression",
+          "Obedience",
+        ],
+        acceptableAnswers: ["Freedom and self-expression"],
+      },
+      {
+        type: "multiple-choice",
+        question: "Which quote best represents Joseph’s breakthrough?",
+        options: [
+          "“The typewriter was not a plaything.”",
+          "“His body rarely stops moving.”",
+          "“A bow to break your chain and let out your voice.”",
+          "“Eva held his chin in her hands.”",
+        ],
+        acceptableAnswers: [
+          "“A bow to break your chain and let out your voice.”",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does the metaphor of 'chains' most clearly represent?",
+        options: [
+          "Joseph’s wheelchair",
+          "His physical and social limitations",
+          "Medical treatment",
+          "His relationship with Eva",
+        ],
+        acceptableAnswers: ["His physical and social limitations"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the primary rhetorical effect of describing Joseph's physical state as a 'prison'?",
+        options: [
+          "To introduce a setting of actual captivity",
+          "To elicit sympathy by emphasizing the confinement and frustration of his mind",
+          "To criticize the healthcare system he is in",
+          "To suggest that he enjoys solitude",
+        ],
+        acceptableAnswers: [
+          "To elicit sympathy by emphasizing the confinement and frustration of his mind",
+        ],
+      },
+  
+      // ===== Q11-Q13: CHARACTERIZATION (Clock) =====
+      {
+        type: "multiple-choice",
+        question:
+          "How is Joseph characterized throughout Under the Eye of the Clock?",
+        options: [
+          "Angry and resentful",
+          "Passive and dependent",
+          "Determined and reflective",
+          "Carefree and humorous",
+        ],
+        acceptableAnswers: ["Determined and reflective"],
+      },
+      {
+        type: "multiple-choice",
+        question: "How does Eva Fitzpatrick contribute to the central idea?",
+        options: [
+          "She replaces Joseph’s mother",
+          "She provides discipline through punishment",
+          "She believes in Joseph when others give up",
+          "She teaches Joseph to speak verbally",
+        ],
+        acceptableAnswers: [
+          "She believes in Joseph when others give up",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "Why is Joseph’s mother contrasted with Eva?",
+        options: [
+          "To criticize parenting",
+          "To highlight the importance of belief and perseverance",
+          "To show generational conflict",
+          "To emphasize science over emotion",
+        ],
+        acceptableAnswers: [
+          "To highlight the importance of belief and perseverance",
+        ],
+      },
+  
+      // ===== Q14-Q18: LIFE ON THE MISSISSIPPI: METAPHOR & EVIDENCE =====
+      {
+        type: "multiple-choice",
+        question:
+          "What does the river primarily symbolize in Life on the Mississippi (1901)?",
+        options: [
+          "Freedom",
+          "Danger",
+          "A book of specialized knowledge",
+          "Childhood memories",
+        ],
+        acceptableAnswers: ["A book of specialized knowledge"],
+      },
+      {
+        type: "multiple-choice",
+        question: "Why does Twain compare the river to a 'book'?",
+        options: [
+          "To describe its appearance",
+          "To show it contains hidden meanings readable only to experts",
+          "To emphasize literacy",
+          "To compare it to fiction",
+        ],
+        acceptableAnswers: [
+          "To show it contains hidden meanings readable only to experts",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How does the pilot’s view of the river differ from the passenger’s?",
+        options: [
+          "The pilot finds it more beautiful",
+          "The pilot sees danger and meaning where passengers see beauty",
+          "The passenger understands the river better",
+          "They see it the same way",
+        ],
+        acceptableAnswers: [
+          "The pilot sees danger and meaning where passengers see beauty",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is Twain’s emotional shift after mastering the river?",
+        options: [
+          "From fear to excitement",
+          "From confusion to joy",
+          "From wonder to practical analysis",
+          "From boredom to fascination",
+        ],
+        acceptableAnswers: ["From wonder to practical analysis"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In *Life on the Mississippi*, when Twain describes the once 'inestimable wonder' of the sunset now reduced to a 'practical question of a pilot,' the word 'inestimable' implies that the beauty was previously:",
+        options: [
+          "Easy to calculate",
+          "Beyond measure or value",
+          "Dangerous to look at",
+          "Quickly fading",
+        ],
+        acceptableAnswers: ["Beyond measure or value"],
+      },
+  
+      // ===== Q19-Q21: COMPARISON & AUTHOR’S PURPOSE (Cross-Text) =====
+      {
+        type: "multiple-choice",
+        question:
+          "How are the two texts similar in their treatment of knowledge or ability?",
+        options: [
+          "Both show knowledge always improves happiness",
+          "Both focus on childhood education",
+          "Both reveal a cost or struggle connected to ability or expertise",
+          "Both criticize technology",
+        ],
+        acceptableAnswers: [
+          "Both reveal a cost or struggle connected to ability or expertise",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "What does Joseph gain that Twain ultimately loses?",
+        options: [
+          "Technical skill",
+          "Physical strength",
+          "Freedom and voice",
+          "Professional respect",
+        ],
+        acceptableAnswers: ["Freedom and voice"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Both authors use a shift in perspective (from layman to expert in Twain; from silence to voice in Nolan) primarily to support which claim?",
+        options: [
+          "Technical skill is always preferable to simple observation.",
+          "The acquisition of a new ability fundamentally changes one's engagement with the world.",
+          "The past is always more difficult than the present.",
+          "Personal growth requires advanced technology.",
+        ],
+        acceptableAnswers: [
+          "The acquisition of a new ability fundamentally changes one's engagement with the world.",
+        ],
+      },
+  
+      // ===== Q22-Q23: TONE & STYLE =====
+      {
+        type: "multiple-choice",
+        question:
+          "What is the overall tone of Under the Eye of the Clock?",
+        options: [
+          "Detached and analytical",
+          "Hopeful and determined",
+          "Sarcastic",
+          "Bitter",
+        ],
+        acceptableAnswers: ["Hopeful and determined"],
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the tone of Life on the Mississippi (1901)?",
+        options: [
+          "Optimistic",
+          "Nostalgic and reflective",
+          "Angry",
+          "Humorous",
+        ],
+        acceptableAnswers: ["Nostalgic and reflective"],
+      },
+  
+      // ===== Q24-Q26: REGENTS-STYLE ANALYSIS (Rhetorical Purpose) =====
+      {
+        type: "multiple-choice",
+        question:
+          "Why is metaphor especially effective in Under the Eye of the Clock?",
+        options: [
+          "It simplifies medical language",
+          "It turns internal struggle into a vivid external conflict",
+          "It adds humor",
+          "It shortens the text",
+        ],
+        acceptableAnswers: [
+          "It turns internal struggle into a vivid external conflict",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why does Twain include the doctor comparison at the end of the passage?",
+        options: [
+          "To introduce a new topic",
+          "To criticize doctors",
+          "To reinforce the idea that expertise can reduce emotional beauty",
+          "To add humor only",
+        ],
+        acceptableAnswers: [
+          "To reinforce the idea that expertise can reduce emotional beauty",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In *Under the Eye of the Clock*, what is the main purpose of Eva Fitzpatrick’s initial skepticism and the description of Joseph’s early failures?",
+        options: [
+          "To make the essay longer",
+          "To ensure the reader understands the severity of Joseph’s condition and the magnitude of his eventual triumph",
+          "To criticize her teaching methods",
+          "To show that only technology could help Joseph",
+        ],
+        acceptableAnswers: [
+          "To ensure the reader understands the severity of Joseph’s condition and the magnitude of his eventual triumph",
+        ],
+      },
+  
+      // ===== Q27-Q30: FINAL DETAIL/OVERVIEW QUESTIONS (Thesis Reinforcement) =====
+      {
+        type: "multiple-choice",
+        question: "What ultimately allows Joseph to succeed?",
+        options: [
+          "Luck",
+          "Advanced machinery",
+          "Internal belief supported by Eva’s perseverance",
+          "His mother’s encouragement",
+        ],
+        acceptableAnswers: [
+          "Internal belief supported by Eva’s perseverance",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "What lesson does Nolan most strongly convey?",
+        options: [
+          "Science solves all problems",
+          "Disability defines identity",
+          "Human determination can overcome imposed limitations",
+          "Society is always supportive",
+        ],
+        acceptableAnswers: [
+          "Human determination can overcome imposed limitations",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question: "What lesson does Twain most strongly convey?",
+        options: [
+          "Nature is hostile",
+          "Skill always improves enjoyment",
+          "Professional knowledge can come at an emotional cost",
+          "Travel is dangerous",
+        ],
+        acceptableAnswers: [
+          "Professional knowledge can come at an emotional cost",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which statement best reflects a Regents-level thesis for Under the Eye of the Clock?",
+        options: [
+          "Joseph is disabled but smart",
+          "The author uses metaphor to show how perseverance and support free Joseph from limitation",
+          "The story is about typing",
+          "Eva is a good teacher",
+        ],
+        acceptableAnswers: [
+          "The author uses metaphor to show how perseverance and support free Joseph from limitation",
+        ],
+      },
+    ],
+  },
   {
     id: "early-us-history-federalist-era",
     name: "Early US History: Federalist Era and Early Republic",
