@@ -14,6 +14,312 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "text-analysis-joseph-twain-memorization",
+    name: "Text Analysis: Joseph & Twain Memorization Quiz",
+    category: "Literature",
+    description:
+      "Memorize key information about the Joseph excerpt (Under the Eye of the Clock) and Mark Twain's Life on the Mississippi, including central ideas, literary devices, evidence, and analysis details.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "What is the central idea of the excerpt from Under the Eye of the Clock by Christopher Nolan?",
+        options: [
+          "Disability is an insurmountable obstacle that cannot be overcome.",
+          "Human perseverance, supported by compassion and belief from others, can overcome even the most severe physical limitations.",
+          "Society should provide more support for disabled individuals.",
+          "Technology is the key to overcoming physical limitations.",
+        ],
+        acceptableAnswers: [
+          "Human perseverance, supported by compassion and belief from others, can overcome even the most severe physical limitations.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What literary device is primarily used in the Joseph excerpt?",
+        options: [
+          "Simile",
+          "Personification",
+          "Metaphor (and extended figurative language)",
+          "Hyperbole",
+        ],
+        acceptableAnswers: ["Metaphor (and extended figurative language)"],
+      },
+      {
+        type: "constructed-response",
+        question:
+          'How is Joseph\'s struggle metaphorically described in the text? What does this metaphor suggest?',
+        acceptableAnswers: [
+          "Joseph's struggle is framed as a 'battle' against a 'hostile...world,' turning his disability into a war he must fight.",
+          "It is described as a battle between a crippled, sane boy and a hostile world.",
+          "The metaphor suggests that society acts as an opposing force, and his perseverance is an act of courage.",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question:
+          'What metaphor is used to describe the moment Joseph types successfully? What does this symbolize?',
+        acceptableAnswers: [
+          "It is described as 'a bow to break your chain and let out your voice,' symbolizing freedom and self-expression.",
+          "A bow to break your chain and let out your voice - symbolizing liberation and self-expression.",
+          "Typing becomes a metaphor for reclaiming identity and agency.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the central idea of Mark Twain's Life on the Mississippi excerpt?",
+        options: [
+          "The Mississippi River is dangerous and unpredictable.",
+          "Gaining technical knowledge can lead to a loss of wonder and emotional appreciation.",
+          "Pilots need extensive training to navigate rivers safely.",
+          "Nature's beauty is always preserved regardless of expertise.",
+        ],
+        acceptableAnswers: [
+          "Gaining technical knowledge can lead to a loss of wonder and emotional appreciation.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What literary device is used in the Mark Twain excerpt?",
+        options: [
+          "Simile",
+          "Extended metaphor",
+          "Personification",
+          "Alliteration",
+        ],
+        acceptableAnswers: ["Extended metaphor"],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "How does Twain use extended metaphor to show how expertise changes perception of the river?",
+        acceptableAnswers: [
+          "The river is compared to a 'book,' readable only to trained pilots, showing how expertise changes perception.",
+          "The river is metaphorically described as a book that only trained pilots can read.",
+          "Twain explains that the river's beauty is replaced by danger signs, emphasizing the emotional cost of professional knowledge.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the text-analysis response, what does Nolan emphasize as Joseph's greatest struggle?",
+        options: [
+          "Only his physical disability.",
+          "The social barriers and doubt that silence him, in addition to his disability.",
+          "Lack of access to technology.",
+          "Financial limitations.",
+        ],
+        acceptableAnswers: [
+          "The social barriers and doubt that silence him, in addition to his disability.",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "How does Nolan use metaphors of war and imprisonment to portray Joseph's journey? Provide specific examples.",
+        acceptableAnswers: [
+          "Joseph is introduced as fighting a 'battle...between a crippled, sane boy and a hostile...world.' His inability to control his body is described as being 'damned' and 'frozen,' suggesting captivity. The metaphor of 'man-made mountains' and 'socially constructed barriers' shows obstacles imposed by others.",
+          "Nolan frames Joseph's life as a conflict using metaphors of war and imprisonment, describing him as fighting a battle against a hostile world, and his condition as being 'damned' and 'frozen' like captivity.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does the metaphor of typing as 'a bow to break your chain and let out your voice' represent?",
+        options: [
+          "Only a physical achievement.",
+          "Joseph reclaiming his identity and agency, representing liberation and self-expression.",
+          "A musical accomplishment.",
+          "A way to communicate with others.",
+        ],
+        acceptableAnswers: [
+          "Joseph reclaiming his identity and agency, representing liberation and self-expression.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who is Eva Fitzpatrick, and what role does she play in the text?",
+        options: [
+          "A doctor who treats Joseph.",
+          "A character who provides unwavering support and belief, allowing Joseph to believe in himself.",
+          "A teacher who teaches Joseph to type.",
+          "A family member who doubts Joseph's abilities.",
+        ],
+        acceptableAnswers: [
+          "A character who provides unwavering support and belief, allowing Joseph to believe in himself.",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "What does the text-analysis response say about how metaphors transform Joseph's physical condition?",
+        acceptableAnswers: [
+          "The metaphors transform Joseph's physical condition into an external enemy, making his perseverance an act of courage rather than mere endurance.",
+          "Metaphors turn his disability into an external enemy, showing his perseverance as courage.",
+          "They frame his struggle as imprisonment and success as freedom.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does the text-analysis response identify as the 'climax' of the metaphorical journey?",
+        options: [
+          "When Joseph first meets Eva Fitzpatrick.",
+          "When Joseph finally succeeds in typing, described as liberation.",
+          "When Joseph overcomes his physical disability completely.",
+          "When society accepts Joseph.",
+        ],
+        acceptableAnswers: [
+          "When Joseph finally succeeds in typing, described as liberation.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the analysis, what do the metaphors of 'man-made mountains' and 'socially constructed barriers' represent?",
+        options: [
+          "Physical obstacles in Joseph's environment.",
+          "Obstacles imposed by others' expectations and disbelief.",
+          "Natural geographical features.",
+          "Medical limitations.",
+        ],
+        acceptableAnswers: [
+          "Obstacles imposed by others' expectations and disbelief.",
+        ],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "How does Twain's extended metaphor emphasize the emotional cost of professional knowledge?",
+        acceptableAnswers: [
+          "Twain explains that the river's beauty is replaced by danger signs, showing how technical knowledge causes the pilot to lose emotional appreciation and wonder.",
+          "The river's beauty is replaced by danger signs, emphasizing how expertise leads to loss of wonder.",
+          "The metaphor shows that gaining technical knowledge causes a loss of emotional appreciation.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What does the text-analysis response conclude about perseverance in relation to compassion?",
+        options: [
+          "Perseverance alone is sufficient to overcome limitations.",
+          "Perseverance, strengthened by compassion, enables Joseph to overcome both physical and societal limitations.",
+          "Compassion is more important than perseverance.",
+          "Perseverance and compassion are unrelated.",
+        ],
+        acceptableAnswers: [
+          "Perseverance, strengthened by compassion, enables Joseph to overcome both physical and societal limitations.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the author's name of Under the Eye of the Clock?",
+        options: [
+          "Mark Twain",
+          "Christopher Nolan",
+          "Eva Fitzpatrick",
+          "Joseph Nolan",
+        ],
+        acceptableAnswers: ["Christopher Nolan"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the date/period of the Joseph excerpt mentioned in the materials?",
+        options: [
+          "August 2014",
+          "June 2015",
+          "January 2016",
+          "March 2015",
+        ],
+        acceptableAnswers: ["June 2015"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the date/period of the Mark Twain excerpt mentioned in the materials?",
+        options: [
+          "August 2014",
+          "June 2015",
+          "January 2016",
+          "March 2015",
+        ],
+        acceptableAnswers: ["August 2014"],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "According to the text-analysis response, how does Nolan use metaphorical language to convey the central idea?",
+        acceptableAnswers: [
+          "Through metaphorical language that frames struggle as imprisonment and success as freedom, Nolan powerfully conveys that perseverance, strengthened by compassion, enables Joseph to overcome both physical and societal limitations.",
+          "Metaphorical language frames struggle as imprisonment and success as freedom, conveying how perseverance with compassion helps overcome limitations.",
+          "Nolan uses metaphors to show struggle as imprisonment and success as liberation.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In the Mark Twain excerpt, what is the river metaphorically compared to?",
+        options: [
+          "A war",
+          "A book",
+          "A prison",
+          "A chain",
+        ],
+        acceptableAnswers: ["A book"],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "What does the text-analysis response say about how Joseph's inability to control his body is described?",
+        acceptableAnswers: [
+          "It is described as being 'damned' and 'frozen,' suggesting captivity rather than weakness.",
+          "As being 'damned' and 'frozen,' which suggests captivity.",
+          "The descriptions 'damned' and 'frozen' suggest imprisonment rather than just physical limitation.",
+        ],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What quality does Eva Fitzpatrick possess that helps Joseph, according to the analysis?",
+        options: [
+          "Technical expertise",
+          "'Gumption' and belief",
+          "Financial resources",
+          "Medical knowledge",
+        ],
+        acceptableAnswers: ["'Gumption' and belief"],
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "According to the analysis, what does typing represent beyond just a physical achievement?",
+        options: [
+          "A way to earn money",
+          "Joseph reclaiming his identity and agency",
+          "A hobby",
+          "A form of exercise",
+        ],
+        acceptableAnswers: ["Joseph reclaiming his identity and agency"],
+      },
+      {
+        type: "constructed-response",
+        question:
+          "How does the text-analysis response explain the relationship between the metaphors and Joseph's character development?",
+        acceptableAnswers: [
+          "The metaphors transform Joseph's physical condition into an external enemy, making his perseverance an act of courage rather than mere endurance, and show his journey from imprisonment to freedom.",
+          "Metaphors show Joseph's journey from captivity to liberation, framing his perseverance as courage.",
+          "The metaphors demonstrate how Joseph's struggle evolves from being trapped to achieving freedom and self-expression.",
+        ],
+      },
+    ],
+  },
+  {
     id: "universal-circular-motion",
     name: "Universal Circular Motion",
     category: "Physics",
