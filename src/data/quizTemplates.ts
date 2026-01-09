@@ -14,411 +14,483 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
-    id: "regents-ela-text-analysis-comprehensive",
-    name: "Regents ELA Text Analysis - Comprehensive Review",
+    id: "regents-ela-response-strategy-nolan-focused",
+    name: "Regents ELA Response Strategy: Under the Eye of the Clock",
     category: "English",
     description:
-      "A 30-question multiple-choice quiz covering central ideas, literary devices, and key evidence from Under the Eye of the Clock and Life on the Mississippi (1901).",
+      "A 30-question quiz focused on the strategic choices required to write a successful two-to-three paragraph text analysis response based on the excerpt from Under the Eye of the Clock, covering central idea, strategy, and evidence selection.",
     questions: [
-      // ===== Q1-Q2: CENTRAL IDEAS =====
-      {
-        type: "multiple-choice",
-        question: "What is the central idea of Under the Eye of the Clock?",
-        options: [
-          "Disability prevents independence",
-          "Technology alone solves human problems",
-          "Perseverance and support can overcome severe physical limitations",
-          "Society fully understands disability",
-        ],
-        acceptableAnswers: [
-          "Perseverance and support can overcome severe physical limitations",
-        ],
-      },
-      {
-        type: "multiple-choice",
-        question: "What is the central idea of Life on the Mississippi (1901)?",
-        options: [
-          "Nature is dangerous and uncontrollable",
-          "Professional knowledge can diminish wonder and beauty",
-          "Travel is more valuable than education",
-          "The river is unpredictable",
-        ],
-        acceptableAnswers: [
-          "Professional knowledge can diminish wonder and beauty",
-        ],
-      },
-  
-      // ===== Q3-Q4: LITERARY DEVICES (Primary) =====
+      // ===== SECTION 1: THESIS & CENTRAL IDEA (CI) SELECTION (Q1-Q5) =====
       {
         type: "multiple-choice",
         question:
-          "Which literary device most strongly develops the central idea in Under the Eye of the Clock?",
+          "Which option presents the most effective and analytical central idea for the first paragraph of the response?",
         options: [
-          "Simile",
-          "Extended metaphor",
-          "Alliteration",
-          "Hyperbole",
+          "Joseph Meehan is a crippled boy who struggles to type with a head-mounted pointer.",
+          "The passage contrasts Eva Fitzpatrick's methods with the mother's methods.",
+          "The central idea is that internal perseverance, fueled by external support, is crucial for liberating the self from severe physical and social confinement.",
+          "Christopher Nolan's text is about overcoming physical disability.",
         ],
-        acceptableAnswers: ["Extended metaphor"],
+        acceptableAnswers: [
+          "The central idea is that internal perseverance, fueled by external support, is crucial for liberating the self from severe physical and social confinement.",
+        ],
+        explanation:
+          "A strong CI is analytical, comprehensive, and goes beyond simple summary.",
       },
       {
         type: "multiple-choice",
         question:
-          "Which literary device is central to Life on the Mississippi (1901)?",
+          "The introductory paragraph must name the text, author, and central idea. Which writing strategy (WS) should also be explicitly named in the introduction?",
         options: [
-          "Extended metaphor",
+          "Setting",
+          "Language Use / Diction",
           "Irony",
+          "The primary literary strategy—Extended Metaphor—used to develop the CI.",
+        ],
+        acceptableAnswers: [
+          "The primary literary strategy—Extended Metaphor—used to develop the CI.",
+        ],
+        explanation:
+          "The prompt requires identifying the CI and analyzing *one* writing strategy in the introduction.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If a student chooses to focus their analysis on the central idea of *social prejudice*, which quote best serves as the required support?",
+        options: [
+          "'Writing by hand failed.'",
+          "'But for Eva Fitzpatrick he would never have broken free.'",
+          "'Can I climb socially constructed barriers?'",
+          "'He even noticed the scent of her perfume.'",
+        ],
+        acceptableAnswers: ["'Can I climb socially constructed barriers?'"],
+        explanation:
+          "This quote directly mentions 'socially constructed barriers,' making it the strongest evidence for the social prejudice aspect of the CI.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The concept of **liberation** is vital to the central idea. Which theme best opposes the idea of liberation in the text?",
+        options: ["Compassion", "Entrapment", "Innovation", "Teamwork"],
+        acceptableAnswers: ["Entrapment"],
+        explanation:
+          "Joseph's body is metaphorically described as an entrapment (prison, chains, frozen), which is the state from which he seeks liberation.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "To make the introduction paragraph strong, the central idea must be clearly linked to the writer's *intent*. Nolan's intent is most accurately described as:",
+        options: [
+          "To inform the reader about brain damage.",
+          "To create a fictional story about a boy named Joseph.",
+          "To persuade the reader of the extraordinary power of the human spirit to overcome physical and social obstacles.",
+          "To detail the failure of Joseph’s mother.",
+        ],
+        acceptableAnswers: [
+          "To persuade the reader of the extraordinary power of the human spirit to overcome physical and social obstacles.",
+        ],
+      },
+
+      // ===== SECTION 2: WRITING STRATEGY (WS) SELECTION & DEFINITION (Q6-Q10) =====
+      {
+        type: "multiple-choice",
+        question:
+          "Which writing strategy is the most effective choice for analyzing how the struggle is presented, due to its pervasive use throughout the text?",
+        options: [
+          "Simile (e.g., 'like a house of cards')",
+          "Allusion (e.g., 'a Simon')",
+          "Extended Metaphor (e.g., battle, chains, prison)",
           "Dialogue",
-          "Foreshadowing",
         ],
-        acceptableAnswers: ["Extended metaphor"],
-      },
-  
-      // ===== Q5-Q10: UNDER THE EYE OF THE CLOCK: METAPHOR & EVIDENCE =====
-      {
-        type: "multiple-choice",
-        question: "Why does Nolan describe Joseph’s life as a 'battle'?",
-        options: [
-          "To show Joseph enjoys conflict",
-          "To portray Joseph’s struggle against his body and society",
-          "To compare Joseph to a soldier",
-          "To suggest physical violence",
-        ],
-        acceptableAnswers: [
-          "To portray Joseph’s struggle against his body and society",
-        ],
+        acceptableAnswers: ["Extended Metaphor (e.g., battle, chains, prison)"],
+        explanation:
+          "Extended metaphor is the dominant strategy, covering the primary conflict (battle) and the emotional state (chains/prison).",
       },
       {
         type: "multiple-choice",
         question:
-          "What do 'man-made mountains' and 'socially constructed barriers' symbolize?",
+          "If the student chooses **Extended Metaphor** as their writing strategy, the body paragraph (Paragraph 2) should primarily focus on:",
         options: [
-          "Natural obstacles",
-          "Medical conditions",
-          "Societal prejudice and expectations",
-          "Joseph’s imagination",
-        ],
-        acceptableAnswers: ["Societal prejudice and expectations"],
-      },
-      {
-        type: "multiple-choice",
-        question: "What does typing symbolize for Joseph?",
-        options: [
-          "Entertainment",
-          "Academic success",
-          "Freedom and self-expression",
-          "Obedience",
-        ],
-        acceptableAnswers: ["Freedom and self-expression"],
-      },
-      {
-        type: "multiple-choice",
-        question: "Which quote best represents Joseph’s breakthrough?",
-        options: [
-          "“The typewriter was not a plaything.”",
-          "“His body rarely stops moving.”",
-          "“A bow to break your chain and let out your voice.”",
-          "“Eva held his chin in her hands.”",
+          "A summary of Joseph's medical treatment.",
+          "Analyzing how figurative language transforms Joseph’s internal struggle into a heroic external conflict.",
+          "Discussing the history of the typewriter.",
+          "Explaining the actions of Eva Fitzpatrick.",
         ],
         acceptableAnswers: [
-          "“A bow to break your chain and let out your voice.”",
+          "Analyzing how figurative language transforms Joseph’s internal struggle into a heroic external conflict.",
         ],
+        explanation:
+          "The analysis must explain *how* the strategy develops the CI, not just summarize events.",
       },
       {
         type: "multiple-choice",
         question:
-          "What does the metaphor of 'chains' most clearly represent?",
+          "The strategy of **characterization** is developed through the contrast between Joseph’s mother and Eva Fitzpatrick. This contrast highlights the theme of:",
         options: [
-          "Joseph’s wheelchair",
-          "His physical and social limitations",
-          "Medical treatment",
-          "His relationship with Eva",
+          "Scientific accuracy vs. emotional healing.",
+          "Parental vs. professional relationships.",
+          "Defeat and doubt vs. perseverance and belief.",
+          "Old technology vs. new technology.",
         ],
-        acceptableAnswers: ["His physical and social limitations"],
+        acceptableAnswers: ["Defeat and doubt vs. perseverance and belief."],
+        explanation:
+          "The mother 'gave up on him' and felt 'hurt by defeat,' contrasting with Eva's 'gumption' and belief.",
       },
       {
         type: "multiple-choice",
         question:
-          "What is the primary rhetorical effect of describing Joseph's physical state as a 'prison'?",
+          "If a student analyzes the strategy of **Language Use/Diction**, which type of words would they focus on to support the CI of *entrapment*?",
         options: [
-          "To introduce a setting of actual captivity",
-          "To elicit sympathy by emphasizing the confinement and frustration of his mind",
-          "To criticize the healthcare system he is in",
-          "To suggest that he enjoys solitude",
+          "Words related to scent and sound (e.g., 'perfume', 'music').",
+          "Words related to conflict and restriction (e.g., 'hostile', 'curtails', 'obliterates').",
+          "Words related to geography (e.g., 'mountains', 'corridor').",
+          "Words related to humor (e.g., 'light-hearted banter').",
         ],
         acceptableAnswers: [
-          "To elicit sympathy by emphasizing the confinement and frustration of his mind",
+          "Words related to conflict and restriction (e.g., 'hostile', 'curtails', 'obliterates').",
         ],
-      },
-  
-      // ===== Q11-Q13: CHARACTERIZATION (Clock) =====
-      {
-        type: "multiple-choice",
-        question:
-          "How is Joseph characterized throughout Under the Eye of the Clock?",
-        options: [
-          "Angry and resentful",
-          "Passive and dependent",
-          "Determined and reflective",
-          "Carefree and humorous",
-        ],
-        acceptableAnswers: ["Determined and reflective"],
-      },
-      {
-        type: "multiple-choice",
-        question: "How does Eva Fitzpatrick contribute to the central idea?",
-        options: [
-          "She replaces Joseph’s mother",
-          "She provides discipline through punishment",
-          "She believes in Joseph when others give up",
-          "She teaches Joseph to speak verbally",
-        ],
-        acceptableAnswers: [
-          "She believes in Joseph when others give up",
-        ],
-      },
-      {
-        type: "multiple-choice",
-        question: "Why is Joseph’s mother contrasted with Eva?",
-        options: [
-          "To criticize parenting",
-          "To highlight the importance of belief and perseverance",
-          "To show generational conflict",
-          "To emphasize science over emotion",
-        ],
-        acceptableAnswers: [
-          "To highlight the importance of belief and perseverance",
-        ],
-      },
-  
-      // ===== Q14-Q18: LIFE ON THE MISSISSIPPI: METAPHOR & EVIDENCE =====
-      {
-        type: "multiple-choice",
-        question:
-          "What does the river primarily symbolize in Life on the Mississippi (1901)?",
-        options: [
-          "Freedom",
-          "Danger",
-          "A book of specialized knowledge",
-          "Childhood memories",
-        ],
-        acceptableAnswers: ["A book of specialized knowledge"],
-      },
-      {
-        type: "multiple-choice",
-        question: "Why does Twain compare the river to a 'book'?",
-        options: [
-          "To describe its appearance",
-          "To show it contains hidden meanings readable only to experts",
-          "To emphasize literacy",
-          "To compare it to fiction",
-        ],
-        acceptableAnswers: [
-          "To show it contains hidden meanings readable only to experts",
-        ],
+        explanation:
+          "Diction should support the chosen CI. These words emphasize the struggle and limitations.",
       },
       {
         type: "multiple-choice",
         question:
-          "How does the pilot’s view of the river differ from the passenger’s?",
+          "A strong analytical response must avoid simple summary. The best way to transition from evidence to analysis is to use a phrase like:",
         options: [
-          "The pilot finds it more beautiful",
-          "The pilot sees danger and meaning where passengers see beauty",
-          "The passenger understands the river better",
-          "They see it the same way",
+          "'This quote shows that...' (Weak)",
+          "'Next, Joseph does...' (Weak)",
+          "'This evidence illustrates how the metaphor transforms...' (Strong)",
+          "'In conclusion, the typewriter is important...' (Weak)",
         ],
         acceptableAnswers: [
-          "The pilot sees danger and meaning where passengers see beauty",
+          "'This evidence illustrates how the metaphor transforms...' (Strong)",
         ],
+        explanation:
+          "Analytical phrases link the evidence directly to the function of the writing strategy.",
+      },
+
+      // ===== SECTION 3: CI DEVELOPMENT: INTRODUCTION PARAGRAPH CONSTRUCTION (Q11-Q15) =====
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following is the most effective opening sentence for the response?",
+        options: [
+          "Joseph Meehan is the main character in this story about typing.",
+          "In the excerpt from *Under the Eye of the Clock*, Christopher Nolan uses vivid imagery to describe a boy with a disability.",
+          "In Christopher Nolan’s memoir *Under the Eye of the Clock*, the core message explores how internal resilience and supportive relationships can achieve liberation from severe physical and social confinement.",
+          "This story is about a battle against the world.",
+        ],
+        acceptableAnswers: [
+          "In Christopher Nolan’s memoir *Under the Eye of the Clock*, the core message explores how internal resilience and supportive relationships can achieve liberation from severe physical and social confinement.",
+        ],
+        explanation:
+          "A strong opening names the text, author, genre (if known), and introduces the CI immediately.",
       },
       {
         type: "multiple-choice",
         question:
-          "What is Twain’s emotional shift after mastering the river?",
+          "If the central idea is established, the introductory paragraph should then present a brief, focused statement connecting the CI to the WS. Which option does this best?",
         options: [
-          "From fear to excitement",
-          "From confusion to joy",
-          "From wonder to practical analysis",
-          "From boredom to fascination",
+          "The main writing strategy is characterization, showing how Eva is a good teacher.",
+          "The use of metaphor is important because it makes the story interesting.",
+          "Nolan primarily develops this idea through the extended metaphor of Joseph's life as a battle against physical and social imprisonment.",
+          "Joseph had many questions and doubts about his body.",
         ],
-        acceptableAnswers: ["From wonder to practical analysis"],
+        acceptableAnswers: [
+          "Nolan primarily develops this idea through the extended metaphor of Joseph's life as a battle against physical and social imprisonment.",
+        ],
+        explanation:
+          "This explicitly links the strategy (metaphor) to the subject (Joseph's struggle) and the theme (imprisonment).",
       },
       {
         type: "multiple-choice",
         question:
-          "In *Life on the Mississippi*, when Twain describes the once 'inestimable wonder' of the sunset now reduced to a 'practical question of a pilot,' the word 'inestimable' implies that the beauty was previously:",
+          "A well-structured introduction paragraph should take up roughly how much space in the required response?",
         options: [
-          "Easy to calculate",
-          "Beyond measure or value",
-          "Dangerous to look at",
-          "Quickly fading",
-        ],
-        acceptableAnswers: ["Beyond measure or value"],
-      },
-  
-      // ===== Q19-Q21: COMPARISON & AUTHOR’S PURPOSE (Cross-Text) =====
-      {
-        type: "multiple-choice",
-        question:
-          "How are the two texts similar in their treatment of knowledge or ability?",
-        options: [
-          "Both show knowledge always improves happiness",
-          "Both focus on childhood education",
-          "Both reveal a cost or struggle connected to ability or expertise",
-          "Both criticize technology",
+          "The entire response (2 paragraphs)",
+          "One short sentence",
+          "2-4 sentences, clearly establishing the focus and thesis.",
+          "Half of the first paragraph, leaving the rest for evidence.",
         ],
         acceptableAnswers: [
-          "Both reveal a cost or struggle connected to ability or expertise",
+          "2-4 sentences, clearly establishing the focus and thesis.",
         ],
-      },
-      {
-        type: "multiple-choice",
-        question: "What does Joseph gain that Twain ultimately loses?",
-        options: [
-          "Technical skill",
-          "Physical strength",
-          "Freedom and voice",
-          "Professional respect",
-        ],
-        acceptableAnswers: ["Freedom and voice"],
+        explanation:
+          "The intro should be concise, leaving ample space for analysis and evidence in the body.",
       },
       {
         type: "multiple-choice",
         question:
-          "Both authors use a shift in perspective (from layman to expert in Twain; from silence to voice in Nolan) primarily to support which claim?",
+          "When using the term 'literary element/technique/rhetorical device,' the best practice is to:",
         options: [
-          "Technical skill is always preferable to simple observation.",
-          "The acquisition of a new ability fundamentally changes one's engagement with the world.",
-          "The past is always more difficult than the present.",
-          "Personal growth requires advanced technology.",
+          "Avoid defining the term.",
+          "Clearly name and define the term (e.g., 'The author employs the extended metaphor, which is a prolonged comparison between two unlike things...').",
+          "Use multiple different strategies to show breadth of reading.",
+          "Wait until the conclusion to name the strategy.",
         ],
         acceptableAnswers: [
-          "The acquisition of a new ability fundamentally changes one's engagement with the world.",
+          "Clearly name and define the term (e.g., 'The author employs the extended metaphor, which is a prolonged comparison between two unlike things...').",
         ],
-      },
-  
-      // ===== Q22-Q23: TONE & STYLE =====
-      {
-        type: "multiple-choice",
-        question:
-          "What is the overall tone of Under the Eye of the Clock?",
-        options: [
-          "Detached and analytical",
-          "Hopeful and determined",
-          "Sarcastic",
-          "Bitter",
-        ],
-        acceptableAnswers: ["Hopeful and determined"],
-      },
-      {
-        type: "multiple-choice",
-        question: "What is the tone of Life on the Mississippi (1901)?",
-        options: [
-          "Optimistic",
-          "Nostalgic and reflective",
-          "Angry",
-          "Humorous",
-        ],
-        acceptableAnswers: ["Nostalgic and reflective"],
-      },
-  
-      // ===== Q24-Q26: REGENTS-STYLE ANALYSIS (Rhetorical Purpose) =====
-      {
-        type: "multiple-choice",
-        question:
-          "Why is metaphor especially effective in Under the Eye of the Clock?",
-        options: [
-          "It simplifies medical language",
-          "It turns internal struggle into a vivid external conflict",
-          "It adds humor",
-          "It shortens the text",
-        ],
-        acceptableAnswers: [
-          "It turns internal struggle into a vivid external conflict",
-        ],
+        explanation:
+          "Explicitly defining the strategy demonstrates clear understanding and strengthens the analysis.",
       },
       {
         type: "multiple-choice",
         question:
-          "Why does Twain include the doctor comparison at the end of the passage?",
+          "Which element must be included in the introduction according to the Regents prompt guidelines?",
         options: [
-          "To introduce a new topic",
-          "To criticize doctors",
-          "To reinforce the idea that expertise can reduce emotional beauty",
-          "To add humor only",
+          "A full list of all literary devices.",
+          "A detailed biography of Christopher Nolan.",
+          "Identification of the Central Idea (CI) and the chosen Writing Strategy (WS).",
+          "A summary of the ending.",
         ],
         acceptableAnswers: [
-          "To reinforce the idea that expertise can reduce emotional beauty",
+          "Identification of the Central Idea (CI) and the chosen Writing Strategy (WS).",
         ],
+        explanation:
+          "These two items form the foundation of the analytical thesis.",
+      },
+
+      // ===== SECTION 4: WS ANALYSIS: BODY PARAGRAPH STRUCTURE (Q16-Q20) =====
+      {
+        type: "multiple-choice",
+        question:
+          "The body paragraph (Paragraph 2) should begin with a topic sentence that:",
+        options: [
+          "Restates the whole thesis word-for-word.",
+          "Introduces the first piece of evidence.",
+          "Reiterates the chosen writing strategy and explains *how* it first develops the central idea.",
+          "Summarizes the beginning of the passage.",
+        ],
+        acceptableAnswers: [
+          "Reiterates the chosen writing strategy and explains *how* it first develops the central idea.",
+        ],
+        explanation:
+          "The topic sentence acts as a mini-thesis for the body paragraph, guiding the analysis.",
       },
       {
         type: "multiple-choice",
         question:
-          "In *Under the Eye of the Clock*, what is the main purpose of Eva Fitzpatrick’s initial skepticism and the description of Joseph’s early failures?",
+          "If the body paragraph focuses on the Metaphor of **Imprisonment**, which topic sentence is strongest?",
         options: [
-          "To make the essay longer",
-          "To ensure the reader understands the severity of Joseph’s condition and the magnitude of his eventual triumph",
-          "To criticize her teaching methods",
-          "To show that only technology could help Joseph",
+          "Nolan uses words that make Joseph seem trapped by his condition.",
+          "The metaphor of Joseph’s life as an imprisoned 'sane boy' fighting a 'hostile...world' develops the CI by establishing the severe psychological conflict that precedes physical triumph.",
+          "Joseph's body often shook, which made it hard to type.",
+          "The second paragraph will discuss the physical struggle of Joseph.",
         ],
         acceptableAnswers: [
-          "To ensure the reader understands the severity of Joseph’s condition and the magnitude of his eventual triumph",
+          "The metaphor of Joseph’s life as an imprisoned 'sane boy' fighting a 'hostile...world' develops the CI by establishing the severe psychological conflict that precedes physical triumph.",
         ],
-      },
-  
-      // ===== Q27-Q30: FINAL DETAIL/OVERVIEW QUESTIONS (Thesis Reinforcement) =====
-      {
-        type: "multiple-choice",
-        question: "What ultimately allows Joseph to succeed?",
-        options: [
-          "Luck",
-          "Advanced machinery",
-          "Internal belief supported by Eva’s perseverance",
-          "His mother’s encouragement",
-        ],
-        acceptableAnswers: [
-          "Internal belief supported by Eva’s perseverance",
-        ],
-      },
-      {
-        type: "multiple-choice",
-        question: "What lesson does Nolan most strongly convey?",
-        options: [
-          "Science solves all problems",
-          "Disability defines identity",
-          "Human determination can overcome imposed limitations",
-          "Society is always supportive",
-        ],
-        acceptableAnswers: [
-          "Human determination can overcome imposed limitations",
-        ],
-      },
-      {
-        type: "multiple-choice",
-        question: "What lesson does Twain most strongly convey?",
-        options: [
-          "Nature is hostile",
-          "Skill always improves enjoyment",
-          "Professional knowledge can come at an emotional cost",
-          "Travel is dangerous",
-        ],
-        acceptableAnswers: [
-          "Professional knowledge can come at an emotional cost",
-        ],
+        explanation:
+          "This is specific, names the strategy/evidence, and explains the developmental function ('establishing the severe psychological conflict').",
       },
       {
         type: "multiple-choice",
         question:
-          "Which statement best reflects a Regents-level thesis for Under the Eye of the Clock?",
+          "A strong body paragraph should ideally contain how many pieces of strong, integrated evidence?",
         options: [
-          "Joseph is disabled but smart",
-          "The author uses metaphor to show how perseverance and support free Joseph from limitation",
-          "The story is about typing",
-          "Eva is a good teacher",
+          "One very long quote.",
+          "Zero, reliance on summary is better.",
+          "Two to three specific and relevant pieces of embedded evidence.",
+          "Ten short quotes.",
         ],
         acceptableAnswers: [
-          "The author uses metaphor to show how perseverance and support free Joseph from limitation",
+          "Two to three specific and relevant pieces of embedded evidence.",
         ],
+        explanation:
+          "Quality and depth of analysis are more important than quantity; 2-3 pieces allow for thorough discussion.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "When integrating evidence, the quote must be followed by analysis that:",
+        options: [
+          "Summarizes what happened next.",
+          "Explains how the quote supports the Central Idea *through the lens of the Writing Strategy*.",
+          "Justifies why the mother gave up.",
+          "Rejects the quote as ineffective.",
+        ],
+        acceptableAnswers: [
+          "Explains how the quote supports the Central Idea *through the lens of the Writing Strategy*.",
+        ],
+        explanation:
+          "This is the core of analysis: linking the CI, WS, and Evidence.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "To ensure a cohesive analysis, the final sentence of the body paragraph should:",
+        options: [
+          "Introduce the next topic.",
+          "Offer a new piece of evidence.",
+          "Provide a concluding statement that summarizes the paragraph's analysis and ties it back to the overarching central idea.",
+          "Ask a rhetorical question.",
+        ],
+        acceptableAnswers: [
+          "Provide a concluding statement that summarizes the paragraph's analysis and ties it back to the overarching central idea.",
+        ],
+        explanation:
+          "This ensures the paragraph is fully developed and logically leads toward a conclusion (or the next body paragraph).",
+      },
+
+      // ===== SECTION 5: EVIDENCE SELECTION & INTEGRATION (Deep Analysis) (Q21-Q30) =====
+      {
+        type: "multiple-choice",
+        question:
+          "When analyzing the quote, 'A bow to break your chain and let out your voice,' what is the best analytical interpretation?",
+        options: [
+          "The chains are Joseph's arms, and the bow is his head-pointer.",
+          "The metaphor shows that successful typing is a painful, but ultimately liberating, break from social and physical confinement.",
+          "The quote is literal, meaning Joseph broke an actual chain.",
+          "The passage focuses on sound imagery.",
+        ],
+        acceptableAnswers: [
+          "The metaphor shows that successful typing is a painful, but ultimately liberating, break from social and physical confinement.",
+        ],
+        explanation:
+          "This interpretation connects the figurative language (chains/voice) to the central theme (liberation/confinement).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If a student analyzes the strategy of **Allusion**, which quote should they use?",
+        options: [
+          "'But how was a mother to know that hidden behind her cross was a Simon ready and willing to research areas...'",
+          "'The typewriter was not a plaything.'",
+          "'Feebly he smiled but she continued to study him.'",
+          "'His body rarely stops moving.'",
+        ],
+        acceptableAnswers: [
+          "'But how was a mother to know that hidden behind her cross was a Simon ready and willing to research areas...'",
+        ],
+        explanation:
+          "The reference to 'Simon' and 'cross' is a direct Biblical allusion, implying Eva is a dedicated helper.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "To support the CI that *external belief is necessary*, which piece of evidence is most effective?",
+        options: [
+          "'Now a new drug was being administered...'",
+          "'His own mother had given up on him...'",
+          "'Together they would struggle, the boy blowing like a whale...'",
+          "'He even noticed the scent of her perfume...'",
+        ],
+        acceptableAnswers: ["'His own mother had given up on him...'"],
+        explanation:
+          "The mother's giving up (lack of belief) provides a direct contrast, demonstrating how crucial Eva's continued support was.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "When quoting, it is essential to **embed** the evidence. Which is the best example of embedded evidence?",
+        options: [
+          "The quote is: 'A bow to break your chain and let out your voice.'",
+          "The author states that Joseph needed 'a bow to break your chain and let out your voice,' showing the metaphorical nature of his freedom.",
+          "Nolan says the boy was freed.",
+          "'A bow to break your chain and let out your voice' is the climax.",
+        ],
+        acceptableAnswers: [
+          "The author states that Joseph needed 'a bow to break your chain and let out your voice,' showing the metaphorical nature of his freedom.",
+        ],
+        explanation:
+          "Embedding means integrating the quote smoothly into the student's own sentence structure.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The final two lines, 'Feebly he smiled but she continued to study him. Looking back into her face he tried to get her response,' most clearly demonstrate the theme of:",
+        options: [
+          "Dependence on drugs.",
+          "The ongoing, serious nature of the physical struggle, despite the emotional triumph.",
+          "Eva's indifference.",
+          "The need for humor.",
+        ],
+        acceptableAnswers: [
+          "The ongoing, serious nature of the physical struggle, despite the emotional triumph.",
+        ],
+        explanation:
+          "The smile is feeble, and Eva continues to 'study' him, suggesting the battle is not entirely over, only the first major victory has been won.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In analyzing the metaphor of the 'battle,' the writer should focus on the idea that Joseph is described as 'sane' because:",
+        options: [
+          "It emphasizes the sanity and intelligence trapped within the uncontrollable, 'hostile' body.",
+          "It contradicts the mother's belief.",
+          "It means he is mentally unstable.",
+          "It is a literal description of his medical chart.",
+        ],
+        acceptableAnswers: [
+          "It emphasizes the sanity and intelligence trapped within the uncontrollable, 'hostile' body.",
+        ],
+        explanation:
+          "The contrast between the 'crippled, sane boy' and the 'hostile' world highlights the mind-body disconnection.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The phrase 'the mustard seeds of his and Eva’s hours of discovery' uses which strategy, and what does it convey?",
+        options: [
+          "Hyperbole; it conveys the large dose of medication.",
+          "Symbolism; it conveys the small, hopeful beginning of a significant change.",
+          "Simile; it compares the medicine to food.",
+          "Personification; it makes the seeds seem alive.",
+        ],
+        acceptableAnswers: [
+          "Symbolism; it conveys the small, hopeful beginning of a significant change.",
+        ],
+        explanation:
+          "Mustard seed is a Biblical symbol for something small yielding large results, emphasizing the magnitude of the discovery.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "When integrating evidence, what should the student do with a quote that includes ellipses (three dots ...)?",
+        options: [
+          "Avoid using it.",
+          "Use the full quote regardless of length.",
+          "Use the ellipses to indicate words have been omitted for brevity or focus.",
+          "Assume the ellipses mean the quote is incomplete.",
+        ],
+        acceptableAnswers: [
+          "Use the ellipses to indicate words have been omitted for brevity or focus.",
+        ],
+        explanation:
+          "Ellipses are essential for academic writing to shorten quotes while maintaining grammatical integrity.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "To ensure the analysis is coherent and flows smoothly, the student should primarily use:",
+        options: [
+          "Complex vocabulary without context.",
+          "Long, run-on sentences.",
+          "Transitional words and phrases (e.g., 'Consequently,' 'Furthermore,' 'This realization').",
+          "Slang and informal language.",
+        ],
+        acceptableAnswers: [
+          "Transitional words and phrases (e.g., 'Consequently,' 'Furthermore,' 'This realization').",
+        ],
+        explanation:
+          "Transitions ensure logical movement between the CI, WS, and evidence.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If the response is only two paragraphs, what is the required function of the final few sentences of the entire response?",
+        options: [
+          "To introduce a second writing strategy.",
+          "To provide a concluding statement that synthesizes the analysis and reaffirms the central idea.",
+          "To summarize the entire text again.",
+          "To apologize for not having a third paragraph.",
+        ],
+        acceptableAnswers: [
+          "To provide a concluding statement that synthesizes the analysis and reaffirms the central idea.",
+        ],
+        explanation:
+          "The conclusion should bring the analysis to a focused close, often echoing the main thesis.",
       },
     ],
   },
@@ -426,7 +498,8 @@ export const quizTemplates: QuizTemplate[] = [
     id: "early-us-history-federalist-era",
     name: "Early US History: Federalist Era and Early Republic",
     category: "US History",
-    description: "Comprehensive quiz covering the Washington, Adams, and Jefferson administrations, early political parties, foreign policy, and key events from 1789-1815",
+    description:
+      "Comprehensive quiz covering the Washington, Adams, and Jefferson administrations, early political parties, foreign policy, and key events from 1789-1815",
     questions: [
       {
         type: "multiple-choice",
@@ -435,10 +508,13 @@ export const quizTemplates: QuizTemplate[] = [
           "That state governments were more powerful than the federal government",
           "The federal government had the power and willingness to enforce its laws",
           "That the Constitution needed to be amended",
-          "That farmers could successfully resist federal taxes"
+          "That farmers could successfully resist federal taxes",
         ],
-        acceptableAnswers: ["The federal government had the power and willingness to enforce its laws"],
-        explanation: "The Whiskey Rebellion proved that the federal government had the power and willingness to enforce its laws, demonstrating the strength of the new federal government under the Constitution."
+        acceptableAnswers: [
+          "The federal government had the power and willingness to enforce its laws",
+        ],
+        explanation:
+          "The Whiskey Rebellion proved that the federal government had the power and willingness to enforce its laws, demonstrating the strength of the new federal government under the Constitution.",
       },
       {
         type: "multiple-choice",
@@ -447,22 +523,29 @@ export const quizTemplates: QuizTemplate[] = [
           "Favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry",
           "Favored states' rights, strict interpretation of the Constitution, and an agricultural economy",
           "Favored a weak central government and strong state governments",
-          "Favored isolationism and avoiding foreign entanglements"
+          "Favored isolationism and avoiding foreign entanglements",
         ],
-        acceptableAnswers: ["Favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry"],
-        explanation: "The Federalist Party favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry."
+        acceptableAnswers: [
+          "Favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry",
+        ],
+        explanation:
+          "The Federalist Party favored a strong national government, a loose interpretation of the Constitution, and support for commerce and industry.",
       },
       {
         type: "multiple-choice",
-        question: "Describe the political beliefs of the Democratic-Republican Party.",
+        question:
+          "Describe the political beliefs of the Democratic-Republican Party.",
         options: [
           "Favored a strong national government and loose interpretation of the Constitution",
           "Favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy",
           "Favored industrialization and urban development",
-          "Favored permanent alliances with European powers"
+          "Favored permanent alliances with European powers",
         ],
-        acceptableAnswers: ["Favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy"],
-        explanation: "The Democratic-Republican Party favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy."
+        acceptableAnswers: [
+          "Favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy",
+        ],
+        explanation:
+          "The Democratic-Republican Party favored states' rights, a strict interpretation of the Constitution, and an agricultural-based economy.",
       },
       {
         type: "multiple-choice",
@@ -471,22 +554,27 @@ export const quizTemplates: QuizTemplate[] = [
           "A diplomatic incident in which French agents demanded bribes from American diplomats to negotiate",
           "A trade agreement between the US and France",
           "A military alliance between the US and Britain",
-          "A treaty that ended the War of 1812"
+          "A treaty that ended the War of 1812",
         ],
-        acceptableAnswers: ["A diplomatic incident in which French agents demanded bribes from American diplomats to negotiate"],
-        explanation: "The XYZ Affair was a diplomatic incident in which French agents demanded bribes from American diplomats to negotiate, leading to an undeclared naval war."
+        acceptableAnswers: [
+          "A diplomatic incident in which French agents demanded bribes from American diplomats to negotiate",
+        ],
+        explanation:
+          "The XYZ Affair was a diplomatic incident in which French agents demanded bribes from American diplomats to negotiate, leading to an undeclared naval war.",
       },
       {
         type: "multiple-choice",
-        question: "Which Supreme Court case established the doctrine of Judicial Review?",
+        question:
+          "Which Supreme Court case established the doctrine of Judicial Review?",
         options: [
           "McCulloch v. Maryland",
           "Marbury v. Madison",
           "Gibbons v. Ogden",
-          "Dred Scott v. Sandford"
+          "Dred Scott v. Sandford",
         ],
         acceptableAnswers: ["Marbury v. Madison"],
-        explanation: "Marbury v. Madison (1803) established the doctrine of judicial review, giving the Supreme Court the power to declare laws unconstitutional."
+        explanation:
+          "Marbury v. Madison (1803) established the doctrine of judicial review, giving the Supreme Court the power to declare laws unconstitutional.",
       },
       {
         type: "multiple-choice",
@@ -495,10 +583,13 @@ export const quizTemplates: QuizTemplate[] = [
           "To connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion",
           "To provide irrigation for western farms",
           "To serve as a military defense line",
-          "To transport slaves from the South to the North"
+          "To transport slaves from the South to the North",
         ],
-        acceptableAnswers: ["To connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion"],
-        explanation: "The purpose of the Erie Canal was to connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion."
+        acceptableAnswers: [
+          "To connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion",
+        ],
+        explanation:
+          "The purpose of the Erie Canal was to connect the Great Lakes to the Atlantic Ocean and promote trade and westward expansion.",
       },
       {
         type: "multiple-choice",
@@ -507,34 +598,37 @@ export const quizTemplates: QuizTemplate[] = [
           "They believed it favored France and hurt American trade",
           "They believed it favored Britain and failed to protect American sailors",
           "They thought it gave too much power to the states",
-          "They believed it violated the Constitution"
+          "They believed it violated the Constitution",
         ],
-        acceptableAnswers: ["They believed it favored Britain and failed to protect American sailors"],
-        explanation: "Many Americans opposed Jay's Treaty because they believed it favored Britain and failed to protect American sailors from impressment."
+        acceptableAnswers: [
+          "They believed it favored Britain and failed to protect American sailors",
+        ],
+        explanation:
+          "Many Americans opposed Jay's Treaty because they believed it favored Britain and failed to protect American sailors from impressment.",
       },
       {
         type: "multiple-choice",
         question: "What city was at the center of Pinckney's Treaty?",
-        options: [
-          "New York",
-          "New Orleans",
-          "Philadelphia",
-          "Charleston"
-        ],
+        options: ["New York", "New Orleans", "Philadelphia", "Charleston"],
         acceptableAnswers: ["New Orleans"],
-        explanation: "New Orleans was the city at the center of Pinckney's Treaty, which secured American navigation rights on the Mississippi River and the right to deposit goods in New Orleans."
+        explanation:
+          "New Orleans was the city at the center of Pinckney's Treaty, which secured American navigation rights on the Mississippi River and the right to deposit goods in New Orleans.",
       },
       {
         type: "multiple-choice",
-        question: "What were the four Federal departments created by George Washington? Who did he choose to head them?",
+        question:
+          "What were the four Federal departments created by George Washington? Who did he choose to head them?",
         options: [
           "State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)",
           "State (John Adams), Treasury (Thomas Jefferson), War (George Washington), and Justice (James Madison)",
           "State (Alexander Hamilton), Treasury (Thomas Jefferson), War (John Adams), and Justice (James Monroe)",
-          "State (Edmund Randolph), Treasury (Henry Knox), War (Alexander Hamilton), and Justice (Thomas Jefferson)"
+          "State (Edmund Randolph), Treasury (Henry Knox), War (Alexander Hamilton), and Justice (Thomas Jefferson)",
         ],
-        acceptableAnswers: ["State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)"],
-        explanation: "The four departments were State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)."
+        acceptableAnswers: [
+          "State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph)",
+        ],
+        explanation:
+          "The four departments were State (Thomas Jefferson), Treasury (Alexander Hamilton), War (Henry Knox), and Justice/Attorney General (Edmund Randolph).",
       },
       {
         type: "multiple-choice",
@@ -543,22 +637,29 @@ export const quizTemplates: QuizTemplate[] = [
           "It violated the First Amendment's protection of free speech",
           "It was too expensive to enforce",
           "It only applied to federal officials",
-          "It conflicted with state laws"
+          "It conflicted with state laws",
         ],
-        acceptableAnswers: ["It violated the First Amendment's protection of free speech"],
-        explanation: "The Sedition Act was overturned because it violated the First Amendment's protection of free speech, making it illegal to criticize the government."
+        acceptableAnswers: [
+          "It violated the First Amendment's protection of free speech",
+        ],
+        explanation:
+          "The Sedition Act was overturned because it violated the First Amendment's protection of free speech, making it illegal to criticize the government.",
       },
       {
         type: "multiple-choice",
-        question: "Why did President Jefferson have an internal conflict about making the Louisiana Purchase?",
+        question:
+          "Why did President Jefferson have an internal conflict about making the Louisiana Purchase?",
         options: [
           "He believed the Constitution did not explicitly give him the power to buy foreign land",
           "He thought the land was too expensive",
           "He feared it would lead to war with Spain",
-          "He believed it would upset the balance of power between states"
+          "He believed it would upset the balance of power between states",
         ],
-        acceptableAnswers: ["He believed the Constitution did not explicitly give him the power to buy foreign land"],
-        explanation: "Jefferson struggled with the Louisiana Purchase because he believed the Constitution did not explicitly give him the power to buy foreign land, conflicting with his strict interpretation of the Constitution."
+        acceptableAnswers: [
+          "He believed the Constitution did not explicitly give him the power to buy foreign land",
+        ],
+        explanation:
+          "Jefferson struggled with the Louisiana Purchase because he believed the Constitution did not explicitly give him the power to buy foreign land, conflicting with his strict interpretation of the Constitution.",
       },
       {
         type: "multiple-choice",
@@ -567,10 +668,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Amendments that were never formally ratified",
           "Traditions, customs, and precedents that guide government but are not written in the Constitution",
           "Laws passed by Congress that contradict the Constitution",
-          "State constitutions that supplement the federal Constitution"
+          "State constitutions that supplement the federal Constitution",
         ],
-        acceptableAnswers: ["Traditions, customs, and precedents that guide government but are not written in the Constitution"],
-        explanation: "The 'unwritten Constitution' refers to traditions, customs, and precedents that guide government but are not written in the Constitution, such as the cabinet system and political parties."
+        acceptableAnswers: [
+          "Traditions, customs, and precedents that guide government but are not written in the Constitution",
+        ],
+        explanation:
+          "The 'unwritten Constitution' refers to traditions, customs, and precedents that guide government but are not written in the Constitution, such as the cabinet system and political parties.",
       },
       {
         type: "multiple-choice",
@@ -579,22 +683,29 @@ export const quizTemplates: QuizTemplate[] = [
           "Federalist congressmen who opposed war with Britain",
           "Young Democratic-Republican congressmen who pushed for war with Britain",
           "Military leaders who advocated for peace",
-          "Diplomats who negotiated treaties with European powers"
+          "Diplomats who negotiated treaties with European powers",
         ],
-        acceptableAnswers: ["Young Democratic-Republican congressmen who pushed for war with Britain"],
-        explanation: "The War Hawks were young Democratic-Republican congressmen who pushed for war with Britain, led by Henry Clay and John C. Calhoun."
+        acceptableAnswers: [
+          "Young Democratic-Republican congressmen who pushed for war with Britain",
+        ],
+        explanation:
+          "The War Hawks were young Democratic-Republican congressmen who pushed for war with Britain, led by Henry Clay and John C. Calhoun.",
       },
       {
         type: "multiple-choice",
-        question: "Why were Democratic-Republicans generally against the Bank of the United States?",
+        question:
+          "Why were Democratic-Republicans generally against the Bank of the United States?",
         options: [
           "They believed it was unconstitutional and favored the wealthy",
           "They thought it would cause inflation",
           "They believed it would lead to foreign control of the economy",
-          "They thought it would only benefit northern states"
+          "They thought it would only benefit northern states",
         ],
-        acceptableAnswers: ["They believed it was unconstitutional and favored the wealthy"],
-        explanation: "Democratic-Republicans opposed the Bank of the United States because they believed it was unconstitutional and favored the wealthy over common citizens."
+        acceptableAnswers: [
+          "They believed it was unconstitutional and favored the wealthy",
+        ],
+        explanation:
+          "Democratic-Republicans opposed the Bank of the United States because they believed it was unconstitutional and favored the wealthy over common citizens.",
       },
       {
         type: "multiple-choice",
@@ -603,10 +714,13 @@ export const quizTemplates: QuizTemplate[] = [
           "To acquire land from Mexico for a southern railroad route",
           "To settle border disputes with Canada",
           "To acquire Florida from Spain",
-          "To purchase Alaska from Russia"
+          "To purchase Alaska from Russia",
         ],
-        acceptableAnswers: ["To acquire land from Mexico for a southern railroad route"],
-        explanation: "The Gadsden Purchase was meant to acquire land from Mexico for a southern railroad route to connect the eastern United States with California."
+        acceptableAnswers: [
+          "To acquire land from Mexico for a southern railroad route",
+        ],
+        explanation:
+          "The Gadsden Purchase was meant to acquire land from Mexico for a southern railroad route to connect the eastern United States with California.",
       },
       {
         type: "multiple-choice",
@@ -615,34 +729,41 @@ export const quizTemplates: QuizTemplate[] = [
           "Washington, D.C. and Philadelphia",
           "Washington, D.C. and York (Toronto)",
           "New York and Boston",
-          "Richmond and Baltimore"
+          "Richmond and Baltimore",
         ],
         acceptableAnswers: ["Washington, D.C. and York (Toronto)"],
-        explanation: "Washington, D.C. and York (Toronto) were the two capital cities burned during the War of 1812."
+        explanation:
+          "Washington, D.C. and York (Toronto) were the two capital cities burned during the War of 1812.",
       },
       {
         type: "multiple-choice",
-        question: "What American general led American forces during the Battle of New Orleans?",
+        question:
+          "What American general led American forces during the Battle of New Orleans?",
         options: [
           "George Washington",
           "Andrew Jackson",
           "William Henry Harrison",
-          "James Madison"
+          "James Madison",
         ],
         acceptableAnswers: ["Andrew Jackson"],
-        explanation: "General Andrew Jackson led American forces at the Battle of New Orleans, achieving a decisive victory that made him a national hero."
+        explanation:
+          "General Andrew Jackson led American forces at the Battle of New Orleans, achieving a decisive victory that made him a national hero.",
       },
       {
         type: "multiple-choice",
-        question: "List three ways in which the US Constitution is a flexible document.",
+        question:
+          "List three ways in which the US Constitution is a flexible document.",
         options: [
           "Amendments, elastic clause interpretation, and judicial interpretation",
           "Presidential decrees, congressional laws, and state constitutions",
           "Military power, economic control, and foreign policy",
-          "Voting rights, taxation, and representation"
+          "Voting rights, taxation, and representation",
         ],
-        acceptableAnswers: ["Amendments, elastic clause interpretation, and judicial interpretation"],
-        explanation: "The Constitution is flexible through amendments, elastic clause (Necessary and Proper Clause) interpretation, and judicial interpretation."
+        acceptableAnswers: [
+          "Amendments, elastic clause interpretation, and judicial interpretation",
+        ],
+        explanation:
+          "The Constitution is flexible through amendments, elastic clause (Necessary and Proper Clause) interpretation, and judicial interpretation.",
       },
       {
         type: "multiple-choice",
@@ -651,34 +772,45 @@ export const quizTemplates: QuizTemplate[] = [
           "Powers given exclusively to the federal government",
           "Powers not given to the federal government and kept by the states under the Tenth Amendment",
           "Powers shared between federal and state governments",
-          "Powers that can be exercised by either level of government"
+          "Powers that can be exercised by either level of government",
         ],
-        acceptableAnswers: ["Powers not given to the federal government and kept by the states under the Tenth Amendment"],
-        explanation: "Reserved powers are powers not given to the federal government and kept by the states under the Tenth Amendment."
+        acceptableAnswers: [
+          "Powers not given to the federal government and kept by the states under the Tenth Amendment",
+        ],
+        explanation:
+          "Reserved powers are powers not given to the federal government and kept by the states under the Tenth Amendment.",
       },
       {
         type: "multiple-choice",
-        question: "What did the foreign policies of Washington, Adams and Jefferson all have in common?",
+        question:
+          "What did the foreign policies of Washington, Adams and Jefferson all have in common?",
         options: [
           "They all tried to keep the United States neutral in foreign conflicts",
           "They all sought permanent alliances with European powers",
           "They all declared war on France",
-          "They all favored isolation from all foreign trade"
+          "They all favored isolation from all foreign trade",
         ],
-        acceptableAnswers: ["They all tried to keep the United States neutral in foreign conflicts"],
-        explanation: "Washington, Adams, and Jefferson all tried to keep the United States neutral in foreign conflicts, avoiding entanglement in European wars."
+        acceptableAnswers: [
+          "They all tried to keep the United States neutral in foreign conflicts",
+        ],
+        explanation:
+          "Washington, Adams, and Jefferson all tried to keep the United States neutral in foreign conflicts, avoiding entanglement in European wars.",
       },
       {
         type: "multiple-choice",
-        question: "Why did Washington advise the US to avoid permanent alliances with any part of the foreign world? When did the US break with Washington's policy of neutrality?",
+        question:
+          "Why did Washington advise the US to avoid permanent alliances with any part of the foreign world? When did the US break with Washington's policy of neutrality?",
         options: [
           "To avoid foreign entanglements; broke with policy by joining NATO in 1949 after World War II",
           "To maintain trade relationships; broke with policy during the Civil War",
           "To protect American interests; broke with policy in 1917 when entering World War I",
-          "To avoid military conflicts; broke with policy by joining the United Nations in 1945"
+          "To avoid military conflicts; broke with policy by joining the United Nations in 1945",
         ],
-        acceptableAnswers: ["To avoid foreign entanglements; broke with policy by joining NATO in 1949 after World War II"],
-        explanation: "Washington warned against permanent alliances to avoid foreign entanglements, and the United States broke with this policy by joining NATO in 1949 after World War II."
+        acceptableAnswers: [
+          "To avoid foreign entanglements; broke with policy by joining NATO in 1949 after World War II",
+        ],
+        explanation:
+          "Washington warned against permanent alliances to avoid foreign entanglements, and the United States broke with this policy by joining NATO in 1949 after World War II.",
       },
       {
         type: "multiple-choice",
@@ -687,10 +819,13 @@ export const quizTemplates: QuizTemplate[] = [
           "To strengthen the national economy and establish federal credit",
           "To reduce the national debt to zero",
           "To eliminate all state governments",
-          "To create a single national currency"
+          "To create a single national currency",
         ],
-        acceptableAnswers: ["To strengthen the national economy and establish federal credit"],
-        explanation: "Hamilton's financial plan aimed to strengthen the national economy and establish federal credit through assumption of state debts, creation of a national bank, and tariffs."
+        acceptableAnswers: [
+          "To strengthen the national economy and establish federal credit",
+        ],
+        explanation:
+          "Hamilton's financial plan aimed to strengthen the national economy and establish federal credit through assumption of state debts, creation of a national bank, and tariffs.",
       },
       {
         type: "multiple-choice",
@@ -699,10 +834,13 @@ export const quizTemplates: QuizTemplate[] = [
           "He feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power",
           "He believed immigrants were causing economic problems",
           "He thought immigrants were spies for foreign governments",
-          "He wanted to limit the number of people in the country"
+          "He wanted to limit the number of people in the country",
         ],
-        acceptableAnswers: ["He feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power"],
-        explanation: "Adams supported the Alien Act because he feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power."
+        acceptableAnswers: [
+          "He feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power",
+        ],
+        explanation:
+          "Adams supported the Alien Act because he feared immigrants would support the Democratic-Republicans and weaken the Federalists' political power.",
       },
       {
         type: "multiple-choice",
@@ -711,30 +849,36 @@ export const quizTemplates: QuizTemplate[] = [
           "The belief that the United States should remain isolated from world affairs",
           "The belief that the United States was destined to expand westward across North America",
           "The belief that slavery should expand to all territories",
-          "The belief that the Constitution should never be amended"
+          "The belief that the Constitution should never be amended",
         ],
-        acceptableAnswers: ["The belief that the United States was destined to expand westward across North America"],
-        explanation: "Manifest Destiny was the belief that the United States was destined to expand westward across North America, popularized in the 1840s."
+        acceptableAnswers: [
+          "The belief that the United States was destined to expand westward across North America",
+        ],
+        explanation:
+          "Manifest Destiny was the belief that the United States was destined to expand westward across North America, popularized in the 1840s.",
       },
       {
         type: "multiple-choice",
-        question: "In which Supreme Court case was the principle of Judicial Review expanded to cover state and local laws?",
+        question:
+          "In which Supreme Court case was the principle of Judicial Review expanded to cover state and local laws?",
         options: [
           "Marbury v. Madison",
           "McCulloch v. Maryland",
           "Gibbons v. Ogden",
-          "Dred Scott v. Sandford"
+          "Dred Scott v. Sandford",
         ],
         acceptableAnswers: ["McCulloch v. Maryland"],
-        explanation: "McCulloch v. Maryland (1819) expanded judicial review to include state and local laws, establishing that states could not tax federal institutions."
-      }
-    ]
+        explanation:
+          "McCulloch v. Maryland (1819) expanded judicial review to include state and local laws, establishing that states could not tax federal institutions.",
+      },
+    ],
   },
   {
     id: "spanish-preterite-imperfect",
     name: "Spanish Preterite vs Imperfect",
     category: "Languages",
-    description: "Comprehensive quiz on understanding when and how to use the preterite and imperfect tenses, including conjugation practice",
+    description:
+      "Comprehensive quiz on understanding when and how to use the preterite and imperfect tenses, including conjugation practice",
     questions: [
       {
         type: "multiple-choice",
@@ -743,10 +887,11 @@ export const quizTemplates: QuizTemplate[] = [
           "Ongoing or habitual in the past",
           "Completed events in the past",
           "Descriptions of weather or age",
-          "Background information or setting the scene"
+          "Background information or setting the scene",
         ],
         acceptableAnswers: ["Completed events in the past"],
-        explanation: "The preterite tense is used for completed events in the past, specific actions that happened at a certain point in time, and actions that were part of a sequence or interruption."
+        explanation:
+          "The preterite tense is used for completed events in the past, specific actions that happened at a certain point in time, and actions that were part of a sequence or interruption.",
       },
       {
         type: "multiple-choice",
@@ -755,346 +900,282 @@ export const quizTemplates: QuizTemplate[] = [
           "Completed events in the past",
           "Specific actions that happened at a certain point in time",
           "Ongoing or habitual in the past",
-          "Actions that were part of a sequence"
+          "Actions that were part of a sequence",
         ],
         acceptableAnswers: ["Ongoing or habitual in the past"],
-        explanation: "The imperfect tense is used for ongoing or habitual actions in the past, descriptions (weather, age, time), and background information or setting the scene."
+        explanation:
+          "The imperfect tense is used for ongoing or habitual actions in the past, descriptions (weather, age, time), and background information or setting the scene.",
       },
       {
         type: "multiple-choice",
-        question: "Which tense would you use to describe what the weather was like?",
-        options: [
-          "Preterite",
-          "Imperfect",
-          "Present",
-          "Future"
-        ],
+        question:
+          "Which tense would you use to describe what the weather was like?",
+        options: ["Preterite", "Imperfect", "Present", "Future"],
         acceptableAnswers: ["Imperfect"],
-        explanation: "The imperfect tense is used for descriptions such as weather, age, and time, as these provide background information."
+        explanation:
+          "The imperfect tense is used for descriptions such as weather, age, and time, as these provide background information.",
       },
       {
         type: "multiple-choice",
-        question: "Which tense would you use for a specific action that happened once at a certain point in time?",
-        options: [
-          "Preterite",
-          "Imperfect",
-          "Present",
-          "Conditional"
-        ],
+        question:
+          "Which tense would you use for a specific action that happened once at a certain point in time?",
+        options: ["Preterite", "Imperfect", "Present", "Conditional"],
         acceptableAnswers: ["Preterite"],
-        explanation: "The preterite is used for specific actions that happened at a certain point in time, as these are completed events."
+        explanation:
+          "The preterite is used for specific actions that happened at a certain point in time, as these are completed events.",
       },
       {
         type: "multiple-choice",
         question: "Complete: Cuando llegamos, _______ (llover) mucho.",
-        options: [
-          "llovió",
-          "llovía",
-          "llueve",
-          "lloverá"
-        ],
+        options: ["llovió", "llovía", "llueve", "lloverá"],
         acceptableAnswers: ["llovía"],
-        explanation: "Use the imperfect 'llovía' because this describes the weather/background when they arrived - it was raining (ongoing state)."
+        explanation:
+          "Use the imperfect 'llovía' because this describes the weather/background when they arrived - it was raining (ongoing state).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando era joven, _______ (tocar) la guitarra todos los días.",
-        options: [
-          "toqué",
-          "tocaba",
-          "toco",
-          "tocaré"
-        ],
+        question:
+          "Complete: Cuando era joven, _______ (tocar) la guitarra todos los días.",
+        options: ["toqué", "tocaba", "toco", "tocaré"],
         acceptableAnswers: ["tocaba"],
-        explanation: "Use the imperfect 'tocaba' because this describes a habitual action in the past (used to play every day)."
+        explanation:
+          "Use the imperfect 'tocaba' because this describes a habitual action in the past (used to play every day).",
       },
       {
         type: "multiple-choice",
         question: "Complete: La fiesta _______ (estar) muy divertida.",
-        options: [
-          "estuvo",
-          "estaba",
-          "está",
-          "estará"
-        ],
+        options: ["estuvo", "estaba", "está", "estará"],
         acceptableAnswers: ["estaba"],
-        explanation: "Use the imperfect 'estaba' because this describes the ongoing state/atmosphere of the party (background description)."
+        explanation:
+          "Use the imperfect 'estaba' because this describes the ongoing state/atmosphere of the party (background description).",
       },
       {
         type: "multiple-choice",
         question: "Complete: Nosotros _______ (cenar) cuando él llegó.",
-        options: [
-          "cenamos",
-          "cenábamos",
-          "cenan",
-          "cenaremos"
-        ],
+        options: ["cenamos", "cenábamos", "cenan", "cenaremos"],
         acceptableAnswers: ["cenábamos"],
-        explanation: "Use the imperfect 'cenábamos' because this describes an ongoing action (we were having dinner) that was interrupted by 'él llegó' (preterite - completed action)."
+        explanation:
+          "Use the imperfect 'cenábamos' because this describes an ongoing action (we were having dinner) that was interrupted by 'él llegó' (preterite - completed action).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando era niño, me _______ (gustar) mucho ir al cine.",
-        options: [
-          "gustó",
-          "gustaba",
-          "gusta",
-          "gustará"
-        ],
+        question:
+          "Complete: Cuando era niño, me _______ (gustar) mucho ir al cine.",
+        options: ["gustó", "gustaba", "gusta", "gustará"],
         acceptableAnswers: ["gustaba"],
-        explanation: "Use the imperfect 'gustaba' because this describes a habitual feeling or preference in the past (used to like)."
+        explanation:
+          "Use the imperfect 'gustaba' because this describes a habitual feeling or preference in the past (used to like).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: El año pasado, nosotros _______ (viajar) a Italia.",
-        options: [
-          "viajamos",
-          "viajábamos",
-          "viajamos",
-          "viajaremos"
-        ],
+        question:
+          "Complete: El año pasado, nosotros _______ (viajar) a Italia.",
+        options: ["viajamos", "viajábamos", "viajamos", "viajaremos"],
         acceptableAnswers: ["viajamos"],
-        explanation: "Use the preterite 'viajamos' because this is a completed action that happened at a specific time (last year)."
+        explanation:
+          "Use the preterite 'viajamos' because this is a completed action that happened at a specific time (last year).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Mientras tú _______ (estudiar), yo _______ (trabajar).",
+        question:
+          "Complete: Mientras tú _______ (estudiar), yo _______ (trabajar).",
         options: [
           "estudiaste, trabajé",
           "estudiabas, trabajaba",
           "estudias, trabajo",
-          "estudiarás, trabajaré"
+          "estudiarás, trabajaré",
         ],
         acceptableAnswers: ["estudiabas, trabajaba"],
-        explanation: "Use the imperfect for both verbs because they describe two ongoing actions happening simultaneously in the past."
+        explanation:
+          "Use the imperfect for both verbs because they describe two ongoing actions happening simultaneously in the past.",
       },
       {
         type: "multiple-choice",
         question: "Complete: Ayer, Marta _______ (tener) un accidente.",
-        options: [
-          "tuvo",
-          "tenía",
-          "tiene",
-          "tendrá"
-        ],
+        options: ["tuvo", "tenía", "tiene", "tendrá"],
         acceptableAnswers: ["tuvo"],
-        explanation: "Use the preterite 'tuvo' because this is a specific completed event that happened at a specific time (yesterday)."
+        explanation:
+          "Use the preterite 'tuvo' because this is a specific completed event that happened at a specific time (yesterday).",
       },
       {
         type: "multiple-choice",
         question: "Complete: Cuando llegamos, _______ (hacer) mucho frío.",
-        options: [
-          "hizo",
-          "hacía",
-          "hace",
-          "hará"
-        ],
+        options: ["hizo", "hacía", "hace", "hará"],
         acceptableAnswers: ["hacía"],
-        explanation: "Use the imperfect 'hacía' because this describes the weather/background condition when they arrived."
+        explanation:
+          "Use the imperfect 'hacía' because this describes the weather/background condition when they arrived.",
       },
       {
         type: "multiple-choice",
         question: "Complete: Cada verano, mi familia _______ (ir) a la playa.",
-        options: [
-          "fue",
-          "iba",
-          "va",
-          "irá"
-        ],
+        options: ["fue", "iba", "va", "irá"],
         acceptableAnswers: ["iba"],
-        explanation: "Use the imperfect 'iba' because this describes a habitual action in the past (every summer - repeated action)."
+        explanation:
+          "Use the imperfect 'iba' because this describes a habitual action in the past (every summer - repeated action).",
       },
       {
         type: "multiple-choice",
         question: "Complete: Ayer, él _______ (comprar) una bicicleta nueva.",
-        options: [
-          "compró",
-          "compraba",
-          "compra",
-          "comprará"
-        ],
+        options: ["compró", "compraba", "compra", "comprará"],
         acceptableAnswers: ["compró"],
-        explanation: "Use the preterite 'compró' because this is a specific completed action that happened at a specific time (yesterday)."
+        explanation:
+          "Use the preterite 'compró' because this is a specific completed action that happened at a specific time (yesterday).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando yo _______ (tener) diez años, me _______ (gustar) ir al parque.",
+        question:
+          "Complete: Cuando yo _______ (tener) diez años, me _______ (gustar) ir al parque.",
         options: [
           "tuve, gustó",
           "tenía, gustaba",
           "tengo, gusta",
-          "tendré, gustará"
+          "tendré, gustará",
         ],
         acceptableAnswers: ["tenía, gustaba"],
-        explanation: "Use the imperfect for both: 'tenía' describes age (description), and 'gustaba' describes a habitual preference in the past."
+        explanation:
+          "Use the imperfect for both: 'tenía' describes age (description), and 'gustaba' describes a habitual preference in the past.",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Nosotros _______ (ver) la película cuando se _______ (apagar) la luz.",
+        question:
+          "Complete: Nosotros _______ (ver) la película cuando se _______ (apagar) la luz.",
         options: [
           "vimos, apagó",
           "veíamos, apagaba",
           "veíamos, se apagó",
-          "vimos, se apagaba"
+          "vimos, se apagaba",
         ],
         acceptableAnswers: ["veíamos, se apagó"],
-        explanation: "Use imperfect 'veíamos' for the ongoing action (we were watching) and preterite 'se apagó' for the interrupting completed action (the lights went off)."
+        explanation:
+          "Use imperfect 'veíamos' for the ongoing action (we were watching) and preterite 'se apagó' for the interrupting completed action (the lights went off).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando era niño, siempre _______ (comer) pizza los viernes.",
-        options: [
-          "comí",
-          "comía",
-          "como",
-          "comeré"
-        ],
+        question:
+          "Complete: Cuando era niño, siempre _______ (comer) pizza los viernes.",
+        options: ["comí", "comía", "como", "comeré"],
         acceptableAnswers: ["comía"],
-        explanation: "Use the imperfect 'comía' because this describes a habitual action in the past (always ate - repeated action)."
+        explanation:
+          "Use the imperfect 'comía' because this describes a habitual action in the past (always ate - repeated action).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: El mes pasado, Marta _______ (viajar) a España para sus vacaciones.",
-        options: [
-          "viajó",
-          "viajaba",
-          "viaja",
-          "viajará"
-        ],
+        question:
+          "Complete: El mes pasado, Marta _______ (viajar) a España para sus vacaciones.",
+        options: ["viajó", "viajaba", "viaja", "viajará"],
         acceptableAnswers: ["viajó"],
-        explanation: "Use the preterite 'viajó' because this is a completed action that happened at a specific time (last month)."
+        explanation:
+          "Use the preterite 'viajó' because this is a completed action that happened at a specific time (last month).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando _______ (ser) niños, jugábamos afuera todos los días.",
-        options: [
-          "fuimos",
-          "éramos",
-          "somos",
-          "seremos"
-        ],
+        question:
+          "Complete: Cuando _______ (ser) niños, jugábamos afuera todos los días.",
+        options: ["fuimos", "éramos", "somos", "seremos"],
         acceptableAnswers: ["éramos"],
-        explanation: "Use the imperfect 'éramos' because this describes a state/condition in the past (when we were children - background description)."
+        explanation:
+          "Use the imperfect 'éramos' because this describes a state/condition in the past (when we were children - background description).",
       },
       {
         type: "multiple-choice",
         question: "Complete: Anoche, Juan _______ (salir) con sus amigos.",
-        options: [
-          "salió",
-          "salía",
-          "sale",
-          "saldrá"
-        ],
+        options: ["salió", "salía", "sale", "saldrá"],
         acceptableAnswers: ["salió"],
-        explanation: "Use the preterite 'salió' because this is a specific completed action that happened at a specific time (last night)."
+        explanation:
+          "Use the preterite 'salió' because this is a specific completed action that happened at a specific time (last night).",
       },
       {
         type: "multiple-choice",
-        question: "Complete: Cuando _______ (estar) en la escuela, siempre _______ (estudiar) mucho.",
+        question:
+          "Complete: Cuando _______ (estar) en la escuela, siempre _______ (estudiar) mucho.",
         options: [
           "estuve, estudié",
           "estaba, estudiaba",
           "estoy, estudio",
-          "estaré, estudiaré"
+          "estaré, estudiaré",
         ],
         acceptableAnswers: ["estaba, estudiaba"],
-        explanation: "Use the imperfect for both: 'estaba' describes a past state/condition, and 'estudiaba' describes a habitual action in the past."
+        explanation:
+          "Use the imperfect for both: 'estaba' describes a past state/condition, and 'estudiaba' describes a habitual action in the past.",
       },
       {
         type: "multiple-choice",
-        question: "Complete: El sol _______ (brillar) y _______ (hacer) mucho calor.",
+        question:
+          "Complete: El sol _______ (brillar) y _______ (hacer) mucho calor.",
         options: [
           "brilló, hizo",
           "brillaba, hacía",
           "brilla, hace",
-          "brillará, hará"
+          "brillará, hará",
         ],
         acceptableAnswers: ["brillaba, hacía"],
-        explanation: "Use the imperfect for both verbs because they describe ongoing background conditions (the sun was shining and it was hot)."
+        explanation:
+          "Use the imperfect for both verbs because they describe ongoing background conditions (the sun was shining and it was hot).",
       },
       {
         type: "multiple-choice",
         question: "What is the preterite form of 'ser' for 'él/ella/usted'?",
-        options: [
-          "era",
-          "fue",
-          "es",
-          "será"
-        ],
+        options: ["era", "fue", "es", "será"],
         acceptableAnswers: ["fue"],
-        explanation: "The preterite form of 'ser' (to be) for él/ella/usted is 'fue'. Note: 'ser' and 'ir' have the same preterite forms."
+        explanation:
+          "The preterite form of 'ser' (to be) for él/ella/usted is 'fue'. Note: 'ser' and 'ir' have the same preterite forms.",
       },
       {
         type: "multiple-choice",
         question: "What is the imperfect form of 'estar' for 'nosotros'?",
-        options: [
-          "estamos",
-          "estuvimos",
-          "estábamos",
-          "estaremos"
-        ],
+        options: ["estamos", "estuvimos", "estábamos", "estaremos"],
         acceptableAnswers: ["estábamos"],
-        explanation: "The imperfect form of 'estar' (to be) for nosotros is 'estábamos'."
+        explanation:
+          "The imperfect form of 'estar' (to be) for nosotros is 'estábamos'.",
       },
       {
         type: "multiple-choice",
         question: "What is the preterite form of 'decir' for 'yo'?",
-        options: [
-          "decía",
-          "dije",
-          "digo",
-          "diré"
-        ],
+        options: ["decía", "dije", "digo", "diré"],
         acceptableAnswers: ["dije"],
-        explanation: "The preterite form of 'decir' (to say) for yo is 'dije'. Note: 'decir' is an irregular verb in the preterite."
+        explanation:
+          "The preterite form of 'decir' (to say) for yo is 'dije'. Note: 'decir' is an irregular verb in the preterite.",
       },
       {
         type: "multiple-choice",
         question: "What is the imperfect form of 'tener' for 'tú'?",
-        options: [
-          "tuviste",
-          "tenías",
-          "tienes",
-          "tendrás"
-        ],
+        options: ["tuviste", "tenías", "tienes", "tendrás"],
         acceptableAnswers: ["tenías"],
-        explanation: "The imperfect form of 'tener' (to have) for tú is 'tenías'."
+        explanation:
+          "The imperfect form of 'tener' (to have) for tú is 'tenías'.",
       },
       {
         type: "multiple-choice",
-        question: "What is the preterite form of 'empezar' for 'ellos/ellas/ustedes'?",
-        options: [
-          "empezaban",
-          "empezaron",
-          "empiezan",
-          "empezarán"
-        ],
+        question:
+          "What is the preterite form of 'empezar' for 'ellos/ellas/ustedes'?",
+        options: ["empezaban", "empezaron", "empiezan", "empezarán"],
         acceptableAnswers: ["empezaron"],
-        explanation: "The preterite form of 'empezar' (to begin) for ellos/ellas/ustedes is 'empezaron'. Note: 'empezar' is a stem-changing verb (e→ie) but in the preterite, it only changes in the third person."
+        explanation:
+          "The preterite form of 'empezar' (to begin) for ellos/ellas/ustedes is 'empezaron'. Note: 'empezar' is a stem-changing verb (e→ie) but in the preterite, it only changes in the third person.",
       },
       {
         type: "multiple-choice",
         question: "What is the imperfect form of 'ir' for 'nosotros'?",
-        options: [
-          "fuimos",
-          "íbamos",
-          "vamos",
-          "iremos"
-        ],
+        options: ["fuimos", "íbamos", "vamos", "iremos"],
         acceptableAnswers: ["íbamos"],
-        explanation: "The imperfect form of 'ir' (to go) for nosotros is 'íbamos'."
+        explanation:
+          "The imperfect form of 'ir' (to go) for nosotros is 'íbamos'.",
       },
       {
         type: "multiple-choice",
-        question: "In the sentence 'Mientras yo leía, él llegó,' which action is ongoing and which is completed?",
+        question:
+          "In the sentence 'Mientras yo leía, él llegó,' which action is ongoing and which is completed?",
         options: [
           "Both are ongoing",
           "'leía' is ongoing (imperfect), 'llegó' is completed (preterite)",
           "Both are completed",
-          "'llegó' is ongoing (imperfect), 'leía' is completed (preterite)"
+          "'llegó' is ongoing (imperfect), 'leía' is completed (preterite)",
         ],
-        acceptableAnswers: ["'leía' is ongoing (imperfect), 'llegó' is completed (preterite)"],
-        explanation: "The imperfect 'leía' describes the ongoing action (I was reading), while the preterite 'llegó' describes the completed interrupting action (he arrived)."
+        acceptableAnswers: [
+          "'leía' is ongoing (imperfect), 'llegó' is completed (preterite)",
+        ],
+        explanation:
+          "The imperfect 'leía' describes the ongoing action (I was reading), while the preterite 'llegó' describes the completed interrupting action (he arrived).",
       },
       {
         type: "multiple-choice",
@@ -1103,75 +1184,93 @@ export const quizTemplates: QuizTemplate[] = [
           "Ayer, yo estudiaba cuando mi amigo llegó.",
           "Ayer, yo estudié cuando mi amigo llegaba.",
           "Ayer, yo estudié cuando mi amigo llegó.",
-          "Ayer, yo estudiaba cuando mi amigo llegaba."
+          "Ayer, yo estudiaba cuando mi amigo llegaba.",
         ],
         acceptableAnswers: ["Ayer, yo estudiaba cuando mi amigo llegó."],
-        explanation: "Use imperfect 'estudiaba' for the ongoing action (I was studying) and preterite 'llegó' for the interrupting completed action (my friend arrived)."
+        explanation:
+          "Use imperfect 'estudiaba' for the ongoing action (I was studying) and preterite 'llegó' for the interrupting completed action (my friend arrived).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Ayer, María _______ (despertarse) a las siete de la mañana.",
+        question:
+          "Complete: Ayer, María _______ (despertarse) a las siete de la mañana.",
         acceptableAnswers: ["se despertó", "despertó"],
-        explanation: "Use the preterite 'se despertó' because this is a specific completed action that happened at a specific time (yesterday at 7 AM)."
+        explanation:
+          "Use the preterite 'se despertó' because this is a specific completed action that happened at a specific time (yesterday at 7 AM).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Cuando era joven, yo siempre _______ (llevar) una camiseta azul.",
+        question:
+          "Complete: Cuando era joven, yo siempre _______ (llevar) una camiseta azul.",
         acceptableAnswers: ["llevaba"],
-        explanation: "Use the imperfect 'llevaba' because this describes a habitual action in the past (always wore - repeated action)."
+        explanation:
+          "Use the imperfect 'llevaba' because this describes a habitual action in the past (always wore - repeated action).",
       },
       {
         type: "constructed-response",
-        question: "Complete: El año pasado, ellos _______ (casarse) en una iglesia hermosa.",
+        question:
+          "Complete: El año pasado, ellos _______ (casarse) en una iglesia hermosa.",
         acceptableAnswers: ["se casaron", "casaron"],
-        explanation: "Use the preterite 'se casaron' because this is a completed event that happened at a specific time (last year)."
+        explanation:
+          "Use the preterite 'se casaron' because this is a completed event that happened at a specific time (last year).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Mientras nosotros _______ (celebrar) la fiesta, llegó la policía.",
+        question:
+          "Complete: Mientras nosotros _______ (celebrar) la fiesta, llegó la policía.",
         acceptableAnswers: ["celebrábamos"],
-        explanation: "Use the imperfect 'celebrábamos' because this describes an ongoing action (we were celebrating) that was interrupted by 'llegó' (preterite)."
+        explanation:
+          "Use the imperfect 'celebrábamos' because this describes an ongoing action (we were celebrating) that was interrupted by 'llegó' (preterite).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Cuando cumplí dieciocho años, mis padres me _______ (dar) un coche nuevo.",
+        question:
+          "Complete: Cuando cumplí dieciocho años, mis padres me _______ (dar) un coche nuevo.",
         acceptableAnswers: ["dieron", "me dieron"],
-        explanation: "Use the preterite 'dieron' because this is a specific completed action that happened at a specific point in time (when I turned 18)."
+        explanation:
+          "Use the preterite 'dieron' because this is a specific completed action that happened at a specific point in time (when I turned 18).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Todos los sábados, mi hermana _______ (tocar) el piano por dos horas.",
+        question:
+          "Complete: Todos los sábados, mi hermana _______ (tocar) el piano por dos horas.",
         acceptableAnswers: ["tocaba"],
-        explanation: "Use the imperfect 'tocaba' because this describes a habitual action in the past (every Saturday - repeated action)."
+        explanation:
+          "Use the imperfect 'tocaba' because this describes a habitual action in the past (every Saturday - repeated action).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Anoche, yo _______ (recibir) una carta de mi abuela.",
+        question:
+          "Complete: Anoche, yo _______ (recibir) una carta de mi abuela.",
         acceptableAnswers: ["recibí"],
-        explanation: "Use the preterite 'recibí' because this is a specific completed action that happened at a specific time (last night)."
+        explanation:
+          "Use the preterite 'recibí' because this is a specific completed action that happened at a specific time (last night).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Cuando _______ (ser) las tres de la tarde, empezó a llover.",
+        question:
+          "Complete: Cuando _______ (ser) las tres de la tarde, empezó a llover.",
         acceptableAnswers: ["eran"],
-        explanation: "Use the imperfect 'eran' because this describes time (it was 3 PM - background description) before the interrupting action 'empezó' (preterite)."
+        explanation:
+          "Use the imperfect 'eran' because this describes time (it was 3 PM - background description) before the interrupting action 'empezó' (preterite).",
       },
       {
         type: "constructed-response",
-        question: "Complete: El mes pasado, tú _______ (romper) la ventana jugando fútbol.",
+        question:
+          "Complete: El mes pasado, tú _______ (romper) la ventana jugando fútbol.",
         acceptableAnswers: ["rompiste"],
-        explanation: "Use the preterite 'rompiste' because this is a completed action that happened at a specific time (last month)."
+        explanation:
+          "Use the preterite 'rompiste' because this is a completed action that happened at a specific time (last month).",
       },
       {
         type: "constructed-response",
-        question: "Complete: Cuando yo _______ (estar) en la universidad, siempre _______ (cenar) a las ocho.",
-        acceptableAnswers: [
-          "estaba, cenaba",
-          "estaba cenaba"
-        ],
-        explanation: "Use the imperfect for both verbs: 'estaba' describes a past state/condition, and 'cenaba' describes a habitual action in the past (always had dinner at 8)."
-      }
-    ]
+        question:
+          "Complete: Cuando yo _______ (estar) en la universidad, siempre _______ (cenar) a las ocho.",
+        acceptableAnswers: ["estaba, cenaba", "estaba cenaba"],
+        explanation:
+          "Use the imperfect for both verbs: 'estaba' describes a past state/condition, and 'cenaba' describes a habitual action in the past (always had dinner at 8).",
+      },
+    ],
   },
   {
     id: "osi-model-networking",
@@ -3197,7 +3296,7 @@ export const quizTemplates: QuizTemplate[] = [
       {
         type: "constructed-response",
         question:
-          'How is Joseph\'s struggle metaphorically described in the text? What does this metaphor suggest?',
+          "How is Joseph's struggle metaphorically described in the text? What does this metaphor suggest?",
         acceptableAnswers: [
           "Joseph's struggle is framed as a 'battle' against a 'hostile...world,' turning his disability into a war he must fight.",
           "It is described as a battle between a crippled, sane boy and a hostile world.",
@@ -3207,7 +3306,7 @@ export const quizTemplates: QuizTemplate[] = [
       {
         type: "constructed-response",
         question:
-          'What metaphor is used to describe the moment Joseph types successfully? What does this symbolize?',
+          "What metaphor is used to describe the moment Joseph types successfully? What does this symbolize?",
         acceptableAnswers: [
           "It is described as 'a bow to break your chain and let out your voice,' symbolizing freedom and self-expression.",
           "A bow to break your chain and let out your voice - symbolizing liberation and self-expression.",
@@ -3230,8 +3329,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "What literary device is used in the Mark Twain excerpt?",
+        question: "What literary device is used in the Mark Twain excerpt?",
         options: [
           "Simile",
           "Extended metaphor",
@@ -3365,8 +3463,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "What is the author's name of Under the Eye of the Clock?",
+        question: "What is the author's name of Under the Eye of the Clock?",
         options: [
           "Mark Twain",
           "Christopher Nolan",
@@ -3379,24 +3476,14 @@ export const quizTemplates: QuizTemplate[] = [
         type: "multiple-choice",
         question:
           "What is the date/period of the Joseph excerpt mentioned in the materials?",
-        options: [
-          "August 2014",
-          "June 2015",
-          "January 2016",
-          "March 2015",
-        ],
+        options: ["August 2014", "June 2015", "January 2016", "March 2015"],
         acceptableAnswers: ["June 2015"],
       },
       {
         type: "multiple-choice",
         question:
           "What is the date/period of the Mark Twain excerpt mentioned in the materials?",
-        options: [
-          "August 2014",
-          "June 2015",
-          "January 2016",
-          "March 2015",
-        ],
+        options: ["August 2014", "June 2015", "January 2016", "March 2015"],
         acceptableAnswers: ["August 2014"],
       },
       {
@@ -3413,12 +3500,7 @@ export const quizTemplates: QuizTemplate[] = [
         type: "multiple-choice",
         question:
           "In the Mark Twain excerpt, what is the river metaphorically compared to?",
-        options: [
-          "A war",
-          "A book",
-          "A prison",
-          "A chain",
-        ],
+        options: ["A war", "A book", "A prison", "A chain"],
         acceptableAnswers: ["A book"],
       },
       {
