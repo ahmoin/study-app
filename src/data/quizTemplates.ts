@@ -14,6 +14,213 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "us-history-multiple-choice-64",
+    name: "US History Multiple Choice Quiz",
+    category: "History",
+    description:
+      "A 14-question multiple choice quiz covering key topics in US History including the Articles of Confederation, Constitutional principles, early presidents, and reform movements.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "Under the Articles of Confederation, what level of government had the most power?",
+        options: [
+          "Federal Government",
+          "State Governments",
+          "Local Governments",
+          "They all had the same powers",
+        ],
+        acceptableAnswers: ["State Governments"],
+        explanation:
+          "Under the Articles of Confederation, state governments retained most of the power, while the federal government was weak and had limited authority.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Proclamation Line of 1763 was located at the",
+        options: [
+          "Rocky Mountains",
+          "Mississippi River",
+          "Appalachian Mountains",
+          "Pacific Ocean",
+        ],
+        acceptableAnswers: ["Appalachian Mountains"],
+        explanation:
+          "The Proclamation Line of 1763 was established by the British government along the Appalachian Mountains to prevent colonial expansion westward and avoid conflicts with Native Americans.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "All of the following are examples of the flexibility of the US Constitution EXCEPT",
+        options: [
+          "the Bill of Rights",
+          "the creation of the President's Cabinet",
+          "the Electoral College",
+          "Judicial Review",
+        ],
+        acceptableAnswers: ["the Electoral College"],
+        explanation:
+          "The Electoral College was established in the original Constitution, not added later as a flexible adaptation. The Bill of Rights, Cabinet, and Judicial Review are examples of constitutional flexibility.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the purpose of the Federalist Papers?",
+        options: [
+          "To support approval of the Declaration of Independence",
+          "To list the reasons why Americans wanted to free from Great Britain",
+          "To support the Albany Plan of Union",
+          "To support the ratification of the US Constitution",
+        ],
+        acceptableAnswers: [
+          "To support the ratification of the US Constitution",
+        ],
+        explanation:
+          "The Federalist Papers were a series of essays written by Alexander Hamilton, James Madison, and John Jay to persuade New Yorkers to ratify the US Constitution.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "The principle of Judicial Review was established in which Supreme Court case?",
+        options: [
+          "Fletcher v Peck",
+          "Marbury v Madison",
+          "McCulloch v Maryland",
+          "Dred Scott v Sanford",
+        ],
+        acceptableAnswers: ["Marbury v Madison"],
+        explanation:
+          "Marbury v Madison (1803) established the principle of judicial review, giving the Supreme Court the power to declare laws unconstitutional.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Because of his views as a Strict Constructionist, Thomas Jefferson had an internal conflict in",
+        options: [
+          "making the Louisiana Purchase",
+          "launching an embargo against all foreign trade",
+          "appointing John Marshall to be Chief Justice of the Supreme Court",
+          "vetoing the Bank of the US",
+        ],
+        acceptableAnswers: ["making the Louisiana Purchase"],
+        explanation:
+          "As a strict constructionist, Jefferson believed the Constitution should be interpreted literally. The Louisiana Purchase required a broad interpretation of presidential power, creating an internal conflict for him.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Roger Williams established which idea in the Rhode Island Colony?",
+        options: [
+          "Checks & Balances",
+          "Separation of Powers",
+          "Majority Rule",
+          "Separation of Church & State",
+        ],
+        acceptableAnswers: ["Separation of Church & State"],
+        explanation:
+          "Roger Williams founded Rhode Island as a haven for religious freedom and established the principle of separation of church and state.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which president was associated with the Trail of Tears, the Battle of New Orleans and vetoing the Bank of the US?",
+        options: [
+          "James Madison",
+          "Andrew Jackson",
+          "James Monroe",
+          "John Quincy Adams",
+        ],
+        acceptableAnswers: ["Andrew Jackson"],
+        explanation:
+          "Andrew Jackson was responsible for the Indian Removal Act (Trail of Tears), won the Battle of New Orleans in the War of 1812, and vetoed the rechartering of the Bank of the United States.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Sen. Daniel Webster (MA) argued against the South Carolina's use of Nullification because he thought it would violate",
+        options: [
+          "the Constitution's Supremacy Clause",
+          "the Constitution's Elastic Clause",
+          "the idea of Separation of Church & State",
+          "Reserved Powers",
+        ],
+        acceptableAnswers: ["the Constitution's Supremacy Clause"],
+        explanation:
+          "Webster argued that nullification violated the Supremacy Clause, which establishes that federal law takes precedence over state law.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which reform movement began in the 1840s in Seneca Falls, New York?",
+        options: [
+          "The Abolitionist Movement",
+          "The Populist (Farmers) Movement",
+          "The Women's Rights Movement",
+          "All of the above",
+        ],
+        acceptableAnswers: ["The Women's Rights Movement"],
+        explanation:
+          "The Seneca Falls Convention in 1848 marked the beginning of the organized women's rights movement in the United States.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which president is correctly paired with an event or action from his time in office?",
+        options: [
+          "James Monroe - War of 1812",
+          "Thomas Jefferson - The Whiskey Rebellion",
+          "John Adams - XYZ Affair",
+          "James Madison - Veto of the Bank of the US",
+        ],
+        acceptableAnswers: ["John Adams - XYZ Affair"],
+        explanation:
+          "The XYZ Affair occurred during John Adams' presidency (1797-1801) when French agents demanded bribes from American diplomats.",
+      },
+      {
+        type: "multiple-choice",
+        question: "President James K Polk",
+        options: [
+          "vowed to only serve only one term if elected",
+          "was in office during the Mexican-American War",
+          "purchased the southwestern part of the continent, including California",
+          "All of the above",
+        ],
+        acceptableAnswers: ["All of the above"],
+        explanation:
+          "James K. Polk served one term, was president during the Mexican-American War (1846-1848), and the war resulted in the acquisition of the southwestern territories including California.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following was NOT a part of the Compromise of 1850?",
+        options: [
+          "California would enter the union as free state",
+          "Missouri would enter the union as a slave state",
+          "New, tougher fugitive slave laws would be enacted",
+          "Popular Sovereignty would be granted in the New Mexico and Utah Territories",
+        ],
+        acceptableAnswers: [
+          "Missouri would enter the union as a slave state",
+        ],
+        explanation:
+          "Missouri entered as a slave state as part of the Missouri Compromise of 1820, not the Compromise of 1850.",
+      },
+      {
+        type: "multiple-choice",
+        question: "In the 1850s, Republicans like Abraham Lincoln,",
+        options: [
+          "favored abolition of slavery",
+          "supported secession by the South",
+          "supported the idea of Nullification for State governments",
+          "wanted to keep slavery from spreading to the Western territories",
+        ],
+        acceptableAnswers: [
+          "wanted to keep slavery from spreading to the Western territories",
+        ],
+        explanation:
+          "Republicans in the 1850s, including Lincoln, opposed the expansion of slavery into western territories, though they did not initially call for immediate abolition in existing slave states.",
+      },
+    ],
+  },
+  {
     id: "regents-ela-response-strategy-nolan-focused",
     name: "Regents ELA Response Strategy: Under the Eye of the Clock",
     category: "English",
