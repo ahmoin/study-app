@@ -18,7 +18,7 @@ export const quizTemplates: QuizTemplate[] = [
     name: "US History Multiple Choice Quiz",
     category: "History",
     description:
-      "A 14-question multiple choice quiz covering key topics in US History including the Articles of Confederation, Constitutional principles, early presidents, and reform movements.",
+      "A 64-question multiple choice quiz covering key topics in US History including the Articles of Confederation, Constitutional principles, early presidents, reform movements, and the events leading to the Civil War.",
     questions: [
       {
         type: "multiple-choice",
@@ -217,6 +217,784 @@ export const quizTemplates: QuizTemplate[] = [
         ],
         explanation:
           "Republicans in the 1850s, including Lincoln, opposed the expansion of slavery into western territories, though they did not initially call for immediate abolition in existing slave states.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Under the Articles of Confederation, which level of government had most real power?",
+        options: [
+          "The federal government had the most real power",
+          "The state governments had the most real power",
+          "Local governments had the most real power",
+          "Power was equally distributed among all levels",
+        ],
+        acceptableAnswers: ["The state governments had the most real power"],
+        explanation:
+          "Under the Articles of Confederation, state governments retained most of the power, while the federal government was weak and had limited authority.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did the Articles of Confederation create a decentralized system of government?",
+        options: [
+          "To ensure efficient tax collection",
+          "The decentralized system was created because the newly independent states feared creating a strong central government that might become tyrannical, similar to the British monarchy they had just overthrown. They prioritized state sovereignty",
+          "To promote international trade",
+          "To establish a unified military command",
+        ],
+        acceptableAnswers: [
+          "The decentralized system was created because the newly independent states feared creating a strong central government that might become tyrannical, similar to the British monarchy they had just overthrown. They prioritized state sovereignty",
+        ],
+        explanation:
+          "After fighting against British tyranny, the states were wary of creating another powerful central government and prioritized state sovereignty.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why was the Bill of Rights added to the Constitution?",
+        options: [
+          "To establish the federal court system",
+          "To create the executive branch",
+          "The Bill of Rights was added to satisfy the Anti-Federalists who feared the new strong central government would infringe upon individual liberties. It guarantees specific individual freedoms and limits the power of the federal government",
+          "To regulate interstate commerce",
+        ],
+        acceptableAnswers: [
+          "The Bill of Rights was added to satisfy the Anti-Federalists who feared the new strong central government would infringe upon individual liberties. It guarantees specific individual freedoms and limits the power of the federal government",
+        ],
+        explanation:
+          "The Bill of Rights was added to address Anti-Federalist concerns about individual liberties and to limit federal power.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "List ways in which the Constitution can be flexible.",
+        options: [
+          "The Amendment Process, The Elastic Clause, and Judicial Review",
+          "Only through constitutional amendments",
+          "Through executive orders and presidential proclamations",
+          "Through state nullification of federal laws",
+        ],
+        acceptableAnswers: [
+          "The Amendment Process, The Elastic Clause, and Judicial Review",
+        ],
+        explanation:
+          "The Constitution remains flexible through amendments, the Elastic Clause (necessary and proper clause), and judicial review, which allows it to adapt to changing circumstances.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did the founders believe in a strong central government?",
+        options: [
+          "To eliminate state governments entirely",
+          "To create a monarchy similar to European nations",
+          "The founders who pushed for the Constitution (Federalists) believed in a strong central government because they recognized the weaknesses of the Articles of Confederation, especially the national government's inability to regulate interstate trade, conduct foreign policy, raise an army, and effectively collect taxes as seen in Shays' Rebellion",
+          "To restrict individual freedoms",
+        ],
+        acceptableAnswers: [
+          "The founders who pushed for the Constitution (Federalists) believed in a strong central government because they recognized the weaknesses of the Articles of Confederation, especially the national government's inability to regulate interstate trade, conduct foreign policy, raise an army, and effectively collect taxes as seen in Shays' Rebellion",
+        ],
+        explanation:
+          "Federalists like Hamilton and Madison supported a strong central government to address the weaknesses of the Articles of Confederation, particularly after events like Shays' Rebellion demonstrated the need for effective governance.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Describe the process of a bill becoming a law.",
+        options: [
+          "Introduction, Committee Review, Floor Debate and Passage, Referral to Second Chamber, Conference Committee, Final Passage, Presidential Action",
+          "A bill becomes law immediately after introduction",
+          "The president writes the bill and it becomes law",
+          "State legislatures approve all federal laws",
+        ],
+        acceptableAnswers: [
+          "Introduction, Committee Review, Floor Debate and Passage, Referral to Second Chamber, Conference Committee, Final Passage, Presidential Action",
+        ],
+        explanation:
+          "A bill must go through multiple steps including introduction, committee review, floor debate, passage in both houses, conference committee if needed, and finally presidential action (signature or veto).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why is the US government considered a Federal system of government?",
+        options: [
+          "Because all power is held by the federal government",
+          "Because all power is held by state governments",
+          "The US government is considered a Federal system because power is constitutionally divided and shared between a strong national (federal) government and the smaller, regional (state) governments",
+          "Because it is a direct democracy",
+        ],
+        acceptableAnswers: [
+          "The US government is considered a Federal system because power is constitutionally divided and shared between a strong national (federal) government and the smaller, regional (state) governments",
+        ],
+        explanation:
+          "Federalism is a system where power is divided and shared between the national government and state governments, as established in the US Constitution.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How were the Virginia House of Burgesses and the Mayflower Compact similar?",
+        options: [
+          "Both were established by the British Parliament",
+          "Both were early examples of self-government and the idea that colonists could establish their own political institutions and rules. The House of Burgesses was the first representative assembly. The Mayflower Compact was an agreement to create a governing body and obey its laws",
+          "Both were royal charters from the king",
+          "Both established religious theocracies",
+        ],
+        acceptableAnswers: [
+          "Both were early examples of self-government and the idea that colonists could establish their own political institutions and rules. The House of Burgesses was the first representative assembly. The Mayflower Compact was an agreement to create a governing body and obey its laws",
+        ],
+        explanation:
+          "Both represented early colonial experiments in self-government, with the House of Burgesses being the first representative assembly and the Mayflower Compact establishing a framework for self-rule.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Under which system of government did the states have the right to coin money, control trade and collect taxes?",
+        options: [
+          "The US Constitution",
+          "The Articles of Confederation (or a very weak confederate system) allowed the states these specific sovereign powers",
+          "The Federal system established in 1789",
+          "The unitary system",
+        ],
+        acceptableAnswers: [
+          "The Articles of Confederation (or a very weak confederate system) allowed the states these specific sovereign powers",
+        ],
+        explanation:
+          "Under the Articles of Confederation, states retained these sovereign powers, which contributed to economic problems and was one reason for creating a stronger federal government.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In which document does it state that government gets its power from the people?",
+        options: [
+          "The Articles of Confederation",
+          "The Federalist Papers",
+          "The Declaration of Independence and the Preamble to the Constitution (\"We the People...\") both state this principle of popular sovereignty",
+          "The Mayflower Compact",
+        ],
+        acceptableAnswers: [
+          "The Declaration of Independence and the Preamble to the Constitution (\"We the People...\") both state this principle of popular sovereignty",
+        ],
+        explanation:
+          "Both documents express the principle of popular sovereignty - that government derives its power from the consent of the governed.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was the purpose of the Declaration of Independence?",
+        options: [
+          "To establish the US Constitution",
+          "To declare war on Great Britain",
+          "The purpose was to formally declare the 13 colonies separate and independent from Great Britain, outline the philosophical basis for this separation (natural rights), and list the grievances against King George III",
+          "To create the Articles of Confederation",
+        ],
+        acceptableAnswers: [
+          "The purpose was to formally declare the 13 colonies separate and independent from Great Britain, outline the philosophical basis for this separation (natural rights), and list the grievances against King George III",
+        ],
+        explanation:
+          "The Declaration of Independence formally announced the colonies' separation from Britain, explained the philosophical justification (natural rights), and listed grievances against the king.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did the Supreme Court obtain its power of Judicial Review?",
+        options: [
+          "Through a constitutional amendment",
+          "Through the landmark 1803 Supreme Court case Marbury v. Madison",
+          "Through an act of Congress",
+          "Through the Articles of Confederation",
+        ],
+        acceptableAnswers: [
+          "Through the landmark 1803 Supreme Court case Marbury v. Madison",
+        ],
+        explanation:
+          "Marbury v. Madison (1803) established the principle of judicial review, giving the Supreme Court the power to declare laws unconstitutional.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why are Supreme Court Justices appointed for life?",
+        options: [
+          "To ensure they remain loyal to the president who appointed them",
+          "To prevent them from making unpopular decisions",
+          "Justices are appointed for life to ensure judicial independence. This means they are removed from political pressures, public opinion, and the influence of the legislative or executive branches when making decisions",
+          "To save money on elections",
+        ],
+        acceptableAnswers: [
+          "Justices are appointed for life to ensure judicial independence. This means they are removed from political pressures, public opinion, and the influence of the legislative or executive branches when making decisions",
+        ],
+        explanation:
+          "Lifetime appointments ensure judicial independence, allowing justices to make decisions based on the law rather than political pressure or public opinion.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why did the Founders create the Electoral College?",
+        options: [
+          "To ensure only wealthy landowners could vote",
+          "The Founders created the Electoral College as a compromise between electing the president by a direct popular vote and electing the president by a vote in Congress. It was intended to give smaller states a proportionally stronger voice and ensure that the president had broad support across states, not just concentrated population centers",
+          "To eliminate the need for presidential elections",
+          "To allow state legislatures to directly choose the president",
+        ],
+        acceptableAnswers: [
+          "The Founders created the Electoral College as a compromise between electing the president by a direct popular vote and electing the president by a vote in Congress. It was intended to give smaller states a proportionally stronger voice and ensure that the president had broad support across states, not just concentrated population centers",
+        ],
+        explanation:
+          "The Electoral College was a compromise between direct popular election and congressional selection, designed to balance the interests of large and small states.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the Great Compromise?",
+        options: [
+          "A compromise over slavery in the territories",
+          "A compromise over the location of the national capital",
+          "The Great Compromise resolved the dispute between large and small states over representation in Congress. It established a bicameral legislature, The Senate and The House of Representatives",
+          "A compromise over the Bill of Rights",
+        ],
+        acceptableAnswers: [
+          "The Great Compromise resolved the dispute between large and small states over representation in Congress. It established a bicameral legislature, The Senate and The House of Representatives",
+        ],
+        explanation:
+          "The Great Compromise (Connecticut Compromise) created a bicameral legislature with equal representation in the Senate and proportional representation in the House.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was the purpose of the Federalist Papers? Who wrote them?",
+        options: [
+          "To oppose the Constitution, written by Patrick Henry and Samuel Adams",
+          "To convince the people of New York and other states to ratify (approve) the new US Constitution by explaining and defending its principles and structure. Alexander Hamilton, James Madison, and John Jay",
+          "To declare independence from Britain, written by Thomas Jefferson",
+          "To establish the Articles of Confederation, written by Benjamin Franklin",
+        ],
+        acceptableAnswers: [
+          "To convince the people of New York and other states to ratify (approve) the new US Constitution by explaining and defending its principles and structure. Alexander Hamilton, James Madison, and John Jay",
+        ],
+        explanation:
+          "The Federalist Papers were written by Hamilton, Madison, and Jay to persuade New Yorkers and others to ratify the Constitution.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did political parties develop in the United States?",
+        options: [
+          "They were established in the Constitution",
+          "Political parties developed primarily out of fundamental disagreements among George Washington's advisors (Hamilton and Jefferson) over the interpretation of the Constitution (strict vs. loose), economic policy (national bank), and foreign policy (alliance with Britain vs. France). These disagreements led to the formation of the first two parties: the Federalists and the Democratic-Republicans",
+          "They were created by foreign powers",
+          "They developed from regional differences only",
+        ],
+        acceptableAnswers: [
+          "Political parties developed primarily out of fundamental disagreements among George Washington's advisors (Hamilton and Jefferson) over the interpretation of the Constitution (strict vs. loose), economic policy (national bank), and foreign policy (alliance with Britain vs. France). These disagreements led to the formation of the first two parties: the Federalists and the Democratic-Republicans",
+        ],
+        explanation:
+          "Political parties emerged from disagreements between Hamilton (Federalists) and Jefferson (Democratic-Republicans) over constitutional interpretation, economic policy, and foreign relations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What advice did George Washington give the United States before leaving office?",
+        options: [
+          "To expand westward immediately",
+          "To establish a national bank",
+          "Before leaving office, George Washington warned against the dangers of factionalism (divisive political parties) and the danger of creating permanent alliances",
+          "To abolish slavery",
+        ],
+        acceptableAnswers: [
+          "Before leaving office, George Washington warned against the dangers of factionalism (divisive political parties) and the danger of creating permanent alliances",
+        ],
+        explanation:
+          "In his Farewell Address, Washington warned against political parties and permanent foreign alliances.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Define – Mercantilism",
+        options: [
+          "An economic system based on free trade",
+          "Mercantilism is an economic theory practiced by European powers from the 16th to 18th centuries. It holds that a nation's power is directly related to its wealth. To achieve this, colonies exist only to benefit the mother country by providing raw materials and serving as a captive market for finished goods, thus creating a favorable balance of trade for the mother country",
+          "A political system of representative government",
+          "A religious movement",
+        ],
+        acceptableAnswers: [
+          "Mercantilism is an economic theory practiced by European powers from the 16th to 18th centuries. It holds that a nation's power is directly related to its wealth. To achieve this, colonies exist only to benefit the mother country by providing raw materials and serving as a captive market for finished goods, thus creating a favorable balance of trade for the mother country",
+        ],
+        explanation:
+          "Mercantilism was the economic system where colonies existed to enrich the mother country through trade restrictions and resource extraction.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What term is most closely associated with Westward Expansion?",
+        options: [
+          "Isolationism",
+          "Manifest Destiny, the belief that the U.S. was divinely ordained to expand across the entire North American continent",
+          "Nullification",
+          "Popular Sovereignty",
+        ],
+        acceptableAnswers: [
+          "Manifest Destiny, the belief that the U.S. was divinely ordained to expand across the entire North American continent",
+        ],
+        explanation:
+          "Manifest Destiny was the belief that the United States was destined to expand across the North American continent.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What geographic feature served as America's western border before the Louisiana Purchase?",
+        options: [
+          "The Rocky Mountains",
+          "The Mississippi River",
+          "The Appalachian Mountains",
+          "The Pacific Ocean",
+        ],
+        acceptableAnswers: ["The Mississippi River"],
+        explanation:
+          "Before the Louisiana Purchase in 1803, the Mississippi River served as the western boundary of the United States.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "American business cannot be hurt by which form of taxes?",
+        options: [
+          "Income taxes",
+          "Import taxes",
+          "American business cannot be hurt by export taxes because the Constitution specifically forbids the federal government from taxing goods sent out of the country",
+          "Property taxes",
+        ],
+        acceptableAnswers: [
+          "American business cannot be hurt by export taxes because the Constitution specifically forbids the federal government from taxing goods sent out of the country",
+        ],
+        explanation:
+          "The Constitution prohibits the federal government from taxing exports, protecting American businesses from export taxes.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What conflict did Jefferson have in making the Louisiana Purchase?",
+        options: [
+          "He feared it would be too expensive",
+          "Jefferson was a strict constructionist, believing the government could only do what the Constitution explicitly allowed. The Constitution did not explicitly grant the President the power to acquire vast new territory. His conflict was the constitutional dilemma of using a loose interpretation of the Constitution, which he usually opposed in order to make the purchase, which he believed was crucial for the nation's future",
+          "He didn't want to expand the nation",
+          "He preferred to purchase Florida instead",
+        ],
+        acceptableAnswers: [
+          "Jefferson was a strict constructionist, believing the government could only do what the Constitution explicitly allowed. The Constitution did not explicitly grant the President the power to acquire vast new territory. His conflict was the constitutional dilemma of using a loose interpretation of the Constitution, which he usually opposed in order to make the purchase, which he believed was crucial for the nation's future",
+        ],
+        explanation:
+          "As a strict constructionist, Jefferson faced a conflict between his constitutional principles and the opportunity to double the nation's size through the Louisiana Purchase.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which president was in office during the War of 1812?",
+        options: [
+          "Thomas Jefferson",
+          "James Madison",
+          "James Monroe",
+          "Andrew Jackson",
+        ],
+        acceptableAnswers: ["James Madison"],
+        explanation:
+          "James Madison was president during the War of 1812 (1812-1815).",
+      },
+      {
+        type: "multiple-choice",
+        question: "What does a lobbyist do?",
+        options: [
+          "A lobbyist is hired by an interest group, corporation, or non-profit to influence government officials (Congress members, regulatory agencies) on behalf of their organization's specific political agenda or goals",
+          "A lobbyist runs for political office",
+          "A lobbyist enforces laws",
+          "A lobbyist serves as a judge",
+        ],
+        acceptableAnswers: [
+          "A lobbyist is hired by an interest group, corporation, or non-profit to influence government officials (Congress members, regulatory agencies) on behalf of their organization's specific political agenda or goals",
+        ],
+        explanation:
+          "Lobbyists are hired to influence government officials and policymakers on behalf of their clients' interests.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the process within a political party for selecting a candidate for president?",
+        options: [
+          "The president is chosen directly by party leaders",
+          "The process generally involves a series of primaries and meetings held in various states, culminating in the National Nominating Convention where delegates formally select the party's presidential and vice-presidential candidates",
+          "The president is chosen by the Supreme Court",
+          "The president is chosen by state governors",
+        ],
+        acceptableAnswers: [
+          "The process generally involves a series of primaries and meetings held in various states, culminating in the National Nominating Convention where delegates formally select the party's presidential and vice-presidential candidates",
+        ],
+        explanation:
+          "The presidential nomination process involves primaries/caucuses in states, leading to the national convention where the party formally selects its candidates.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What are the three parts of the Monroe Doctrine?",
+        options: [
+          "1. The Western Hemisphere was closed to future European colonization. 2. The U.S. would not interfere with existing European colonies or affairs in Europe. 3. Any attempt by a European power to control or interfere with independent nations in the Americas would be viewed as a hostile act against the United States",
+          "1. Free trade with all nations 2. Military expansion 3. Abolition of slavery",
+          "1. Isolation from all foreign affairs 2. Annexation of Canada 3. War with Spain",
+          "1. Support for European monarchies 2. Colonization of South America 3. Alliance with Great Britain",
+        ],
+        acceptableAnswers: [
+          "1. The Western Hemisphere was closed to future European colonization. 2. The U.S. would not interfere with existing European colonies or affairs in Europe. 3. Any attempt by a European power to control or interfere with independent nations in the Americas would be viewed as a hostile act against the United States",
+        ],
+        explanation:
+          "The Monroe Doctrine (1823) declared the Western Hemisphere closed to European colonization, stated non-interference with existing colonies, and warned against European interference with independent American nations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Roger Williams is most closely associated with which government principle?",
+        options: [
+          "Checks and Balances",
+          "Separation of Powers",
+          "Separation of Church and State",
+          "Popular Sovereignty",
+        ],
+        acceptableAnswers: ["Separation of Church and State"],
+        explanation:
+          "Roger Williams founded Rhode Island as a haven for religious freedom and established the principle of separation of church and state.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What events/actions is Andrew Jackson most known for?",
+        options: [
+          "The Louisiana Purchase and the Lewis and Clark Expedition",
+          "The Indian Removal Act and the resulting Trail of Tears. His decisive action during the Nullification Crisis by threatening military force against South Carolina",
+          "The XYZ Affair and the Alien and Sedition Acts",
+          "The Missouri Compromise and the Compromise of 1850",
+        ],
+        acceptableAnswers: [
+          "The Indian Removal Act and the resulting Trail of Tears. His decisive action during the Nullification Crisis by threatening military force against South Carolina",
+        ],
+        explanation:
+          "Andrew Jackson is most known for the Indian Removal Act (Trail of Tears) and his strong response to the Nullification Crisis.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What was the Missouri Compromise (Compromise of 1820)?",
+        options: [
+          "Missouri was admitted as a slave state. Maine was admitted as a free state. Slavery was prohibited in the remaining Louisiana Purchase territory north of Missouri's southern border",
+          "California entered as a free state",
+          "Kansas and Nebraska could choose slavery through popular sovereignty",
+          "Slavery was abolished in all territories",
+        ],
+        acceptableAnswers: [
+          "Missouri was admitted as a slave state. Maine was admitted as a free state. Slavery was prohibited in the remaining Louisiana Purchase territory north of Missouri's southern border",
+        ],
+        explanation:
+          "The Missouri Compromise (1820) maintained the balance between free and slave states by admitting Missouri as a slave state and Maine as a free state, and prohibiting slavery north of 36°30' in the Louisiana Territory.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did Sen. Daniel Webster argue against the idea of Nullification?",
+        options: [
+          "He supported states' rights over federal authority",
+          "Webster argued that the Union was perpetual and had been created by the people, not by the states as individual sovereign entities. He believed that the Supreme Court, not the individual state legislatures, had the final authority to determine the constitutionality of federal laws. Nullification, he argued, would lead to the disintegration of the Union",
+          "He wanted to abolish slavery",
+          "He supported the Bank of the United States",
+        ],
+        acceptableAnswers: [
+          "Webster argued that the Union was perpetual and had been created by the people, not by the states as individual sovereign entities. He believed that the Supreme Court, not the individual state legislatures, had the final authority to determine the constitutionality of federal laws. Nullification, he argued, would lead to the disintegration of the Union",
+        ],
+        explanation:
+          "Webster argued against nullification, asserting that the Union was created by the people and that the Supreme Court, not states, had final authority over constitutionality.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did Sen. John C. Calhoun write the South Carolina Exposition and Protest? What did that document state?",
+        options: [
+          "Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the \"Tariff of Abominations\", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders",
+          "To support the Bank of the United States",
+          "To advocate for the abolition of slavery",
+          "To support westward expansion",
+        ],
+        acceptableAnswers: [
+          "Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the \"Tariff of Abominations\", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders",
+        ],
+        explanation:
+          "Calhoun wrote the document in response to the Tariff of 1828, arguing for the doctrine of nullification - that states could declare federal laws void within their borders.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How was the issue of extending slavery into the western territories dealt with in the years before the Civil War?",
+        options: [
+          "Through military force only",
+          "The issue was dealt with primarily through a series of compromises and legislative acts, each attempting to draw new lines or adopt new principles Missouri Compromise (1820), Compromise of 1850, Kansas-Nebraska Act (1854)",
+          "Through immediate abolition in all territories",
+          "Through state nullification",
+        ],
+        acceptableAnswers: [
+          "The issue was dealt with primarily through a series of compromises and legislative acts, each attempting to draw new lines or adopt new principles Missouri Compromise (1820), Compromise of 1850, Kansas-Nebraska Act (1854)",
+        ],
+        explanation:
+          "The slavery expansion issue was addressed through a series of compromises: Missouri Compromise (1820), Compromise of 1850, and Kansas-Nebraska Act (1854).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What were the major reasons for the Mexican-American War?",
+        options: [
+          "Annexation of Texas: Mexico still considered Texas a breakaway province and viewed U.S. annexation (1845) as an aggressive act. Border Dispute: The U.S. claimed the border was the Rio Grande, while Mexico claimed it was the Nueces River. Manifest Destiny: U.S. desire to acquire the Mexican territories of California and New Mexico. Polk's Actions: President Polk sent U.S. troops into the disputed border zone, provoking conflict",
+          "Disputes over trade routes",
+          "Religious differences",
+          "Competition for Canadian territories",
+        ],
+        acceptableAnswers: [
+          "Annexation of Texas: Mexico still considered Texas a breakaway province and viewed U.S. annexation (1845) as an aggressive act. Border Dispute: The U.S. claimed the border was the Rio Grande, while Mexico claimed it was the Nueces River. Manifest Destiny: U.S. desire to acquire the Mexican territories of California and New Mexico. Polk's Actions: President Polk sent U.S. troops into the disputed border zone, provoking conflict",
+        ],
+        explanation:
+          "The Mexican-American War was caused by Texas annexation, border disputes (Rio Grande vs. Nueces), Manifest Destiny, and Polk's provocative actions.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How were native Americans treated during Andrew Jackson's presidency?",
+        options: [
+          "They were granted full citizenship and voting rights",
+          "Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the \"Five Civilized Tribes\") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears",
+          "They were given equal representation in Congress",
+          "They were allowed to keep all their ancestral lands",
+        ],
+        acceptableAnswers: [
+          "Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the \"Five Civilized Tribes\") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears",
+        ],
+        explanation:
+          "Jackson's Indian Removal Act of 1830 forced Native Americans from their lands, resulting in the deadly Trail of Tears.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did westerners not support the Bank of the United States?",
+        options: [
+          "They wanted higher interest rates",
+          "Westerners (and farmers) viewed the Bank as an elitist institution controlled by wealthy Eastern merchants. They felt it restricted credit, limited the availability of currency (especially hard money), and favored established business interests over the needs of common farmers and speculators seeking easier loans for land purchases",
+          "They preferred state banks only",
+          "They wanted to abolish all banks",
+        ],
+        acceptableAnswers: [
+          "Westerners (and farmers) viewed the Bank as an elitist institution controlled by wealthy Eastern merchants. They felt it restricted credit, limited the availability of currency (especially hard money), and favored established business interests over the needs of common farmers and speculators seeking easier loans for land purchases",
+        ],
+        explanation:
+          "Westerners and farmers opposed the Bank because they saw it as an elitist Eastern institution that restricted credit and favored wealthy business interests over common farmers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did southerners not support the government spending money on road and canal projects?",
+        options: [
+          "They preferred railroads to canals",
+          "Southerners opposed \"internal improvements\" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery",
+          "They wanted all funding to go to military projects",
+          "They preferred private funding only",
+        ],
+        acceptableAnswers: [
+          "Southerners opposed \"internal improvements\" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery",
+        ],
+        explanation:
+          "Southerners opposed internal improvements because they primarily benefited the North/West, were seen as unconstitutional, and raised fears about federal power over slavery.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Andrew Jackson was the father of which political party?",
+        options: [
+          "The Whig Party",
+          "The Republican Party",
+          "The Democratic Party (which evolved from the Democratic-Republican Party)",
+          "The Federalist Party",
+        ],
+        acceptableAnswers: [
+          "The Democratic Party (which evolved from the Democratic-Republican Party)",
+        ],
+        explanation:
+          "Andrew Jackson is considered the founder of the modern Democratic Party, which evolved from the Democratic-Republican Party.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which president was hurt by the passage of the Alien and Sedition Acts?",
+        options: [
+          "Thomas Jefferson",
+          "John Adams (Federalist). The resulting public outcry and the backlash against the suppression of free speech contributed to his defeat in the election of 1800",
+          "James Madison",
+          "George Washington",
+        ],
+        acceptableAnswers: [
+          "John Adams (Federalist). The resulting public outcry and the backlash against the suppression of free speech contributed to his defeat in the election of 1800",
+        ],
+        explanation:
+          "The Alien and Sedition Acts, passed during John Adams' presidency, were unpopular and contributed to his defeat in the 1800 election.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the Corrupt Bargain?",
+        options: [
+          "The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a \"corrupt bargain\" where Clay traded his support for a high office",
+          "A deal to purchase Louisiana",
+          "An agreement over the Missouri Compromise",
+          "A trade agreement with Great Britain",
+        ],
+        acceptableAnswers: [
+          "The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a \"corrupt bargain\" where Clay traded his support for a high office",
+        ],
+        explanation:
+          "The 'Corrupt Bargain' refers to the 1824 election where Clay's support for Adams in the House vote, followed by Clay's appointment as Secretary of State, was seen as a political deal.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which president was in office during the Mexican-American War?",
+        options: [
+          "John Tyler",
+          "James K. Polk",
+          "Zachary Taylor",
+          "Millard Fillmore",
+        ],
+        acceptableAnswers: ["James K. Polk"],
+        explanation:
+          "James K. Polk was president during the Mexican-American War (1846-1848).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What function does the Vice President serve in the US Government?",
+        options: [
+          "To serve as commander-in-chief of the military",
+          "The Vice President has two main formal functions: To preside over the Senate (and vote only in case of a tie). To be the first person in the line of succession to the presidency should the President be unable to serve",
+          "To write and propose legislation",
+          "To serve as the head of the Supreme Court",
+        ],
+        acceptableAnswers: [
+          "The Vice President has two main formal functions: To preside over the Senate (and vote only in case of a tie). To be the first person in the line of succession to the presidency should the President be unable to serve",
+        ],
+        explanation:
+          "The Vice President presides over the Senate (voting only to break ties) and is first in line of presidential succession.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which political party was founded to oppose the Democratic Party in the 1840s?",
+        options: [
+          "The Republican Party",
+          "The Whig Party. They opposed Jackson's powerful executive actions, especially regarding the Bank and Nullification",
+          "The Federalist Party",
+          "The Democratic-Republican Party",
+        ],
+        acceptableAnswers: [
+          "The Whig Party. They opposed Jackson's powerful executive actions, especially regarding the Bank and Nullification",
+        ],
+        explanation:
+          "The Whig Party was formed in the 1830s-1840s to oppose Jackson's strong executive actions and policies.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did President Washington react to the Whiskey Rebellion?",
+        options: [
+          "He ignored the rebellion",
+          "Washington reacted decisively by personally leading a large federal militia (nearly 13,000 troops) to suppress the uprising of farmers in Western Pennsylvania protesting the excise tax on whiskey. His action demonstrated the new federal government's strength and its commitment to enforcing federal law (a clear contrast to the weakness of the government under the Articles of Confederation)",
+          "He repealed the whiskey tax",
+          "He allowed the states to handle it",
+        ],
+        acceptableAnswers: [
+          "Washington reacted decisively by personally leading a large federal militia (nearly 13,000 troops) to suppress the uprising of farmers in Western Pennsylvania protesting the excise tax on whiskey. His action demonstrated the new federal government's strength and its commitment to enforcing federal law (a clear contrast to the weakness of the government under the Articles of Confederation)",
+        ],
+        explanation:
+          "Washington's decisive response to the Whiskey Rebellion demonstrated the new federal government's ability to enforce federal law, contrasting with the weakness under the Articles of Confederation.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What purpose did the Erie Canal serve?",
+        options: [
+          "To connect the Atlantic and Pacific Oceans",
+          "The Erie Canal (completed 1825) provided a vital, efficient, and cheap water route connecting the Great Lakes region (via Buffalo) to the Atlantic Ocean (via the Hudson River and New York City). It dramatically reduced shipping costs, spurred Western migration, and established New York City as the nation's premier commercial center",
+          "To provide irrigation for farms",
+          "To serve as a military defense barrier",
+        ],
+        acceptableAnswers: [
+          "The Erie Canal (completed 1825) provided a vital, efficient, and cheap water route connecting the Great Lakes region (via Buffalo) to the Atlantic Ocean (via the Hudson River and New York City). It dramatically reduced shipping costs, spurred Western migration, and established New York City as the nation's premier commercial center",
+        ],
+        explanation:
+          "The Erie Canal connected the Great Lakes to the Atlantic via the Hudson River, reducing shipping costs and making New York City a major commercial center.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did the veto of the Bank of the United States impact the US economy?",
+        options: [
+          "It stabilized the economy immediately",
+          "Andrew Jackson's veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State \"pet banks\" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837",
+          "It had no economic impact",
+          "It increased international trade",
+        ],
+        acceptableAnswers: [
+          "Andrew Jackson's veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State \"pet banks\" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837",
+        ],
+        explanation:
+          "Jackson's veto and removal of federal funds from the BUS led to financial instability, with state banks issuing excessive paper money, contributing to the Panic of 1837.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which Supreme Court case saw the extension of Judicial Review to cover state and local laws?",
+        options: [
+          "Marbury v. Madison",
+          "Fletcher v. Peck (1810) established that the Supreme Court could strike down state laws that violated the Constitution. (Later confirmed in Cohens v. Virginia (1821))",
+          "McCulloch v. Maryland",
+          "Dred Scott v. Sanford",
+        ],
+        acceptableAnswers: [
+          "Fletcher v. Peck (1810) established that the Supreme Court could strike down state laws that violated the Constitution. (Later confirmed in Cohens v. Virginia (1821))",
+        ],
+        explanation:
+          "Fletcher v. Peck (1810) extended judicial review to state laws, establishing that the Supreme Court could strike down state laws that violated the Constitution.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did the publication of Uncle Tom's Cabin impact the abolitionist movement in the 1850s?",
+        options: [
+          "It had no significant impact",
+          "Published by Harriet Beecher Stowe in 1852, the novel had an immense impact. It humanized the suffering of enslaved people and dramatically increased antislavery sentiment and moral outrage in the North, pushing many previously apathetic Northerners toward the abolitionist movement. It intensified the sectional conflict",
+          "It decreased support for abolition",
+          "It only affected Southern readers",
+        ],
+        acceptableAnswers: [
+          "Published by Harriet Beecher Stowe in 1852, the novel had an immense impact. It humanized the suffering of enslaved people and dramatically increased antislavery sentiment and moral outrage in the North, pushing many previously apathetic Northerners toward the abolitionist movement. It intensified the sectional conflict",
+        ],
+        explanation:
+          "Uncle Tom's Cabin (1852) by Harriet Beecher Stowe humanized slavery's horrors, dramatically increasing Northern antislavery sentiment and intensifying sectional conflict.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is popular sovereignty?",
+        options: [
+          "The rule of the majority over the minority",
+          "Popular sovereignty is the principle that the authority of the government is created and sustained by the will of its people, through their elected representatives. In the context of the slavery debate before the Civil War, it specifically referred to the idea that the residents of a territory should be able to vote to decide whether that territory would allow slavery or not",
+          "The divine right of kings",
+          "The absolute power of the federal government",
+        ],
+        acceptableAnswers: [
+          "Popular sovereignty is the principle that the authority of the government is created and sustained by the will of its people, through their elected representatives. In the context of the slavery debate before the Civil War, it specifically referred to the idea that the residents of a territory should be able to vote to decide whether that territory would allow slavery or not",
+        ],
+        explanation:
+          "Popular sovereignty is the principle that government authority comes from the people. In the slavery context, it meant territories could vote on whether to allow slavery.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Where was the women's rights convention held in 1848?",
+        options: [
+          "Boston, Massachusetts",
+          "Philadelphia, Pennsylvania",
+          "Seneca Falls, New York",
+          "Washington, D.C.",
+        ],
+        acceptableAnswers: ["Seneca Falls, New York"],
+        explanation:
+          "The first women's rights convention was held in Seneca Falls, New York in 1848, marking the beginning of the organized women's rights movement.",
       },
     ],
   },
