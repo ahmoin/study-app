@@ -14,6 +14,530 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+    id: "network-cabling-connectors",
+    name: "Network Cabling & Connectors",
+    category: "Networking",
+    description:
+      "A 43-question multiple choice quiz covering network media, copper cabling, fiber optic cabling, connectors, and troubleshooting network cable issues.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What does network media refer to?",
+        options: [
+          "The speed of data transmission in a network",
+          "The type of devices used in a network",
+          "The materials used to connect devices and carry data signals",
+          "The protocols used for network communication",
+        ],
+        acceptableAnswers: [
+          "The materials used to connect devices and carry data signals",
+        ],
+        explanation:
+          "Network media is the physical way to connect the different parts of a network, such as cables (copper or fiber) or the air (for wireless).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which organization sets the standards for digital networking equipment to ensure compatibility?",
+        options: ["ISO", "IEEE", "FCC", "IETF"],
+        acceptableAnswers: ["IEEE"],
+        explanation:
+          "The Institute of Electrical & Electronics Engineers (IEEE) sets networking standards such as Ethernet (802.3).",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the most commonly used type of coaxial cable?",
+        options: ["RG58", "RG6", "CAT5e", "Fiber Optic"],
+        acceptableAnswers: ["RG6"],
+        explanation: "RG-6 is the most commonly used type of coaxial cable.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which connector type is used for coaxial cables in cable television and modems?",
+        options: ["RJ-45", "SFP+", "F-Type", "SC"],
+        acceptableAnswers: ["F-Type"],
+        explanation:
+          "F-type connectors are used for coaxial cables in cable television and modems.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum distance that 10Base2 coaxial Ethernet can transmit data before signal degradation?",
+        options: ["100 meters", "185 meters", "500 meters", "1 kilometer"],
+        acceptableAnswers: ["185 meters"],
+        explanation:
+          "The maximum distance a coaxial cable can transmit data before signal degradation is 185 meters (for 10Base2 standard).",
+      },
+      {
+        type: "multiple-choice",
+        question: "What type of cable is Direct Attach Copper (DAC)?",
+        options: [
+          "Fiber optic cable",
+          "Twisted pair cable",
+          "Coaxial cable",
+          "Twinaxial cable",
+        ],
+        acceptableAnswers: ["Twinaxial cable"],
+        explanation:
+          "Direct Attach Copper (DAC) is a type of twinaxial cable used for fast connectivity between network backbone devices.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which connector types are used for Direct Attach Copper (DAC) cables?",
+        options: [
+          "RJ-11 and RJ-45",
+          "F-Type and BNC",
+          "SFP+ and QSFP+",
+          "SC and LC",
+        ],
+        acceptableAnswers: ["SFP+ and QSFP+"],
+        explanation:
+          "DAC cables use SFP+ and QSFP+ connectors and are primarily used for fast connectivity between network backbone devices in data centers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum effective distance of a Direct Attach Copper (DAC) cable?",
+        options: ["5 to 15 meters", "50 meters", "100 meters", "500 meters"],
+        acceptableAnswers: ["5 to 15 meters"],
+        explanation:
+          "DAC cables are used for short-distance connections, typically 5 to 15 meters, between network backbone devices.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which type of twisted pair connector is typically used for Ethernet networking?",
+        options: ["RJ-11", "RJ-45", "SC", "F-Type"],
+        acceptableAnswers: ["RJ-45"],
+        explanation:
+          "RJ-45 is used for Category 5 – 8 cables (Ethernet networking) and typically uses all 4 pairs.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum cable length for a standard twisted pair Ethernet connection?",
+        options: ["50 meters", "100 meters", "185 meters", "500 meters"],
+        acceptableAnswers: ["100 meters"],
+        explanation:
+          "The maximum distance for twisted pair cables used in Ethernet networking is 100 meters.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the primary difference between plenum and non-plenum cables?",
+        options: [
+          "Speed and bandwidth",
+          "Fire resistance and safety requirements",
+          "Connector type",
+          "Maximum transmission distance",
+        ],
+        acceptableAnswers: ["Fire resistance and safety requirements"],
+        explanation:
+          "Plenum cable is specifically designed for use in air circulation areas and is constructed with materials that resist fire and flame spread, producing minimal smoke and toxic fumes.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which category of twisted pair cable supports speeds up to 10 Gbps?",
+        options: ["CAT 3", "CAT 5e", "CAT 6a", "CAT 8"],
+        acceptableAnswers: ["CAT 6a"],
+        explanation:
+          "Category 6a or 7 twisted pair cables support 10 Gigabit Ethernet.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the speed rating for CAT 8 twisted pair cable?",
+        options: ["1 Gbps", "10 Gbps", "40 Gbps", "100 Gbps"],
+        acceptableAnswers: ["40 Gbps"],
+        explanation:
+          "Category 8 is an alternative to DAC for short-distance 40 Gbps networking (limited to 30 meters).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What type of cable is required in spaces where air circulation can spread smoke in case of a fire?",
+        options: [
+          "Non-plenum cable",
+          "Fiber optic cable",
+          "Plenum-rated cable",
+          "Coaxial cable",
+        ],
+        acceptableAnswers: ["Plenum-rated cable"],
+        explanation:
+          "Plenum cables are required in air circulation areas to comply with fire safety regulations because they resist fire and produce minimal smoke and toxic fumes.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a common symptom of using the wrong type of network cable?",
+        options: [
+          "Increased Wi-Fi interference",
+          "Slow network speeds or no connectivity",
+          "Higher power consumption",
+          "Overheating of network switches",
+        ],
+        acceptableAnswers: ["Slow network speeds or no connectivity"],
+        explanation:
+          "Using the wrong type of network cable can result in slow network speeds or complete lack of connectivity.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the typical color of a single-mode fiber optic cable?",
+        options: ["Orange", "Aqua", "Yellow", "Green"],
+        acceptableAnswers: ["Yellow"],
+        explanation:
+          "Single-mode fiber optic cables are typically yellow in color.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If a network is experiencing interference from electrical equipment, which type of cable should be used?",
+        options: [
+          "Unshielded Twisted Pair (UTP)",
+          "Shielded Twisted Pair (STP)",
+          "Coaxial cable",
+          "Multimode fiber",
+        ],
+        acceptableAnswers: ["Shielded Twisted Pair (STP)"],
+        explanation:
+          "Shielded Twisted Pair (STP) cables provide protection against electromagnetic interference from electrical equipment.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum recommended length for a Cat6 Ethernet cable before signal degradation occurs?",
+        options: ["50 meters", "75 meters", "100 meters", "150 meters"],
+        acceptableAnswers: ["100 meters"],
+        explanation:
+          "The maximum distance for twisted pair cables used in Ethernet networking is 100 meters before signal degradation becomes a concern.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What issue is caused by interference between wires within the same cable?",
+        options: [
+          "Attenuation",
+          "Crosstalk",
+          "Signal reflection",
+          "Overheating",
+        ],
+        acceptableAnswers: ["Crosstalk"],
+        explanation:
+          "Crosstalk is interference between wires within the same cable, which can degrade signal quality.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a recommended way to reduce crosstalk in network cabling?",
+        options: [
+          "Use untwisted pair cables",
+          "Run cables near electrical sources",
+          "Use higher category cables with better shielding",
+          "Increase cable length beyond the standard",
+        ],
+        acceptableAnswers: [
+          "Use higher category cables with better shielding",
+        ],
+        explanation:
+          "Higher category cables (like Cat 6a or Cat 7) have better shielding and twisted pair design that reduces crosstalk.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If a fiber optic cable has a break or bend, which tool can help locate the fault?",
+        options: [
+          "Toner",
+          "Visual Fault Locator",
+          "Cable Tester",
+          "Ping Command",
+        ],
+        acceptableAnswers: ["Visual Fault Locator"],
+        explanation:
+          "A Visual Fault Locator (VFL) is used to locate breaks, bends, or other faults in fiber optic cables by sending visible light through the fiber.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which command is commonly used to check network connectivity and measure packet loss?",
+        options: ["traceroute", "ping", "nslookup", "netstat"],
+        acceptableAnswers: ["ping"],
+        explanation:
+          "The ping command is used to check network connectivity and measure packet loss between devices.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What problem occurs when a cable is too long and the signal weakens over distance?",
+        options: ["Crosstalk", "Interference", "Attenuation", "Overvoltage"],
+        acceptableAnswers: ["Attenuation"],
+        explanation:
+          "Attenuation is the weakening of a signal over distance, which occurs when a cable exceeds its recommended length.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What should be checked if an Ethernet cable is suspected to have improper termination?",
+        options: [
+          "Transmit (TX) and Receive (RX) pin alignment",
+          "Cable shielding type",
+          "The length of the cable",
+          "The color of the cable",
+        ],
+        acceptableAnswers: [
+          "Transmit (TX) and Receive (RX) pin alignment",
+        ],
+        explanation:
+          "Improper termination often involves swapped or misaligned TX and RX pins, which can cause connectivity issues.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which tool is used to identify a specific cable in a bundle?",
+        options: [
+          "Cable Tester",
+          "Toner",
+          "Visual Fault Locator",
+          "Tap (Test Access Point)",
+        ],
+        acceptableAnswers: ["Toner"],
+        explanation:
+          "A toner (tone generator and probe) is used to identify and trace a specific cable in a bundle of cables.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of a cable tester?",
+        options: [
+          "To check if a cable is properly wired and functioning",
+          "To increase the speed of a network connection",
+          "To locate cables inside walls",
+          "To test Wi-Fi signal strength",
+        ],
+        acceptableAnswers: [
+          "To check if a cable is properly wired and functioning",
+        ],
+        explanation:
+          "A cable tester checks if a cable is properly wired, terminated correctly, and functioning as expected.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a common cause of signal degradation in network cables?",
+        options: [
+          "Running cables underwater",
+          "Cables exceeding their recommended length",
+          "Using cables with more than 12 pairs of wires",
+          "Using fiber optic cables in a copper network",
+        ],
+        acceptableAnswers: ["Cables exceeding their recommended length"],
+        explanation:
+          "Signal degradation (attenuation) commonly occurs when cables exceed their recommended maximum length, causing the signal to weaken over distance.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is a key difference between passive and active network taps?",
+        options: [
+          "Passive taps only copy traffic, while active taps can amplify or modify the signal",
+          "Active taps work only with fiber optic cables",
+          "Passive taps require power, while active taps do not",
+          "Active taps introduce more latency than passive taps",
+        ],
+        acceptableAnswers: [
+          "Passive taps only copy traffic, while active taps can amplify or modify the signal",
+        ],
+        explanation:
+          "Passive taps simply copy network traffic without modification, while active taps can amplify, regenerate, or modify the signal and typically require power.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following is a symptom of swapped transmitter (TX) and receiver (RX) connections?",
+        options: [
+          "Increased network speed",
+          "No network connectivity",
+          "Higher power consumption",
+          "Reduced interference",
+        ],
+        acceptableAnswers: ["No network connectivity"],
+        explanation:
+          "Swapped TX and RX connections result in no network connectivity because the signals are being sent to the wrong pins.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the primary advantage of fiber optic cables over traditional copper cables?",
+        options: [
+          "They are less expensive to install",
+          "They transmit data using light, allowing for higher speeds and longer distances",
+          "They require less maintenance",
+          "They are easier to install and terminate",
+        ],
+        acceptableAnswers: [
+          "They transmit data using light, allowing for higher speeds and longer distances",
+        ],
+        explanation:
+          "Fiber optic cables offer immunity to Electromagnetic Interference (EMI), low signal loss (less attenuation), and the longest maximum distance capability.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the core size of a single-mode fiber optic cable?",
+        options: [
+          "50-62.5 micrometers",
+          "8-10 micrometers",
+          "100 micrometers",
+          "25 micrometers",
+        ],
+        acceptableAnswers: ["8-10 micrometers"],
+        explanation:
+          "Single-mode fiber has a very small core diameter (~8-10 micrometers).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which type of fiber optic cable is best suited for long-distance communication?",
+        options: [
+          "Multimode fiber",
+          "Single-mode fiber",
+          "Coaxial cable",
+          "Twisted pair cable",
+        ],
+        acceptableAnswers: ["Single-mode fiber"],
+        explanation:
+          "Single-mode fiber (SMF) is better for long distances due to its smaller core and lower signal loss.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the maximum distance that multimode fiber can typically support?",
+        options: [
+          "100 meters",
+          "500 meters to 2 kilometers",
+          "10 kilometers",
+          "100 kilometers",
+        ],
+        acceptableAnswers: ["500 meters to 2 kilometers"],
+        explanation:
+          "Multimode fiber typically supports high speeds up to 500 meters or lower speeds up to 2 km.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of the following fiber optic standards is used for single-mode fiber?",
+        options: [
+          "1000BASE-SX",
+          "1000BASE-LX",
+          "10GBASE-SR",
+          "CAT6a",
+        ],
+        acceptableAnswers: ["1000BASE-LX"],
+        explanation:
+          "1000Base-LX (using Single-Mode Fiber) supports 1 Gbps over long distances.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which fiber optic connector type is square-shaped and features a push-pull design?",
+        options: ["LC", "ST", "SC", "MPO"],
+        acceptableAnswers: ["SC"],
+        explanation:
+          "SC (Subscriber Connector) is a push-pull design with a square-shaped connector.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which fiber optic connector type is compact, has a latch mechanism, and is used in high-density applications?",
+        options: ["ST", "LC", "SC", "MPO"],
+        acceptableAnswers: ["LC"],
+        explanation:
+          "LC (Local Connector) is a small form-factor connector with a latch mechanism, typically used in high-density environments.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which fiber optic connector is an older bayonet-style design primarily used with multimode fiber?",
+        options: ["SC", "LC", "ST", "MPO"],
+        acceptableAnswers: ["ST"],
+        explanation:
+          "Straight Tip (ST) has a bayonet-style locking mechanism and is an older design primarily used with multimode fiber.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the purpose of an MPO connector?",
+        options: [
+          "To connect multiple fibers at once for high-density applications",
+          "To connect only single-mode fiber",
+          "To terminate twisted pair cables",
+          "To increase the speed of copper connections",
+        ],
+        acceptableAnswers: [
+          "To connect multiple fibers at once for high-density applications",
+        ],
+        explanation:
+          "Multi-Fiber Push On (MPO) connectors are used to connect multiple fibers (often 12, 24, or 48) with a single connector for high-density applications.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the primary function of a transceiver in a fiber optic network?",
+        options: [
+          "To boost the signal strength of fiber cables",
+          "To convert electrical signals into light signals and vice versa",
+          "To clean and maintain fiber connections",
+          "To connect twisted pair cables to fiber optics",
+        ],
+        acceptableAnswers: [
+          "To convert electrical signals into light signals and vice versa",
+        ],
+        explanation:
+          "Transceivers convert electrical signals (from copper/Ethernet cables) into light signals for transmission over fiber optic cable, and vice versa.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which transceiver type is small, hot-swappable, and supports speeds from 1 Gbps to 25 Gbps?",
+        options: ["QSFP", "SFP", "RJ-45", "BNC"],
+        acceptableAnswers: ["SFP"],
+        explanation:
+          "SFP (Small Form-Factor Pluggable) supports 1 fiber channel and speeds from 1 Gbps to 25 Gbps. SFP+ (which supports Fibre Channel protocols like 16 Gbps) is commonly used in storage area networks (SANs).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which transceiver type supports very high speeds (40 Gbps to 400 Gbps) and is mainly used with fiber?",
+        options: ["QSFP", "SFP", "SC", "ST"],
+        acceptableAnswers: ["QSFP"],
+        explanation:
+          "QSFP (Quad Small Form-Factor Pluggable) supports 4 fiber channels and very high speeds (40 Gbps to 400 Gbps), mainly used with fiber.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which protocol is primarily used in local area networks (LANs) and supports both copper and fiber connections?",
+        options: ["Fiber Channel", "Ethernet", "DSL", "Coaxial"],
+        acceptableAnswers: ["Ethernet"],
+        explanation:
+          "Ethernet is a common networking protocol used in LANs that supports both copper and fiber connections.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the primary use case for Fiber Channel?",
+        options: [
+          "Internet browsing",
+          "Wireless networking",
+          "Storage area networks (SANs) with high-speed data transfer",
+          "Home networking",
+        ],
+        acceptableAnswers: [
+          "Storage area networks (SANs) with high-speed data transfer",
+        ],
+        explanation:
+          "Fibre Channel is primarily used in storage area networks (SANs) with high-speed data transfer requirements.",
+      },
+    ],
+  },
+  {
     id: "us-history-multiple-choice-64",
     name: "US History Multiple Choice Quiz",
     category: "History",
