@@ -14,6 +14,224 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
+  "id": "spanish-travel-vocab-grammar-quiz",
+  "name": "Spanish Travel Vocabulary & Relative Pronouns Review",
+  "category": "Spanish Language",
+  "description": "A comprehensive multiple-choice quiz covering travel vocabulary (el andén, facturar, etc.), travel concepts, and the usage of relative pronouns (que, quien, donde) based on the 'K Viajes' study sheet.",
+  "questions": [
+    {
+      "type": "multiple-choice",
+      "question": "What is the English meaning of 'el andén'?",
+      "options": [
+        "The aisle",
+        "The platform",
+        "The train car",
+        "The ticket booth"
+      ],
+      "acceptableAnswers": [
+        "The platform"
+      ],
+      "explanation": "'El andén' translates to 'the platform', typically where you wait for a train."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which verb means 'to take off' (regarding an airplane)?",
+      "options": [
+        "Aterrizar",
+        "Facturar",
+        "Despegar",
+        "Doblar"
+      ],
+      "acceptableAnswers": [
+        "Despegar"
+      ],
+      "explanation": "'Despegar' means to take off. 'Aterrizar' is the opposite (to land)."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If you prefer a window seat, which vocabulary word should you use?",
+      "options": [
+        "El pasillo",
+        "La ventanilla",
+        "El mostrador",
+        "La taquilla"
+      ],
+      "acceptableAnswers": [
+        "La ventanilla"
+      ],
+      "explanation": "'La ventanilla' refers to the window seat, while 'el pasillo' is the aisle seat."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What is the opposite of 'la salida'?",
+      "options": [
+        "La parada",
+        "La llegada",
+        "El retraso",
+        "El despegue"
+      ],
+      "acceptableAnswers": [
+        "La llegada"
+      ],
+      "explanation": "'La salida' means departure, and its opposite is 'la llegada', which means arrival."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Where do you typically go to buy tickets ('comprar boletos') at a station?",
+      "options": [
+        "La taquilla",
+        "El andén",
+        "El vagón",
+        "La seguridad"
+      ],
+      "acceptableAnswers": [
+        "La taquilla"
+      ],
+      "explanation": "'La taquilla' is the ticket booth where tickets are sold."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "What action do you perform at 'el mostrador' (the counter)?",
+      "options": [
+        "Aterrizar",
+        "Pasar por seguridad",
+        "Facturar el equipaje",
+        "Doblar"
+      ],
+      "acceptableAnswers": [
+        "Facturar el equipaje"
+      ],
+      "explanation": "You check in luggage ('facturar el equipaje') at the counter ('el mostrador')."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "If a flight is NOT 'retrasado', what is it?",
+      "options": [
+        "On time",
+        "Cancelled",
+        "Full",
+        "Direct"
+      ],
+      "acceptableAnswers": [
+        "On time"
+      ],
+      "explanation": "'Retrasado' means delayed. If it is not delayed, the flight is on time."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which word refers to the 'aisle' inside a plane or train?",
+      "options": [
+        "El asiento",
+        "El pasillo",
+        "La parada",
+        "El vagón"
+      ],
+      "acceptableAnswers": [
+        "El pasillo"
+      ],
+      "explanation": "'El pasillo' is the aisle. 'El asiento' is the seat."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which relative pronoun is used to refer to places (meaning 'where')?",
+      "options": [
+        "Que",
+        "Quien",
+        "Donde",
+        "Cual"
+      ],
+      "acceptableAnswers": [
+        "Donde"
+      ],
+      "explanation": "'Donde' refers to places and means 'where'."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete the sentence: 'El libro _____ compré es interesante.'",
+      "options": [
+        "quien",
+        "que",
+        "donde",
+        "a quien"
+      ],
+      "acceptableAnswers": [
+        "que"
+      ],
+      "explanation": "'Que' is used because it refers to a thing (el libro) and means 'that' or 'which'."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "When should you use 'quien' instead of 'que'?",
+      "options": [
+        "When referring to a place",
+        "When referring to things",
+        "When referring to people, usually after a preposition (con, a, de)",
+        "When there is no comma in the sentence"
+      ],
+      "acceptableAnswers": [
+        "When referring to people, usually after a preposition (con, a, de)"
+      ],
+      "explanation": "'Quien' refers to people and is typically used after a preposition (e.g., con quien, a quien)."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete the sentence: 'La chica con _____ viajo es mi hermana.'",
+      "options": [
+        "que",
+        "donde",
+        "quien",
+        "cual"
+      ],
+      "acceptableAnswers": [
+        "quien"
+      ],
+      "explanation": "Because there is a preposition ('con') before the blank and it refers to a person ('la chica'), you must use 'quien'."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Complete the sentence: 'El aeropuerto _____ estamos es muy grande.'",
+      "options": [
+        "quien",
+        "que",
+        "donde",
+        "a quien"
+      ],
+      "acceptableAnswers": [
+        "donde"
+      ],
+      "explanation": "'Donde' is used because the sentence refers to a place ('el aeropuerto') and implies location."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Which of these words means 'to turn' or 'to fold'?",
+      "options": [
+        "Doblar",
+        "Despegar",
+        "Pasar",
+        "Facturar"
+      ],
+      "acceptableAnswers": [
+        "Doblar"
+      ],
+      "explanation": "'Doblar' can mean both 'to turn' (direction) and 'to fold' (an object)."
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Select the correct statement regarding relative pronouns.",
+      "options": [
+        "'Quien' is the most common option for everything.",
+        "'Que' can refer to people if there is no preposition.",
+        "'Donde' is used for people and places.",
+        "'Que' is only used for things, never people."
+      ],
+      "acceptableAnswers": [
+        "'Que' can refer to people if there is no preposition."
+      ],
+      "explanation": "According to the study sheet, 'Que' refers to things or ideas, but can also refer to people when used without a preposition."
+    }
+  ]
+},
+  {
     id: "network-cabling-connectors",
     name: "Network Cabling & Connectors",
     category: "Networking",

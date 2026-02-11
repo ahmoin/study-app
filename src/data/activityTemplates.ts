@@ -2,6 +2,37 @@ import type { Activity } from "@/types/quiz";
 
 export const activityTemplates: Activity[] = [
   {
+    id: "spanish-travel-vocab",
+    name: "K Viajes Vocabulary Review",
+    category: "Languages",
+    description:
+      "Practice Spanish travel vocabulary and relative pronouns from the K Viajes review sheet",
+    variant: "four-choice",
+    wordPairs: [
+      { word: "el andén", translation: "platform" },
+      { word: "el vagón", translation: "train car" },
+      { word: "retrasado", translation: "delayed" },
+      { word: "doblar", translation: "to turn / to fold" },
+      { word: "despegar", translation: "to take off" },
+      { word: "aterrizar", translation: "to land" },
+      { word: "facturar", translation: "to check in (luggage)" },
+      { word: "pasar por seguridad", translation: "to go through security" },
+      { word: "comprar boletos", translation: "to buy ticket" },
+      { word: "la ventanilla", translation: "window seat" },
+      { word: "el pasillo", translation: "aisle" },
+      { word: "el asiento", translation: "seat" },
+      { word: "el equipaje", translation: "luggage" },
+      { word: "el mostrador", translation: "counter" },
+      { word: "la taquilla", translation: "ticket booth" },
+      { word: "la salida", translation: "departure" },
+      { word: "la llegada", translation: "arrival" },
+      { word: "la parada", translation: "stop" },
+      { word: "que", translation: "that / which" },
+      { word: "quien", translation: "who / whom" },
+      { word: "donde", translation: "where" },
+    ],
+  },
+  {
     id: "geometry-constructions",
     category: "Math",
     name: "Geometry Constructions",
