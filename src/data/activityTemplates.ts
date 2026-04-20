@@ -5,7 +5,8 @@ export const activityTemplates: Activity[] = [
     id: "spanish-chapter4-travel-vocab",
     name: "Capítulo 4: ¿Adónde vas a viajar? Vocabulary",
     category: "Languages",
-    description: "Practice all travel vocabulary from Capítulo 4, including airport/train terms, travel actions, and relative pronouns.",
+    description:
+      "Practice all travel vocabulary from Capítulo 4, including airport/train terms, travel actions, and relative pronouns.",
     variant: "four-choice",
     wordPairs: [
       { word: "el pasillo", translation: "aisle" },
@@ -47,8 +48,15 @@ export const activityTemplates: Activity[] = [
       { word: "doblar", translation: "to turn" },
       { word: "tropezar", translation: "to trip / to stumble" },
       { word: "que", translation: "that / which (refers to things)" },
-      { word: "quien", translation: "who / whom (singular, after preposition, refers to a person)" },
-      { word: "quienes", translation: "who / whom (plural, after preposition, refers to people)" },
+      {
+        word: "quien",
+        translation:
+          "who / whom (singular, after preposition, refers to a person)",
+      },
+      {
+        word: "quienes",
+        translation: "who / whom (plural, after preposition, refers to people)",
+      },
       { word: "donde", translation: "where (refers to a place)" },
     ],
   },

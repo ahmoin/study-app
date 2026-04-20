@@ -14,223 +14,725 @@ export interface QuizTemplate {
 
 export const quizTemplates: QuizTemplate[] = [
   {
-  "id": "spanish-travel-vocab-grammar-quiz",
-  "name": "Spanish Travel Vocabulary & Relative Pronouns Review",
-  "category": "Spanish Language",
-  "description": "A comprehensive multiple-choice quiz covering travel vocabulary (el andén, facturar, etc.), travel concepts, and the usage of relative pronouns (que, quien, donde) based on the 'K Viajes' study sheet.",
-  "questions": [
-    {
-      "type": "multiple-choice",
-      "question": "What is the English meaning of 'el andén'?",
-      "options": [
-        "The aisle",
-        "The platform",
-        "The train car",
-        "The ticket booth"
-      ],
-      "acceptableAnswers": [
-        "The platform"
-      ],
-      "explanation": "'El andén' translates to 'the platform', typically where you wait for a train."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which verb means 'to take off' (regarding an airplane)?",
-      "options": [
-        "Aterrizar",
-        "Facturar",
-        "Despegar",
-        "Doblar"
-      ],
-      "acceptableAnswers": [
-        "Despegar"
-      ],
-      "explanation": "'Despegar' means to take off. 'Aterrizar' is the opposite (to land)."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "If you prefer a window seat, which vocabulary word should you use?",
-      "options": [
-        "El pasillo",
-        "La ventanilla",
-        "El mostrador",
-        "La taquilla"
-      ],
-      "acceptableAnswers": [
-        "La ventanilla"
-      ],
-      "explanation": "'La ventanilla' refers to the window seat, while 'el pasillo' is the aisle seat."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What is the opposite of 'la salida'?",
-      "options": [
-        "La parada",
-        "La llegada",
-        "El retraso",
-        "El despegue"
-      ],
-      "acceptableAnswers": [
-        "La llegada"
-      ],
-      "explanation": "'La salida' means departure, and its opposite is 'la llegada', which means arrival."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Where do you typically go to buy tickets ('comprar boletos') at a station?",
-      "options": [
-        "La taquilla",
-        "El andén",
-        "El vagón",
-        "La seguridad"
-      ],
-      "acceptableAnswers": [
-        "La taquilla"
-      ],
-      "explanation": "'La taquilla' is the ticket booth where tickets are sold."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "What action do you perform at 'el mostrador' (the counter)?",
-      "options": [
-        "Aterrizar",
-        "Pasar por seguridad",
-        "Facturar el equipaje",
-        "Doblar"
-      ],
-      "acceptableAnswers": [
-        "Facturar el equipaje"
-      ],
-      "explanation": "You check in luggage ('facturar el equipaje') at the counter ('el mostrador')."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "If a flight is NOT 'retrasado', what is it?",
-      "options": [
-        "On time",
-        "Cancelled",
-        "Full",
-        "Direct"
-      ],
-      "acceptableAnswers": [
-        "On time"
-      ],
-      "explanation": "'Retrasado' means delayed. If it is not delayed, the flight is on time."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which word refers to the 'aisle' inside a plane or train?",
-      "options": [
-        "El asiento",
-        "El pasillo",
-        "La parada",
-        "El vagón"
-      ],
-      "acceptableAnswers": [
-        "El pasillo"
-      ],
-      "explanation": "'El pasillo' is the aisle. 'El asiento' is the seat."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which relative pronoun is used to refer to places (meaning 'where')?",
-      "options": [
-        "Que",
-        "Quien",
-        "Donde",
-        "Cual"
-      ],
-      "acceptableAnswers": [
-        "Donde"
-      ],
-      "explanation": "'Donde' refers to places and means 'where'."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Complete the sentence: 'El libro _____ compré es interesante.'",
-      "options": [
-        "quien",
-        "que",
-        "donde",
-        "a quien"
-      ],
-      "acceptableAnswers": [
-        "que"
-      ],
-      "explanation": "'Que' is used because it refers to a thing (el libro) and means 'that' or 'which'."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "When should you use 'quien' instead of 'que'?",
-      "options": [
-        "When referring to a place",
-        "When referring to things",
-        "When referring to people, usually after a preposition (con, a, de)",
-        "When there is no comma in the sentence"
-      ],
-      "acceptableAnswers": [
-        "When referring to people, usually after a preposition (con, a, de)"
-      ],
-      "explanation": "'Quien' refers to people and is typically used after a preposition (e.g., con quien, a quien)."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Complete the sentence: 'La chica con _____ viajo es mi hermana.'",
-      "options": [
-        "que",
-        "donde",
-        "quien",
-        "cual"
-      ],
-      "acceptableAnswers": [
-        "quien"
-      ],
-      "explanation": "Because there is a preposition ('con') before the blank and it refers to a person ('la chica'), you must use 'quien'."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Complete the sentence: 'El aeropuerto _____ estamos es muy grande.'",
-      "options": [
-        "quien",
-        "que",
-        "donde",
-        "a quien"
-      ],
-      "acceptableAnswers": [
-        "donde"
-      ],
-      "explanation": "'Donde' is used because the sentence refers to a place ('el aeropuerto') and implies location."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Which of these words means 'to turn' or 'to fold'?",
-      "options": [
-        "Doblar",
-        "Despegar",
-        "Pasar",
-        "Facturar"
-      ],
-      "acceptableAnswers": [
-        "Doblar"
-      ],
-      "explanation": "'Doblar' can mean both 'to turn' (direction) and 'to fold' (an object)."
-    },
-    {
-      "type": "multiple-choice",
-      "question": "Select the correct statement regarding relative pronouns.",
-      "options": [
-        "'Quien' is the most common option for everything.",
-        "'Que' can refer to people if there is no preposition.",
-        "'Donde' is used for people and places.",
-        "'Que' is only used for things, never people."
-      ],
-      "acceptableAnswers": [
-        "'Que' can refer to people if there is no preposition."
-      ],
-      "explanation": "According to the study sheet, 'Que' refers to things or ideas, but can also refer to people when used without a preposition."
-    }
-  ]
-},
+    id: "progressive-era-imperialism-review",
+    name: "Labor, Reform, and American Imperialism Quiz",
+    category: "US History",
+    description:
+      "A comprehensive review of the Progressive Era, Muckrakers, Political Reforms, and the rise of American Imperialism.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question:
+          "What was a primary reason workers began to organize into unions during the late 19th century?",
+        options: [
+          "To support business owners",
+          "To fight for shorter work hours and safer conditions",
+          "To promote child labor",
+          "To decrease their wages",
+        ],
+        acceptableAnswers: [
+          "To fight for shorter work hours and safer conditions",
+        ],
+        explanation:
+          "Workers unionized to demand 8-hour workdays, better pay, and safer environments.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which term describes the process of negotiating as a group for better contracts?",
+        options: [
+          "Individualism",
+          "Collective bargaining",
+          "Yellow journalism",
+          "Monopoly",
+        ],
+        acceptableAnswers: ["Collective bargaining"],
+        explanation:
+          "Collective bargaining is when workers negotiate as a group rather than individually.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a 'strike' in the context of labor movements?",
+        options: [
+          "A method of voting",
+          "Refusing to work until demands are met",
+          "A government law protecting bosses",
+          "A way to hire more workers",
+        ],
+        acceptableAnswers: ["Refusing to work until demands are met"],
+        explanation:
+          "A strike is a work stoppage used by unions to pressure employers.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How did the federal government react to the Pullman Strike?",
+        options: [
+          "They supported the workers",
+          "They remained neutral",
+          "They used federal troops to break up the strike",
+          "They raised wages for everyone",
+        ],
+        acceptableAnswers: ["They used federal troops to break up the strike"],
+        explanation:
+          "Initially, the government sided with business owners and used military force to stop strikes.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which President mediated the 1902 Coal Strike, showing a shift in government involvement?",
+        options: [
+          "William McKinley",
+          "Theodore Roosevelt",
+          "Woodrow Wilson",
+          "Abraham Lincoln",
+        ],
+        acceptableAnswers: ["Theodore Roosevelt"],
+        explanation:
+          "Theodore Roosevelt's involvement signaled the start of the government acting as a mediator.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What were 'tenements' in late 19th-century cities?",
+        options: [
+          "Luxury hotels",
+          "Government offices",
+          "Small, overcrowded slum apartments",
+          "Large factories",
+        ],
+        acceptableAnswers: ["Small, overcrowded slum apartments"],
+        explanation:
+          "Tenements were poor-quality, overcrowded housing units common in urban areas.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who used photography in 'How the Other Half Lives' to expose poor living conditions?",
+        options: [
+          "Upton Sinclair",
+          "Ida Tarbell",
+          "Jacob Riis",
+          "Lincoln Steffens",
+        ],
+        acceptableAnswers: ["Jacob Riis"],
+        explanation:
+          "Jacob Riis used photojournalism to show the public the horrors of tenement life.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What defines a 'muckraker'?",
+        options: [
+          "A corrupt politician",
+          "An investigative journalist who exposes social ills",
+          "A factory owner",
+          "A person who cleans city streets",
+        ],
+        acceptableAnswers: [
+          "An investigative journalist who exposes social ills",
+        ],
+        explanation:
+          "Muckrakers wrote about corruption, poverty, and unsafe conditions to spark reform.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the impact of Upton Sinclair's book 'The Jungle'?",
+        options: [
+          "It led to the 17th Amendment",
+          "It exposed corruption in Standard Oil",
+          "It led to the Meat Inspection Act",
+          "It started the Spanish-American War",
+        ],
+        acceptableAnswers: ["It led to the Meat Inspection Act"],
+        explanation:
+          "The Jungle exposed unsanitary meatpacking, leading to the Meat Inspection Act and Pure Food and Drug Act.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which muckraker exposed political corruption in city governments in 'The Shame of the Cities'?",
+        options: [
+          "Lincoln Steffens",
+          "Ida B. Wells",
+          "Ida Tarbell",
+          "Jacob Riis",
+        ],
+        acceptableAnswers: ["Lincoln Steffens"],
+        explanation:
+          "Steffens focused on the corruption of municipal (city) political machines.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Who was a co-founder of the NAACP and pushed for immediate racial equality?",
+        options: [
+          "Upton Sinclair",
+          "W.E.B. Du Bois",
+          "Theodore Roosevelt",
+          "Ida Tarbell",
+        ],
+        acceptableAnswers: ["W.E.B. Du Bois"],
+        explanation:
+          "Du Bois advocated for immediate civil rights and helped establish the NAACP.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What did Ida Tarbell expose in her investigative writing?",
+        options: [
+          "The horrors of lynching",
+          "Unfair business practices of Standard Oil",
+          "Meatpacking conditions",
+          "Slum housing",
+        ],
+        acceptableAnswers: ["Unfair business practices of Standard Oil"],
+        explanation:
+          "Ida Tarbell's work contributed to the eventual breakup of the Standard Oil monopoly.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Ida B. Wells is best known for her crusade against which social horror?",
+        options: [
+          "Child labor",
+          "Alcohol consumption",
+          "Lynching",
+          "Political bosses",
+        ],
+        acceptableAnswers: ["Lynching"],
+        explanation:
+          "Ida B. Wells was a prominent journalist who documented and campaigned against lynching.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the purpose of the 16th Amendment?",
+        options: [
+          "To ban alcohol",
+          "To grant women the right to vote",
+          "To create a Federal Income Tax",
+          "To allow direct election of senators",
+        ],
+        acceptableAnswers: ["To create a Federal Income Tax"],
+        explanation:
+          "The 16th Amendment gave the government a steady source of income and reduced reliance on tariffs.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How did the 17th Amendment make the Senate more democratic?",
+        options: [
+          "It allowed people to vote directly for Senators",
+          "It gave Senators 10-year terms",
+          "It allowed the President to appoint Senators",
+          "It abolished the Senate",
+        ],
+        acceptableAnswers: ["It allowed people to vote directly for Senators"],
+        explanation:
+          "Previously, state legislatures chose Senators; the 17th Amendment gave that power to the voters.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was Tammany Hall?",
+        options: [
+          "A famous labor union",
+          "A corrupt political machine in New York City",
+          "A national park",
+          "A major steel factory",
+        ],
+        acceptableAnswers: ["A corrupt political machine in New York City"],
+        explanation:
+          "Tammany Hall used jobs and housing to get votes from immigrants while stealing taxpayer money.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What is the main goal of antitrust laws like the Sherman Antitrust Act?",
+        options: [
+          "To protect monopolies",
+          "To break up trusts and ensure fair competition",
+          "To increase taxes on the poor",
+          "To discourage international trade",
+        ],
+        acceptableAnswers: ["To break up trusts and ensure fair competition"],
+        explanation:
+          "Antitrust laws were designed to prevent single companies (monopolies) from controlling entire industries.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which political reform allows citizens to propose a new law directly?",
+        options: ["Referendum", "Recall", "Initiative", "Injunction"],
+        acceptableAnswers: ["Initiative"],
+        explanation:
+          "An initiative allows citizens to bypass the legislature and propose laws themselves.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which political reform allows citizens to vote on an existing law?",
+        options: ["Referendum", "Initiative", "Recall", "Primary"],
+        acceptableAnswers: ["Referendum"],
+        explanation:
+          "A referendum is a direct vote by the people on a specific law or proposal.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What does the 'Recall' process allow voters to do?",
+        options: [
+          "Vote twice",
+          "Remove an elected official from office",
+          "Change the Constitution",
+          "Veto a President's decision",
+        ],
+        acceptableAnswers: ["Remove an elected official from office"],
+        explanation:
+          "The recall allows voters to remove an official before their term has ended.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did the U.S. pursue imperialism in the late 19th century?",
+        options: [
+          "To isolate itself from the world",
+          "To find new markets and raw materials",
+          "To give away American land",
+          "To decrease the size of the Navy",
+        ],
+        acceptableAnswers: ["To find new markets and raw materials"],
+        explanation:
+          "The U.S. needed new markets for goods and resources for its growing factories.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the 'Big Stick' Policy?",
+        options: [
+          "Using the military to conquer Canada",
+          "Peaceful negotiation backed by the threat of a powerful Navy",
+          "Refusing to talk to other countries",
+          "Giving money to European banks",
+        ],
+        acceptableAnswers: [
+          "Peaceful negotiation backed by the threat of a powerful Navy",
+        ],
+        explanation:
+          "Roosevelt's policy was 'speak softly and carry a big stick,' meaning use diplomacy but be ready with force.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which style of reporting used sensationalized and exaggerated stories to sell newspapers?",
+        options: [
+          "Muckraking",
+          "Yellow Journalism",
+          "Objective Journalism",
+          "Scientific Reporting",
+        ],
+        acceptableAnswers: ["Yellow Journalism"],
+        explanation:
+          "Yellow journalism, practiced by Hearst and Pulitzer, helped stir up public support for the Spanish-American War.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What event in Havana Harbor was a major cause of the Spanish-American War?",
+        options: [
+          "The sinking of the Lusitania",
+          "The explosion of the USS Maine",
+          "A Spanish invasion of Florida",
+          "The Battle of Midway",
+        ],
+        acceptableAnswers: ["The explosion of the USS Maine"],
+        explanation:
+          "The mysterious explosion of the USS Maine was blamed on Spain, leading to war.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which territories did the U.S. gain as a result of the Spanish-American War?",
+        options: [
+          "Hawaii, Alaska, and Texas",
+          "Guam, Puerto Rico, and the Philippines",
+          "Cuba, Mexico, and Panama",
+          "California and Oregon",
+        ],
+        acceptableAnswers: ["Guam, Puerto Rico, and the Philippines"],
+        explanation:
+          "After the war, the U.S. became a world power with these new overseas territories.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Why did many Filipinos feel betrayed by the United States after the Spanish-American War?",
+        options: [
+          "The U.S. refused to trade with them",
+          "The U.S. annexed the Philippines instead of granting independence",
+          "The U.S. returned them to Spain",
+          "The U.S. forced them to move to Guam",
+        ],
+        acceptableAnswers: [
+          "The U.S. annexed the Philippines instead of granting independence",
+        ],
+        explanation:
+          "Filipinos expected independence; when the U.S. took control, a three-year war broke out.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the Roosevelt Corollary to the Monroe Doctrine?",
+        options: [
+          "A plan to invade Europe",
+          "A statement that the U.S. would act as a 'police power' in Latin America",
+          "An agreement to share the Panama Canal with Spain",
+          "A ban on all immigration from Asia",
+        ],
+        acceptableAnswers: [
+          "A statement that the U.S. would act as a 'police power' in Latin America",
+        ],
+        explanation:
+          "The Corollary stated the U.S. would intervene in Latin American affairs to keep Europeans out.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the main reason for building the Panama Canal?",
+        options: [
+          "To provide jobs for Panamanians",
+          "To create a shortcut between the Atlantic and Pacific Oceans",
+          "To stop the spread of yellow fever",
+          "To build a bridge to South America",
+        ],
+        acceptableAnswers: [
+          "To create a shortcut between the Atlantic and Pacific Oceans",
+        ],
+        explanation:
+          "The canal was a vital shortcut for trade and moving the U.S. Navy quickly between oceans.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Why did the U.S. acquire Hawaii?",
+        options: [
+          "To use it as a penal colony",
+          "For its oil reserves",
+          "To serve as a naval base (Pearl Harbor) and protect sugar interests",
+          "Because the Hawaiian Queen asked for annexation",
+        ],
+        acceptableAnswers: [
+          "To serve as a naval base (Pearl Harbor) and protect sugar interests",
+        ],
+        explanation:
+          "American sugar planters and the military value of Pearl Harbor led to the acquisition of Hawaii.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "How did the government's role change during the Progressive Era?",
+        options: [
+          "It became less involved in business",
+          "It began to regulate industry and protect workers' rights",
+          "It abolished the Supreme Court",
+          "It stopped collecting all taxes",
+        ],
+        acceptableAnswers: [
+          "It began to regulate industry and protect workers' rights",
+        ],
+        explanation:
+          "The Progressive Era saw a shift toward government regulation to fix social and economic problems.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which of these was a major problem caused by rapid urbanization?",
+        options: [
+          "Too much clean water",
+          "A lack of labor unions",
+          "Poor sanitation and spread of disease",
+          "Low crime rates",
+        ],
+        acceptableAnswers: ["Poor sanitation and spread of disease"],
+        explanation:
+          "Rapidly growing cities lacked proper infrastructure, leading to disease and filth.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The Clayton Antitrust Act was significant because it:",
+        options: [
+          "Outlawed labor unions",
+          "Protected the rights of unions to exist",
+          "Increased the power of monopolies",
+          "Ended the income tax",
+        ],
+        acceptableAnswers: ["Protected the rights of unions to exist"],
+        explanation:
+          "The Clayton Antitrust Act strengthened the Sherman Act and specifically exempted unions from being treated as illegal combinations.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "In the late 1800s, what was the general relationship between political bosses and immigrants?",
+        options: [
+          "Bosses ignored immigrants",
+          "Bosses provided help (jobs/housing) in exchange for votes",
+          "Immigrants ran the political machines",
+          "Bosses forced immigrants to return to their home countries",
+        ],
+        acceptableAnswers: [
+          "Bosses provided help (jobs/housing) in exchange for votes",
+        ],
+        explanation:
+          "Political machines like Tammany Hall built their power on the support of immigrant voters.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "What 'duty' did many imperialists believe they had toward other nations?",
+        options: [
+          "A duty to remain neutral",
+          "A duty to spread American culture and democracy",
+          "A duty to learn other languages",
+          "A duty to pay other countries' debts",
+        ],
+        acceptableAnswers: ["A duty to spread American culture and democracy"],
+        explanation:
+          "Cultural superiority and a perceived 'civilizing mission' were justifications for imperialism.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What role did the Pure Food and Drug Act play?",
+        options: [
+          "It made food more expensive",
+          "It required truthful labeling and banned harmful ingredients",
+          "It outlawed farming",
+          "It encouraged the use of chemicals in meat",
+        ],
+        acceptableAnswers: [
+          "It required truthful labeling and banned harmful ingredients",
+        ],
+        explanation:
+          "Passed alongside the Meat Inspection Act, it aimed to protect consumers from dangerous products.",
+      },
+      {
+        type: "multiple-choice",
+        question: "How did the 1902 Coal Strike end?",
+        options: [
+          "The workers were all fired",
+          "The Army took over the mines forever",
+          "Roosevelt threatened to use the Army to run the mines, forcing owners to negotiate",
+          "The union was abolished",
+        ],
+        acceptableAnswers: [
+          "Roosevelt threatened to use the Army to run the mines, forcing owners to negotiate",
+        ],
+        explanation:
+          "Roosevelt's 'Square Deal' approach forced a compromise between owners and workers.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which amendment was passed to reduce the government's need for high tariffs?",
+        options: [
+          "16th Amendment",
+          "17th Amendment",
+          "18th Amendment",
+          "19th Amendment",
+        ],
+        acceptableAnswers: ["16th Amendment"],
+        explanation:
+          "The income tax provided a new revenue stream, allowing for lower trade tariffs.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is a 'monopoly'?",
+        options: [
+          "A type of government",
+          "When one company controls an entire industry",
+          "A group of workers on strike",
+          "A treaty between two nations",
+        ],
+        acceptableAnswers: ["When one company controls an entire industry"],
+        explanation:
+          "Monopolies eliminate competition, which Progressive reformers sought to fix through antitrust laws.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What was the significance of the De Lôme Letter?",
+        options: [
+          "It started the Panama Canal project",
+          "It was a Spanish letter that insulted President McKinley",
+          "It ended the Philippine-American War",
+          "It proposed an alliance between Mexico and Germany",
+        ],
+        acceptableAnswers: [
+          "It was a Spanish letter that insulted President McKinley",
+        ],
+        explanation:
+          "The letter's publication outraged Americans and increased the pressure for war with Spain.",
+      },
+      {
+        type: "multiple-choice",
+        question: "The primary goal of the NAACP was:",
+        options: [
+          "To limit immigration",
+          "To achieve racial equality and civil rights",
+          "To promote the Big Stick policy",
+          "To build tenements",
+        ],
+        acceptableAnswers: ["To achieve racial equality and civil rights"],
+        explanation:
+          "Founded during the Progressive Era, the NAACP fought for the rights of African Americans.",
+      },
+    ],
+  },
+  {
+    id: "spanish-travel-vocab-grammar-quiz",
+    name: "Spanish Travel Vocabulary & Relative Pronouns Review",
+    category: "Spanish Language",
+    description:
+      "A comprehensive multiple-choice quiz covering travel vocabulary (el andén, facturar, etc.), travel concepts, and the usage of relative pronouns (que, quien, donde) based on the 'K Viajes' study sheet.",
+    questions: [
+      {
+        type: "multiple-choice",
+        question: "What is the English meaning of 'el andén'?",
+        options: [
+          "The aisle",
+          "The platform",
+          "The train car",
+          "The ticket booth",
+        ],
+        acceptableAnswers: ["The platform"],
+        explanation:
+          "'El andén' translates to 'the platform', typically where you wait for a train.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which verb means 'to take off' (regarding an airplane)?",
+        options: ["Aterrizar", "Facturar", "Despegar", "Doblar"],
+        acceptableAnswers: ["Despegar"],
+        explanation:
+          "'Despegar' means to take off. 'Aterrizar' is the opposite (to land).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "If you prefer a window seat, which vocabulary word should you use?",
+        options: ["El pasillo", "La ventanilla", "El mostrador", "La taquilla"],
+        acceptableAnswers: ["La ventanilla"],
+        explanation:
+          "'La ventanilla' refers to the window seat, while 'el pasillo' is the aisle seat.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What is the opposite of 'la salida'?",
+        options: ["La parada", "La llegada", "El retraso", "El despegue"],
+        acceptableAnswers: ["La llegada"],
+        explanation:
+          "'La salida' means departure, and its opposite is 'la llegada', which means arrival.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Where do you typically go to buy tickets ('comprar boletos') at a station?",
+        options: ["La taquilla", "El andén", "El vagón", "La seguridad"],
+        acceptableAnswers: ["La taquilla"],
+        explanation:
+          "'La taquilla' is the ticket booth where tickets are sold.",
+      },
+      {
+        type: "multiple-choice",
+        question: "What action do you perform at 'el mostrador' (the counter)?",
+        options: [
+          "Aterrizar",
+          "Pasar por seguridad",
+          "Facturar el equipaje",
+          "Doblar",
+        ],
+        acceptableAnswers: ["Facturar el equipaje"],
+        explanation:
+          "You check in luggage ('facturar el equipaje') at the counter ('el mostrador').",
+      },
+      {
+        type: "multiple-choice",
+        question: "If a flight is NOT 'retrasado', what is it?",
+        options: ["On time", "Cancelled", "Full", "Direct"],
+        acceptableAnswers: ["On time"],
+        explanation:
+          "'Retrasado' means delayed. If it is not delayed, the flight is on time.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which word refers to the 'aisle' inside a plane or train?",
+        options: ["El asiento", "El pasillo", "La parada", "El vagón"],
+        acceptableAnswers: ["El pasillo"],
+        explanation: "'El pasillo' is the aisle. 'El asiento' is the seat.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Which relative pronoun is used to refer to places (meaning 'where')?",
+        options: ["Que", "Quien", "Donde", "Cual"],
+        acceptableAnswers: ["Donde"],
+        explanation: "'Donde' refers to places and means 'where'.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Complete the sentence: 'El libro _____ compré es interesante.'",
+        options: ["quien", "que", "donde", "a quien"],
+        acceptableAnswers: ["que"],
+        explanation:
+          "'Que' is used because it refers to a thing (el libro) and means 'that' or 'which'.",
+      },
+      {
+        type: "multiple-choice",
+        question: "When should you use 'quien' instead of 'que'?",
+        options: [
+          "When referring to a place",
+          "When referring to things",
+          "When referring to people, usually after a preposition (con, a, de)",
+          "When there is no comma in the sentence",
+        ],
+        acceptableAnswers: [
+          "When referring to people, usually after a preposition (con, a, de)",
+        ],
+        explanation:
+          "'Quien' refers to people and is typically used after a preposition (e.g., con quien, a quien).",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Complete the sentence: 'La chica con _____ viajo es mi hermana.'",
+        options: ["que", "donde", "quien", "cual"],
+        acceptableAnswers: ["quien"],
+        explanation:
+          "Because there is a preposition ('con') before the blank and it refers to a person ('la chica'), you must use 'quien'.",
+      },
+      {
+        type: "multiple-choice",
+        question:
+          "Complete the sentence: 'El aeropuerto _____ estamos es muy grande.'",
+        options: ["quien", "que", "donde", "a quien"],
+        acceptableAnswers: ["donde"],
+        explanation:
+          "'Donde' is used because the sentence refers to a place ('el aeropuerto') and implies location.",
+      },
+      {
+        type: "multiple-choice",
+        question: "Which of these words means 'to turn' or 'to fold'?",
+        options: ["Doblar", "Despegar", "Pasar", "Facturar"],
+        acceptableAnswers: ["Doblar"],
+        explanation:
+          "'Doblar' can mean both 'to turn' (direction) and 'to fold' (an object).",
+      },
+      {
+        type: "multiple-choice",
+        question: "Select the correct statement regarding relative pronouns.",
+        options: [
+          "'Quien' is the most common option for everything.",
+          "'Que' can refer to people if there is no preposition.",
+          "'Donde' is used for people and places.",
+          "'Que' is only used for things, never people.",
+        ],
+        acceptableAnswers: [
+          "'Que' can refer to people if there is no preposition.",
+        ],
+        explanation:
+          "According to the study sheet, 'Que' refers to things or ideas, but can also refer to people when used without a preposition.",
+      },
+    ],
+  },
   {
     id: "network-cabling-connectors",
     name: "Network Cabling & Connectors",
@@ -402,7 +904,8 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question: "What is the typical color of a single-mode fiber optic cable?",
+        question:
+          "What is the typical color of a single-mode fiber optic cable?",
         options: ["Orange", "Aqua", "Yellow", "Green"],
         acceptableAnswers: ["Yellow"],
         explanation:
@@ -455,9 +958,7 @@ export const quizTemplates: QuizTemplate[] = [
           "Use higher category cables with better shielding",
           "Increase cable length beyond the standard",
         ],
-        acceptableAnswers: [
-          "Use higher category cables with better shielding",
-        ],
+        acceptableAnswers: ["Use higher category cables with better shielding"],
         explanation:
           "Higher category cables (like Cat 6a or Cat 7) have better shielding and twisted pair design that reduces crosstalk.",
       },
@@ -503,9 +1004,7 @@ export const quizTemplates: QuizTemplate[] = [
           "The length of the cable",
           "The color of the cable",
         ],
-        acceptableAnswers: [
-          "Transmit (TX) and Receive (RX) pin alignment",
-        ],
+        acceptableAnswers: ["Transmit (TX) and Receive (RX) pin alignment"],
         explanation:
           "Improper termination often involves swapped or misaligned TX and RX pins, which can cause connectivity issues.",
       },
@@ -643,12 +1142,7 @@ export const quizTemplates: QuizTemplate[] = [
         type: "multiple-choice",
         question:
           "Which of the following fiber optic standards is used for single-mode fiber?",
-        options: [
-          "1000BASE-SX",
-          "1000BASE-LX",
-          "10GBASE-SR",
-          "CAT6a",
-        ],
+        options: ["1000BASE-SX", "1000BASE-LX", "10GBASE-SR", "CAT6a"],
         acceptableAnswers: ["1000BASE-LX"],
         explanation:
           "1000Base-LX (using Single-Mode Fiber) supports 1 Gbps over long distances.",
@@ -939,9 +1433,7 @@ export const quizTemplates: QuizTemplate[] = [
           "New, tougher fugitive slave laws would be enacted",
           "Popular Sovereignty would be granted in the New Mexico and Utah Territories",
         ],
-        acceptableAnswers: [
-          "Missouri would enter the union as a slave state",
-        ],
+        acceptableAnswers: ["Missouri would enter the union as a slave state"],
         explanation:
           "Missouri entered as a slave state as part of the Missouri Compromise of 1820, not the Compromise of 1850.",
       },
@@ -1007,8 +1499,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "List ways in which the Constitution can be flexible.",
+        question: "List ways in which the Constitution can be flexible.",
         options: [
           "The Amendment Process, The Elastic Clause, and Judicial Review",
           "Only through constitutional amendments",
@@ -1107,19 +1598,18 @@ export const quizTemplates: QuizTemplate[] = [
         options: [
           "The Articles of Confederation",
           "The Federalist Papers",
-          "The Declaration of Independence and the Preamble to the Constitution (\"We the People...\") both state this principle of popular sovereignty",
+          'The Declaration of Independence and the Preamble to the Constitution ("We the People...") both state this principle of popular sovereignty',
           "The Mayflower Compact",
         ],
         acceptableAnswers: [
-          "The Declaration of Independence and the Preamble to the Constitution (\"We the People...\") both state this principle of popular sovereignty",
+          'The Declaration of Independence and the Preamble to the Constitution ("We the People...") both state this principle of popular sovereignty',
         ],
         explanation:
           "Both documents express the principle of popular sovereignty - that government derives its power from the consent of the governed.",
       },
       {
         type: "multiple-choice",
-        question:
-          "What was the purpose of the Declaration of Independence?",
+        question: "What was the purpose of the Declaration of Independence?",
         options: [
           "To establish the US Constitution",
           "To declare war on Great Britain",
@@ -1150,8 +1640,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "Why are Supreme Court Justices appointed for life?",
+        question: "Why are Supreme Court Justices appointed for life?",
         options: [
           "To ensure they remain loyal to the president who appointed them",
           "To prevent them from making unpopular decisions",
@@ -1212,8 +1701,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "How did political parties develop in the United States?",
+        question: "How did political parties develop in the United States?",
         options: [
           "They were established in the Constitution",
           "Political parties developed primarily out of fundamental disagreements among George Washington's advisors (Hamilton and Jefferson) over the interpretation of the Constitution (strict vs. loose), economic policy (national bank), and foreign policy (alliance with Britain vs. France). These disagreements led to the formation of the first two parties: the Federalists and the Democratic-Republicans",
@@ -1289,8 +1777,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "American business cannot be hurt by which form of taxes?",
+        question: "American business cannot be hurt by which form of taxes?",
         options: [
           "Income taxes",
           "Import taxes",
@@ -1321,8 +1808,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "Which president was in office during the War of 1812?",
+        question: "Which president was in office during the War of 1812?",
         options: [
           "Thomas Jefferson",
           "James Madison",
@@ -1395,8 +1881,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "What events/actions is Andrew Jackson most known for?",
+        question: "What events/actions is Andrew Jackson most known for?",
         options: [
           "The Louisiana Purchase and the Lewis and Clark Expedition",
           "The Indian Removal Act and the resulting Trail of Tears. His decisive action during the Nullification Crisis by threatening military force against South Carolina",
@@ -1411,8 +1896,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "What was the Missouri Compromise (Compromise of 1820)?",
+        question: "What was the Missouri Compromise (Compromise of 1820)?",
         options: [
           "Missouri was admitted as a slave state. Maine was admitted as a free state. Slavery was prohibited in the remaining Louisiana Purchase territory north of Missouri's southern border",
           "California entered as a free state",
@@ -1446,13 +1930,13 @@ export const quizTemplates: QuizTemplate[] = [
         question:
           "Why did Sen. John C. Calhoun write the South Carolina Exposition and Protest? What did that document state?",
         options: [
-          "Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the \"Tariff of Abominations\", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders",
+          'Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the "Tariff of Abominations", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders',
           "To support the Bank of the United States",
           "To advocate for the abolition of slavery",
           "To support westward expansion",
         ],
         acceptableAnswers: [
-          "Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the \"Tariff of Abominations\", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders",
+          'Calhoun wrote the document secretly in response to the highly protective Tariff of 1828, the "Tariff of Abominations", which the South felt unfairly damaged their economy for the benefit of Northern industry. It formally put forth the doctrine of nullification, asserting that if a state deemed a federal law unconstitutional and harmful, that state had the right to declare the law void within its borders',
         ],
         explanation:
           "Calhoun wrote the document in response to the Tariff of 1828, arguing for the doctrine of nullification - that states could declare federal laws void within their borders.",
@@ -1475,8 +1959,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "What were the major reasons for the Mexican-American War?",
+        question: "What were the major reasons for the Mexican-American War?",
         options: [
           "Annexation of Texas: Mexico still considered Texas a breakaway province and viewed U.S. annexation (1845) as an aggressive act. Border Dispute: The U.S. claimed the border was the Rio Grande, while Mexico claimed it was the Nueces River. Manifest Destiny: U.S. desire to acquire the Mexican territories of California and New Mexico. Polk's Actions: President Polk sent U.S. troops into the disputed border zone, provoking conflict",
           "Disputes over trade routes",
@@ -1495,12 +1978,12 @@ export const quizTemplates: QuizTemplate[] = [
           "How were native Americans treated during Andrew Jackson's presidency?",
         options: [
           "They were granted full citizenship and voting rights",
-          "Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the \"Five Civilized Tribes\") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears",
+          'Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the "Five Civilized Tribes") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears',
           "They were given equal representation in Congress",
           "They were allowed to keep all their ancestral lands",
         ],
         acceptableAnswers: [
-          "Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the \"Five Civilized Tribes\") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears",
+          'Native Americans were treated brutally and viewed as obstacles to white expansion. Jackson signed the Indian Removal Act of 1830, which forced thousands of Native Americans (especially the "Five Civilized Tribes") from their ancestral lands in the Southeast to territories west of the Mississippi River. This forced march resulted in the deadly Trail of Tears',
         ],
         explanation:
           "Jackson's Indian Removal Act of 1830 forced Native Americans from their lands, resulting in the deadly Trail of Tears.",
@@ -1527,20 +2010,19 @@ export const quizTemplates: QuizTemplate[] = [
           "Why did southerners not support the government spending money on road and canal projects?",
         options: [
           "They preferred railroads to canals",
-          "Southerners opposed \"internal improvements\" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery",
+          'Southerners opposed "internal improvements" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery',
           "They wanted all funding to go to military projects",
           "They preferred private funding only",
         ],
         acceptableAnswers: [
-          "Southerners opposed \"internal improvements\" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery",
+          'Southerners opposed "internal improvements" (roads, canals, etc.) because: They felt such projects primarily benefited the Northern and Western economies (which lacked the extensive river systems the South relied on). They believed the government spending was an unconstitutional expansion of federal power. They feared that if the federal government had the power to fund internal improvements, it might eventually gain the power to interfere with slavery',
         ],
         explanation:
           "Southerners opposed internal improvements because they primarily benefited the North/West, were seen as unconstitutional, and raised fears about federal power over slavery.",
       },
       {
         type: "multiple-choice",
-        question:
-          "Andrew Jackson was the father of which political party?",
+        question: "Andrew Jackson was the father of which political party?",
         options: [
           "The Whig Party",
           "The Republican Party",
@@ -1573,13 +2055,13 @@ export const quizTemplates: QuizTemplate[] = [
         type: "multiple-choice",
         question: "What was the Corrupt Bargain?",
         options: [
-          "The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a \"corrupt bargain\" where Clay traded his support for a high office",
+          'The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams\' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a "corrupt bargain" where Clay traded his support for a high office',
           "A deal to purchase Louisiana",
           "An agreement over the Missouri Compromise",
           "A trade agreement with Great Britain",
         ],
         acceptableAnswers: [
-          "The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a \"corrupt bargain\" where Clay traded his support for a high office",
+          'The Corrupt Bargain refers to the controversial outcome of the 1824 election. No candidate won a majority of electoral votes, throwing the election into the House of Representatives. Henry Clay (Speaker of the House) supported John Quincy Adams, ensuring Adams\' victory. Shortly afterward, Adams appointed Clay as his Secretary of State. Andrew Jackson and his supporters claimed this was a "corrupt bargain" where Clay traded his support for a high office',
         ],
         explanation:
           "The 'Corrupt Bargain' refers to the 1824 election where Clay's support for Adams in the House vote, followed by Clay's appointment as Secretary of State, was seen as a political deal.",
@@ -1667,12 +2149,12 @@ export const quizTemplates: QuizTemplate[] = [
           "How did the veto of the Bank of the United States impact the US economy?",
         options: [
           "It stabilized the economy immediately",
-          "Andrew Jackson's veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State \"pet banks\" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837",
+          'Andrew Jackson\'s veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State "pet banks" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837',
           "It had no economic impact",
           "It increased international trade",
         ],
         acceptableAnswers: [
-          "Andrew Jackson's veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State \"pet banks\" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837",
+          'Andrew Jackson\'s veto and subsequent withdrawal of federal funds from the Second Bank of the United States (BUS) led to a period of financial instability. State "pet banks" received the federal deposits and began issuing too much paper money, leading to speculation, inflation, and ultimately contributing to the severe economic depression known as the Panic of 1837',
         ],
         explanation:
           "Jackson's veto and removal of federal funds from the BUS led to financial instability, with state banks issuing excessive paper money, contributing to the Panic of 1837.",
@@ -1726,8 +2208,7 @@ export const quizTemplates: QuizTemplate[] = [
       },
       {
         type: "multiple-choice",
-        question:
-          "Where was the women's rights convention held in 1848?",
+        question: "Where was the women's rights convention held in 1848?",
         options: [
           "Boston, Massachusetts",
           "Philadelphia, Pennsylvania",
@@ -9396,168 +9877,211 @@ export const quizTemplates: QuizTemplate[] = [
     id: "spanish-chapter-4-adonde-vas-a-viajar",
     name: "Capítulo 4: ¿Adónde vas a viajar? — Prueba de Vocabulario",
     category: "Spanish Language",
-    description: "Vocabulary and grammar quiz for Chapter 4 covering travel vocabulary, odd-one-out groupings, relative pronouns (que, quien, quienes, donde), and logical sentence completion.",
+    description:
+      "Vocabulary and grammar quiz for Chapter 4 covering travel vocabulary, odd-one-out groupings, relative pronouns (que, quien, quienes, donde), and logical sentence completion.",
     questions: [
       {
         type: "multiple-choice",
         question: "La ventanilla y _____ son dos tipos de asiento en el avión.",
         options: ["la taquilla", "la parada", "el pasillo", "el mostrador"],
         acceptableAnswers: ["el pasillo"],
-        explanation: "The two types of airplane seats are window (la ventanilla) and aisle (el pasillo).",
+        explanation:
+          "The two types of airplane seats are window (la ventanilla) and aisle (el pasillo).",
       },
       {
         type: "multiple-choice",
         question: "Facturamos el equipaje en _____.",
-        options: ["la taquilla", "el mostrador", "la sala de espera", "el andén"],
+        options: [
+          "la taquilla",
+          "el mostrador",
+          "la sala de espera",
+          "el andén",
+        ],
         acceptableAnswers: ["el mostrador"],
-        explanation: "You check your luggage at the counter (el mostrador). 'Facturar el equipaje' means to check your bags.",
+        explanation:
+          "You check your luggage at the counter (el mostrador). 'Facturar el equipaje' means to check your bags.",
       },
       {
         type: "multiple-choice",
         question: "Si un vuelo no está _____, está a tiempo.",
         options: ["cancelado", "directo", "retrasado", "lleno"],
         acceptableAnswers: ["retrasado"],
-        explanation: "'Retrasado' means delayed. If a flight is not delayed, it is on time (a tiempo).",
+        explanation:
+          "'Retrasado' means delayed. If a flight is not delayed, it is on time (a tiempo).",
       },
       {
         type: "multiple-choice",
         question: "Cuando viajamos, llevamos _____.",
         options: ["boletos", "asientos", "pasaportes", "equipaje"],
         acceptableAnswers: ["equipaje"],
-        explanation: "When we travel, we carry luggage (equipaje). The sentence is about what you physically bring with you.",
+        explanation:
+          "When we travel, we carry luggage (equipaje). The sentence is about what you physically bring with you.",
       },
       {
         type: "multiple-choice",
         question: "_____ es donde se venden los boletos.",
         options: ["El andén", "La taquilla", "La aduana", "El mostrador"],
         acceptableAnswers: ["La taquilla"],
-        explanation: "La taquilla is the ticket booth/window where tickets (boletos) are sold.",
+        explanation:
+          "La taquilla is the ticket booth/window where tickets (boletos) are sold.",
       },
       {
         type: "multiple-choice",
         question: "La llegada es lo opuesto de _____. (*opuesto = opposite)",
         options: ["el retraso", "la parada", "la salida", "el destino"],
         acceptableAnswers: ["la salida"],
-        explanation: "La llegada (arrival) is the opposite of la salida (departure).",
+        explanation:
+          "La llegada (arrival) is the opposite of la salida (departure).",
       },
       {
         type: "multiple-choice",
-        question: "Este tren va directamente a su destino, no hace ninguna _____.",
+        question:
+          "Este tren va directamente a su destino, no hace ninguna _____.",
         options: ["llegada", "parada", "salida", "factura"],
         acceptableAnswers: ["parada"],
-        explanation: "A direct train makes no stops (paradas). 'No hace ninguna parada' means it doesn't make any stops.",
+        explanation:
+          "A direct train makes no stops (paradas). 'No hace ninguna parada' means it doesn't make any stops.",
       },
       {
         type: "multiple-choice",
-        question: "Which word does NOT belong with the others? (despegar, aterrizar, facturar, doblar)",
+        question:
+          "Which word does NOT belong with the others? (despegar, aterrizar, facturar, doblar)",
         options: ["despegar", "aterrizar", "facturar", "doblar"],
         acceptableAnswers: ["doblar"],
-        explanation: "Despegar (take off), aterrizar (land), and facturar (check luggage) are all airport/travel actions. Doblar (to turn) is a driving/directions term and does not belong.",
+        explanation:
+          "Despegar (take off), aterrizar (land), and facturar (check luggage) are all airport/travel actions. Doblar (to turn) is a driving/directions term and does not belong.",
       },
       {
         type: "multiple-choice",
-        question: "Which word does NOT belong with the others? (la parada, el andén, el piloto, el vagón)",
+        question:
+          "Which word does NOT belong with the others? (la parada, el andén, el piloto, el vagón)",
         options: ["la parada", "el andén", "el piloto", "el vagón"],
         acceptableAnswers: ["el piloto"],
-        explanation: "El andén (platform), el vagón (train car), and la parada (stop) are all train-related terms. El piloto (pilot) is associated with airplanes, not trains.",
+        explanation:
+          "El andén (platform), el vagón (train car), and la parada (stop) are all train-related terms. El piloto (pilot) is associated with airplanes, not trains.",
       },
       {
         type: "multiple-choice",
-        question: "Which word does NOT belong with the others? (el asiento, la aduana, la visa, el pasaporte)",
+        question:
+          "Which word does NOT belong with the others? (el asiento, la aduana, la visa, el pasaporte)",
         options: ["el asiento", "la aduana", "la visa", "el pasaporte"],
         acceptableAnswers: ["el asiento"],
-        explanation: "La aduana (customs), la visa, and el pasaporte are all related to international border crossing. El asiento (seat) does not belong in this group.",
+        explanation:
+          "La aduana (customs), la visa, and el pasaporte are all related to international border crossing. El asiento (seat) does not belong in this group.",
       },
       {
         type: "multiple-choice",
-        question: "Which word does NOT belong with the others? (pasar por seguridad, facturar equipaje, comprar boletos, tropezar)",
-        options: ["pasar por seguridad", "facturar equipaje", "comprar boletos", "tropezar"],
+        question:
+          "Which word does NOT belong with the others? (pasar por seguridad, facturar equipaje, comprar boletos, tropezar)",
+        options: [
+          "pasar por seguridad",
+          "facturar equipaje",
+          "comprar boletos",
+          "tropezar",
+        ],
         acceptableAnswers: ["tropezar"],
-        explanation: "Pasar por seguridad (go through security), facturar equipaje (check luggage), and comprar boletos (buy tickets) are all travel activities. Tropezar (to trip/stumble) is not a travel activity.",
+        explanation:
+          "Pasar por seguridad (go through security), facturar equipaje (check luggage), and comprar boletos (buy tickets) are all travel activities. Tropezar (to trip/stumble) is not a travel activity.",
       },
       {
         type: "multiple-choice",
-        question: "Lucía es la amiga con _____ paso mucho tiempo los fines de semana.",
+        question:
+          "Lucía es la amiga con _____ paso mucho tiempo los fines de semana.",
         options: ["que", "donde", "quien", "quienes"],
         acceptableAnswers: ["quien"],
-        explanation: "After a preposition (con), use 'quien' to refer to a single person. 'Lucía is the friend with whom I spend a lot of time on weekends.'",
+        explanation:
+          "After a preposition (con), use 'quien' to refer to a single person. 'Lucía is the friend with whom I spend a lot of time on weekends.'",
       },
       {
         type: "multiple-choice",
-        question: "El boleto es el papel _____ necesitas para viajar en avión o tren.",
+        question:
+          "El boleto es el papel _____ necesitas para viajar en avión o tren.",
         options: ["donde", "que", "quien", "quienes"],
         acceptableAnswers: ["que"],
-        explanation: "'Que' is used to refer to a thing (el papel). 'The ticket is the paper that you need to travel by plane or train.'",
+        explanation:
+          "'Que' is used to refer to a thing (el papel). 'The ticket is the paper that you need to travel by plane or train.'",
       },
       {
         type: "multiple-choice",
         question: "El andén es el lugar _____ esperas el tren.",
         options: ["que", "quien", "quienes", "donde"],
         acceptableAnswers: ["donde"],
-        explanation: "'Donde' (where) refers to a place (el lugar). 'The platform is the place where you wait for the train.'",
+        explanation:
+          "'Donde' (where) refers to a place (el lugar). 'The platform is the place where you wait for the train.'",
       },
       {
         type: "multiple-choice",
         question: "El revisor es una persona _____ trabaja en un tren.",
         options: ["que", "donde", "quien", "quienes"],
         acceptableAnswers: ["quien"],
-        explanation: "'Quien' refers to a person (una persona). 'El revisor is a person who works on a train.' Use 'quien' when directly following a noun referring to a person.",
+        explanation:
+          "'Quien' refers to a person (una persona). 'El revisor is a person who works on a train.' Use 'quien' when directly following a noun referring to a person.",
       },
       {
         type: "multiple-choice",
         question: "El equipaje es de los chicos con _____ salimos.",
         options: ["que", "donde", "quien", "quienes"],
         acceptableAnswers: ["quienes"],
-        explanation: "'Quienes' is the plural form used after a preposition (con) when referring to multiple people (los chicos). 'The luggage belongs to the boys with whom we are leaving.'",
+        explanation:
+          "'Quienes' is the plural form used after a preposition (con) when referring to multiple people (los chicos). 'The luggage belongs to the boys with whom we are leaving.'",
       },
       {
         type: "multiple-choice",
         question: "El piloto es la persona _____ vuela el avión.",
         options: ["donde", "que", "quienes", "quien"],
         acceptableAnswers: ["quien"],
-        explanation: "'Quien' refers to a specific person (la persona). 'The pilot is the person who flies the plane.'",
+        explanation:
+          "'Quien' refers to a specific person (la persona). 'The pilot is the person who flies the plane.'",
       },
       {
         type: "multiple-choice",
-        question: "El pase de abordar es el papel _____ necesitas para abordar un avión.",
+        question:
+          "El pase de abordar es el papel _____ necesitas para abordar un avión.",
         options: ["quien", "donde", "que", "quienes"],
         acceptableAnswers: ["que"],
-        explanation: "'Que' refers to a thing (el papel). 'The boarding pass is the paper that you need to board a plane.'",
+        explanation:
+          "'Que' refers to a thing (el papel). 'The boarding pass is the paper that you need to board a plane.'",
       },
       {
         type: "multiple-choice",
         question: "La maleta es _____ pones la ropa cuando viajas.",
         options: ["que", "quien", "donde", "quienes"],
         acceptableAnswers: ["donde"],
-        explanation: "'Donde' (where) is used because the suitcase is the place where you put clothes. 'The suitcase is where you put your clothes when you travel.'",
+        explanation:
+          "'Donde' (where) is used because the suitcase is the place where you put clothes. 'The suitcase is where you put your clothes when you travel.'",
       },
       {
         type: "multiple-choice",
         question: "El pasajero es la persona _____ viaja en avión o tren.",
         options: ["donde", "que", "quienes", "quien"],
         acceptableAnswers: ["quien"],
-        explanation: "'Quien' refers to a person (la persona). 'The passenger is the person who travels by plane or train.'",
+        explanation:
+          "'Quien' refers to a person (la persona). 'The passenger is the person who travels by plane or train.'",
       },
       {
         type: "multiple-choice",
-        question: "La taquilla es el lugar _____ compras tu boleto para el tren.",
+        question:
+          "La taquilla es el lugar _____ compras tu boleto para el tren.",
         options: ["que", "quien", "donde", "quienes"],
         acceptableAnswers: ["donde"],
-        explanation: "'Donde' (where) refers to a place (el lugar). 'The ticket booth is the place where you buy your ticket for the train.'",
+        explanation:
+          "'Donde' (where) refers to a place (el lugar). 'The ticket booth is the place where you buy your ticket for the train.'",
       },
       {
         type: "multiple-choice",
         question: "Ella es la agente con _____ puedes hablar.",
         options: ["que", "donde", "quienes", "quien"],
         acceptableAnswers: ["quien"],
-        explanation: "After a preposition (con), use 'quien' for a singular person. 'She is the agent with whom you can speak.'",
+        explanation:
+          "After a preposition (con), use 'quien' for a singular person. 'She is the agent with whom you can speak.'",
       },
       {
         type: "multiple-choice",
         question: "La litera es el lugar _____ duermes en el tren.",
         options: ["que", "quien", "donde", "quienes"],
         acceptableAnswers: ["donde"],
-        explanation: "'Donde' (where) refers to a place. 'La litera is the berth/bunk where you sleep on the train.'",
+        explanation:
+          "'Donde' (where) refers to a place. 'La litera is the berth/bunk where you sleep on the train.'",
       },
       {
         type: "multiple-choice",
@@ -9569,7 +10093,8 @@ export const quizTemplates: QuizTemplate[] = [
           "el avión en seguida",
         ],
         acceptableAnswers: ["nuestros pasaportes para enseñárselos al agente"],
-        explanation: "'Sacar' means to take out/remove. 'Let's take out our passports to show them to the agent' is the logical completion.",
+        explanation:
+          "'Sacar' means to take out/remove. 'Let's take out our passports to show them to the agent' is the logical completion.",
       },
       {
         type: "multiple-choice",
@@ -9581,7 +10106,8 @@ export const quizTemplates: QuizTemplate[] = [
           "el avión en seguida",
         ],
         acceptableAnswers: ["los boletos en la taquilla"],
-        explanation: "'Pagar' means to pay. 'We pay for the tickets at the ticket booth' is the logical completion.",
+        explanation:
+          "'Pagar' means to pay. 'We pay for the tickets at the ticket booth' is the logical completion.",
       },
       {
         type: "multiple-choice",
@@ -9593,7 +10119,8 @@ export const quizTemplates: QuizTemplate[] = [
           "nuestro equipaje en el coche",
         ],
         acceptableAnswers: ["nuestro equipaje en el coche"],
-        explanation: "'Comprar' means to buy. Here the sentence completes as 'We buy/pick up our luggage in the (train) car.' In train travel, 'el coche' refers to the train car.",
+        explanation:
+          "'Comprar' means to buy. Here the sentence completes as 'We buy/pick up our luggage in the (train) car.' In train travel, 'el coche' refers to the train car.",
       },
       {
         type: "multiple-choice",
@@ -9605,7 +10132,8 @@ export const quizTemplates: QuizTemplate[] = [
           "nuestros pasaportes para enseñárselos al agente",
         ],
         acceptableAnswers: ["el avión en seguida"],
-        explanation: "'Abordar' means to board. 'We board the plane right away (en seguida)' is the logical completion.",
+        explanation:
+          "'Abordar' means to board. 'We board the plane right away (en seguida)' is the logical completion.",
       },
       {
         type: "multiple-choice",
@@ -9617,7 +10145,8 @@ export const quizTemplates: QuizTemplate[] = [
           "los boletos en la taquilla",
         ],
         acceptableAnswers: ["nuestros asientos"],
-        explanation: "'Buscar' means to look for. 'We look for our seats' makes sense when boarding a plane or train.",
+        explanation:
+          "'Buscar' means to look for. 'We look for our seats' makes sense when boarding a plane or train.",
       },
       {
         type: "multiple-choice",
@@ -9629,7 +10158,8 @@ export const quizTemplates: QuizTemplate[] = [
           "en la sala de espera",
         ],
         acceptableAnswers: ["con el agente sobre el vuelo"],
-        explanation: "'Hablar' means to speak. 'We speak with the agent about the flight' is the logical completion.",
+        explanation:
+          "'Hablar' means to speak. 'We speak with the agent about the flight' is the logical completion.",
       },
       {
         type: "multiple-choice",
@@ -9641,7 +10171,8 @@ export const quizTemplates: QuizTemplate[] = [
           "el avión en seguida",
         ],
         acceptableAnswers: ["en la sala de espera"],
-        explanation: "'Esperar' means to wait. 'Let's wait in the waiting room (la sala de espera)' is perfectly logical.",
+        explanation:
+          "'Esperar' means to wait. 'Let's wait in the waiting room (la sala de espera)' is perfectly logical.",
       },
       {
         type: "multiple-choice",
@@ -9653,7 +10184,8 @@ export const quizTemplates: QuizTemplate[] = [
           "por seguridad antes de comer",
         ],
         acceptableAnswers: ["por seguridad antes de comer"],
-        explanation: "'Pasar por seguridad' means to go through security. 'We go through security before eating' describes the airport sequence.",
+        explanation:
+          "'Pasar por seguridad' means to go through security. 'We go through security before eating' describes the airport sequence.",
       },
     ],
   },
@@ -9661,31 +10193,40 @@ export const quizTemplates: QuizTemplate[] = [
     id: "great-gatsby-chapters-1-3",
     name: "The Great Gatsby: Chapters 1–3 Quiz",
     category: "English Literature",
-    description: "Multiple-choice comprehension quiz covering key characters, settings, and events from Chapters 1 through 3 of The Great Gatsby by F. Scott Fitzgerald.",
+    description:
+      "Multiple-choice comprehension quiz covering key characters, settings, and events from Chapters 1 through 3 of The Great Gatsby by F. Scott Fitzgerald.",
     questions: [
       {
         type: "multiple-choice",
-        question: "What is Nick Carraway's social class background, and how did his family make its money?",
+        question:
+          "What is Nick Carraway's social class background, and how did his family make its money?",
         options: [
           "He is from the working class; his family earned money through factory labor.",
           "He is from a well-to-do Midwestern family that made its money in hardware.",
           "He is from old New York aristocracy; his family inherited a banking fortune.",
           "He is newly wealthy; his family struck oil in the 1900s.",
         ],
-        acceptableAnswers: ["He is from a well-to-do Midwestern family that made its money in hardware."],
-        explanation: "Nick comes from a prominent, comfortable Midwestern family whose wealth derives from a hardware wholesale business. He is educated at Yale, placing him in the upper-middle class.",
+        acceptableAnswers: [
+          "He is from a well-to-do Midwestern family that made its money in hardware.",
+        ],
+        explanation:
+          "Nick comes from a prominent, comfortable Midwestern family whose wealth derives from a hardware wholesale business. He is educated at Yale, placing him in the upper-middle class.",
       },
       {
         type: "multiple-choice",
-        question: "Where does Nick live at the start of the novel, and how does he describe his house?",
+        question:
+          "Where does Nick live at the start of the novel, and how does he describe his house?",
         options: [
           "East Egg, in a large mansion on the waterfront.",
           "New York City, in a modest apartment near Central Park.",
           "West Egg, in a small, weather-beaten eyesore squeezed between two huge mansions.",
           "The valley of ashes, in a run-down bungalow near the railroad.",
         ],
-        acceptableAnswers: ["West Egg, in a small, weather-beaten eyesore squeezed between two huge mansions."],
-        explanation: "Nick rents a small, shabby house on West Egg, which he describes as an eyesore — it looks out of place sandwiched between two enormous, ostentatious mansions.",
+        acceptableAnswers: [
+          "West Egg, in a small, weather-beaten eyesore squeezed between two huge mansions.",
+        ],
+        explanation:
+          "Nick rents a small, shabby house on West Egg, which he describes as an eyesore — it looks out of place sandwiched between two enormous, ostentatious mansions.",
       },
       {
         type: "multiple-choice",
@@ -9696,32 +10237,43 @@ export const quizTemplates: QuizTemplate[] = [
           "West Egg is a rural farming community; East Egg is an industrial district.",
           "West Egg has better beaches; East Egg is more inland.",
         ],
-        acceptableAnswers: ["West Egg is home to 'new money' — the newly rich; East Egg is home to 'old money' — established aristocratic families."],
-        explanation: "The two Eggs represent a social divide: East Egg families have inherited wealth and social prestige, while West Egg residents like Gatsby have recently acquired their fortunes. East Eggers look down on West Eggers as socially inferior.",
+        acceptableAnswers: [
+          "West Egg is home to 'new money' — the newly rich; East Egg is home to 'old money' — established aristocratic families.",
+        ],
+        explanation:
+          "The two Eggs represent a social divide: East Egg families have inherited wealth and social prestige, while West Egg residents like Gatsby have recently acquired their fortunes. East Eggers look down on West Eggers as socially inferior.",
       },
       {
         type: "multiple-choice",
-        question: "Who are Tom and Daisy Buchanan, and what is Daisy's relationship to Nick?",
+        question:
+          "Who are Tom and Daisy Buchanan, and what is Daisy's relationship to Nick?",
         options: [
           "Tom is Nick's college roommate; Daisy is Tom's sister.",
           "Tom is a wealthy former athlete from East Egg; Daisy is Nick's cousin.",
           "Tom is a self-made businessman from West Egg; Daisy is Nick's childhood friend.",
           "Tom is a politician; Daisy is Nick's aunt.",
         ],
-        acceptableAnswers: ["Tom is a wealthy former athlete from East Egg; Daisy is Nick's cousin."],
-        explanation: "Tom Buchanan is an enormously wealthy, arrogant former football star who lives on East Egg. Daisy is his wife and Nick's second cousin once removed — the family connection is what brings Nick to visit them early in the novel.",
+        acceptableAnswers: [
+          "Tom is a wealthy former athlete from East Egg; Daisy is Nick's cousin.",
+        ],
+        explanation:
+          "Tom Buchanan is an enormously wealthy, arrogant former football star who lives on East Egg. Daisy is his wife and Nick's second cousin once removed — the family connection is what brings Nick to visit them early in the novel.",
       },
       {
         type: "multiple-choice",
-        question: "At the end of Chapter 1, Nick sees Gatsby alone on his lawn. What is Gatsby doing?",
+        question:
+          "At the end of Chapter 1, Nick sees Gatsby alone on his lawn. What is Gatsby doing?",
         options: [
           "He is hosting a small private dinner party on the dock.",
           "He is standing alone in the dark, reaching his arms out toward a green light across the bay.",
           "He is pacing back and forth and talking on the telephone.",
           "He is watching fireworks from East Egg with a pair of binoculars.",
         ],
-        acceptableAnswers: ["He is standing alone in the dark, reaching his arms out toward a green light across the bay."],
-        explanation: "Nick spots Gatsby standing alone at the end of his dock, trembling and stretching his arms toward a faint green light across the water — the light at the end of Daisy's dock on East Egg. This image establishes Gatsby's yearning and romantic obsession.",
+        acceptableAnswers: [
+          "He is standing alone in the dark, reaching his arms out toward a green light across the bay.",
+        ],
+        explanation:
+          "Nick spots Gatsby standing alone at the end of his dock, trembling and stretching his arms toward a faint green light across the water — the light at the end of Daisy's dock on East Egg. This image establishes Gatsby's yearning and romantic obsession.",
       },
       {
         type: "multiple-choice",
@@ -9732,24 +10284,32 @@ export const quizTemplates: QuizTemplate[] = [
           "A busy commercial district full of factories and workers.",
           "A quiet farming valley on the outskirts of East Egg.",
         ],
-        acceptableAnswers: ["A desolate industrial wasteland of grey ash and dust between West Egg and New York City."],
-        explanation: "The valley of ashes is a bleak, grey stretch of land where industrial ash is dumped, creating a dismal landscape. It symbolizes the moral decay and poverty hidden beneath the glittering wealth of the Eggs.",
+        acceptableAnswers: [
+          "A desolate industrial wasteland of grey ash and dust between West Egg and New York City.",
+        ],
+        explanation:
+          "The valley of ashes is a bleak, grey stretch of land where industrial ash is dumped, creating a dismal landscape. It symbolizes the moral decay and poverty hidden beneath the glittering wealth of the Eggs.",
       },
       {
         type: "multiple-choice",
-        question: "Who does Tom take Nick to meet in Chapter 2, and how is this person described?",
+        question:
+          "Who does Tom take Nick to meet in Chapter 2, and how is this person described?",
         options: [
           "Jay Gatsby — a mysterious, incredibly rich neighbor.",
           "George Wilson — a pale, spiritless garage owner in the valley of ashes.",
           "Meyer Wolfsheim — a flashy New York gangster.",
           "Jordan Baker — a professional golfer and friend of Daisy.",
         ],
-        acceptableAnswers: ["George Wilson — a pale, spiritless garage owner in the valley of ashes."],
-        explanation: "Tom takes Nick to meet George Wilson, a dull, anaemic man who owns a garage in the valley of ashes. Wilson is described as lacking vitality or ambition. Tom actually wants to see Wilson's wife, Myrtle, with whom he is having an affair.",
+        acceptableAnswers: [
+          "George Wilson — a pale, spiritless garage owner in the valley of ashes.",
+        ],
+        explanation:
+          "Tom takes Nick to meet George Wilson, a dull, anaemic man who owns a garage in the valley of ashes. Wilson is described as lacking vitality or ambition. Tom actually wants to see Wilson's wife, Myrtle, with whom he is having an affair.",
       },
       {
         type: "multiple-choice",
-        question: "What does Myrtle buy while she is out with Tom and Nick in New York?",
+        question:
+          "What does Myrtle buy while she is out with Tom and Nick in New York?",
         options: [
           "A new dress and a bottle of perfume.",
           "A puppy.",
@@ -9757,7 +10317,8 @@ export const quizTemplates: QuizTemplate[] = [
           "A train ticket to Long Island.",
         ],
         acceptableAnswers: ["A puppy."],
-        explanation: "Among her purchases, the most notable is a puppy she buys from a street vendor. It signals her desire to live like the wealthy, though the dog essentially vanishes from the novel after this scene.",
+        explanation:
+          "Among her purchases, the most notable is a puppy she buys from a street vendor. It signals her desire to live like the wealthy, though the dog essentially vanishes from the novel after this scene.",
       },
       {
         type: "multiple-choice",
@@ -9768,12 +10329,16 @@ export const quizTemplates: QuizTemplate[] = [
           "Her parents arranged the marriage for financial reasons.",
           "She married him to escape her abusive family.",
         ],
-        acceptableAnswers: ["She thought he was a gentleman and that he knew something about breeding, but she soon realized he had nothing."],
-        explanation: "Myrtle tells the party guests that she married George because she mistakenly believed he was a man of refinement. She quickly became disillusioned when she realized he didn't even own the suit he wore to their wedding — he had borrowed it.",
+        acceptableAnswers: [
+          "She thought he was a gentleman and that he knew something about breeding, but she soon realized he had nothing.",
+        ],
+        explanation:
+          "Myrtle tells the party guests that she married George because she mistakenly believed he was a man of refinement. She quickly became disillusioned when she realized he didn't even own the suit he wore to their wedding — he had borrowed it.",
       },
       {
         type: "multiple-choice",
-        question: "What does Tom do to Myrtle when she repeatedly shouts Daisy's name at the apartment party?",
+        question:
+          "What does Tom do to Myrtle when she repeatedly shouts Daisy's name at the apartment party?",
         options: [
           "He throws her out of the apartment.",
           "He breaks her nose with a short, deft movement.",
@@ -9781,67 +10346,88 @@ export const quizTemplates: QuizTemplate[] = [
           "He laughs it off and changes the subject.",
         ],
         acceptableAnswers: ["He breaks her nose with a short, deft movement."],
-        explanation: "When Myrtle taunts Tom by chanting Daisy's name, Tom strikes her across the face, breaking her nose. The act reveals his brutal, controlling nature and the violence lurking beneath his aristocratic surface.",
+        explanation:
+          "When Myrtle taunts Tom by chanting Daisy's name, Tom strikes her across the face, breaking her nose. The act reveals his brutal, controlling nature and the violence lurking beneath his aristocratic surface.",
       },
       {
         type: "multiple-choice",
-        question: "How does Nick describe the people who attend Gatsby's parties in Chapter 3?",
+        question:
+          "How does Nick describe the people who attend Gatsby's parties in Chapter 3?",
         options: [
           "They are close personal friends of Gatsby who he has carefully invited.",
           "They are mostly sober, intellectual professionals who discuss art and politics.",
           "They are a chaotic, anonymous crowd — they come uninvited, get drunk, rumor-monger, and leave without ever meeting their host.",
           "They are exclusively East Egg aristocrats who look down on Gatsby.",
         ],
-        acceptableAnswers: ["They are a chaotic, anonymous crowd — they come uninvited, get drunk, rumor-monger, and leave without ever meeting their host."],
-        explanation: "Nick observes that Gatsby's guests are largely strangers to their host. They arrive uninvited, consume enormous amounts of alcohol, spread wild rumors about Gatsby, and depart without gratitude. The parties are spectacles of excess rather than genuine social gatherings.",
+        acceptableAnswers: [
+          "They are a chaotic, anonymous crowd — they come uninvited, get drunk, rumor-monger, and leave without ever meeting their host.",
+        ],
+        explanation:
+          "Nick observes that Gatsby's guests are largely strangers to their host. They arrive uninvited, consume enormous amounts of alcohol, spread wild rumors about Gatsby, and depart without gratitude. The parties are spectacles of excess rather than genuine social gatherings.",
       },
       {
         type: "multiple-choice",
-        question: "Why does Nick attend Gatsby's party, and how does he meet Gatsby?",
+        question:
+          "Why does Nick attend Gatsby's party, and how does he meet Gatsby?",
         options: [
           "Nick crashes the party out of curiosity after seeing the lights from his house.",
           "Nick receives a formal written invitation — one of the few guests who does — and later meets Gatsby when Gatsby introduces himself in a conversation.",
           "Daisy brings Nick as her plus-one.",
           "Jordan Baker drags Nick along and introduces him to Gatsby personally.",
         ],
-        acceptableAnswers: ["Nick receives a formal written invitation — one of the few guests who does — and later meets Gatsby when Gatsby introduces himself in a conversation."],
-        explanation: "Unlike most guests, Nick actually receives an invitation delivered by Gatsby's chauffeur. At the party, Nick has an extended conversation with a man before realizing the man is Gatsby himself — Gatsby then formally introduces himself.",
+        acceptableAnswers: [
+          "Nick receives a formal written invitation — one of the few guests who does — and later meets Gatsby when Gatsby introduces himself in a conversation.",
+        ],
+        explanation:
+          "Unlike most guests, Nick actually receives an invitation delivered by Gatsby's chauffeur. At the party, Nick has an extended conversation with a man before realizing the man is Gatsby himself — Gatsby then formally introduces himself.",
       },
       {
         type: "multiple-choice",
-        question: "How does Nick describe Gatsby's appearance and manner when he finally meets him?",
+        question:
+          "How does Nick describe Gatsby's appearance and manner when he finally meets him?",
         options: [
           "Gatsby is heavyset, loud, and boastful, with an obvious nouveau riche flair.",
           "Gatsby has an elegant, reassuring smile that seems to understand and affirm you perfectly — Nick feels Gatsby's rare gift is making everyone feel they are the sole object of his attention.",
           "Gatsby is shy and awkward, avoiding eye contact throughout the conversation.",
           "Gatsby is cold and businesslike, immediately discussing financial deals.",
         ],
-        acceptableAnswers: ["Gatsby has an elegant, reassuring smile that seems to understand and affirm you perfectly — Nick feels Gatsby's rare gift is making everyone feel they are the sole object of his attention."],
-        explanation: "Nick is struck by Gatsby's extraordinary smile — it carries a quality of eternal reassurance, as though Gatsby has seen the world as it should be and is now focusing that vision on you. This charisma is central to Gatsby's mystique.",
+        acceptableAnswers: [
+          "Gatsby has an elegant, reassuring smile that seems to understand and affirm you perfectly — Nick feels Gatsby's rare gift is making everyone feel they are the sole object of his attention.",
+        ],
+        explanation:
+          "Nick is struck by Gatsby's extraordinary smile — it carries a quality of eternal reassurance, as though Gatsby has seen the world as it should be and is now focusing that vision on you. This charisma is central to Gatsby's mystique.",
       },
       {
         type: "multiple-choice",
-        question: "What are some of the rumors circulating about Gatsby at his own parties?",
+        question:
+          "What are some of the rumors circulating about Gatsby at his own parties?",
         options: [
           "That he is a retired professor from Oxford and a former U.S. senator.",
           "That he killed a man, is a German spy, and attended Oxford — though no one knows which rumor is true.",
           "That he is actually a foreign prince traveling incognito.",
           "That he made his money by inventing a popular household product.",
         ],
-        acceptableAnswers: ["That he killed a man, is a German spy, and attended Oxford — though no one knows which rumor is true."],
-        explanation: "Gatsby's mysterious background fuels wild speculation. Guests whisper that he killed a man, that he was a German spy during the war, and that he went to Oxford. These contradictory rumors highlight how little anyone actually knows about him.",
+        acceptableAnswers: [
+          "That he killed a man, is a German spy, and attended Oxford — though no one knows which rumor is true.",
+        ],
+        explanation:
+          "Gatsby's mysterious background fuels wild speculation. Guests whisper that he killed a man, that he was a German spy during the war, and that he went to Oxford. These contradictory rumors highlight how little anyone actually knows about him.",
       },
       {
         type: "multiple-choice",
-        question: "What does Nick learn about Jordan Baker by the end of Chapter 3?",
+        question:
+          "What does Nick learn about Jordan Baker by the end of Chapter 3?",
         options: [
           "Jordan is secretly engaged to Tom Buchanan.",
           "Jordan was accused of cheating in a golf tournament — she moved her ball to improve her lie.",
           "Jordan is Gatsby's long-lost sister.",
           "Jordan is planning to move to Europe to escape her gambling debts.",
         ],
-        acceptableAnswers: ["Jordan was accused of cheating in a golf tournament — she moved her ball to improve her lie."],
-        explanation: "Nick recalls that Jordan Baker was involved in a scandal early in her golf career — she was accused of moving her ball during a tournament. Though the incident was hushed up, it reveals that Jordan is dishonest and careless, traits Nick begins to notice in her character.",
+        acceptableAnswers: [
+          "Jordan was accused of cheating in a golf tournament — she moved her ball to improve her lie.",
+        ],
+        explanation:
+          "Nick recalls that Jordan Baker was involved in a scandal early in her golf career — she was accused of moving her ball during a tournament. Though the incident was hushed up, it reveals that Jordan is dishonest and careless, traits Nick begins to notice in her character.",
       },
     ],
   },
@@ -9849,116 +10435,183 @@ export const quizTemplates: QuizTemplate[] = [
     id: "spanish-hotel-commands-pronouns-quiz",
     name: "Spanish: Hotel Vocabulary, Commands & Pronouns",
     category: "Spanish Language",
-    description: "Multiple-choice quiz covering el hotel vocabulary, affirmative/negative tú commands, formal (Ud.) commands, nosotros commands, and pronoun placement with commands.",
+    description:
+      "Multiple-choice quiz covering el hotel vocabulary, affirmative/negative tú commands, formal (Ud.) commands, nosotros commands, and pronoun placement with commands.",
     questions: [
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'la habitación'?",
-        options: ["The elevator", "The room", "The reception desk", "The guest"],
+        options: [
+          "The elevator",
+          "The room",
+          "The reception desk",
+          "The guest",
+        ],
         acceptableAnswers: ["The room"],
-        explanation: "'La habitación' means 'the room', typically referring to a hotel room.",
+        explanation:
+          "'La habitación' means 'the room', typically referring to a hotel room.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el ascensor'?",
-        options: ["The bellhop", "The tourist", "The elevator", "The transportation"],
+        options: [
+          "The bellhop",
+          "The tourist",
+          "The elevator",
+          "The transportation",
+        ],
         acceptableAnswers: ["The elevator"],
         explanation: "'El ascensor' means 'the elevator'.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el/la botones'?",
-        options: ["The guest", "The bellhop", "The business center", "The room service"],
+        options: [
+          "The guest",
+          "The bellhop",
+          "The business center",
+          "The room service",
+        ],
         acceptableAnswers: ["The bellhop"],
-        explanation: "'El/la botones' means 'the bellhop', the hotel employee who carries luggage.",
+        explanation:
+          "'El/la botones' means 'the bellhop', the hotel employee who carries luggage.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el/la huésped'?",
-        options: ["The tourist", "The guest", "The reception desk", "The wireless internet"],
+        options: [
+          "The tourist",
+          "The guest",
+          "The reception desk",
+          "The wireless internet",
+        ],
         acceptableAnswers: ["The guest"],
-        explanation: "'El/la huésped' means 'the guest', a person staying at a hotel.",
+        explanation:
+          "'El/la huésped' means 'the guest', a person staying at a hotel.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'la recepción'?",
-        options: ["The room service", "The transportation", "The reception desk", "The business center"],
+        options: [
+          "The room service",
+          "The transportation",
+          "The reception desk",
+          "The business center",
+        ],
         acceptableAnswers: ["The reception desk"],
-        explanation: "'La recepción' means 'the reception desk', where guests check in.",
+        explanation:
+          "'La recepción' means 'the reception desk', where guests check in.",
       },
       {
         type: "multiple-choice",
-        question: "What is the English meaning of 'el servicio a la habitación'?",
-        options: ["The transportation", "The business center", "The guest", "The room service"],
+        question:
+          "What is the English meaning of 'el servicio a la habitación'?",
+        options: [
+          "The transportation",
+          "The business center",
+          "The guest",
+          "The room service",
+        ],
         acceptableAnswers: ["The room service"],
         explanation: "'El servicio a la habitación' means 'room service'.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el centro de negocios'?",
-        options: ["The wireless internet", "The business center", "The elevator", "The tourist"],
+        options: [
+          "The wireless internet",
+          "The business center",
+          "The elevator",
+          "The tourist",
+        ],
         acceptableAnswers: ["The business center"],
         explanation: "'El centro de negocios' means 'the business center'.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el wifi'?",
-        options: ["The transportation", "The room", "The wireless internet", "The reception desk"],
+        options: [
+          "The transportation",
+          "The room",
+          "The wireless internet",
+          "The reception desk",
+        ],
         acceptableAnswers: ["The wireless internet"],
         explanation: "'El wifi' means 'wireless internet'.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el transporte'?",
-        options: ["The tourist", "The transportation", "The elevator", "The business center"],
+        options: [
+          "The tourist",
+          "The transportation",
+          "The elevator",
+          "The business center",
+        ],
         acceptableAnswers: ["The transportation"],
         explanation: "'El transporte' means 'transportation'.",
       },
       {
         type: "multiple-choice",
         question: "What is the English meaning of 'el/la turista'?",
-        options: ["The guest", "The bellhop", "The tourist", "The room service"],
+        options: [
+          "The guest",
+          "The bellhop",
+          "The tourist",
+          "The room service",
+        ],
         acceptableAnswers: ["The tourist"],
         explanation: "'El/la turista' means 'the tourist'.",
       },
       {
         type: "multiple-choice",
-        question: "Which relative pronoun means 'that / which / who' and is used for both people and things?",
+        question:
+          "Which relative pronoun means 'that / which / who' and is used for both people and things?",
         options: ["Quien", "Donde", "Que", "Cuál"],
         acceptableAnswers: ["Que"],
-        explanation: "'Que' means 'that / which / who' and can be used for both people and things. Example: 'El vuelo que sale a Madrid está lleno.'",
+        explanation:
+          "'Que' means 'that / which / who' and can be used for both people and things. Example: 'El vuelo que sale a Madrid está lleno.'",
       },
       {
         type: "multiple-choice",
-        question: "Which relative pronoun is used ONLY for people, especially after prepositions?",
+        question:
+          "Which relative pronoun is used ONLY for people, especially after prepositions?",
         options: ["Que", "Donde", "Quien", "Como"],
         acceptableAnswers: ["Quien"],
-        explanation: "'Quien/Quienes' is used only for people. Example: 'El pasajero con quien viajé fue amable.'",
+        explanation:
+          "'Quien/Quienes' is used only for people. Example: 'El pasajero con quien viajé fue amable.'",
       },
       {
         type: "multiple-choice",
-        question: "Which relative pronoun means 'where' and is used for places?",
+        question:
+          "Which relative pronoun means 'where' and is used for places?",
         options: ["Que", "Quien", "Cuando", "Donde"],
         acceptableAnswers: ["Donde"],
-        explanation: "'Donde' means 'where' and is used for places. Example: 'Nueva York es la ciudad donde hacemos escala.'",
+        explanation:
+          "'Donde' means 'where' and is used for places. Example: 'Nueva York es la ciudad donde hacemos escala.'",
       },
       {
         type: "multiple-choice",
-        question: "Which relative pronoun best completes: 'La mujer ___ canta es mi profesora.'?",
+        question:
+          "Which relative pronoun best completes: 'La mujer ___ canta es mi profesora.'?",
         options: ["Donde", "Quien", "Que", "Cuál"],
         acceptableAnswers: ["Que"],
-        explanation: "Use 'que' here because 'la mujer' is the subject and no preposition precedes the pronoun. 'La mujer que canta' = 'The woman who sings.'",
+        explanation:
+          "Use 'que' here because 'la mujer' is the subject and no preposition precedes the pronoun. 'La mujer que canta' = 'The woman who sings.'",
       },
       {
         type: "multiple-choice",
-        question: "Which relative pronoun best completes: 'El amigo con ___ estudié es muy listo.'?",
+        question:
+          "Which relative pronoun best completes: 'El amigo con ___ estudié es muy listo.'?",
         options: ["Que", "Donde", "Quien", "Como"],
         acceptableAnswers: ["Quien"],
-        explanation: "After a preposition (con), use 'quien' for people: 'El amigo con quien estudié' = 'The friend with whom I studied.'",
+        explanation:
+          "After a preposition (con), use 'quien' for people: 'El amigo con quien estudié' = 'The friend with whom I studied.'",
       },
       {
         type: "multiple-choice",
-        question: "How do you form an affirmative tú command for most regular verbs?",
+        question:
+          "How do you form an affirmative tú command for most regular verbs?",
         options: [
           "Use the yo form of the present tense",
           "Use the él/ella/usted form of the present tense",
@@ -9966,95 +10619,109 @@ export const quizTemplates: QuizTemplate[] = [
           "Add -e to the verb stem",
         ],
         acceptableAnswers: ["Use the él/ella/usted form of the present tense"],
-        explanation: "For affirmative tú commands, use the él/ella/usted form. Example: 'hablar' → 'habla', 'comer' → 'come'.",
+        explanation:
+          "For affirmative tú commands, use the él/ella/usted form. Example: 'hablar' → 'habla', 'comer' → 'come'.",
       },
       {
         type: "multiple-choice",
         question: "What is the affirmative tú command for 'hablar'?",
         options: ["Hablas", "Hablad", "Habla", "Hables"],
         acceptableAnswers: ["Habla"],
-        explanation: "'Habla' is the affirmative tú command for 'hablar', using the él/ella form of the present tense.",
+        explanation:
+          "'Habla' is the affirmative tú command for 'hablar', using the él/ella form of the present tense.",
       },
       {
         type: "multiple-choice",
         question: "What is the affirmative tú command for 'escribir'?",
         options: ["Escribas", "Escribid", "Escribes", "Escribe"],
         acceptableAnswers: ["Escribe"],
-        explanation: "'Escribe' is the affirmative tú command for 'escribir', using the él/ella form.",
+        explanation:
+          "'Escribe' is the affirmative tú command for 'escribir', using the él/ella form.",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'hacer'?",
         options: ["Haces", "Hace", "Haz", "Haga"],
         acceptableAnswers: ["Haz"],
-        explanation: "'Haz' is the irregular affirmative tú command for 'hacer'. It must be memorized.",
+        explanation:
+          "'Haz' is the irregular affirmative tú command for 'hacer'. It must be memorized.",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'ir'?",
         options: ["Iras", "Va", "Ve", "Ir"],
         acceptableAnswers: ["Ve"],
-        explanation: "'Ve' is the irregular affirmative tú command for 'ir'. Example: 'Ve al aeropuerto.'",
+        explanation:
+          "'Ve' is the irregular affirmative tú command for 'ir'. Example: 'Ve al aeropuerto.'",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'tener'?",
         options: ["Tienes", "Tiene", "Tenga", "Ten"],
         acceptableAnswers: ["Ten"],
-        explanation: "'Ten' is the irregular affirmative tú command for 'tener'. Example: 'Ten cuidado.'",
+        explanation:
+          "'Ten' is the irregular affirmative tú command for 'tener'. Example: 'Ten cuidado.'",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'venir'?",
         options: ["Vienes", "Venga", "Viene", "Ven"],
         acceptableAnswers: ["Ven"],
-        explanation: "'Ven' is the irregular affirmative tú command for 'venir'. Example: 'Ven conmigo.'",
+        explanation:
+          "'Ven' is the irregular affirmative tú command for 'venir'. Example: 'Ven conmigo.'",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'poner'?",
         options: ["Pone", "Pones", "Pon", "Ponga"],
         acceptableAnswers: ["Pon"],
-        explanation: "'Pon' is the irregular affirmative tú command for 'poner'. It must be memorized.",
+        explanation:
+          "'Pon' is the irregular affirmative tú command for 'poner'. It must be memorized.",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'decir'?",
         options: ["Dice", "Dices", "Diga", "Di"],
         acceptableAnswers: ["Di"],
-        explanation: "'Di' is the irregular affirmative tú command for 'decir'. It must be memorized.",
+        explanation:
+          "'Di' is the irregular affirmative tú command for 'decir'. It must be memorized.",
       },
       {
         type: "multiple-choice",
         question: "What is the irregular affirmative tú command for 'salir'?",
         options: ["Sale", "Salga", "Sal", "Salid"],
         acceptableAnswers: ["Sal"],
-        explanation: "'Sal' is the irregular affirmative tú command for 'salir'. Example: 'Sal de aquí.'",
+        explanation:
+          "'Sal' is the irregular affirmative tú command for 'salir'. Example: 'Sal de aquí.'",
       },
       {
         type: "multiple-choice",
         question: "How do you form a negative tú command for 'hablar'?",
         options: ["No habla", "No hablad", "No hables", "No hablas"],
         acceptableAnswers: ["No hables"],
-        explanation: "For negative tú commands with -ar verbs: yo form (hablo) → drop -o → add -es → 'No hables'.",
+        explanation:
+          "For negative tú commands with -ar verbs: yo form (hablo) → drop -o → add -es → 'No hables'.",
       },
       {
         type: "multiple-choice",
         question: "How do you form a negative tú command for 'comer'?",
         options: ["No come", "No comes", "No comas", "No comad"],
         acceptableAnswers: ["No comas"],
-        explanation: "For negative tú commands with -er verbs: yo form (como) → drop -o → add -as → 'No comas'.",
+        explanation:
+          "For negative tú commands with -er verbs: yo form (como) → drop -o → add -as → 'No comas'.",
       },
       {
         type: "multiple-choice",
         question: "How do you form a negative tú command for 'escribir'?",
         options: ["No escribe", "No escribas", "No escribes", "No escribid"],
         acceptableAnswers: ["No escribas"],
-        explanation: "For negative tú commands with -ir verbs: yo form (escribo) → drop -o → add -as → 'No escribas'.",
+        explanation:
+          "For negative tú commands with -ir verbs: yo form (escribo) → drop -o → add -as → 'No escribas'.",
       },
       {
         type: "multiple-choice",
-        question: "How do you form a formal (Ud.) command for an -ar verb like 'pasar'?",
+        question:
+          "How do you form a formal (Ud.) command for an -ar verb like 'pasar'?",
         options: [
           "Start with the tú form and add -e",
           "Start with the yo form, drop -o, add -e",
@@ -10062,14 +10729,16 @@ export const quizTemplates: QuizTemplate[] = [
           "Start with the yo form, drop -o, add -a",
         ],
         acceptableAnswers: ["Start with the yo form, drop -o, add -e"],
-        explanation: "For formal commands of -ar verbs: yo form → drop -o → add -e. 'pasar' → 'paso' → 'pase'.",
+        explanation:
+          "For formal commands of -ar verbs: yo form → drop -o → add -e. 'pasar' → 'paso' → 'pase'.",
       },
       {
         type: "multiple-choice",
         question: "What is the formal (Ud.) command for 'poner'?",
         options: ["Pon", "Pone", "Ponga", "Pones"],
         acceptableAnswers: ["Ponga"],
-        explanation: "'poner' → yo form 'pongo' → drop -o → add -a → 'ponga'. The irregular yo form carries over to the command.",
+        explanation:
+          "'poner' → yo form 'pongo' → drop -o → add -a → 'ponga'. The irregular yo form carries over to the command.",
       },
       {
         type: "multiple-choice",
@@ -10083,28 +10752,32 @@ export const quizTemplates: QuizTemplate[] = [
         question: "What is the formal (Ud.) command for 'buscar'?",
         options: ["Busca", "Buscas", "Buscen", "Busque"],
         acceptableAnswers: ["Busque"],
-        explanation: "'buscar' → yo form 'busco' → drop -o → add -e → 'busque'. Note the spelling change c→qu to preserve the /k/ sound.",
+        explanation:
+          "'buscar' → yo form 'busco' → drop -o → add -e → 'busque'. Note the spelling change c→qu to preserve the /k/ sound.",
       },
       {
         type: "multiple-choice",
         question: "What is the formal (Ud.) command for 'ir'?",
         options: ["Ve", "Vaya", "Va", "Vayas"],
         acceptableAnswers: ["Vaya"],
-        explanation: "'ir' has an irregular formal command: 'vaya'. This must be memorized.",
+        explanation:
+          "'ir' has an irregular formal command: 'vaya'. This must be memorized.",
       },
       {
         type: "multiple-choice",
         question: "What is the formal (Ud.) command for 'ser'?",
         options: ["Es", "Eres", "Sé", "Sea"],
         acceptableAnswers: ["Sea"],
-        explanation: "'ser' has an irregular formal command: 'sea'. This must be memorized.",
+        explanation:
+          "'ser' has an irregular formal command: 'sea'. This must be memorized.",
       },
       {
         type: "multiple-choice",
         question: "What is the formal (Ud.) command for 'dar'?",
         options: ["Da", "Das", "Dé", "Diga"],
         acceptableAnswers: ["Dé"],
-        explanation: "'dar' has an irregular formal command: 'dé' (with an accent to distinguish it from the preposition 'de'). This must be memorized.",
+        explanation:
+          "'dar' has an irregular formal command: 'dé' (with an accent to distinguish it from the preposition 'de'). This must be memorized.",
       },
       {
         type: "multiple-choice",
@@ -10116,28 +10789,32 @@ export const quizTemplates: QuizTemplate[] = [
           "Use no + yo form",
         ],
         acceptableAnswers: ["Use no + command form"],
-        explanation: "Negative formal commands use 'no' + the command form. Example: 'No hable.' / 'No pierda el pasaporte.'",
+        explanation:
+          "Negative formal commands use 'no' + the command form. Example: 'No hable.' / 'No pierda el pasaporte.'",
       },
       {
         type: "multiple-choice",
         question: "Which is the correct nosotros command for 'comprar'?",
         options: ["Compramos", "Compremos", "Comprad", "Compren"],
         acceptableAnswers: ["Compremos"],
-        explanation: "The nosotros command for 'comprar' is 'compremos' — change the -amos ending to -emos. Example: 'Compremos regalos.'",
+        explanation:
+          "The nosotros command for 'comprar' is 'compremos' — change the -amos ending to -emos. Example: 'Compremos regalos.'",
       },
       {
         type: "multiple-choice",
         question: "Which is the correct nosotros command for 'pedir'?",
         options: ["Pedimos", "Pedamos", "Pidamos", "Pidan"],
         acceptableAnswers: ["Pidamos"],
-        explanation: "'pedir' is a stem-changing verb. Its nosotros command is 'pidamos'. Example: 'Pidamos un refresco.'",
+        explanation:
+          "'pedir' is a stem-changing verb. Its nosotros command is 'pidamos'. Example: 'Pidamos un refresco.'",
       },
       {
         type: "multiple-choice",
         question: "Which is the correct nosotros command for 'volver'?",
         options: ["Volvamos", "Volvemos", "Vuelvan", "Volved"],
         acceptableAnswers: ["Volvamos"],
-        explanation: "The nosotros command for 'volver' is 'volvamos'. Example: 'Volvamos al hotel.'",
+        explanation:
+          "The nosotros command for 'volver' is 'volvamos'. Example: 'Volvamos al hotel.'",
       },
       {
         type: "multiple-choice",
@@ -10149,11 +10826,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Corramos — Run to the plane (formal).",
         ],
         acceptableAnswers: ["Corramos — Let's run to the plane."],
-        explanation: "'Corramos' is a nosotros command meaning 'Let's run.' Example: 'Corramos al avión.'",
+        explanation:
+          "'Corramos' is a nosotros command meaning 'Let's run.' Example: 'Corramos al avión.'",
       },
       {
         type: "multiple-choice",
-        question: "Where are pronouns placed when used with an AFFIRMATIVE command?",
+        question:
+          "Where are pronouns placed when used with an AFFIRMATIVE command?",
         options: [
           "Before the verb",
           "After 'no'",
@@ -10161,11 +10840,13 @@ export const quizTemplates: QuizTemplate[] = [
           "Before the subject",
         ],
         acceptableAnswers: ["Attached to the end of the command form"],
-        explanation: "With affirmative commands, pronouns attach to the end. Example: 'La cama está desordenada. Hazla.'",
+        explanation:
+          "With affirmative commands, pronouns attach to the end. Example: 'La cama está desordenada. Hazla.'",
       },
       {
         type: "multiple-choice",
-        question: "Where are pronouns placed when used with a NEGATIVE command?",
+        question:
+          "Where are pronouns placed when used with a NEGATIVE command?",
         options: [
           "Attached to the end of the command form",
           "After the subject",
@@ -10173,37 +10854,47 @@ export const quizTemplates: QuizTemplate[] = [
           "After 'no'... at the end",
         ],
         acceptableAnswers: ["Directly before the command form"],
-        explanation: "With negative commands, pronouns are placed directly before the command. Example: 'No lo hagas.' / 'No se lo prestes.'",
+        explanation:
+          "With negative commands, pronouns are placed directly before the command. Example: 'No lo hagas.' / 'No se lo prestes.'",
       },
       {
         type: "multiple-choice",
-        question: "An accent mark must be added to a command + pronoun combination when:",
+        question:
+          "An accent mark must be added to a command + pronoun combination when:",
         options: [
           "The pronoun starts with a vowel",
           "The new combined word has more than three syllables",
           "The verb is irregular",
           "The pronoun is a direct object",
         ],
-        acceptableAnswers: ["The new combined word has more than three syllables"],
-        explanation: "When attaching a pronoun creates a word with more than three syllables, an accent is required. Example: 'Límpialo' (lím-pia-lo) and 'Dámelo' (dá-me-lo).",
+        acceptableAnswers: [
+          "The new combined word has more than three syllables",
+        ],
+        explanation:
+          "When attaching a pronoun creates a word with more than three syllables, an accent is required. Example: 'Límpialo' (lím-pia-lo) and 'Dámelo' (dá-me-lo).",
       },
       {
         type: "multiple-choice",
-        question: "Which is the correct command form for: 'The bathroom is dirty. ___ please.' (Clean it — affirmative tú command with pronoun)?",
+        question:
+          "Which is the correct command form for: 'The bathroom is dirty. ___ please.' (Clean it — affirmative tú command with pronoun)?",
         options: ["No lo limpies", "Limpia lo", "Límpialo", "Lo limpia"],
         acceptableAnswers: ["Límpialo"],
-        explanation: "'Limpiar' affirmative tú command is 'limpia'. Attach the pronoun 'lo' → 'límpialo'. An accent is added because the word now has more than three syllables.",
+        explanation:
+          "'Limpiar' affirmative tú command is 'limpia'. Attach the pronoun 'lo' → 'límpialo'. An accent is added because the word now has more than three syllables.",
       },
       {
         type: "multiple-choice",
-        question: "Which is the correct way to say 'Don't do it' (negative tú command) referring to running on the platform?",
+        question:
+          "Which is the correct way to say 'Don't do it' (negative tú command) referring to running on the platform?",
         options: ["Hazlo", "No hazlo", "No lo hagas", "No lo hace"],
         acceptableAnswers: ["No lo hagas"],
-        explanation: "With negative tú commands, pronouns go BEFORE the verb: 'No lo hagas.' The negative tú command of 'hacer' is 'hagas'.",
+        explanation:
+          "With negative tú commands, pronouns go BEFORE the verb: 'No lo hagas.' The negative tú command of 'hacer' is 'hagas'.",
       },
       {
         type: "multiple-choice",
-        question: "Which sentence correctly uses an affirmative tú command with a hotel vocabulary word?",
+        question:
+          "Which sentence correctly uses an affirmative tú command with a hotel vocabulary word?",
         options: [
           "No busques tu pase de abordar.",
           "Busca tu pase de abordar.",
@@ -10211,7 +10902,8 @@ export const quizTemplates: QuizTemplate[] = [
           "Buscas tu pase de abordar.",
         ],
         acceptableAnswers: ["Busca tu pase de abordar."],
-        explanation: "'Busca' is the affirmative tú command for 'buscar' (él/ella form). 'Busca tu pase de abordar' means 'Look for your boarding pass.'",
+        explanation:
+          "'Busca' is the affirmative tú command for 'buscar' (él/ella form). 'Busca tu pase de abordar' means 'Look for your boarding pass.'",
       },
     ],
   },
